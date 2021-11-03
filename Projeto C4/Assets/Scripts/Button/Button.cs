@@ -12,6 +12,6 @@ public class Button:MonoBehaviour{
 	}
 	
 	public void CloseGame(){
-		
+		Application.Quit();
 	}
 }
