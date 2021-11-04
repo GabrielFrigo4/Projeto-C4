@@ -10,7 +10,6 @@ public class LanguageBehaviour : MonoBehaviour
     [SerializeField] string portugues, ingles;
     [SerializeField] Text text;
 
-    // Start is called before the first frame update
     void Start()
     {
         SetLenguage();
@@ -25,7 +24,8 @@ public class LanguageBehaviour : MonoBehaviour
             text.text = portugues;
         }
 		
-		switch(LanguageBehaviour.lingua){
+		switch(LanguageBehaviour.lingua)
+		{
 			case Lingua.Portugues:
 			text.text = portugues;
 				break;
