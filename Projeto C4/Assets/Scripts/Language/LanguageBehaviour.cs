@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LanguageBehaviour : MonoBehaviour
 {
+	static public List<LanguageBehaviour> languageBehaviour = new  List<LanguageBehaviour>();
     public static Lingua lingua = Lingua.Portugues;
     [SerializeField] string portugues, ingles;
     [SerializeField] Text text;
@@ -13,12 +14,8 @@ public class LanguageBehaviour : MonoBehaviour
     void Start()
     {
         SetLenguage();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+		if(!languageBehaviour.Contains(this))
+			languageBehaviour.Add(this);
     }
 
     public void SetLenguage()
@@ -27,6 +24,15 @@ public class LanguageBehaviour : MonoBehaviour
         {
             text.text = portugues;
         }
+		
+		switch(LanguageBehaviour.lingua){
+			case Lingua.Portugues:
+			text.text = portugues;
+				break;
+			case Lingua.Ingles:
+			text.text = ingles;
+				break;
+		}
     }
 }
 
