@@ -2970,7 +2970,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a912930cb9df5144ca9c46f3ca80709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 62b98405bf68f224aa1b64ef38b16b7a, type: 3}
+  clip: {fileID: 8300000, guid: 62b98405bf68f224aa1b64ef38b16b7a, type: 3}
+  volume: 1
+  isStatic: 1
 --- !u!1 &1848270634
 GameObject:
   m_ObjectHideFlags: 0

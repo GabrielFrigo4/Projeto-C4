@@ -19,7 +19,9 @@ public class DropDownScript : MonoBehaviour
 		foreach(var ling in LanguageBehaviour.languageBehaviour)
 		{
 			if(ling != null)
+			{
 				ling.SetLenguage();
+			}
 		}
 	}
 }

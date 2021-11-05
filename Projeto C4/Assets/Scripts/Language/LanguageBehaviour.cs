@@ -14,7 +14,9 @@ public class LanguageBehaviour : MonoBehaviour
     {
         SetLenguage();
 		if(!languageBehaviour.Contains(this))
+		{
 			languageBehaviour.Add(this);
+		}
     }
 
     public void SetLenguage()
