@@ -21,12 +21,7 @@ public class LanguageBehaviour : MonoBehaviour
 
     public void SetLenguage()
     {
-        if (lingua == Lingua.Portugues)
-        {
-            text.text = portugues;
-        }
-		
-		switch(LanguageBehaviour.lingua)
+		switch(lingua)
 		{
 			case Lingua.Portugues:
 			text.text = portugues;
@@ -35,7 +30,7 @@ public class LanguageBehaviour : MonoBehaviour
 			text.text = ingles;
 				break;
 		}
-    }
+	}
 }
 
 public enum Lingua

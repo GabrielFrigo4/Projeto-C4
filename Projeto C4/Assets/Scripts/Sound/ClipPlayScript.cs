@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClipPlayScript : MonoBehaviour
 {
-	Transform camera;
+	Transform transformCamera;
 	AudioSource source;
 	[HideInInspector] public AudioClip clip;
 	[HideInInspector] public float volume;
@@ -17,8 +17,8 @@ public class ClipPlayScript : MonoBehaviour
 		{
 			DontDestroyOnLoad(gameObject);
 		}
-		
-        camera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
+
+		transformCamera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
 		source = GetComponent<AudioSource>();
 		source.clip = clip;
 		source.volume = volume;
@@ -28,16 +28,16 @@ public class ClipPlayScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(camera != null)
+		if(transformCamera != null)
 		{
-			transform.position = camera.position;
+			transform.position = transformCamera.position;
 		}
 		else
 		{
-			camera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
-			if(camera != null)
+			transformCamera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
+			if(transformCamera != null)
 			{
-				transform.position = camera.position;
+				transform.position = transformCamera.position;
 			}
 		}
     }

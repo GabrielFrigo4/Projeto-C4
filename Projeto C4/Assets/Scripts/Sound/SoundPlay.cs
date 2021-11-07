@@ -8,7 +8,10 @@ public class SoundPlay : MonoBehaviour
 	[SerializeField] AudioClip clip;
 	[SerializeField] float volume = 1f;
 	[SerializeField] bool isStatic = false;
+	[SerializeField] TipoVolumeSound typeSound;
+
 	static GameObject clipSound;
+
 	static GameObject ClipSound 
 	{ 
 		get 
@@ -28,7 +31,18 @@ public class SoundPlay : MonoBehaviour
 	
 	public void Play()
 	{
-		PlayClip(clip, volume, isStatic);
+        switch (typeSound)
+        {
+			case TipoVolumeSound.Normal:
+				PlayClip(clip, volume, isStatic);
+				break;
+			case TipoVolumeSound.Musica:
+				PlayClip(clip, SliderScript.volumeMusic, isStatic);
+				break;
+			case TipoVolumeSound.Som:
+				PlayClip(clip, SliderScript.volumeSound, isStatic);
+				break;
+		}
 	}
 	
 	public static GameObject PlayClip(AudioClip clip, float volume, bool isStatic)
@@ -40,4 +54,11 @@ public class SoundPlay : MonoBehaviour
 		clipScript.isStatic = isStatic;
 		return sound;
 	}
+
+	public enum TipoVolumeSound
+    {
+		Normal,
+		Musica,
+		Som,
+    }
 }
