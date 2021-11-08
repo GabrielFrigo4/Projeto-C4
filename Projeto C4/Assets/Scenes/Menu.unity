@@ -492,7 +492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Close
+  m_Text: Fechar
 --- !u!222 &264361027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -945,7 +945,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option
+  m_Text: "Op\xE7\xF5es"
 --- !u!222 &454527627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2094,7 +2094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Jogar
 --- !u!222 &1354166864
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3135,7 +3135,7 @@ RectTransform:
   m_GameObject: {fileID: 1898600130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0222185, y: 0.0222185, z: 0.0222185}
+  m_LocalScale: {x: 0.022243347, y: 0.022243347, z: 0.022243347}
   m_Children:
   - {fileID: 601820651}
   - {fileID: 1084973388}
@@ -3146,7 +3146,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 450.0754}
+  m_SizeDelta: {x: 800, y: 449.57263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1984986618
 GameObject:

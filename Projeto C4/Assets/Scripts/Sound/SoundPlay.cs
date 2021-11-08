@@ -6,7 +6,7 @@ using UnityEngine;
 public class SoundPlay : MonoBehaviour
 {
 	[SerializeField] AudioClip clip;
-	[SerializeField] float volume = 1f;
+	[Range(0, 1)][SerializeField] float volume = 1f;
 	[SerializeField] bool isStatic = false;
 	[SerializeField] TipoVolumeSound typeSound;
 
