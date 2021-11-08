@@ -7,6 +7,7 @@ public class ButtonPauseScript : MonoBehaviour
 {
 	[SerializeField]GameObject menuPause, option;
 	[SerializeField]Slider music, sound;
+	bool isPaused = false;
 	
 	public void Start()
 	{
@@ -16,7 +17,17 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void Update()
 	{
-		
+		if(Input.GetKeyDown("escape") && !isPaused)
+		{
+			PauseGame();
+		}
+	}
+	
+	public void PauseGame()
+	{
+		isPaused = true;
+		menuPause.transform.position = new Vector3(0,0,0);
+		option.transform.position = new Vector3(18,0,0);
 	}
 	
 	public void OptionGame()
@@ -25,14 +36,9 @@ public class ButtonPauseScript : MonoBehaviour
 		option.transform.position = new Vector3(0,0,0);
 	}
 	
-	public void PauseGame()
-	{
-		menuPause.transform.position = new Vector3(0,0,0);
-		option.transform.position = new Vector3(18,0,0);
-	}
-	
 	public void ReturnGame()
 	{
+		isPaused = false;
 		menuPause.transform.position = new Vector3(-18,0,0);
 		option.transform.position = new Vector3(18,0,0);
 	}
