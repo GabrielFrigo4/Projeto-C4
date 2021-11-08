@@ -7,12 +7,15 @@ public class ButtonPauseScript : MonoBehaviour
 {
 	[SerializeField]GameObject menuPause, gameGUI, option;
 	[SerializeField]Slider music, sound;
+	[SerializeField]Dropdown language;
+	[SerializeField]Text setTimeScaleText;
 	public static bool isPaused = false;
 	
 	public void Start()
 	{
 		music.value = SliderScript.volumeMusic;
 		sound.value = SliderScript.volumeSound;
+		language.value = DropDownScript.languageValue;
 	}
 	
 	public void Update()
@@ -25,6 +28,20 @@ public class ButtonPauseScript : MonoBehaviour
 		else if(esc && isPaused)
 		{
 			ReturnGame();
+		}
+	}
+	
+	public void SetTimeScale()
+	{
+		if(Time.timeScale == 1f)
+		{
+			setTimeScaleText.text = "200%";
+			Time.timeScale = 2f;
+		}
+		else if(Time.timeScale == 2f)
+		{
+			setTimeScaleText.text = "100%";
+			Time.timeScale = 1f;
 		}
 	}
 	

@@ -7,11 +7,13 @@ public class ButtonScript:MonoBehaviour
 {
 	[SerializeField]GameObject menu, option;
 	[SerializeField]Slider music, sound;
+	[SerializeField]Dropdown language;
 	
 	public void Start()
 	{
 		music.value = SliderScript.volumeMusic;
 		sound.value = SliderScript.volumeSound;
+		language.value = DropDownScript.languageValue;
 	}
 	
     public void StartGame()

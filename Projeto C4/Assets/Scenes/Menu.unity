@@ -2936,6 +2936,7 @@ MonoBehaviour:
   option: {fileID: 506287009}
   music: {fileID: 1300173296}
   sound: {fileID: 1672172908}
+  language: {fileID: 1411735069}
 --- !u!114 &1793626196
 MonoBehaviour:
   m_ObjectHideFlags: 0
