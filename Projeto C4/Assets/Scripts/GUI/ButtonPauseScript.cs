@@ -7,7 +7,7 @@ public class ButtonPauseScript : MonoBehaviour
 {
 	[SerializeField]GameObject menuPause, gameGUI, option;
 	[SerializeField]Slider music, sound;
-	bool isPaused = false;
+	public static bool isPaused = false;
 	
 	public void Start()
 	{
@@ -17,14 +17,20 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape) && !isPaused)
+		bool esc = Input.GetKeyDown(KeyCode.Escape);
+		if(esc && !isPaused)
 		{
 			PauseGame();
+		}
+		else if(esc && isPaused)
+		{
+			ReturnGame();
 		}
 	}
 	
 	public void PauseGame()
 	{
+		Time.timeScale = 0;
 		isPaused = true;
 		menuPause.transform.position = new Vector3(0,0,0);
 		gameGUI.transform.position = new Vector3(18,0,0);
@@ -40,6 +46,7 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void ReturnGame()
 	{
+		Time.timeScale = 1;
 		isPaused = false;
 		menuPause.transform.position = new Vector3(-18,0,0);
 		gameGUI.transform.position = new Vector3(0,0,0);
