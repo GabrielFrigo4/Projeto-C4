@@ -23,14 +23,14 @@ public class ButtonScript:MonoBehaviour
 	
 	public void OptionGame()
 	{
-		menu.transform.position = new Vector3(-18,0,0);
+		menu.transform.position = new Vector3(-32,0,0);
 		option.transform.position = new Vector3(0,0,0);
 	}
 	
 	public void ReturnMenu()
 	{
 		menu.transform.position = new Vector3(0,0,0);
-		option.transform.position = new Vector3(18,0,0);
+		option.transform.position = new Vector3(32,0,0);
 	}
 	
 	public void CloseGame()
