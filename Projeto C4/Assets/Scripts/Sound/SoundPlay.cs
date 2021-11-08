@@ -34,22 +34,25 @@ public class SoundPlay : MonoBehaviour
         switch (typeSound)
         {
 			case TipoVolumeSound.Normal:
-				PlayClip(clip, volume, isStatic);
+				PlayClip(clip, ref volume, isStatic);
 				break;
 			case TipoVolumeSound.Musica:
-				PlayClip(clip, SliderScript.volumeMusic, isStatic);
+				PlayClip(clip, ref SliderScript.volumeMusic, isStatic);
 				break;
 			case TipoVolumeSound.Som:
-				PlayClip(clip, SliderScript.volumeSound, isStatic);
+				PlayClip(clip, ref SliderScript.volumeSound, isStatic);
 				break;
 		}
 	}
 	
-	public static GameObject PlayClip(AudioClip clip, float volume, bool isStatic)
+	public unsafe static GameObject PlayClip(AudioClip clip, ref float volume, bool isStatic)
 	{
 		GameObject sound = Instantiate(ClipSound);
 		ClipPlayScript clipScript = sound.GetComponent<ClipPlayScript>();
-		clipScript.volume = volume;
+		fixed(float* ptr = &volume)
+		{
+			clipScript.volume = ptr;
+		}
 		clipScript.clip = clip;
 		clipScript.isStatic = isStatic;
 		return sound;

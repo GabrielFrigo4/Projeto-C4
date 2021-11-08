@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClipPlayScript : MonoBehaviour
+public unsafe class ClipPlayScript : MonoBehaviour
 {
 	Transform transformCamera;
 	AudioSource source;
 	[HideInInspector] public AudioClip clip;
-	[HideInInspector] public float volume;
+	[HideInInspector] public float* volume;
 	[HideInInspector] public bool isStatic;
 	
     // Start is called before the first frame update
@@ -17,11 +17,11 @@ public class ClipPlayScript : MonoBehaviour
 		{
 			DontDestroyOnLoad(gameObject);
 		}
-
+		
 		transformCamera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
 		source = GetComponent<AudioSource>();
 		source.clip = clip;
-		source.volume = volume;
+		source.volume = *volume;
 		source.Play();
     }
 
@@ -39,6 +39,11 @@ public class ClipPlayScript : MonoBehaviour
 			{
 				transform.position = transformCamera.position;
 			}
+		}
+		
+		if(*volume != source.volume)
+		{
+			source.volume = *volume;
 		}
     }
 }
