@@ -2934,6 +2934,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1898600130}
   option: {fileID: 506287009}
+  music: {fileID: 1300173296}
+  sound: {fileID: 1672172908}
 --- !u!114 &1793626196
 MonoBehaviour:
   m_ObjectHideFlags: 0

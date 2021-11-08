@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class ButtonScript:MonoBehaviour
 {
 	[SerializeField]GameObject menu, option;
+	[SerializeField]Slider music, sound;
+	
+	public void Start()
+	{
+		music.value = SliderScript.volumeMusic;
+		sound.value = SliderScript.volumeSound;
+	}
 	
     public void StartGame()
 	{
