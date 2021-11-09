@@ -9,7 +9,7 @@ public class ButtonPauseScript : MonoBehaviour
 	[SerializeField]Slider music, sound;
 	[SerializeField]Dropdown language;
 	[SerializeField]Text setTimeScaleText;
-	public static bool isPaused = false;
+	public static bool isPaused = false, isSpeed = false;
 	
 	public void Start()
 	{
@@ -35,11 +35,13 @@ public class ButtonPauseScript : MonoBehaviour
 	{
 		if(Time.timeScale == 1f)
 		{
+			isSpeed = true;
 			setTimeScaleText.text = "200%";
 			Time.timeScale = 2f;
 		}
 		else if(Time.timeScale == 2f)
 		{
+			isSpeed = false;
 			setTimeScaleText.text = "100%";
 			Time.timeScale = 1f;
 		}
@@ -63,7 +65,15 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void ReturnGame()
 	{
-		Time.timeScale = 1;
+		if(isSpeed)
+		{
+			Time.timeScale = 2;
+		}
+		else
+		{
+			Time.timeScale = 1;
+		}
+		
 		isPaused = false;
 		menuPause.transform.position = new Vector3(-32,0,0);
 		gameGUI.transform.position = new Vector3(0,0,0);
@@ -72,6 +82,8 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void ExitGame()
 	{
+		Time.timeScale = 1;
+		isPaused = false;
 		SceneScript.GoScene("Menu");
 	}
 }
