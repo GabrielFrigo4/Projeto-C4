@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CodeUltils;
+using static CodeUtils;
 
 public class TeseCode : MonoBehaviour
 {
@@ -16,19 +16,19 @@ public class TeseCode : MonoBehaviour
 		if(!ButtonPauseScript.isPaused)
 		{
 			int x, y;
-			grid.GetXY(MouseUtils.GetWorldPosition(), out x, out y);
+			grid.GetXY(GetMouseWorldPosition(), out x, out y);
 			
 			if(y < 8)
 			{
 				if(Input.GetMouseButtonDown(0))
 				{
 					grid.SetValue(x, y, grid.GetValue(x, y) + 1);
-					Debug.Log($"[{x}, {y}] {grid.GetValue(x, y)}");
+					//Debug.Log($"[{x}, {y}] {grid.GetValue(x, y)}");
 				}
 				
 				if(Input.GetMouseButtonDown(1))
 				{
-					Debug.Log($"[{x}, {y}] {grid.GetValue(x, y)}");
+					//Debug.Log($"[{x}, {y}] {grid.GetValue(x, y)}");
 				}	
 			}
 		}
