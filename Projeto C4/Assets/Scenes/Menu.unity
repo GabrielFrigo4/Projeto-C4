@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Musica
+  m_Text: "M\xFAsica"
 --- !u!222 &433840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: Musica
+  portugues: "M\xFAsica"
   ingles: Music
   text: {fileID: 433839}
 --- !u!1 &1354166861
@@ -2668,7 +2668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Lingua:'
+  m_Text: " L\xEDngua:"
 --- !u!222 &1630449834
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2689,7 +2689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: ' Lingua:'
+  portugues: " L\xEDngua:"
   ingles: ' Language:'
   text: {fileID: 1630449833}
 --- !u!1 &1672172906

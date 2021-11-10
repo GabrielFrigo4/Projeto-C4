@@ -24,7 +24,6 @@ public class Projectile : MonoBehaviour
 	{
 		Vector2 moveDir = ((Vector2)targetPosition - (Vector2)transform.position).normalized;
 		
-		Debug.Log(moveDir);
 		float moveSpeed = 60f;
 		
 		transform.position += (Vector3)moveDir * moveSpeed * Time.deltaTime;
