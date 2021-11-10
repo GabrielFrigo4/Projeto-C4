@@ -35,10 +35,10 @@ public class TowerIA : MonoBehaviour
 		int x, y;
 		grid.GetXY(position, out x, out y);
 		
-		if(grid.GetValue(x,y) == 0)
+		if(grid.GetValue(x,y) == GridType.noone)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
-			grid.SetValue(x,y,2);
+			grid.SetValue(x,y,GridType.towerUsing);
 			return true;
 		}
 		else

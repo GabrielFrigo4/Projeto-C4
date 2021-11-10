@@ -8,7 +8,7 @@ public class Grid
 	int height;
 	float cellSize;
 	Vector3 originPosition;
-	int[,] gridArray;
+	GridType[,] gridArray;
 	
 	public Grid(int widht, int height, float cellSize, Vector3 originPosition)
 	{
@@ -17,7 +17,7 @@ public class Grid
 		this.cellSize = cellSize;
 		this.originPosition = originPosition;
 		
-		gridArray = new int[widht,height];
+		gridArray = new GridType[widht,height];
 		
 		for(int x = 0; x < gridArray.GetLength(0); x++)
 		{
@@ -42,7 +42,7 @@ public class Grid
 		y = Mathf.FloorToInt((worldPosition.y - originPosition.y) / cellSize);
 	}
 	
-	public void SetValue(int x, int y, int value)
+	public void SetValue(int x, int y, GridType value)
 	{
 		if(x >= 0 && y >= 0 && x < widht && y < height)
 		{
@@ -50,14 +50,14 @@ public class Grid
 		}
 	}
 	
-	public void SetValue(Vector3 worldPosition, int value)
+	public void SetValue(Vector3 worldPosition, GridType value)
 	{
 		int x, y;
 		GetXY(worldPosition, out x, out y);
 		SetValue(x, y, value);
 	}
 	
-	public int GetValue(int x, int y)
+	public GridType GetValue(int x, int y)
 	{
 		if(x >= 0 && x < widht && y >= 0 && y < height)
 		{
@@ -65,14 +65,25 @@ public class Grid
 		}
 		else
 		{
-			return -1;
+			return GridType.outside;
 		}
 	}
 	
-	public int GetValue(Vector3 worldPosition)
+	public GridType GetValue(Vector3 worldPosition)
 	{
 		int x, y;
 		GetXY(worldPosition, out x, out y);
 		return GetValue(x, y);
 	}
+}
+
+public enum GridType : int
+{
+	
+	outside = -1,
+	noone = 0,
+	ground = 1,
+	path = 2,
+	towerPosition = 3,
+	towerUsing = 4,
 }
