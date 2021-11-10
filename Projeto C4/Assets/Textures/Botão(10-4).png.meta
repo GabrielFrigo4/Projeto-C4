@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8446ffe3a41c674ea21af211df04f2a
+guid: 590a06eae37aca449a0cb515fe68a7fe
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -11,6 +11,135 @@ TextureImporter:
   - first:
       213: -1442503542070607039
     second: "Bot\xE3o(10-4)_2"
+  - first:
+      213: 7962832656919772627
+    second: "Bot\xE3o(10-4)_3"
+  - first:
+      213: -5460440865839614267
+    second: "Bot\xE3o(10-4)_4"
+  - first:
+      213: -4339669916327589119
+    second: "Bot\xE3o(10-4)_5"
+  - first:
+      213: -7080039411140013368
+    second: "Bot\xE3o(10-4)_6"
+  - first:
+      213: -7233080918463337150
+    second: "Bot\xE3o(10-4)_7"
+  - first:
+      213: -5481025271504833735
+    second: "Bot\xE3o(10-4)_8"
+  - first:
+      213: 3134131686696483260
+    second: "Bot\xE3o(10-4)_9"
+  - first:
+      213: -6090296719595335537
+    second: "Bot\xE3o(10-4)_10"
+  - first:
+      213: 8648624749127399973
+    second: "Bot\xE3o(10-4)_11"
+  - first:
+      213: -3388826388518378453
+    second: "Bot\xE3o(10-4)_12"
+  - first:
+      213: -833712763202239586
+    second: "Bot\xE3o(10-4)_13"
+  - first:
+      213: -9056706806234528940
+    second: "Bot\xE3o(10-4)_14"
+  - first:
+      213: 699938697918008897
+    second: "Bot\xE3o(10-4)_15"
+  - first:
+      213: 7528617022529687085
+    second: "Bot\xE3o(10-4)_16"
+  - first:
+      213: 535414685387708442
+    second: "Bot\xE3o(10-4)_17"
+  - first:
+      213: -5676150843556284451
+    second: "Bot\xE3o(10-4)_18"
+  - first:
+      213: -4838918381437930806
+    second: "Bot\xE3o(10-4)_19"
+  - first:
+      213: -7410281729702359656
+    second: "Bot\xE3o(10-4)_20"
+  - first:
+      213: -4701995609870894365
+    second: "Bot\xE3o(10-4)_21"
+  - first:
+      213: -5807432559973787796
+    second: "Bot\xE3o(10-4)_22"
+  - first:
+      213: 5820695098140418515
+    second: "Bot\xE3o(10-4)_23"
+  - first:
+      213: -1037880434253209946
+    second: "Bot\xE3o(10-4)_24"
+  - first:
+      213: -1088518696968992421
+    second: "Bot\xE3o(10-4)_25"
+  - first:
+      213: 3771471833396383087
+    second: "Bot\xE3o(10-4)_26"
+  - first:
+      213: 5438879682677641467
+    second: "Bot\xE3o(10-4)_27"
+  - first:
+      213: -3757643699981996450
+    second: "Bot\xE3o(10-4)_28"
+  - first:
+      213: 6188679274327565186
+    second: "Bot\xE3o(10-4)_29"
+  - first:
+      213: 3022349516680300780
+    second: "Bot\xE3o(10-4)_30"
+  - first:
+      213: 7297240510888264204
+    second: "Bot\xE3o(10-4)_31"
+  - first:
+      213: -1385022831715393619
+    second: "Bot\xE3o(10-4)_32"
+  - first:
+      213: -7429390215811965269
+    second: "Bot\xE3o(10-4)_33"
+  - first:
+      213: 4665136772695862739
+    second: "Bot\xE3o(10-4)_34"
+  - first:
+      213: -6176984923718219281
+    second: "Bot\xE3o(10-4)_35"
+  - first:
+      213: 6285116797437417300
+    second: "Bot\xE3o(10-4)_36"
+  - first:
+      213: 3997552887668150612
+    second: "Bot\xE3o(10-4)_37"
+  - first:
+      213: -1461907211604487921
+    second: "Bot\xE3o(10-4)_38"
+  - first:
+      213: -5688254580561341405
+    second: "Bot\xE3o(10-4)_39"
+  - first:
+      213: -2575704837200520252
+    second: "Bot\xE3o(10-4)_40"
+  - first:
+      213: 5249248425026523766
+    second: "Bot\xE3o(10-4)_41"
+  - first:
+      213: -4044356427100230945
+    second: "Bot\xE3o(10-4)_42"
+  - first:
+      213: 1002074522434979163
+    second: "Bot\xE3o(10-4)_43"
+  - first:
+      213: -5616650060406563210
+    second: "Bot\xE3o(10-4)_44"
+  - first:
+      213: -6586982764481572503
+    second: "Bot\xE3o(10-4)_45"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +184,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +203,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -86,7 +215,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -105,8 +234,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 40
+        width: 90
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,10 +253,10 @@ TextureImporter:
       name: "Bot\xE3o(10-4)_1"
       rect:
         serializedVersion: 2
-        x: 100
+        x: 180
         y: 0
-        width: 100
-        height: 40
+        width: 90
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +274,10 @@ TextureImporter:
       name: "Bot\xE3o(10-4)_2"
       rect:
         serializedVersion: 2
-        x: 200
+        x: 270
         y: 0
-        width: 100
-        height: 40
+        width: 90
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,6 +287,909 @@ TextureImporter:
       bones: []
       spriteID: 14383a3dba23bfbe0800000000000000
       internalID: -1442503542070607039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_3"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd3591dc1aa18e60800000000000000
+      internalID: 7962832656919772627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_4"
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c67a9296fd9834b0800000000000000
+      internalID: -5460440865839614267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_5"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b48d2243566c3c0800000000000000
+      internalID: -4339669916327589119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_6"
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2db3fcaa5aebd90800000000000000
+      internalID: -7080039411140013368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_7"
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d26572a3fee9b90800000000000000
+      internalID: -7233080918463337150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_8"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933f3072e8c7fe3b0800000000000000
+      internalID: -5481025271504833735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_9"
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9f6d8e92cae7b20800000000000000
+      internalID: 3134131686696483260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_10"
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f801bcbb66bea7ba0800000000000000
+      internalID: -6090296719595335537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_11"
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52af36f0366160870800000000000000
+      internalID: 8648624749127399973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_12"
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2464eaba5878f0d0800000000000000
+      internalID: -3388826388518378453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_13"
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e930f98b8ae0e64f0800000000000000
+      internalID: -833712763202239586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_14"
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453478be42d105280800000000000000
+      internalID: -9056706806234528940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_15"
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ec3fd898ea6b900800000000000000
+      internalID: 699938697918008897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_16"
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e47dd2b450b7860800000000000000
+      internalID: 7528617022529687085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_17"
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18df02d1dc2e6700800000000000000
+      internalID: 535414685387708442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_18"
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd73b4e91e24a31b0800000000000000
+      internalID: -5676150843556284451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_19"
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2b849ae55b8dcb0800000000000000
+      internalID: -4838918381437930806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_20"
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d06873704692990800000000000000
+      internalID: -7410281729702359656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_21"
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaf232b7e72fbeb0800000000000000
+      internalID: -4701995609870894365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_22"
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6799b51bdad76fa0800000000000000
+      internalID: -5807432559973787796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_23"
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d164863a5347c050800000000000000
+      internalID: 5820695098140418515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_24"
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae52057e35b891f0800000000000000
+      internalID: -1037880434253209946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_25"
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59cac7230ec4e0f0800000000000000
+      internalID: -1088518696968992421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_26"
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d8bfd76a5f65430800000000000000
+      internalID: 3771471833396383087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_27"
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf017164148ca7b40800000000000000
+      internalID: 5438879682677641467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_28"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ea616b6fa2adbc0800000000000000
+      internalID: -3757643699981996450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_29"
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283ed1fc20b92e550800000000000000
+      internalID: 6188679274327565186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_30"
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce88dc05fda81f920800000000000000
+      internalID: 3022349516680300780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_31"
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02c51c0591054560800000000000000
+      internalID: 7297240510888264204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_32"
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf5ccd921967cce0800000000000000
+      internalID: -1385022831715393619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_33"
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baed3c816f085e890800000000000000
+      internalID: -7429390215811965269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_34"
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd26258d25edb040800000000000000
+      internalID: 4665136772695862739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_35"
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe905de50f0f64aa0800000000000000
+      internalID: -6176984923718219281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_36"
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45719136d68393750800000000000000
+      internalID: 6285116797437417300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_37"
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4511c40eb292a7730800000000000000
+      internalID: 3997552887668150612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_38"
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f019bb5f22346bbe0800000000000000
+      internalID: -1461907211604487921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_39"
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32417adb8924f01b0800000000000000
+      internalID: -5688254580561341405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_40"
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb5864e812414cd0800000000000000
+      internalID: -2575704837200520252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_41"
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6721c7f71a319d840800000000000000
+      internalID: 5249248425026523766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_42"
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda6f99e14f8fd7c0800000000000000
+      internalID: -4044356427100230945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_43"
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55c43c087518ed00800000000000000
+      internalID: 1002074522434979163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_44"
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e5ac14786ad02b0800000000000000
+      internalID: -5616650060406563210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o(10-4)_45"
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961947533165694a0800000000000000
+      internalID: -6586982764481572503
       vertices: []
       indices: 
       edges: []
