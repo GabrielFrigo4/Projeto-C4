@@ -23,16 +23,27 @@ public class TowerIA : MonoBehaviour
 	void SpawnTower()
 	{
 		Vector3 spawnPosition = GetMouseWorldPosition();
-		spawnPosition = ValidatePosition(spawnPosition);
 		
-		Instantiate((GameObject)Resources.Load("Tower"),spawnPosition,Quaternion.identity);
+		if(ValidatePosition(ref spawnPosition))
+		{
+			Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
+		}
 	}
 	
-	Vector3 ValidatePosition(Vector3 position)
+	bool ValidatePosition(ref Vector3 position)
 	{
 		int x, y;
 		grid.GetXY(position, out x, out y);
 		
-		return new Vector3(x*2 - 15f, y*2 - 8f, position.z);
+		if(grid.GetValue(x,y) == 0)
+		{
+			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
+			grid.SetValue(x,y,2);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }

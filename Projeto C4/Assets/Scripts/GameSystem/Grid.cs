@@ -65,7 +65,7 @@ public class Grid
 		}
 		else
 		{
-			return 0;
+			return -1;
 		}
 	}
 	

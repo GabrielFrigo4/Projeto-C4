@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
 		transform.eulerAngles = new Vector3(0, 0, angle);
 		
 		float destroySelfDistance = 1f;
-		if(Vector3.Distance(transform.position, targetPosition) < destroySelfDistance)
+		if(Vector2.Distance(transform.position, targetPosition) < destroySelfDistance)
 		{
 			Destroy(gameObject);
 		}
