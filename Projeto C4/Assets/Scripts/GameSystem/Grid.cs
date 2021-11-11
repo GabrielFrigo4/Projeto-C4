@@ -79,7 +79,6 @@ public class Grid
 
 public enum GridType : int
 {
-	
 	outside = -1,
 	noone = 0,
 	ground = 1,
