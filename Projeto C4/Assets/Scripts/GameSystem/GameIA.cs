@@ -6,17 +6,20 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	public Tilemap map;
+	[SerializeField]Tilemap map;
+	[SerializeField]List<Vector3> starts, ends;
 	[SerializeField]List<TileBase> tileNoone;
 	[SerializeField]List<TileBase> tileGround;
 	[SerializeField]List<TileBase> tilePath;
 	[SerializeField]List<TileBase> tileTowerPositon;
+	public List<Vector3> paths = new List<Vector3>();
 	Grid grid;
 	
     void Start()
     {
         grid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue();
+		GetPath(paths);
     }
 
     void Update()
@@ -57,6 +60,38 @@ public class GameIA : MonoBehaviour
 				}
 			}
 		}
+	}
+	
+	void GetPath(List<Vector3> path)
+	{	
+		void GetNextPosition(Vector3 position)
+		{
+			path.Add(position);
+			Vector3 up, down, left, right;
+			up = position + Vector3.up;
+			down = position + Vector3.down;
+			left = position + Vector3.left;
+			right = position + Vector3.right;
+			
+			if(grid.GetValue((int)up.x, (int)up.y) == GridType.path && !path.Contains(up))
+			{
+				GetNextPosition(up);
+			}
+			else if(grid.GetValue((int)down.x, (int)down.y) == GridType.path && !path.Contains(down))
+			{
+				GetNextPosition(down);
+			}
+			else if(grid.GetValue((int)left.x, (int)left.y) == GridType.path && !path.Contains(left))
+			{
+				GetNextPosition(left);
+			}
+			else if(grid.GetValue((int)right.x, (int)right.y) == GridType.path && !path.Contains(right))
+			{
+				GetNextPosition(right);
+			}			
+		}
+		
+		GetNextPosition(starts[0]);
 	}
 	
 	void SpawnTower()
