@@ -7,7 +7,10 @@ using static CodeUtils;
 public class TowerIA : MonoBehaviour
 {
 	[SerializeField]Tilemap map;
-	[SerializeField]TileBase[] tileBase;
+	[SerializeField]List<TileBase> tileNoone;
+	[SerializeField]List<TileBase> tileGround;
+	[SerializeField]List<TileBase> tilePath;
+	[SerializeField]List<TileBase> tileTowerPositon;
 	Grid grid;
 	
     void Start()
@@ -31,18 +34,36 @@ public class TowerIA : MonoBehaviour
 			for(int y = 0; y < 8; y++)
 			{
 				TileBase b = map.GetTile(new Vector3Int(x,y,0));
-				for(int i = 0; i < tileBase.Length; i++)
+				
+				if(b == null)
 				{
-					if(tileBase[i] == b)
-					{
-						grid.SetValue(x,y,(GridType)i);
+					grid.SetValue(x, y, GridType.outside);
+				}
+				else if(tileNoone.Contains(b))
+				{
+					grid.SetValue(x, y, GridType.noone);
+				}
+				else if(tileGround.Contains(b))
+				{
+					grid.SetValue(x, y, GridType.ground);
+				}
+				else if(tilePath.Contains(b))
+				{
+					grid.SetValue(x, y, GridType.path);
+				}
+				else if(tileTowerPositon.Contains(b))
+				{
+					grid.SetValue(x, y, GridType.towerPosition);
+				}
+				
+				switch(b)
+				{
+					case null:
+						grid.SetValue(x, y, GridType.outside);
 						break;
-					}
-					else if(i == tileBase.Length - 1)
-					{
-						grid.SetValue(x,y,(GridType)(-1));
-						break;
-					}
+					//case null:
+					//	grid.SetValue(x, y, GridType.noone);
+					//	break;
 				}
 			}
 		}
