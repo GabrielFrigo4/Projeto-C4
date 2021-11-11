@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using static CodeUtils;
 
-public class TowerIA : MonoBehaviour
+public class GameIA : MonoBehaviour
 {
-	[SerializeField]Tilemap map;
+	public Tilemap map;
 	[SerializeField]List<TileBase> tileNoone;
 	[SerializeField]List<TileBase> tileGround;
 	[SerializeField]List<TileBase> tilePath;
@@ -54,16 +54,6 @@ public class TowerIA : MonoBehaviour
 				else if(tileTowerPositon.Contains(b))
 				{
 					grid.SetValue(x, y, GridType.towerPosition);
-				}
-				
-				switch(b)
-				{
-					case null:
-						grid.SetValue(x, y, GridType.outside);
-						break;
-					//case null:
-					//	grid.SetValue(x, y, GridType.noone);
-					//	break;
 				}
 			}
 		}

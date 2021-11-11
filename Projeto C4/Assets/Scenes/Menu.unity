@@ -2976,7 +2976,7 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: 62b98405bf68f224aa1b64ef38b16b7a, type: 3}
   volume: 1
   isStatic: 1
-  typeSound: 2
+  typeSound: 1
 --- !u!1 &1848270634
 GameObject:
   m_ObjectHideFlags: 0
