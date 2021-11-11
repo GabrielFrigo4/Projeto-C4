@@ -18,7 +18,7 @@ public class SoundPlay : MonoBehaviour
 		{ 
 			if(clipSound == null)
 			{
-				clipSound = (GameObject)Resources.Load("ClipPlay");
+				clipSound = (GameObject)Resources.Load("Prefab/ClipPlay");
 			}
 			return clipSound;
 		} 
