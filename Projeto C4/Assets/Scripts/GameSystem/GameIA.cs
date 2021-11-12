@@ -17,6 +17,8 @@ public class GameIA : MonoBehaviour
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
 	
+	//public 
+	
 	const int maxTime = 20;
 	int time = maxTime;
 	
