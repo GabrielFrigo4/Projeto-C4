@@ -17,7 +17,7 @@ public class GameIA : MonoBehaviour
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
 
-	const int maxTime = 30;
+	const int maxTime = 20;
 	int time = maxTime;
 	
     void Start()
@@ -26,6 +26,7 @@ public class GameIA : MonoBehaviour
 		UpdateGridToTilemapValue(mainGrid, mainMap);
 		for(int i = 0; i < maps.Count; i++)
 		{
+			UpdateGridToTilemapValue(mainGrid, maps[i]);
 			pathGrid.Add(new Grid(16, 8, 2f, transform.position));
 			UpdateGridToTilemapValue(pathGrid[i], maps[i]);
 			paths.Add(new List<Vector2>());
@@ -110,11 +111,7 @@ public class GameIA : MonoBehaviour
 			{
 				TileBase b = map.GetTile(new Vector3Int(x, y, 0));
 
-				if (b == null)
-				{
-					grid.SetValue(x, y, GridType.outside);
-				}
-				else if (tileNoone.Contains(b))
+				if (tileNoone.Contains(b))
 				{
 					grid.SetValue(x, y, GridType.noone);
 				}
