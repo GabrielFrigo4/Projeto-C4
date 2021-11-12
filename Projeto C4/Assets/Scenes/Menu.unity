@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: "Op\xE7\xF5es"
-  ingles: Option
+  ingles: Options
   text: {fileID: 454527626}
 --- !u!1 &1300173294
 GameObject:
