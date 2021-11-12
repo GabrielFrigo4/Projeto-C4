@@ -6,24 +6,31 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	[SerializeField]Tilemap map;
+	[SerializeField]Tilemap mainMap;
+	[SerializeField]List<Tilemap> maps;
 	[SerializeField]List<Vector2> starts, indentationStarts;
 	[SerializeField]List<TileBase> tileNoone;
 	[SerializeField]List<TileBase> tileGround;
 	[SerializeField]List<TileBase> tilePath;
 	[SerializeField]List<TileBase> tileTowerPositon;
 	public List<List<Vector2>> paths = new List<List<Vector2>>();
-	Grid grid;
+	List<Grid> pathGrid = new List<Grid>(); 
+	Grid mainGrid;
 
-	int time = 10;
+	const int maxTime = 30;
+	int time = maxTime;
 	
     void Start()
     {
-        grid = new Grid(16, 8, 2f, transform.position);
-		UpdateGridToTilemapValue();
-		paths.Add(new List<Vector2>());
-		GetPath(paths[0]);
-		SpawnEnemy(paths[0]);
+        mainGrid = new Grid(16, 8, 2f, transform.position);
+		UpdateGridToTilemapValue(mainGrid, mainMap);
+		for(int i = 0; i < maps.Count; i++)
+		{
+			pathGrid.Add(new Grid(16, 8, 2f, transform.position));
+			UpdateGridToTilemapValue(pathGrid[i], maps[i]);
+			paths.Add(new List<Vector2>());
+			GetPath(paths[i], starts[i], pathGrid[i]);
+		}
     }
 
     void Update()
@@ -31,8 +38,11 @@ public class GameIA : MonoBehaviour
 		time--;
 		if(time == 0)
         {
-			SpawnEnemy(paths[0]);
-			time = 10;
+			for(int i = 0; i < maps.Count; i++)
+			{
+				SpawnEnemy(paths[i], indentationStarts[i]);
+			}
+			time = maxTime;
 		}
 		if (Input.GetMouseButtonDown(1))
 		{
@@ -40,7 +50,7 @@ public class GameIA : MonoBehaviour
 		}
     }
 	
-	void GetPath(List<Vector2> path)
+	void GetPath(List<Vector2> path, Vector2 start, Grid grid)
 	{	
 		void GetNextPosition(Vector2 position, Vector2 direction)
 		{
@@ -73,12 +83,12 @@ public class GameIA : MonoBehaviour
 			}
 		}
 		
-		GetNextPosition(starts[0], Vector2.zero);
+		GetNextPosition(start, Vector2.zero);
 	}
 
-	void SpawnEnemy(List<Vector2> path)
+	void SpawnEnemy(List<Vector2> path, Vector2 indentationStart)
     {
-		Vector3 createPosition = starts[0] * 2 + new Vector2(-15f, -8f) + indentationStarts[0] * 2;
+		Vector3 createPosition = starts[0] * 2 + new Vector2(-15f, -8f) + indentationStart * 2;
 		GameObject inimigo = Instantiate((GameObject)Resources.Load("Prefab/Enemy"), createPosition, Quaternion.identity);
 		Enemy en = inimigo.GetComponent<Enemy>();
 
@@ -92,7 +102,7 @@ public class GameIA : MonoBehaviour
 		en.path = arrayVar;
 	}
 
-	void UpdateGridToTilemapValue()
+	void UpdateGridToTilemapValue(Grid grid, Tilemap map)
 	{
 		for (int x = 0; x < 18; x++)
 		{
@@ -137,12 +147,12 @@ public class GameIA : MonoBehaviour
 	bool ValidatePosition(ref Vector3 position)
 	{
 		int x, y;
-		grid.GetXY(position, out x, out y);
+		mainGrid.GetXY(position, out x, out y);
 		
-		if(grid.GetValue(x,y) == GridType.towerPosition)
+		if(mainGrid.GetValue(x,y) == GridType.towerPosition)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
-			grid.SetValue(x,y,GridType.towerUsing);
+			mainGrid.SetValue(x,y,GridType.towerUsing);
 			return true;
 		}
 		else
