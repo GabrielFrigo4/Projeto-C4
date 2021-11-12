@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class ButtonPauseScript : MonoBehaviour
 {
-	[SerializeField]GameObject menuPause, gameGUI, option;
-	[SerializeField]Slider music, sound;
-	[SerializeField]Dropdown language;
-	[SerializeField]Text setTimeScaleText;
+	[SerializeField] GameObject menuPause, gameGUI, option;
+	[SerializeField] Slider music, sound;
+	[SerializeField] Dropdown language;
+	[SerializeField] Button setTimeScale;
 	public static bool isPaused = false, isSpeed = false;
 	
 	public void Start()

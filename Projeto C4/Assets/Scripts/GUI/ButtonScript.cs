@@ -5,10 +5,16 @@ using UnityEngine;
 
 public class ButtonScript:MonoBehaviour
 {
-	[SerializeField]GameObject menu, option;
-	[SerializeField]Slider music, sound;
-	[SerializeField]Dropdown language;
-	
+	[SerializeField] GameObject menu, option;
+	[SerializeField] Slider music, sound;
+	[SerializeField] Dropdown language;
+
+	void Awake()
+	{
+		QualitySettings.vSyncCount = 1;
+		Application.targetFrameRate = 60;
+	}
+
 	public void Start()
 	{
 		music.value = SliderScript.volumeMusic;

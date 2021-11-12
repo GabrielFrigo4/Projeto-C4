@@ -6,13 +6,13 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	[SerializeField]Tilemap mainMap;
-	[SerializeField]List<Tilemap> maps;
-	[SerializeField]List<Vector2> starts, indentationStarts;
-	[SerializeField]List<TileBase> tileNoone;
-	[SerializeField]List<TileBase> tileGround;
-	[SerializeField]List<TileBase> tilePath;
-	[SerializeField]List<TileBase> tileTowerPositon;
+	[SerializeField] Tilemap mainMap;
+	[SerializeField] List<Tilemap> maps;
+	[SerializeField] List<Vector2> starts, indentationStarts;
+	[SerializeField] List<TileBase> tileNoone;
+	[SerializeField] List<TileBase> tileGround;
+	[SerializeField] List<TileBase> tilePath;
+	[SerializeField] List<TileBase> tileTowerPositon;
 	List<List<Vector2>> paths = new List<List<Vector2>>();
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
