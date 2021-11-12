@@ -13,10 +13,10 @@ public class GameIA : MonoBehaviour
 	[SerializeField]List<TileBase> tileGround;
 	[SerializeField]List<TileBase> tilePath;
 	[SerializeField]List<TileBase> tileTowerPositon;
-	public List<List<Vector2>> paths = new List<List<Vector2>>();
+	List<List<Vector2>> paths = new List<List<Vector2>>();
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
-
+	
 	const int maxTime = 20;
 	int time = maxTime;
 	
@@ -26,10 +26,14 @@ public class GameIA : MonoBehaviour
 		UpdateGridToTilemapValue(mainGrid, mainMap);
 		for(int i = 0; i < maps.Count; i++)
 		{
-			UpdateGridToTilemapValue(mainGrid, maps[i]);
 			pathGrid.Add(new Grid(16, 8, 2f, transform.position));
-			UpdateGridToTilemapValue(pathGrid[i], maps[i]);
 			paths.Add(new List<Vector2>());
+		}
+		
+		for(int i = 0; i < maps.Count; i++)
+		{
+			UpdateGridToTilemapValue(mainGrid, maps[i]);
+			UpdateGridToTilemapValue(pathGrid[i], maps[i]);
 			GetPath(paths[i], starts[i], pathGrid[i]);
 		}
     }
@@ -41,7 +45,7 @@ public class GameIA : MonoBehaviour
         {
 			for(int i = 0; i < maps.Count; i++)
 			{
-				SpawnEnemy(paths[i], indentationStarts[i]);
+				SpawnEnemy(paths[i], starts[i], indentationStarts[i]);
 			}
 			time = maxTime;
 		}
@@ -87,10 +91,10 @@ public class GameIA : MonoBehaviour
 		GetNextPosition(start, Vector2.zero);
 	}
 
-	void SpawnEnemy(List<Vector2> path, Vector2 indentationStart)
+	void SpawnEnemy(List<Vector2> path, Vector2 start, Vector2 indentationStart)
     {
-		Vector3 createPosition = starts[0] * 2 + new Vector2(-15f, -8f) + indentationStart * 2;
-		GameObject inimigo = Instantiate((GameObject)Resources.Load("Prefab/Enemy"), createPosition, Quaternion.identity);
+		Vector3 createPosition = start * 2 + new Vector2(-15f, -8f) + indentationStart * 2;
+		GameObject inimigo = Instantiate((GameObject)Resources.Load("Enemy"), createPosition, Quaternion.identity);
 		Enemy en = inimigo.GetComponent<Enemy>();
 
 		List<Vector2> arrayVar = new List<Vector2>();
@@ -137,7 +141,7 @@ public class GameIA : MonoBehaviour
 		
 		if(ValidatePosition(ref spawnPosition))
 		{
-			Instantiate((GameObject)Resources.Load("Prefab/Tower"), spawnPosition, Quaternion.identity);
+			Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
 		}
 	}
 	

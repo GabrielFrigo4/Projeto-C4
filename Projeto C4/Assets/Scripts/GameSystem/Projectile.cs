@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
 	
 	public static void Create(Vector3 spawnPosition, Vector3 targetPosition)
 	{
-		Transform arrowTranform = Instantiate((GameObject)Resources.Load("Prefab/Projectile"), spawnPosition, Quaternion.identity).transform;
+		Transform arrowTranform = Instantiate((GameObject)Resources.Load("Projectile"), spawnPosition, Quaternion.identity).transform;
 		
 		Projectile projectile = arrowTranform.GetComponent<Projectile>();
 		projectile.Setup(targetPosition);

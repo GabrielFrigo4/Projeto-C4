@@ -44,11 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd81ccdc4403aea4bb1648bc58b93b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMap: {fileID: 0}
   maps:
   - {fileID: 0}
-  - {fileID: 0}
   starts:
-  - {x: 14, y: 7}
   - {x: 14, y: 7}
   indentationStarts:
   - {x: 0, y: 1}
