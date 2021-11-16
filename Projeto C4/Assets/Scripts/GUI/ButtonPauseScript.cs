@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class ButtonPauseScript : MonoBehaviour
 {
 	[SerializeField] GameObject menuPause, gameGUI, option;
-	[SerializeField] AnimatorController animatorNormal, animatorSpeed;
+	[SerializeField] RuntimeAnimatorController animatorNormal, animatorSpeed;
 	[SerializeField] Animator animatorSetVelocity;
 	[SerializeField] Slider music, sound;
 	[SerializeField] Dropdown language;

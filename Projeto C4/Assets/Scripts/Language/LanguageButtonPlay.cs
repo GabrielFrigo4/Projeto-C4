@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class LanguageButtonPlay : MonoBehaviour, ILanguage
 {
 	[SerializeField] Animator animatorPlayer;
-	[SerializeField] AnimatorController playEN, jogarPT;
+	[SerializeField] RuntimeAnimatorController playEN, jogarPT;
 	
     void Start()
     {
