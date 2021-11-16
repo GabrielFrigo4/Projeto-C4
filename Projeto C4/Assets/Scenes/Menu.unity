@@ -1053,6 +1053,7 @@ GameObject:
   - component: {fileID: 601820653}
   - component: {fileID: 601820652}
   - component: {fileID: 601820655}
+  - component: {fileID: 601820657}
   m_Layer: 5
   m_Name: "Come\xE7ar"
   m_TagString: Untagged
@@ -1155,7 +1156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8152176792148102439, guid: 05fdda065aee1524196db012e4f092e5, type: 3}
+  m_Sprite: {fileID: 3314745252765728279, guid: 00fd9f991dbe98f42a0d314157a2af81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1192,6 +1193,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &601820657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601820650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68afc58ddb7a9a54c9d7d153f376305a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorPlayer: {fileID: 601820655}
+  playEN: {fileID: 9100000, guid: a746d50b46e9f5e4bb399c5dfd4314c6, type: 2}
+  jogarPT: {fileID: 9100000, guid: b2e93984e56f108438b05bda8279b47a, type: 2}
 --- !u!1 &680990886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1902,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1084973387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: "Op\xE7\xF5es"
@@ -2024,7 +2040,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300173294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: "M\xFAsica"
@@ -2613,7 +2629,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1630449831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: " L\xEDngua:"
@@ -2732,7 +2748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1672172906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: Som
@@ -2861,9 +2877,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1898600130}
   option: {fileID: 506287009}
-  animatorPlayer: {fileID: 601820655}
-  playEN: {fileID: 9100000, guid: a746d50b46e9f5e4bb399c5dfd4314c6, type: 2}
-  jogarPT: {fileID: 9100000, guid: b2e93984e56f108438b05bda8279b47a, type: 2}
   music: {fileID: 1300173296}
   sound: {fileID: 1672172908}
   language: {fileID: 1411735069}
@@ -3501,7 +3514,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082130099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: Sair

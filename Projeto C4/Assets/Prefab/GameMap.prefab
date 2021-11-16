@@ -347,11 +347,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621524229508880275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: ' Lingua:'
-  ingles: ' Language:'
+  portugues: Portugues
+  ingles: English
   text: {fileID: 1621524229508880278}
 --- !u!1 &1621524229624107365
 GameObject:
@@ -1773,7 +1773,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621524230382795272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: "Op\xE7\xF5es"
@@ -2085,7 +2085,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621524230499556782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: Retomar
@@ -2223,7 +2223,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621524230525952961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: Som
@@ -2241,7 +2241,6 @@ GameObject:
   - component: {fileID: 1621524230553131222}
   - component: {fileID: 1621524230553131217}
   - component: {fileID: 1621524230553131216}
-  - component: {fileID: 1621524230553131223}
   - component: {fileID: 1621524230553131220}
   m_Layer: 5
   m_Name: Menu
@@ -2364,21 +2363,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1621524230553131223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621524230553131218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portugues: Menu
-  ingles: Menu
-  text: {fileID: 1621524231392180682}
 --- !u!95 &1621524230553131220
 Animator:
   serializedVersion: 3
@@ -2586,7 +2570,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621524230591081486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a987e394e773e4984ceb907ff09b18, type: 3}
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portugues: Musica

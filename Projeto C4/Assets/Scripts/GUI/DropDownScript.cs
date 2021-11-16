@@ -24,7 +24,7 @@ public class DropDownScript : MonoBehaviour
 		{
 			if(ling != null)
 			{
-				ling.SetLenguage();
+				ling.SetLanguage();
 			}
 		}
 	}

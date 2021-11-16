@@ -4,10 +4,10 @@ using UnityEditor.Animations;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class LanguageButtonPlay : MonoBehaviour, ILanguage
+public class LanguageButton : MonoBehaviour, ILanguage
 {
-	[SerializeField] Animator animatorPlayer;
-	[SerializeField] AnimatorController playEN, jogarPT;
+	[SerializeField] string portugues, ingles;
+    [SerializeField] Text text;
 	
     void Start()
     {
@@ -17,16 +17,16 @@ public class LanguageButtonPlay : MonoBehaviour, ILanguage
 			LanguageBehaviour.languageBehaviour.Add(this);
 		}
     }
-	
-	void ILanguage.SetLanguage()
+
+    void ILanguage.SetLanguage()
     {
 		switch(LanguageBehaviour.lingua)
 		{
 			case Lingua.Portugues:
-			animatorPlayer.runtimeAnimatorController = jogarPT;
+			text.text = portugues;
 				break;
 			case Lingua.Ingles:
-			animatorPlayer.runtimeAnimatorController = playEN;
+			text.text = ingles;
 				break;
 		}
 	}
