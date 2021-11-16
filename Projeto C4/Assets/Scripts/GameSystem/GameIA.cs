@@ -16,11 +16,11 @@ public class GameIA : MonoBehaviour
 	List<List<Vector2>> paths = new List<List<Vector2>>();
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
-	
+
 	//public 
-	
-	const float maxTime = 1;
-	float time = maxTime;
+
+	const float maxTime = 1, maxTime2 = 5;
+	float time = maxTime, time2 = maxTime2;
 	
     void Start()
     {
@@ -47,10 +47,37 @@ public class GameIA : MonoBehaviour
         {
 			for(int i = 0; i < maps.Count; i++)
 			{
-				SpawnEnemy(paths[i], starts[i], indentationStarts[i]);
+                switch (i)
+                {
+					case 1:
+						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus2"));
+						break;
+					default:
+						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus1"));
+						break;
+                }
 			}
-			time = maxTime;
+			time += maxTime;
 		}
+
+		time2 -= Time.deltaTime;
+		if (time2 <= 0)
+		{
+			for (int i = 0; i < maps.Count; i++)
+			{
+				switch (i)
+				{
+					case 0:
+						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Gírus1"));
+						break;
+					default:
+						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus1"));
+						break;
+				};
+			}
+			time2 += maxTime2;
+		}
+
 		if (Input.GetMouseButtonDown(1))
 		{
 			SpawnTower();
@@ -93,11 +120,12 @@ public class GameIA : MonoBehaviour
 		GetNextPosition(start, Vector2.zero);
 	}
 
-	void SpawnEnemy(List<Vector2> path, Vector2 start, Vector2 indentationStart)
+	void SpawnEnemy(List<Vector2> path, Vector2 start, Vector2 indentationStart, InimigoType type)
     {
 		Vector3 createPosition = start * 2 + new Vector2(-15f, -8f) + indentationStart * 2;
 		GameObject inimigo = Instantiate((GameObject)Resources.Load("Enemy"), createPosition, Quaternion.identity);
 		Enemy en = inimigo.GetComponent<Enemy>();
+		en.inimigoType = type;
 
 		List<Vector2> arrayVar = new List<Vector2>();
 

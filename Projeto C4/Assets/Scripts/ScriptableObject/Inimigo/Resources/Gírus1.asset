@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8453978cf911d4b98de4fec4c4292f, type: 3}
+  m_Name: "G\xEDrus1"
+  m_EditorClassIdentifier: 
+  animatorControler: {fileID: 9100000, guid: a99c8d6459fd21a42afe4e58220c0b74, type: 2}
+  hp: 0
+  speed: 1
