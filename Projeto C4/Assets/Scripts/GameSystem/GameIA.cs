@@ -19,8 +19,8 @@ public class GameIA : MonoBehaviour
 	
 	//public 
 	
-	const int maxTime = 20;
-	int time = maxTime;
+	const float maxTime = 1;
+	float time = maxTime;
 	
     void Start()
     {
@@ -42,8 +42,8 @@ public class GameIA : MonoBehaviour
 
     void Update()
     {
-		time--;
-		if(time == 0)
+		time -= Time.deltaTime;
+		if(time <= 0)
         {
 			for(int i = 0; i < maps.Count; i++)
 			{

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ButtonPauseScript : MonoBehaviour
 {
+	[SerializeField] Sprite[] normalSpeeds, fastSpeeds;
 	[SerializeField] GameObject menuPause, gameGUI, option;
 	[SerializeField] Slider music, sound;
 	[SerializeField] Dropdown language;
@@ -36,13 +37,11 @@ public class ButtonPauseScript : MonoBehaviour
 		if(Time.timeScale == 1f)
 		{
 			isSpeed = true;
-			//setTimeScaleText.text = "200%";
 			Time.timeScale = 2f;
 		}
 		else if(Time.timeScale == 2f)
 		{
 			isSpeed = false;
-			//setTimeScaleText.text = "100%";
 			Time.timeScale = 1f;
 		}
 	}
