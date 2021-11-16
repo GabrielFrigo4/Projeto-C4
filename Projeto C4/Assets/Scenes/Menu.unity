@@ -1183,9 +1183,9 @@ Animator:
   m_GameObject: {fileID: 601820650}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a746d50b46e9f5e4bb399c5dfd4314c6, type: 2}
+  m_Controller: {fileID: 9100000, guid: b2e93984e56f108438b05bda8279b47a, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 2
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -2861,6 +2861,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 1898600130}
   option: {fileID: 506287009}
+  animatorPlayer: {fileID: 601820655}
+  playEN: {fileID: 9100000, guid: a746d50b46e9f5e4bb399c5dfd4314c6, type: 2}
+  jogarPT: {fileID: 9100000, guid: b2e93984e56f108438b05bda8279b47a, type: 2}
   music: {fileID: 1300173296}
   sound: {fileID: 1672172908}
   language: {fileID: 1411735069}
