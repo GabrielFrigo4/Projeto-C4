@@ -34,9 +34,9 @@ public class UpgradeButton : MonoBehaviour
 		{
 			Debug.Log(level + " " + i);
 			if (i != level) {
-				buttons[i].enabled = false;
+				buttons[i].interactable = false;
 			} else {
-				buttons[i].enabled = true;
+				buttons[i].interactable = true;
 			}
 		}
 
