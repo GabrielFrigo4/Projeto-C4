@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class ButtonPauseScript : MonoBehaviour
 {
-	[SerializeField] Sprite[] normalSpeeds, fastSpeeds;
 	[SerializeField] GameObject menuPause, gameGUI, option;
+	[SerializeField] AnimatorController animatorNormal, animatorSpeed;
+	[SerializeField] Animator animatorSetVelocity;
 	[SerializeField] Slider music, sound;
 	[SerializeField] Dropdown language;
-	[SerializeField] Button setTimeScale;
 	public static bool isPaused = false, isSpeed = false;
 	
 	public void Start()
@@ -17,6 +18,8 @@ public class ButtonPauseScript : MonoBehaviour
 		music.value = SliderScript.volumeMusic;
 		sound.value = SliderScript.volumeSound;
 		language.value = DropDownScript.languageValue;
+		
+		animatorSetVelocity.runtimeAnimatorController = animatorNormal;
 	}
 	
 	public void Update()
@@ -37,11 +40,13 @@ public class ButtonPauseScript : MonoBehaviour
 		if(Time.timeScale == 1f)
 		{
 			isSpeed = true;
+			animatorSetVelocity.runtimeAnimatorController = animatorSpeed;
 			Time.timeScale = 2f;
 		}
 		else if(Time.timeScale == 2f)
 		{
 			isSpeed = false;
+			animatorSetVelocity.runtimeAnimatorController = animatorNormal;
 			Time.timeScale = 1f;
 		}
 	}
@@ -50,16 +55,16 @@ public class ButtonPauseScript : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		isPaused = true;
-		menuPause.transform.position = new Vector3(0,0,0);
-		gameGUI.transform.position = new Vector3(32,0,0);
-		option.transform.position = new Vector3(64,0,0);
+		menuPause.transform.position = new Vector3(0, 0, 0);
+		gameGUI.transform.position = new Vector3(32, 0, 0);
+		option.transform.position = new Vector3(64, 0, 0);
 	}
 	
 	public void OptionGame()
 	{
-		menuPause.transform.position = new Vector3(-64,0,0);
-		gameGUI.transform.position = new Vector3(-32,0,0);
-		option.transform.position = new Vector3(0,0,0);
+		menuPause.transform.position = new Vector3(-64, 0, 0);
+		gameGUI.transform.position = new Vector3(-32, 0, 0);
+		option.transform.position = new Vector3(0, 0, 0);
 	}
 	
 	public void ReturnGame()
@@ -74,9 +79,9 @@ public class ButtonPauseScript : MonoBehaviour
 		}
 		
 		isPaused = false;
-		menuPause.transform.position = new Vector3(-32,0,0);
-		gameGUI.transform.position = new Vector3(0,0,0);
-		option.transform.position = new Vector3(32,0,0);
+		menuPause.transform.position = new Vector3(-32, 0, 0);
+		gameGUI.transform.position = new Vector3(0, 0, 0);
+		option.transform.position = new Vector3(32, 0, 0);
 	}
 	
 	public void ExitGame()

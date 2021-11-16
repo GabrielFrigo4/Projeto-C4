@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: b6656ef6ec9077d41b12ee6b7f55c551
+guid: 00fd9f991dbe98f42a0d314157a2af81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7130615792705945681
-    second: "Bot\xE3o Play_0"
+      213: 3314745252765728279
+    second: "Bot\xE3o Play PT_0"
   - first:
-      213: -621759073432923779
-    second: "Bot\xE3o Play_1"
+      213: -4698228477606700918
+    second: "Bot\xE3o Play PT_1"
   - first:
-      213: -6731380821278419981
-    second: "Bot\xE3o Play_2"
+      213: -5002867110550374642
+    second: "Bot\xE3o Play PT_2"
   - first:
-      213: 1231293913753466339
-    second: "Bot\xE3o Play_3"
+      213: 3007924568952181713
+    second: "Bot\xE3o Play PT_3"
   - first:
-      213: 3586840950493849774
-    second: "Bot\xE3o Play_4"
+      213: 8230907958762639732
+    second: "Bot\xE3o Play PT_4"
   - first:
-      213: -8813512252691878286
-    second: "Bot\xE3o Play_5"
+      213: -2772939455388586397
+    second: "Bot\xE3o Play PT_5"
   - first:
-      213: -639079191875460083
-    second: "Bot\xE3o Play_6"
+      213: 1501221686854770628
+    second: "Bot\xE3o Play PT_6"
   - first:
-      213: -1739303590586696633
-    second: "Bot\xE3o Play_7"
+      213: -879884840764847190
+    second: "Bot\xE3o Play PT_7"
   - first:
-      213: 7288568480085540546
-    second: "Bot\xE3o Play_8"
+      213: -8239066819937126080
+    second: "Bot\xE3o Play PT_8"
   - first:
-      213: -1388640381236786343
-    second: "Bot\xE3o Play_9"
+      213: 49112887734165586
+    second: "Bot\xE3o Play PT_9"
   - first:
-      213: 634692305357385598
-    second: "Bot\xE3o Play_10"
+      213: 5311738094806619275
+    second: "Bot\xE3o Play PT_10"
   - first:
-      213: -8642271057775703074
-    second: "Bot\xE3o Play_11"
+      213: 8637975169528536891
+    second: "Bot\xE3o Play PT_11"
   - first:
-      213: 586607378321772584
-    second: "Bot\xE3o Play_12"
+      213: 7212553718079013182
+    second: "Bot\xE3o Play PT_12"
   - first:
-      213: -1609603787077399416
-    second: "Bot\xE3o Play_13"
+      213: -8435203507097229688
+    second: "Bot\xE3o Play PT_13"
   - first:
-      213: -1158221788488655575
-    second: "Bot\xE3o Play_14"
+      213: 9151224195375474528
+    second: "Bot\xE3o Play PT_14"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Bot\xE3o Play_0"
+      name: "Bot\xE3o Play PT_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 150470aa84905f260800000000000000
-      internalID: 7130615792705945681
+      spriteID: 71e7300ce37500e20800000000000000
+      internalID: 3314745252765728279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_1"
+      name: "Bot\xE3o Play PT_1"
       rect:
         serializedVersion: 2
         x: 300
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71972cba611f57f0800000000000000
-      internalID: -621759073432923779
+      spriteID: a88d0a6871a8cceb0800000000000000
+      internalID: -4698228477606700918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_2"
+      name: "Bot\xE3o Play PT_2"
       rect:
         serializedVersion: 2
         x: 450
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f392d3bec45592a0800000000000000
-      internalID: -6731380821278419981
+      spriteID: e07f8298ede329ab0800000000000000
+      internalID: -5002867110550374642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_3"
+      name: "Bot\xE3o Play PT_3"
       rect:
         serializedVersion: 2
         x: 600
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e530677a4f661110800000000000000
-      internalID: 1231293913753466339
+      spriteID: 1d39093757b4eb920800000000000000
+      internalID: 3007924568952181713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_4"
+      name: "Bot\xE3o Play PT_4"
       rect:
         serializedVersion: 2
         x: 750
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8a20037d407c130800000000000000
-      internalID: 3586840950493849774
+      spriteID: 4719bf4ed2f0a3270800000000000000
+      internalID: 8230907958762639732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_5"
+      name: "Bot\xE3o Play PT_5"
       rect:
         serializedVersion: 2
         x: 900
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e6fba5d4d10b580800000000000000
-      internalID: -8813512252691878286
+      spriteID: 36ee5e9c14a8489d0800000000000000
+      internalID: -2772939455388586397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_6"
+      name: "Bot\xE3o Play PT_6"
       rect:
         serializedVersion: 2
         x: 1050
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d046be86cd88127f0800000000000000
-      internalID: -639079191875460083
+      spriteID: 4cf571e9b2965d410800000000000000
+      internalID: 1501221686854770628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_7"
+      name: "Bot\xE3o Play PT_7"
       rect:
         serializedVersion: 2
         x: 1200
@@ -297,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74cb48e7990ccd7e0800000000000000
-      internalID: -1739303590586696633
+      spriteID: aabc5fe26650ac3f0800000000000000
+      internalID: -879884840764847190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_8"
+      name: "Bot\xE3o Play PT_8"
       rect:
         serializedVersion: 2
         x: 1350
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce7b988a62362560800000000000000
-      internalID: 7288568480085540546
+      spriteID: 049b0f43164f8ad80800000000000000
+      internalID: -8239066819937126080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_9"
+      name: "Bot\xE3o Play PT_9"
       rect:
         serializedVersion: 2
         x: 1500
@@ -339,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95b4e9b3eee8abce0800000000000000
-      internalID: -1388640381236786343
+      spriteID: 250e94349eb7ea000800000000000000
+      internalID: 49112887734165586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_10"
+      name: "Bot\xE3o Play PT_10"
       rect:
         serializedVersion: 2
         x: 1650
@@ -360,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7f208af941eec800800000000000000
-      internalID: 634692305357385598
+      spriteID: b84dbd887a517b940800000000000000
+      internalID: 5311738094806619275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_11"
+      name: "Bot\xE3o Play PT_11"
       rect:
         serializedVersion: 2
         x: 1800
@@ -381,14 +381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edbc3acf24c701880800000000000000
-      internalID: -8642271057775703074
+      spriteID: b3f946696a040e770800000000000000
+      internalID: 8637975169528536891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_12"
+      name: "Bot\xE3o Play PT_12"
       rect:
         serializedVersion: 2
         x: 1950
@@ -402,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8201e777d4c042800800000000000000
-      internalID: 586607378321772584
+      spriteID: e31c5819463281460800000000000000
+      internalID: 7212553718079013182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_13"
+      name: "Bot\xE3o Play PT_13"
       rect:
         serializedVersion: 2
         x: 2250
@@ -423,14 +423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88cc02a32e989a9e0800000000000000
-      internalID: -1609603787077399416
+      spriteID: 88627571a1320fa80800000000000000
+      internalID: -8435203507097229688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Play_14"
+      name: "Bot\xE3o Play PT_14"
       rect:
         serializedVersion: 2
         x: 2550
@@ -444,8 +444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d140e7b6b2defe0800000000000000
-      internalID: -1158221788488655575
+      spriteID: 067a051abedaffe70800000000000000
+      internalID: 9151224195375474528
       vertices: []
       indices: 
       edges: []
@@ -453,7 +453,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 87f35e6c266297c4b9cd31f6c119e5b8
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
