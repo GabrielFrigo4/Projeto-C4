@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872692, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2863,13 +2863,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1621524230382795273, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
+    - target: {fileID: 1355736424289932559, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230382795273, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
+    - target: {fileID: 1355736424289932559, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355736424289932559, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1621524230390259762, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: mainMap
@@ -2887,42 +2891,6 @@ PrefabInstance:
       propertyPath: maps.Array.data[2]
       value: 
       objectReference: {fileID: 1039055588}
-    - target: {fileID: 1621524230499556783, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230499556783, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230553131219, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230553131219, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230577048939, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230577048939, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230618074168, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230618074168, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230618074168, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1621524230667274034, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_Name
       value: GameMap
@@ -2971,43 +2939,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230916075358, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+    - target: {fileID: 1782682614121467022, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230916075358, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+    - target: {fileID: 1782682614121467022, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230916075358, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+    - target: {fileID: 1782682614121467022, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230970350957, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230970350957, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230970350957, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230970350957, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524230970350957, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621524231376722251, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+    - target: {fileID: 2036933671798429670, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524231376722251, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+    - target: {fileID: 2036933671798429670, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556715084567039222, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556715084567039222, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
