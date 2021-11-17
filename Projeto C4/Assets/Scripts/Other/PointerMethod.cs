@@ -26,7 +26,7 @@ public static unsafe class PointerMethod
     public static IntPtr GetPointer(ref object obj)
     {
         GCHandle handle = GCHandle.Alloc(obj);
-        return (IntPtr)handle;
+        return handle.AddrOfPinnedObject();
     }
 
     public static type GetValue<type>(IntPtr ptr)
