@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: f10d4eabfb1aa5749b16951f46dd0271
+  - enabled: 1
+    path: Assets/Scenes/Bestiary.unity
+    guid: 51330e88da635a740857ca917686675c
   m_configObjects: {}

@@ -47,9 +47,13 @@ public class UpgradeButton : MonoBehaviour
 
 	}
 	
-	public void onFase1Selected() 
+	public void OnFase1Selected() 
 	{
 		SceneScript.GoScene("Game");
+	}
+	public void OnBestiarySelected() 
+	{
+		SceneScript.GoScene("Bestiary");
 	}
 	
 }
