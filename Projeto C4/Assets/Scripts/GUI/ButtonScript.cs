@@ -24,7 +24,7 @@ public class ButtonScript:MonoBehaviour
 	
     public void StartGame()
 	{
-		SceneScript.GoScene("Game");
+		SceneScript.GoScene("LevelSelect");
 	}
 	
 	public void OptionGame()
