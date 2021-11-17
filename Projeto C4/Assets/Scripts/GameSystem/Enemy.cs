@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamage
 {
 	public InimigoType inimigoType;
 
