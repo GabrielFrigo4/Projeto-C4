@@ -19,12 +19,12 @@ public class LanguageButtonPlay : MonoBehaviour, ILanguage
 	
 	void ILanguage.SetLanguage()
     {
-		switch(LanguageBehaviour.lingua)
+		switch(LanguageBehaviour.language)
 		{
-			case Lingua.Portugues:
+			case Language.Portugues:
 			animatorPlayer.runtimeAnimatorController = jogarPT;
 				break;
-			case Lingua.Ingles:
+			case Language.English:
 			animatorPlayer.runtimeAnimatorController = playEN;
 				break;
 		}

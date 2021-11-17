@@ -13,10 +13,10 @@ public class DropDownScript : MonoBehaviour
 		switch(option)
 		{
 			case 0:
-				LanguageBehaviour.lingua = Lingua.Portugues;
+				LanguageBehaviour.language = Language.Portugues;
 				break;
 			case 1:
-				LanguageBehaviour.lingua = Lingua.Ingles;
+				LanguageBehaviour.language = Language.English;
 				break;
 		}
 		

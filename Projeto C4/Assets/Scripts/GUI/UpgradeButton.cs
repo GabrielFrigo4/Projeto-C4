@@ -15,24 +15,24 @@ public class UpgradeButton : MonoBehaviour
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
 	}
 	
-	public void onUpradesSelected() 
+	public void OnUpradesSelected() 
 	{
 		menuLevelSelector.transform.position = new Vector3(32, 0, 0);
 		menuUpgrades.transform.position = new Vector3(0, 0, 0);
 	}
 	
-	public void onLevelChoiceSelected() 
+	public void OnLevelChoiceSelected() 
 	{
 		menuLevelSelector.transform.position = new Vector3(0, 0, 0);
 		menuUpgrades.transform.position = new Vector3(32, 1, 0);
 	}
 	
-	public void onBack2MenuSelected() 
+	public void OnBack2MenuSelected() 
 	{
 		SceneScript.GoScene("Menu");
 	}
 	
-	public void onUpgradePurchased()
+	public void OnUpgradePurchased()
 	{
 		level++;
 		for(int i = 0; i < buttons.Length; i++)

@@ -4,11 +4,11 @@ using System.Collections.Generic;
 public class LanguageBehaviour
 {
 	static public List<ILanguage> languageBehaviour = new  List<ILanguage>();
-    static public Lingua lingua = Lingua.Portugues;
+    static public Language language = Language.Portugues;
 }
 
-public enum Lingua
+public enum Language
 {
     Portugues = 0,
-    Ingles = 1,
+    English = 1,
 }

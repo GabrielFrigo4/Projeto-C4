@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2082092750}
         m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
-        m_MethodName: onBack2MenuSelected
+        m_MethodName: OnBack2MenuSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1370,7 +1370,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2082092750}
         m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
-        m_MethodName: onFase1Selected
+        m_MethodName: OnFase1Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1582,7 +1582,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2082092750}
         m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
-        m_MethodName: onFase1Selected
+        m_MethodName: OnFase1Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2230,7 +2230,6 @@ GameObject:
   - component: {fileID: 2082092749}
   - component: {fileID: 2082092748}
   - component: {fileID: 2082092747}
-  - component: {fileID: 2082092746}
   - component: {fileID: 2082092750}
   m_Layer: 0
   m_Name: _GC
@@ -2239,22 +2238,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2082092746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082092744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a912930cb9df5144ca9c46f3ca80709f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 62b98405bf68f224aa1b64ef38b16b7a, type: 3}
-  volume: 1
-  isStatic: 1
-  typeSound: 1
 --- !u!114 &2082092747
 MonoBehaviour:
   m_ObjectHideFlags: 0

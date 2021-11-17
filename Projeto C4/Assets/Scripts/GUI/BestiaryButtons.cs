@@ -10,14 +10,13 @@ public class BestiaryButtons : MonoBehaviour
 	public string ing;
     public void OnButtonClicked()
     {
-        if (LanguageBehaviour.lingua == Lingua.Portugues)
-		 {
+        if (LanguageBehaviour.language == Language.Portugues)
+		{
 			textbox.text = port;
-		 } else {
-			 textbox.text = ing;
-		 }
-    }
-	
-
-
+		}
+		else
+		{
+			textbox.text = ing;
+		}
+	}
 }

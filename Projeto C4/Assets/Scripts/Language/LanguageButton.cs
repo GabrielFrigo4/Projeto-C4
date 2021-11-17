@@ -19,12 +19,12 @@ public class LanguageButton : MonoBehaviour, ILanguage
 
     void ILanguage.SetLanguage()
     {
-		switch(LanguageBehaviour.lingua)
+		switch(LanguageBehaviour.language)
 		{
-			case Lingua.Portugues:
+			case Language.Portugues:
 			text.text = portugues;
 				break;
-			case Lingua.Ingles:
+			case Language.English:
 			text.text = ingles;
 				break;
 		}
