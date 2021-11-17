@@ -87,6 +87,6 @@ public class ButtonPauseScript : MonoBehaviour
 	{
 		Time.timeScale = 1;
 		isPaused = false;
-		SceneScript.GoScene("Menu");
+		SceneScript.GoScene("LevelSelect");
 	}
 }
