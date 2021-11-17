@@ -169,31 +169,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Bot\xE3o Lingua-Sheet_1"
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 156
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c68333433f8429090800000000000000
-      internalID: -8029274976258148244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "Bot\xE3o Lingua-Sheet_2"
       rect:
         serializedVersion: 2
-        x: 312
+        x: 468
         y: 0
         width: 156
         height: 42
@@ -214,7 +193,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_3"
       rect:
         serializedVersion: 2
-        x: 468
+        x: 624
         y: 0
         width: 156
         height: 42
@@ -235,7 +214,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_4"
       rect:
         serializedVersion: 2
-        x: 624
+        x: 780
         y: 0
         width: 156
         height: 42
@@ -256,7 +235,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_5"
       rect:
         serializedVersion: 2
-        x: 780
+        x: 936
         y: 0
         width: 156
         height: 42
@@ -277,7 +256,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_6"
       rect:
         serializedVersion: 2
-        x: 936
+        x: 1092
         y: 0
         width: 156
         height: 42
@@ -298,7 +277,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_7"
       rect:
         serializedVersion: 2
-        x: 1092
+        x: 1248
         y: 0
         width: 156
         height: 42
@@ -319,7 +298,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_8"
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1404
         y: 0
         width: 156
         height: 42
@@ -340,7 +319,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_9"
       rect:
         serializedVersion: 2
-        x: 1404
+        x: 1560
         y: 0
         width: 156
         height: 42
@@ -361,7 +340,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_10"
       rect:
         serializedVersion: 2
-        x: 1560
+        x: 1716
         y: 0
         width: 156
         height: 42
@@ -382,7 +361,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_11"
       rect:
         serializedVersion: 2
-        x: 1716
+        x: 1872
         y: 0
         width: 156
         height: 42
@@ -403,7 +382,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_12"
       rect:
         serializedVersion: 2
-        x: 1872
+        x: 2028
         y: 0
         width: 156
         height: 42
@@ -424,7 +403,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_13"
       rect:
         serializedVersion: 2
-        x: 2028
+        x: 2184
         y: 0
         width: 156
         height: 42
@@ -445,7 +424,7 @@ TextureImporter:
       name: "Bot\xE3o Lingua-Sheet_14"
       rect:
         serializedVersion: 2
-        x: 2184
+        x: 2496
         y: 0
         width: 156
         height: 42
@@ -463,70 +442,28 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68333433f8429090800000000000000
+      internalID: -8029274976258148244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: "Bot\xE3o Lingua-Sheet_15"
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 0
-        width: 156
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caf04e65183bf0f80800000000000000
-      internalID: -8138088633545257044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Bot\xE3o Lingua-Sheet_16"
-      rect:
-        serializedVersion: 2
-        x: 2496
-        y: 0
-        width: 156
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84527285e8bb472a0800000000000000
-      internalID: -6740556522228079288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Bot\xE3o Lingua-Sheet_17"
-      rect:
-        serializedVersion: 2
-        x: 2652
-        y: 0
-        width: 156
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c673e195f7ad82870800000000000000
-      internalID: 8658410524110632812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Bot\xE3o Lingua-Sheet_18"
       rect:
         serializedVersion: 2
         x: 2808
@@ -540,8 +477,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6db1f1daaa173c910800000000000000
-      internalID: 1856452449269652438
+      spriteID: caf04e65183bf0f80800000000000000
+      internalID: -8138088633545257044
       vertices: []
       indices: 
       edges: []
