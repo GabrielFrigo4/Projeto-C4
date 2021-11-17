@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class LanguageBehaviour
 {
 	static public List<ILanguage> languageBehaviour = new  List<ILanguage>();
-    public static Lingua lingua = Lingua.Portugues;
+    static public Lingua lingua = Lingua.Portugues;
 }
 
 public enum Lingua
