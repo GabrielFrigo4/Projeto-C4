@@ -171,7 +171,8 @@ public class GameIA : MonoBehaviour
 		
 		if(ValidatePosition(ref spawnPosition))
 		{
-			Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
+			GameObject obj = Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
+			obj.GetComponent<Tower>().type = (TowerType)Resources.Load("Torre1");
 		}
 	}
 	
