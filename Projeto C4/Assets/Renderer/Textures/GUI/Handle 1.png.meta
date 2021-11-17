@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 43c6d6eb97dfb024f80d95bde8915b70
+guid: b8e64df763441bb488e695249819c06e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7930265040436356065
-    second: Handle_0
+      213: 6724485060924360464
+    second: Handle 1_0
   - first:
-      213: -2868309226029128761
-    second: Handle_1
+      213: -6028512990985768089
+    second: Handle 1_1
+  - first:
+      213: -4745455500700726429
+    second: Handle 1_2
+  - first:
+      213: -819417637705043325
+    second: Handle 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Handle_0
+      name: Handle 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e368e5b906fd0e60800000000000000
-      internalID: 7930265040436356065
+      spriteID: 01741d9f88b225d50800000000000000
+      internalID: 6724485060924360464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Handle_1
+      name: Handle 1_1
       rect:
         serializedVersion: 2
         x: 40
@@ -132,8 +138,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c3ee84b4f7b138d0800000000000000
-      internalID: -2868309226029128761
+      spriteID: 7633778006b665ca0800000000000000
+      internalID: -6028512990985768089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handle 1_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b4f475d51c42eb0800000000000000
+      internalID: -4745455500700726429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handle 1_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382b6edfff7d0a4f0800000000000000
+      internalID: -819417637705043325
       vertices: []
       indices: 
       edges: []

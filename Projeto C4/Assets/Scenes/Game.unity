@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872692, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2181,6 +2181,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3037780670055044620, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037780670055044620, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -4745455500700726429, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 3037780670055044620, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 6724485060924360464, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 3037780670055044620, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: -819417637705043325, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 3037780670055044620, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -6028512990985768089, guid: b8e64df763441bb488e695249819c06e, type: 3}
     - target: {fileID: 4555797291615235481, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_Color.b
       value: 0.7294118
@@ -2193,5 +2213,33 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.84313726
       objectReference: {fileID: 0}
+    - target: {fileID: 5381787447953250091, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381787447953250091, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -4745455500700726429, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 5381787447953250091, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 6724485060924360464, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 5381787447953250091, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: -819417637705043325, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 5381787447953250091, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -6028512990985768089, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 6187593281408779399, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6724485060924360464, guid: b8e64df763441bb488e695249819c06e, type: 3}
+    - target: {fileID: 7879924542951725398, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6724485060924360464, guid: b8e64df763441bb488e695249819c06e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}

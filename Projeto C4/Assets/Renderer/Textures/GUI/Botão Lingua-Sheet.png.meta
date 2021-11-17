@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 5ee2a5be3a9dce5489c7e6f013ed5fdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9064773749562596159
+    second: "Bot\xE3o Lingua-Sheet_0"
+  - first:
+      213: -8029274976258148244
+    second: "Bot\xE3o Lingua-Sheet_1"
+  - first:
+      213: 905570125058217191
+    second: "Bot\xE3o Lingua-Sheet_2"
+  - first:
+      213: 1667976759591851209
+    second: "Bot\xE3o Lingua-Sheet_3"
+  - first:
+      213: -7132480284977378980
+    second: "Bot\xE3o Lingua-Sheet_4"
+  - first:
+      213: -3365815293266430126
+    second: "Bot\xE3o Lingua-Sheet_5"
+  - first:
+      213: -4255722416120438794
+    second: "Bot\xE3o Lingua-Sheet_6"
+  - first:
+      213: 329613552868668811
+    second: "Bot\xE3o Lingua-Sheet_7"
+  - first:
+      213: -900850467632408528
+    second: "Bot\xE3o Lingua-Sheet_8"
+  - first:
+      213: -7714250560667037853
+    second: "Bot\xE3o Lingua-Sheet_9"
+  - first:
+      213: -6808553905617329608
+    second: "Bot\xE3o Lingua-Sheet_10"
+  - first:
+      213: -7429491058255960361
+    second: "Bot\xE3o Lingua-Sheet_11"
+  - first:
+      213: -7118459304406051521
+    second: "Bot\xE3o Lingua-Sheet_12"
+  - first:
+      213: 6678834235541918351
+    second: "Bot\xE3o Lingua-Sheet_13"
+  - first:
+      213: -3235759283109785324
+    second: "Bot\xE3o Lingua-Sheet_14"
+  - first:
+      213: -8138088633545257044
+    second: "Bot\xE3o Lingua-Sheet_15"
+  - first:
+      213: -6740556522228079288
+    second: "Bot\xE3o Lingua-Sheet_16"
+  - first:
+      213: 8658410524110632812
+    second: "Bot\xE3o Lingua-Sheet_17"
+  - first:
+      213: 1856452449269652438
+    second: "Bot\xE3o Lingua-Sheet_18"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bd6ffa2bb8ccd70800000000000000
+      internalID: 9064773749562596159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68333433f8429090800000000000000
+      internalID: -8029274976258148244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e41d471b3b319c00800000000000000
+      internalID: 905570125058217191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c454198608d52710800000000000000
+      internalID: 1667976759591851209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59427668f6540d90800000000000000
+      internalID: -7132480284977378980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257f649d2d83a41d0800000000000000
+      internalID: -3365815293266430126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff5974a203a0f4c0800000000000000
+      internalID: -4255722416120438794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8534eba7c5039400800000000000000
+      internalID: 329613552868668811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0389609c5498f73f0800000000000000
+      internalID: -900850467632408528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_9"
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f4517acf971f490800000000000000
+      internalID: -7714250560667037853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_10"
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a49dcb482381a0800000000000000
+      internalID: -6808553905617329608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_11"
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d666b2ee3525e890800000000000000
+      internalID: -7429491058255960361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_12"
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f359dc45af6263d90800000000000000
+      internalID: -7118459304406051521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_13"
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82913be95cffac50800000000000000
+      internalID: 6678834235541918351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_14"
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411919763164813d0800000000000000
+      internalID: -3235759283109785324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_15"
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf04e65183bf0f80800000000000000
+      internalID: -8138088633545257044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_16"
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84527285e8bb472a0800000000000000
+      internalID: -6740556522228079288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_17"
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c673e195f7ad82870800000000000000
+      internalID: 8658410524110632812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Lingua-Sheet_18"
+      rect:
+        serializedVersion: 2
+        x: 2808
+        y: 0
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db1f1daaa173c910800000000000000
+      internalID: 1856452449269652438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
