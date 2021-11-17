@@ -18,4 +18,9 @@ public static class CodeUtils
 		if(n < 0) n += 360;
 		return n;
 	}
+
+	public static float GetDistance2D(Vector2 pos1, Vector2 pos2)
+    {
+		return Mathf.Sqrt((pos1.x - pos2.x) * (pos1.x - pos2.x) + (pos1.y - pos2.y) * (pos1.y - pos2.y));
+    }
 }

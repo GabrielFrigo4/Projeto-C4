@@ -22,4 +22,16 @@ public static unsafe class PointerMethod
     {
         Marshal.FreeHGlobal((IntPtr)pointer);
     }
+
+    public static IntPtr GetPointer(ref object obj)
+    {
+        GCHandle handle = GCHandle.Alloc(obj);
+        return (IntPtr)handle;
+    }
+
+    public static type GetValue<type>(IntPtr ptr)
+    {
+        GCHandle handle = (GCHandle)ptr;
+        return (type)handle.Target;
+    }
 }

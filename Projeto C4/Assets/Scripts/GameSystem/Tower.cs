@@ -8,6 +8,8 @@ public class Tower : MonoBehaviour
 	public TowerType type;
 	Vector3 projectileShootFromPositon;
 	GameObject rangeObj;
+
+	public List<Enemy> allEnemys = new List<Enemy>();
 	
     void Awake()
 	{
@@ -21,7 +23,25 @@ public class Tower : MonoBehaviour
 	
 	void Update()
 	{
-		if(Input.GetMouseButtonDown(0))
+		allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
+		List<Enemy> removeEnemys = new List<Enemy>();
+		foreach (Enemy enemy in allEnemys)
+        {
+			if (GetDistance2D(enemy.transform.position, transform.position) <= type.range) continue;
+			removeEnemys.Add(enemy);
+        }
+
+		foreach (Enemy enemy in removeEnemys)
+		{
+			allEnemys.Remove(enemy);
+		}
+
+		if(allEnemys.Count > 0)
+        {
+			Projectile.Create(projectileShootFromPositon, allEnemys[allEnemys.Count - 1].gameObject.transform.position);
+		}
+
+		if (Input.GetMouseButtonDown(0))
 		{
 			Projectile.Create(projectileShootFromPositon, GetMouseWorldPosition());
 		}
