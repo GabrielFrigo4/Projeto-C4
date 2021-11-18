@@ -11,7 +11,6 @@ public class SoundPlay : MonoBehaviour
 	[Range(0, 1)] [SerializeField] float volume = 1f;
 	[SerializeField] bool isStatic = false;
 	[SerializeField] SoundVolumeType typeSound;
-	private IntPtr volumePtr;
 
 	static GameObject clipSound;
 
@@ -29,21 +28,7 @@ public class SoundPlay : MonoBehaviour
 	
     void Start()
     {
-		volumePtr = CreatePointer(volume);
 		Play();
-    }
-
-    void Update()
-    {
-		if(GetPointerValue<float>(volumePtr) != volume)
-        {
-			SetPointerValue(volumePtr, volume);
-		}
-	}
-
-    void OnDestroy()
-    {
-		FreePointer(volumePtr);
     }
 
     public void Play()
@@ -51,7 +36,7 @@ public class SoundPlay : MonoBehaviour
         switch (typeSound)
         {
 			case SoundVolumeType.Normal:
-				PlayClip(clip, volumePtr, isStatic);
+				PlayClip(clip, GetPointerPtr(ref volume), isStatic);
 				break;
 			case SoundVolumeType.Music:
 				PlayClip(clip, SliderScript.volumeMusic, isStatic);

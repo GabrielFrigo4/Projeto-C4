@@ -6,7 +6,7 @@ using static CodeUtils;
 public class Enemy : MonoBehaviour, IDamage
 {
 	public InimigoType inimigoType;
-
+	
 	public List<Vector2> path = new List<Vector2>();
 	Vector2 randomPos;
 	float destroySelfDistance = 0.5f;

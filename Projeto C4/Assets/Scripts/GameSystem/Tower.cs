@@ -8,6 +8,7 @@ public class Tower : MonoBehaviour
 	public TowerType type;
 	Vector3 projectileShootFromPositon;
 	GameObject rangeObj;
+	Enemy enemySelect = null;
 
 	public List<Enemy> allEnemys = new List<Enemy>();
 	
@@ -23,22 +24,48 @@ public class Tower : MonoBehaviour
 	
 	void Update()
 	{
+		//pega todos os inimigos na scene
 		allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
+		
+		//remove os inimigos que estão longe do range
 		List<Enemy> removeEnemys = new List<Enemy>();
 		foreach (Enemy enemy in allEnemys)
         {
 			if (GetDistance2D(enemy.transform.position, transform.position) <= type.range) continue;
 			removeEnemys.Add(enemy);
         }
-
 		foreach (Enemy enemy in removeEnemys)
 		{
 			allEnemys.Remove(enemy);
 		}
-
+		
+		//seleciona o inimigo que estiver mais perto do final
 		if(allEnemys.Count > 0)
         {
-			Projectile.Create(projectileShootFromPositon, allEnemys[allEnemys.Count - 1].gameObject.transform.position);
+			if(enemySelect == null || !allEnemys.Contains(enemySelect))
+			{
+				enemySelect = allEnemys[0];
+				foreach(Enemy en in allEnemys)
+				{
+					if(en.path.Count < enemySelect.path.Count)
+					{
+						enemySelect = en;
+					}
+					else if(en.path.Count == enemySelect.path.Count)
+					{
+						if(GetDistance2D(en.path[0], en.path[1]) < GetDistance2D(enemySelect.path[0], enemySelect.path[1]))
+						{
+							enemySelect = en;
+						}
+					}
+				}
+			}
+		}
+		
+		//atira no inimigo selecionado
+		if(enemySelect != null)
+        {
+			Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform.position);
 		}
 
 		if (Input.GetMouseButtonDown(0))
