@@ -6,6 +6,28 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
+	[SerializeField] GameObject LifeBar;
+	private static int playerHp = 100;
+	public static int PlayerHp
+	{
+		get
+		{
+			return playerHp;
+		}
+		set
+		{
+			playerHp = value;
+			if(playerHp > 0)
+			{
+				
+			}
+			else
+			{
+				
+			}
+		}
+	}
+	
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
 	[SerializeField] List<Vector2> starts, indentationStarts;

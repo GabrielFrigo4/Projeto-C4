@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "G\xEDrus1"
   m_EditorClassIdentifier: 
   animatorControler: {fileID: 9100000, guid: a99c8d6459fd21a42afe4e58220c0b74, type: 2}
-  hp: 0
+  hp: 15
   speed: 1

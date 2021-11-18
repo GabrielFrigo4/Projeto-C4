@@ -15,6 +15,6 @@ public class SliderScript : MonoBehaviour
 	
 	public void VolumeSound(float volume)
 	{
-		SetPointerValue(volumeMusic, volume);
+		SetPointerValue(volumeSound, volume);
 	}
 }

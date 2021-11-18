@@ -77,7 +77,7 @@ public class Tower : MonoBehaviour
 		{
 			if(enemySelect != null)
 			{
-				Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform.position);
+				Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform);
 			}
 			yield return new WaitForSeconds(time);	
 		}

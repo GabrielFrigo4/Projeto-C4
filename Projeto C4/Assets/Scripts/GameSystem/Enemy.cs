@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour, IDamage
 	
 	public List<Vector2> path = new List<Vector2>();
 	Vector2 randomPos;
-	float destroySelfDistance = 0.5f;
+	float destroySelfDistance, speed;
+	int hp;
 
 	private Animator animator;
 
@@ -21,6 +22,8 @@ public class Enemy : MonoBehaviour, IDamage
 
 		randomPos = new Vector2(Random.Range(-0.35f, 0.35f), Random.Range(-0.35f, 0.35f));
 		destroySelfDistance = Random.Range(0.35f, 0.65f);
+		
+		hp = inimigoType.hp;
 	}
 
     // Update is called once per frame
@@ -47,4 +50,10 @@ public class Enemy : MonoBehaviour, IDamage
     {
 		Destroy(gameObject);
     }
+	
+	void IDamage.Damage(int damage)
+	{
+		hp -= damage;
+		if(hp <= 0) Destroy(gameObject);
+	}
 }

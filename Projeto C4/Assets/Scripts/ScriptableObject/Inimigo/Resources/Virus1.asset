@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Virus1
   m_EditorClassIdentifier: 
   animatorControler: {fileID: 9100000, guid: 770e64e8e0aedef46a028259a0cf4997, type: 2}
-  hp: 0
+  hp: 2
   speed: 7.5

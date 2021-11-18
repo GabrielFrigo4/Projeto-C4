@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IDamage
 {
-
+	void Damage(int damage);
 }
 
 public interface ILanguage
