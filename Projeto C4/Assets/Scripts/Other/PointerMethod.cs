@@ -33,12 +33,6 @@ public unsafe static class SafePointerMethod
         return pnt;
     }
 
-    public unsafe static IntPtr GetPointerPtr<type>(ref type obj) where type : unmanaged
-    {
-        fixed (void* ptr = &obj)
-            return new IntPtr(ptr);
-    }
-
     public static type GetPointerValue<type>(IntPtr ptr) where type : unmanaged
     {
         type val = Marshal.PtrToStructure<type>(ptr);

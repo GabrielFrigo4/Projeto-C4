@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using static SafePointerMethod;
 
 public class SliderScript : MonoBehaviour
 {
-	public static float volumeMusic = 0.5f, volumeSound = 0.5f;
+	public static IntPtr volumeMusic = CreatePointer(0.5f), volumeSound = CreatePointer(0.5f);
 	
     public void VolumeMusic(float volume)
 	{
-		volumeMusic = volume;
+		SetPointerValue(volumeMusic, volume);
 	}
 	
 	public void VolumeSound(float volume)
 	{
-		volumeSound = volume;
+		SetPointerValue(volumeMusic, volume);
 	}
+
+    void OnApplicationQuit()
+    {
+		FreePointer(volumeMusic);
+		FreePointer(volumeMusic);
+    }
 }

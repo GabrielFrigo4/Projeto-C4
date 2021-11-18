@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using static SafePointerMethod;
 
 public class ButtonScript:MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class ButtonScript:MonoBehaviour
 
 	public void Start()
 	{
-		music.value = SliderScript.volumeMusic;
-		sound.value = SliderScript.volumeSound;
+		music.value = GetPointerValue<float>(SliderScript.volumeMusic);
+		sound.value = GetPointerValue<float>(SliderScript.volumeSound);
 		language.value = DropDownScript.languageValue;
 	}
 	
