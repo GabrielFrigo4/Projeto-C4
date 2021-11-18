@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	[SerializeField] GameObject LifeBar;
+	static GameObject LifeBar = null;
 	private static int playerHp = 100;
 	public static int PlayerHp
 	{
@@ -17,13 +18,16 @@ public class GameIA : MonoBehaviour
 		set
 		{
 			playerHp = value;
-			if(playerHp > 0)
+			if(LifeBar != null)
 			{
-				
-			}
-			else
-			{
-				
+				if(playerHp > 0)
+				{
+					LifeBar.transform.localScale = new Vector3(playerHp/100f, 1f, 1f);
+				}
+				else
+				{
+					LifeBar.transform.localScale = new Vector3(0, 1, 1);
+				}
 			}
 		}
 	}
@@ -46,6 +50,10 @@ public class GameIA : MonoBehaviour
 	
     void Start()
     {
+		playerHp = 100;
+		LifeBar = GameObject.Find("Front");
+		PlayerHp = playerHp;
+		
         mainGrid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue(mainGrid, mainMap);
 		for(int i = 0; i < maps.Count; i++)

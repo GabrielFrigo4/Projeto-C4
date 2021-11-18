@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 3addbd36f924fc74d8ae70c24e54bec9
+guid: 1d96e74e032a8464e8938fd6f0176d3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2716515554177057159
-    second: "G\xEDrus 2_0"
+      213: -8775457915460333609
+    second: Bacteria 1_0
   - first:
-      213: 2483636555721891507
-    second: "G\xEDrus 2_1"
+      213: -297068478340547591
+    second: Bacteria 1_1
   - first:
-      213: 1588459855014476766
-    second: "G\xEDrus 2_2"
+      213: 2137065433496415577
+    second: Bacteria 1_2
   - first:
-      213: 5052411524080591619
-    second: "G\xEDrus 2_3"
-  - first:
-      213: -2988710803666768597
-    second: "G\xEDrus 2_4"
-  - first:
-      213: -3486563628566748201
-    second: "G\xEDrus 2_5"
-  - first:
-      213: 3225425889464637288
-    second: "G\xEDrus 2_6"
-  - first:
-      213: -6803312913216683952
-    second: "G\xEDrus 2_7"
+      213: -6596349980595432185
+    second: Bacteria 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,7 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -115,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "G\xEDrus 2_0"
+      name: Bacteria 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 96
+        width: 48
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +117,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97ef3760f7ffc4ad0800000000000000
-      internalID: -2716515554177057159
+      spriteID: 7dfc89f258f473680800000000000000
+      internalID: -8775457915460333609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_1"
+      name: Bacteria 1_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbbb8afac990ebf0800000000000000
+      internalID: -297068478340547591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bacteria 1_2
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 96
-        height: 96
+        width: 48
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3be5afed946a77220800000000000000
-      internalID: 2483636555721891507
+      spriteID: 95de15960b168ad10800000000000000
+      internalID: 2137065433496415577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_2"
+      name: Bacteria 1_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 0
-        width: 96
-        height: 96
+        width: 48
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,113 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edb3b1672d75b0610800000000000000
-      internalID: 1588459855014476766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "G\xEDrus 2_3"
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 303e9e72385cd1640800000000000000
-      internalID: 5052411524080591619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "G\xEDrus 2_4"
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2de113eb57f586d0800000000000000
-      internalID: -2988710803666768597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "G\xEDrus 2_5"
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d36b783adc3d9fc0800000000000000
-      internalID: -3486563628566748201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "G\xEDrus 2_6"
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86753e6e1c303cc20800000000000000
-      internalID: 3225425889464637288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "G\xEDrus 2_7"
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05044ef63f6c591a0800000000000000
-      internalID: -6803312913216683952
+      spriteID: 705547044ae0574a0800000000000000
+      internalID: -6596349980595432185
       vertices: []
       indices: 
       edges: []

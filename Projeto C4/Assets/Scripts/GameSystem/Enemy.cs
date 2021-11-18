@@ -48,14 +48,19 @@ public class Enemy : MonoBehaviour, IDamage
 
 	public void PassedOn()
     {
-		GameIA.PlayerHp -= 1;
-		Debug.Log(GameIA.PlayerHp);
+		GameIA.PlayerHp -= inimigoType.damage;
 		Destroy(gameObject);
     }
 	
 	void IDamage.Damage(int damage)
 	{
 		hp -= damage;
-		if(hp <= 0) Destroy(gameObject);
+		if(hp <= 0) Dead();
+	}
+	
+	void Dead()
+	{
+		Instantiate(inimigoType.dead, transform);
+		Destroy(gameObject);
 	}
 }

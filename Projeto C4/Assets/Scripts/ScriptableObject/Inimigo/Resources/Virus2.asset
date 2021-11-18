@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorControler: {fileID: 9100000, guid: 9b60ddffb52065d4ab4a36e7bb6da0be, type: 2}
   hp: 3
+  damage: 1
   speed: 5
+  dead: {fileID: 3863438606076705272, guid: 47210e397d197774892c10a18bd4dfc7, type: 3}

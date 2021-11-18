@@ -6,6 +6,7 @@ using UnityEngine;
 public class InimigoType : ScriptableObject
 {
     public RuntimeAnimatorController animatorControler;
-    public int hp;
+    public int hp, damage;
     public float speed;
+	public GameObject dead;
 }

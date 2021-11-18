@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 3addbd36f924fc74d8ae70c24e54bec9
+guid: 39eae3ff39d1bfb40a6087e5e76c9a61
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2716515554177057159
-    second: "G\xEDrus 2_0"
+      213: -3433211690651260676
+    second: "Explos\xE3o Big_0"
   - first:
-      213: 2483636555721891507
-    second: "G\xEDrus 2_1"
+      213: 5385691709511972514
+    second: "Explos\xE3o Big_1"
   - first:
-      213: 1588459855014476766
-    second: "G\xEDrus 2_2"
+      213: 7796666711939324482
+    second: "Explos\xE3o Big_2"
   - first:
-      213: 5052411524080591619
-    second: "G\xEDrus 2_3"
+      213: -7414182224015348030
+    second: "Explos\xE3o Big_3"
   - first:
-      213: -2988710803666768597
-    second: "G\xEDrus 2_4"
+      213: -5591389916371967742
+    second: "Explos\xE3o Big_4"
   - first:
-      213: -3486563628566748201
-    second: "G\xEDrus 2_5"
+      213: -2732997993451125385
+    second: "Explos\xE3o Big_5"
   - first:
-      213: 3225425889464637288
-    second: "G\xEDrus 2_6"
+      213: -4271834090453939329
+    second: "Explos\xE3o Big_6"
   - first:
-      213: -6803312913216683952
-    second: "G\xEDrus 2_7"
+      213: -7226681546650954245
+    second: "Explos\xE3o Big_7"
+  - first:
+      213: -7953030575709875490
+    second: "Explos\xE3o Big_8"
+  - first:
+      213: 2642608140013789087
+    second: "Explos\xE3o Big_9"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "G\xEDrus 2_0"
+      name: "Explos\xE3o Big_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97ef3760f7ffc4ad0800000000000000
-      internalID: -2716515554177057159
+      spriteID: cf863044828ca50d0800000000000000
+      internalID: -3433211690651260676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_1"
+      name: "Explos\xE3o Big_1"
       rect:
         serializedVersion: 2
         x: 96
@@ -150,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3be5afed946a77220800000000000000
-      internalID: 2483636555721891507
+      spriteID: 2a63a3f3312ddba40800000000000000
+      internalID: 5385691709511972514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_2"
+      name: "Explos\xE3o Big_2"
       rect:
         serializedVersion: 2
         x: 192
@@ -171,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edb3b1672d75b0610800000000000000
-      internalID: 1588459855014476766
+      spriteID: 24a9145e013533c60800000000000000
+      internalID: 7796666711939324482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_3"
+      name: "Explos\xE3o Big_3"
       rect:
         serializedVersion: 2
         x: 288
@@ -192,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 303e9e72385cd1640800000000000000
-      internalID: 5052411524080591619
+      spriteID: 2ceac8d9c888b1990800000000000000
+      internalID: -7414182224015348030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_4"
+      name: "Explos\xE3o Big_4"
       rect:
         serializedVersion: 2
         x: 384
@@ -213,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2de113eb57f586d0800000000000000
-      internalID: -2988710803666768597
+      spriteID: 201a2f9de746762b0800000000000000
+      internalID: -5591389916371967742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_5"
+      name: "Explos\xE3o Big_5"
       rect:
         serializedVersion: 2
         x: 480
@@ -234,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d36b783adc3d9fc0800000000000000
-      internalID: -3486563628566748201
+      spriteID: 7758d741ec0721ad0800000000000000
+      internalID: -2732997993451125385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_6"
+      name: "Explos\xE3o Big_6"
       rect:
         serializedVersion: 2
         x: 576
@@ -255,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86753e6e1c303cc20800000000000000
-      internalID: 3225425889464637288
+      spriteID: f7bc613278567b4c0800000000000000
+      internalID: -4271834090453939329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "G\xEDrus 2_7"
+      name: "Explos\xE3o Big_7"
       rect:
         serializedVersion: 2
         x: 672
@@ -276,8 +282,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05044ef63f6c591a0800000000000000
-      internalID: -6803312913216683952
+      spriteID: bf5dff20c6ba5bb90800000000000000
+      internalID: -7226681546650954245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Explos\xE3o Big_8"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21efe04d821a190800000000000000
+      internalID: -7953030575709875490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Explos\xE3o Big_9"
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fd31a2a1e6ca420800000000000000
+      internalID: 2642608140013789087
       vertices: []
       indices: 
       edges: []
@@ -285,7 +333,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 6efab591b425de54ab9ca9944d5bb02f
     internalID: 0
     vertices: []
     indices: 
