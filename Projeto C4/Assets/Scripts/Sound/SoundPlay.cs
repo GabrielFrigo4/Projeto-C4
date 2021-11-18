@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
 using System;
-using static SafePointerMethod;
+using static PointerMethod;
 
 public class SoundPlay : MonoBehaviour
 {

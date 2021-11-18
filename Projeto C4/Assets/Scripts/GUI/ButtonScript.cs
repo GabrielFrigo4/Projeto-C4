@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-using static SafePointerMethod;
+using static PointerMethod;
 
 public class ButtonScript:MonoBehaviour
 {

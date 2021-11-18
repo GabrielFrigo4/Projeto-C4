@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using static SafePointerMethod;
+using static PointerMethod;
 
 public class SliderScript : MonoBehaviour
 {
