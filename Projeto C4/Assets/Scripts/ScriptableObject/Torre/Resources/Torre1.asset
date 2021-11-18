@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
   m_Name: Torre1
   m_EditorClassIdentifier: 
-  range: 8
+  range: 7
   time: 0.5
