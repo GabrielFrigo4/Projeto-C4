@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
 	{
 		if(targetPosition != null)
 		{
-			lastPositon = (Vector2)targetPosition.position;	
+			lastPositon = targetPosition.position;	
 			GotoPosition(lastPositon);
 			
 			if(Vector2.Distance(transform.position, targetPosition.position) < destroySelfDistance)

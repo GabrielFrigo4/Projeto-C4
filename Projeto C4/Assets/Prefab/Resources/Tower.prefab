@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 668612131
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d5395d63d2b1e734589b4d1a6a9a66e5, type: 3}
+  m_Sprite: {fileID: 4924548521508734842, guid: 30aaf97b681bd7244856105739c239b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c499199935aacf24294ab89a0a374903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: 5143c6121763ebb428cf96a702cbc4d5, type: 2}
+  type: {fileID: 0}
   allEnemys: []
 --- !u!1 &5685166041823888070
 GameObject:

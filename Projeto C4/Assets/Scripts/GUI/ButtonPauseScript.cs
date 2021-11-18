@@ -15,8 +15,8 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void Start()
 	{
-		music.value = GetPointerValue<float>(SliderScript.volumeMusic);
-		sound.value = GetPointerValue<float>(SliderScript.volumeSound);
+		music.value = SliderScript.volumeMusic;
+		sound.value = SliderScript.volumeSound;
 		language.value = DropDownScript.languageValue;
 		
 		animatorSetVelocity.runtimeAnimatorController = animatorNormal;

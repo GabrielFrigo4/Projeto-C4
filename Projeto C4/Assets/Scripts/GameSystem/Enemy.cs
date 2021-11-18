@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour, IDamage
 	
 	void Dead()
 	{
-		Instantiate(inimigoType.dead, transform);
+		Instantiate(inimigoType.dead, transform.position, transform.rotation);
 		Destroy(gameObject);
 	}
 }
