@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerMele : MonoBehaviour, ITower
+public class TowerGenerator : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,10 +14,5 @@ public class TowerMele : MonoBehaviour, ITower
     void Update()
     {
         
-    }
-
-    void ITower.ShowRange(bool show)
-    {
-        throw new System.NotImplementedException();
     }
 }

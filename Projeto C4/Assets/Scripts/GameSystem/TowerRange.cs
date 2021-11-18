@@ -83,11 +83,6 @@ public class TowerRange: MonoBehaviour, ITower
 		}
     }
 
-    void ITower.Attack()
-    {
-        throw new System.NotImplementedException();
-    }
-
     void ITower.ShowRange(bool show)
     {
         throw new System.NotImplementedException();

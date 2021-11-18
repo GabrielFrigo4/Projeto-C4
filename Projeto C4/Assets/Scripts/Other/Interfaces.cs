@@ -4,7 +4,6 @@ using UnityEngine;
 
 public interface ITower
 {
-	void Attack();
 	void ShowRange(bool show);
 }
 
