@@ -441,6 +441,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &393921973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1852703727, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+  m_PrefabInstance: {fileID: 1621524230150787490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &854639692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +2976,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1621524230390259762, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: LifeBar
+      value: 
+      objectReference: {fileID: 393921973}
     - target: {fileID: 1621524230390259762, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: mainMap
       value: 
