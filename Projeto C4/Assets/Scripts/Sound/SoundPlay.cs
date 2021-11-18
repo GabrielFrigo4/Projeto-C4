@@ -39,10 +39,10 @@ public class SoundPlay : MonoBehaviour
 				PlayClip(clip, GetPointerPtr(ref volume), isStatic);
 				break;
 			case SoundVolumeType.Music:
-				PlayClip(clip, SliderScript.volumeMusic, isStatic);
+				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeMusic), isStatic);
 				break;
 			case SoundVolumeType.Sound:
-				PlayClip(clip, SliderScript.volumeSound, isStatic);
+				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeSound), isStatic);
 				break;
 		}
 	}

@@ -27,7 +27,7 @@ public static class PointerMethod
     public static void SetPointerValue<type>(IntPtr ptr, type newValue) where type : unmanaged
     {
         int size = Marshal.SizeOf(typeof(type));
-        IntPtr newValuePtr = CreatePointer(newValue);
+        IntPtr newValuePtr = GetPointerPtr(ref newValue);
         for(int i  = 0; i < size; i++)
         {
             byte newPart = Marshal.ReadByte(newValuePtr, i);

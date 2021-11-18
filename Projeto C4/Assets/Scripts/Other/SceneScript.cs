@@ -6,11 +6,11 @@ using UnityEngine;
 public static class SceneScript
 {
 	public static string lastScene = "Menu";
+
     public static void GoScene(string scene)
 	{
 		lastScene = SceneManager.GetActiveScene().name;
 		LanguageBehaviour.languageBehaviour.Clear();
 		SceneManager.LoadScene(scene);
 	}
-	
 }

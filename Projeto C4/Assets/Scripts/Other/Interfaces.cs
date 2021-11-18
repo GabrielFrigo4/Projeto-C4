@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public interface ITower
+{
+	void ShowRange(bool show);
+}
+
 public interface IDamage
 {
 	void Damage(int damage);

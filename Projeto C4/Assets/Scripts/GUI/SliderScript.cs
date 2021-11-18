@@ -6,15 +6,15 @@ using static PointerMethod;
 
 public class SliderScript : MonoBehaviour
 {
-	public static IntPtr volumeMusic = CreatePointer(0.5f), volumeSound = CreatePointer(0.5f);
+	public static float volumeMusic = 0.5f, volumeSound = 0.5f;
 	
     public void VolumeMusic(float volume)
 	{
-		SetPointerValue(volumeMusic, volume);
+		volumeMusic = volume;
 	}
 	
 	public void VolumeSound(float volume)
 	{
-		SetPointerValue(volumeSound, volume);
+		volumeSound = volume;
 	}
 }

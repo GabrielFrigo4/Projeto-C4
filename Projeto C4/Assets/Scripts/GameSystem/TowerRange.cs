@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class Tower : MonoBehaviour
+public class TowerRange: MonoBehaviour, ITower
 {
 	public TowerType type;
 	Vector3 projectileShootFromPositon;
@@ -81,5 +81,10 @@ public class Tower : MonoBehaviour
 			}
 			yield return new WaitForSeconds(time);	
 		}
+    }
+
+    void ITower.ShowRange(bool show)
+    {
+        throw new System.NotImplementedException();
     }
 }
