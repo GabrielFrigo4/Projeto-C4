@@ -16,3 +16,4 @@ MonoBehaviour:
   hp: 3
   damage: 1
   speed: 5
+  dead: {fileID: 3863438606076705272, guid: 47210e397d197774892c10a18bd4dfc7, type: 3}

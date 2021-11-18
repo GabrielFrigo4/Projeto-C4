@@ -55,6 +55,12 @@ public class Enemy : MonoBehaviour, IDamage
 	void IDamage.Damage(int damage)
 	{
 		hp -= damage;
-		if(hp <= 0) Destroy(gameObject);
+		if(hp <= 0) Dead();
+	}
+	
+	void Dead()
+	{
+		Instantiate(inimigoType.dead, transform);
+		Destroy(gameObject);
 	}
 }

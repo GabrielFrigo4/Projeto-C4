@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyType", menuName = "ScriptableObjects/EnemyType")]
 public class InimigoType : ScriptableObject
 {
-    public RuntimeAnimatorController animatorControler, morteControler;
+    public RuntimeAnimatorController animatorControler;
     public int hp, damage;
     public float speed;
+	public GameObject dead;
 }
