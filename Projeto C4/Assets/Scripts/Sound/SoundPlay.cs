@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
+using System;
+using static SafePointerMethod;
 
 public class SoundPlay : MonoBehaviour
 {
@@ -45,14 +47,11 @@ public class SoundPlay : MonoBehaviour
 		}
 	}
 	
-	public unsafe static GameObject PlayClip(AudioClip clip, ref float volume, bool isStatic)
+	public static GameObject PlayClip(AudioClip clip, ref float volume, bool isStatic)
 	{
 		GameObject sound = Instantiate(ClipSound);
 		ClipPlayScript clipScript = sound.GetComponent<ClipPlayScript>();
-		fixed(float* ptr = &volume)
-		{
-			clipScript.volume = ptr;
-		}
+		clipScript.volume = GetPointerPtr<float>(ref volume);
 		clipScript.clip = clip;
 		clipScript.isStatic = isStatic;
 		return sound;

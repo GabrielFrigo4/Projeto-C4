@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using static SafePointerMethod;
 
 public unsafe class ClipPlayScript : MonoBehaviour
 {
 	Transform transformCamera;
 	AudioSource source;
 	[HideInInspector] public AudioClip clip;
-	[HideInInspector] public float* volume;
+	[HideInInspector] public IntPtr volume;
 	[HideInInspector] public bool isStatic;
 	
     // Start is called before the first frame update
@@ -21,7 +23,7 @@ public unsafe class ClipPlayScript : MonoBehaviour
 		transformCamera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
 		source = GetComponent<AudioSource>();
 		source.clip = clip;
-		source.volume = *volume;
+		source.volume = GetPointerValue<float>(volume);
 		source.Play();
     }
 
@@ -40,10 +42,14 @@ public unsafe class ClipPlayScript : MonoBehaviour
 				transform.position = transformCamera.position;
 			}
 		}
-		
-		if(*volume != source.volume)
-		{
-			source.volume = *volume;
+
+		if (volume != IntPtr.Zero)
+        {
+			float momentVolume = GetPointerValue<float>(volume);
+			if (momentVolume != source.volume)
+			{
+				source.volume = momentVolume;
+			}
 		}
     }
 }
