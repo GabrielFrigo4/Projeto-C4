@@ -17,10 +17,4 @@ public class SliderScript : MonoBehaviour
 	{
 		SetPointerValue(volumeMusic, volume);
 	}
-
-    void OnApplicationQuit()
-    {
-		FreePointer(volumeMusic);
-		FreePointer(volumeMusic);
-    }
 }
