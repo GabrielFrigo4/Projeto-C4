@@ -9,6 +9,8 @@ public class Tower : MonoBehaviour
 	Vector3 projectileShootFromPositon;
 	GameObject rangeObj;
 	Enemy enemySelect = null;
+	
+	private IEnumerator coroutine;
 
 	public List<Enemy> allEnemys = new List<Enemy>();
 	
@@ -20,6 +22,9 @@ public class Tower : MonoBehaviour
 	void Start()
 	{
 		rangeObj = gameObject.transform.Find("distancia").gameObject;
+		
+		coroutine = ShotLoop(type.time);
+        StartCoroutine(coroutine);
 	}
 	
 	void Update()
@@ -53,7 +58,7 @@ public class Tower : MonoBehaviour
 					}
 					else if(en.path.Count == enemySelect.path.Count)
 					{
-						if(GetDistance2D(en.path[0], en.path[1]) < GetDistance2D(enemySelect.path[0], enemySelect.path[1]))
+						if(GetDistance2D(en.path[0], en.transform.position) < GetDistance2D(enemySelect.path[0], enemySelect.transform.position))
 						{
 							enemySelect = en;
 						}
@@ -62,17 +67,19 @@ public class Tower : MonoBehaviour
 			}
 		}
 		
-		//atira no inimigo selecionado
-		if(enemySelect != null)
-        {
-			Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform.position);
-		}
-
-		if (Input.GetMouseButtonDown(0))
-		{
-			Projectile.Create(projectileShootFromPositon, GetMouseWorldPosition());
-		}
-		
 		rangeObj.transform.localScale = new Vector3(type.range, type.range, 1);
 	}
+	
+	//atira no inimigo selecionado
+	private IEnumerator ShotLoop(float time)
+    {
+		while(true)
+		{
+			if(enemySelect != null)
+			{
+				Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform.position);
+			}
+			yield return new WaitForSeconds(time);	
+		}
+    }
 }
