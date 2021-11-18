@@ -48,6 +48,8 @@ public class Enemy : MonoBehaviour, IDamage
 
 	public void PassedOn()
     {
+		GameIA.PlayerHp -= 1;
+		Debug.Log(GameIA.PlayerHp);
 		Destroy(gameObject);
     }
 	
