@@ -143,19 +143,19 @@ public class GameIA : MonoBehaviour
 			left = position + Vector2.left;
 			right = position + Vector2.right;
 			
-			if(grid.GetValue((int)up.x, (int)up.y) == GridType.path && !path.Contains(up))
+			if(grid.GetValue((int)up.x, (int)up.y) == GridType.Path && !path.Contains(up))
 			{
 				GetNextPosition(up, Vector2.up);
 			}
-			else if(grid.GetValue((int)down.x, (int)down.y) == GridType.path && !path.Contains(down))
+			else if(grid.GetValue((int)down.x, (int)down.y) == GridType.Path && !path.Contains(down))
 			{
 				GetNextPosition(down, Vector2.down);
 			}
-			else if(grid.GetValue((int)left.x, (int)left.y) == GridType.path && !path.Contains(left))
+			else if(grid.GetValue((int)left.x, (int)left.y) == GridType.Path && !path.Contains(left))
 			{
 				GetNextPosition(left, Vector2.left);
 			}
-			else if(grid.GetValue((int)right.x, (int)right.y) == GridType.path && !path.Contains(right))
+			else if(grid.GetValue((int)right.x, (int)right.y) == GridType.Path && !path.Contains(right))
 			{
 				GetNextPosition(right, Vector2.right);
 			}
@@ -195,19 +195,19 @@ public class GameIA : MonoBehaviour
 
 				if (tileNoone.Contains(b))
 				{
-					grid.SetValue(x, y, GridType.noone);
+					grid.SetValue(x, y, GridType.Noone);
 				}
 				else if (tileGround.Contains(b))
 				{
-					grid.SetValue(x, y, GridType.ground);
+					grid.SetValue(x, y, GridType.Ground);
 				}
 				else if (tilePath.Contains(b))
 				{
-					grid.SetValue(x, y, GridType.path);
+					grid.SetValue(x, y, GridType.Path);
 				}
 				else if (tileTowerPositon.Contains(b))
 				{
-					grid.SetValue(x, y, GridType.towerPosition);
+					grid.SetValue(x, y, GridType.TowerPosition);
 				}
 			}
 		}
@@ -229,10 +229,10 @@ public class GameIA : MonoBehaviour
 		int x, y;
 		mainGrid.GetXY(position, out x, out y);
 		
-		if(mainGrid.GetValue(x,y) == GridType.towerPosition)
+		if(mainGrid.GetValue(x,y) == GridType.TowerPosition)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
-			mainGrid.SetValue(x,y,GridType.towerUsing);
+			mainGrid.SetValue(x,y,GridType.TowerUsing);
 			return true;
 		}
 		else

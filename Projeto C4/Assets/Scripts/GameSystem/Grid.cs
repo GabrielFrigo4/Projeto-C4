@@ -23,7 +23,7 @@ public class Grid
 		{
 			for(int y = 0; y < gridArray.GetLength(1); y++)
 			{
-				gridArray[x, y] = GridType.outside;
+				gridArray[x, y] = GridType.TowerPosition;
 			}
 		}
 	}
@@ -62,7 +62,7 @@ public class Grid
 		}
 		else
 		{
-			return GridType.outside;
+			return GridType.Outside;
 		}
 	}
 	
@@ -76,10 +76,10 @@ public class Grid
 
 public enum GridType : int
 {
-	outside = -1,
-	noone = 0,
-	ground = 1,
-	path = 2,
-	towerPosition = 3,
-	towerUsing = 4,
+	Outside = -1,
+	Noone = 0,
+	Ground = 1,
+	Path = 2,
+	TowerPosition = 3,
+	TowerUsing = 4,
 }
