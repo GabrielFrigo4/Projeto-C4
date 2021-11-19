@@ -23,7 +23,7 @@ public class Grid
 		{
 			for(int y = 0; y < gridArray.GetLength(1); y++)
 			{
-				gridArray[x, y] = GridType.TowerPosition;
+				gridArray[x, y] = GridType.Noone;
 			}
 		}
 	}

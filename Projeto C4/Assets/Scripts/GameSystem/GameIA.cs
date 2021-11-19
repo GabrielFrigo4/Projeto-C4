@@ -47,15 +47,12 @@ public class GameIA : MonoBehaviour
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
 	[SerializeField] List<Vector2> starts, indentationStarts;
-	[SerializeField] List<TileBase> tileNoone;
 	[SerializeField] List<TileBase> tileGround;
 	[SerializeField] List<TileBase> tilePath;
 	[SerializeField] List<TileBase> tileTowerPositon;
 	List<List<Vector2>> paths = new List<List<Vector2>>();
 	List<Grid> pathGrid = new List<Grid>(); 
 	Grid mainGrid;
-
-	//public 
 
 	const float maxTime = 1, maxTime2 = 5;
 	float time = maxTime, time2 = maxTime2;
@@ -193,11 +190,7 @@ public class GameIA : MonoBehaviour
 			{
 				TileBase b = map.GetTile(new Vector3Int(x, y, 0));
 
-				if (tileNoone.Contains(b))
-				{
-					grid.SetValue(x, y, GridType.Noone);
-				}
-				else if (tileGround.Contains(b))
+				if (tileGround.Contains(b))
 				{
 					grid.SetValue(x, y, GridType.Ground);
 				}
@@ -229,7 +222,7 @@ public class GameIA : MonoBehaviour
 		int x, y;
 		mainGrid.GetXY(position, out x, out y);
 		
-		if(mainGrid.GetValue(x,y) == GridType.TowerPosition)
+		if(mainGrid.GetValue(x, y) == GridType.TowerPosition)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
 			mainGrid.SetValue(x,y,GridType.TowerUsing);
