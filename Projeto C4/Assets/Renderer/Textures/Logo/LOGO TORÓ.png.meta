@@ -1,0 +1,2052 @@
+fileFormatVersion: 2
+guid: c7ceac5b84a86864995d428cb599121f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8680734259713391535
+    second: "LOGO TOR\xD3 3-Sheet_0"
+  - first:
+      213: -6057806653094753677
+    second: "LOGO TOR\xD3 3-Sheet_1"
+  - first:
+      213: -7255583825605065537
+    second: "LOGO TOR\xD3 3-Sheet_2"
+  - first:
+      213: 2401516685292810387
+    second: "LOGO TOR\xD3 3-Sheet_3"
+  - first:
+      213: 8230511323645150810
+    second: "LOGO TOR\xD3 3-Sheet_4"
+  - first:
+      213: -8559037619432217444
+    second: "LOGO TOR\xD3 3-Sheet_5"
+  - first:
+      213: 1303903939968021596
+    second: "LOGO TOR\xD3 3-Sheet_6"
+  - first:
+      213: -6965451753648555951
+    second: "LOGO TOR\xD3 3-Sheet_7"
+  - first:
+      213: 7638872931881559698
+    second: "LOGO TOR\xD3 3-Sheet_8"
+  - first:
+      213: -5865149118044121724
+    second: "LOGO TOR\xD3 3-Sheet_9"
+  - first:
+      213: 8642226487481773688
+    second: "LOGO TOR\xD3 3-Sheet_10"
+  - first:
+      213: 2798773360913808363
+    second: "LOGO TOR\xD3 3-Sheet_11"
+  - first:
+      213: -39726291090176048
+    second: "LOGO TOR\xD3 3-Sheet_12"
+  - first:
+      213: 639910734492339130
+    second: "LOGO TOR\xD3 3-Sheet_13"
+  - first:
+      213: -8562302565400910591
+    second: "LOGO TOR\xD3 3-Sheet_14"
+  - first:
+      213: -4128112030532471564
+    second: "LOGO TOR\xD3 3-Sheet_15"
+  - first:
+      213: -2707412864415437167
+    second: "LOGO TOR\xD3 3-Sheet_16"
+  - first:
+      213: 8528423993278184382
+    second: "LOGO TOR\xD3 3-Sheet_17"
+  - first:
+      213: -5781481802123385898
+    second: "LOGO TOR\xD3 3-Sheet_18"
+  - first:
+      213: 2564463927399677197
+    second: "LOGO TOR\xD3 3-Sheet_19"
+  - first:
+      213: -7679259501533146749
+    second: "LOGO TOR\xD3 3-Sheet_20"
+  - first:
+      213: -4115868352818450454
+    second: "LOGO TOR\xD3 3-Sheet_21"
+  - first:
+      213: -3425139925262708036
+    second: "LOGO TOR\xD3 3-Sheet_22"
+  - first:
+      213: 6588763346093284010
+    second: "LOGO TOR\xD3 3-Sheet_23"
+  - first:
+      213: 3182939446228592607
+    second: "LOGO TOR\xD3 3-Sheet_24"
+  - first:
+      213: 8116179354550626123
+    second: "LOGO TOR\xD3 3-Sheet_25"
+  - first:
+      213: 134385897433884899
+    second: "LOGO TOR\xD3 3-Sheet_26"
+  - first:
+      213: -4795921209548192032
+    second: "LOGO TOR\xD3 3-Sheet_27"
+  - first:
+      213: -5079817591739104856
+    second: "LOGO TOR\xD3 3-Sheet_28"
+  - first:
+      213: 5744629318065769314
+    second: "LOGO TOR\xD3 3-Sheet_29"
+  - first:
+      213: 3896487738005537843
+    second: "LOGO TOR\xD3 3-Sheet_30"
+  - first:
+      213: -2162048734831066630
+    second: "LOGO TOR\xD3 3-Sheet_31"
+  - first:
+      213: 8999080873157630714
+    second: "LOGO TOR\xD3 3-Sheet_32"
+  - first:
+      213: 2979939908540386518
+    second: "LOGO TOR\xD3 3-Sheet_33"
+  - first:
+      213: 2193472557938306421
+    second: "LOGO TOR\xD3 3-Sheet_34"
+  - first:
+      213: 2852326675869008168
+    second: "LOGO TOR\xD3 3-Sheet_35"
+  - first:
+      213: 5747848744331561479
+    second: "LOGO TOR\xD3 3-Sheet_36"
+  - first:
+      213: -722360303235190482
+    second: "LOGO TOR\xD3 3-Sheet_37"
+  - first:
+      213: -3862249429878395020
+    second: "LOGO TOR\xD3 3-Sheet_38"
+  - first:
+      213: -5603028837323281923
+    second: "LOGO TOR\xD3 3-Sheet_39"
+  - first:
+      213: 4817267893639106449
+    second: "LOGO TOR\xD3 3-Sheet_40"
+  - first:
+      213: 7932425735993564532
+    second: "LOGO TOR\xD3 3-Sheet_41"
+  - first:
+      213: 819071839638687389
+    second: "LOGO TOR\xD3 3-Sheet_42"
+  - first:
+      213: -7729969886535670624
+    second: "LOGO TOR\xD3 3-Sheet_43"
+  - first:
+      213: 5684701382611004415
+    second: "LOGO TOR\xD3 3-Sheet_44"
+  - first:
+      213: 152231477722643972
+    second: "LOGO TOR\xD3 3-Sheet_45"
+  - first:
+      213: 5040482311492502451
+    second: "LOGO TOR\xD3 3-Sheet_46"
+  - first:
+      213: -4160116084872169795
+    second: "LOGO TOR\xD3 3-Sheet_47"
+  - first:
+      213: -2510692211553284224
+    second: "LOGO TOR\xD3 3-Sheet_48"
+  - first:
+      213: 1316747768695073305
+    second: "LOGO TOR\xD3 3-Sheet_49"
+  - first:
+      213: 118862039030384477
+    second: "LOGO TOR\xD3 3-Sheet_50"
+  - first:
+      213: 6841444094501562856
+    second: "LOGO TOR\xD3 3-Sheet_51"
+  - first:
+      213: -5883907790349518725
+    second: "LOGO TOR\xD3 3-Sheet_52"
+  - first:
+      213: -4830247516918801265
+    second: "LOGO TOR\xD3 3-Sheet_53"
+  - first:
+      213: 3016505879975017756
+    second: "LOGO TOR\xD3 3-Sheet_54"
+  - first:
+      213: -5740211904297150929
+    second: "LOGO TOR\xD3 3-Sheet_55"
+  - first:
+      213: -7353442099521072276
+    second: "LOGO TOR\xD3 3-Sheet_56"
+  - first:
+      213: 4502821554884971560
+    second: "LOGO TOR\xD3 3-Sheet_57"
+  - first:
+      213: -4723330392033976777
+    second: "LOGO TOR\xD3 3-Sheet_58"
+  - first:
+      213: -1996777694635474345
+    second: "LOGO TOR\xD3 3-Sheet_59"
+  - first:
+      213: 7866188737863250561
+    second: "LOGO TOR\xD3 3-Sheet_60"
+  - first:
+      213: 8466276108958660673
+    second: "LOGO TOR\xD3 3-Sheet_61"
+  - first:
+      213: 3496536400623355403
+    second: "LOGO TOR\xD3 3-Sheet_62"
+  - first:
+      213: 2475344217098885853
+    second: "LOGO TOR\xD3 3-Sheet_63"
+  - first:
+      213: -251073003780825384
+    second: "LOGO TOR\xD3 3-Sheet_64"
+  - first:
+      213: 5080936635571753229
+    second: "LOGO TOR\xD3 3-Sheet_65"
+  - first:
+      213: -7337200267652043793
+    second: "LOGO TOR\xD3 3-Sheet_66"
+  - first:
+      213: -7730328152623109496
+    second: "LOGO TOR\xD3 3-Sheet_67"
+  - first:
+      213: 978710364979902255
+    second: "LOGO TOR\xD3 3-Sheet_68"
+  - first:
+      213: -8342482024712247792
+    second: "LOGO TOR\xD3 3-Sheet_69"
+  - first:
+      213: 5605031904219418980
+    second: "LOGO TOR\xD3 3-Sheet_70"
+  - first:
+      213: 3021382261079759575
+    second: "LOGO TOR\xD3 3-Sheet_71"
+  - first:
+      213: -7706595846146706007
+    second: "LOGO TOR\xD3 3-Sheet_72"
+  - first:
+      213: -7265172549667186630
+    second: "LOGO TOR\xD3 3-Sheet_73"
+  - first:
+      213: -403825667712466840
+    second: "LOGO TOR\xD3 3-Sheet_74"
+  - first:
+      213: 7385255162586139845
+    second: "LOGO TOR\xD3 3-Sheet_75"
+  - first:
+      213: -1272286614393912650
+    second: "LOGO TOR\xD3 3-Sheet_76"
+  - first:
+      213: -6602691641623281339
+    second: "LOGO TOR\xD3 3-Sheet_77"
+  - first:
+      213: -3260561291129614158
+    second: "LOGO TOR\xD3 3-Sheet_78"
+  - first:
+      213: 7021337369757141306
+    second: "LOGO TOR\xD3 3-Sheet_79"
+  - first:
+      213: -7001565583690172197
+    second: "LOGO TOR\xD3 3-Sheet_80"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 7
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154483cee26d78780800000000000000
+      internalID: -8680734259713391535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a0a44d1f85eeba0800000000000000
+      internalID: -6057806653094753677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb48dbcc3fcfe4b90800000000000000
+      internalID: -7255583825605065537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3903d0593b6e35120800000000000000
+      internalID: 2401516685292810387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5603b51176a83270800000000000000
+      internalID: 8230511323645150810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94a98202a0383980800000000000000
+      internalID: -8559037619432217444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54b60b99b5681210800000000000000
+      internalID: 1303903939968021596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158f7abd88eb55f90800000000000000
+      internalID: -6965451753648555951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296a525857ab20a60800000000000000
+      internalID: 7638872931881559698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_9"
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485d848b3fdca9ea0800000000000000
+      internalID: -5865149118044121724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_10"
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ea2dea33b5fe770800000000000000
+      internalID: 8642226487481773688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_11"
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebf7101b8d37d620800000000000000
+      internalID: 2798773360913808363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_12"
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d78353162dd27ff0800000000000000
+      internalID: -39726291090176048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_13"
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb00613c6b61e800800000000000000
+      internalID: 639910734492339130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_14"
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105ecd98e279c2980800000000000000
+      internalID: -8562302565400910591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_15"
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4781bdafff5b6c0800000000000000
+      internalID: -4128112030532471564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_16"
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ee13428565d6ad0800000000000000
+      internalID: -2707412864415437167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_17"
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbb345bf6c0b5670800000000000000
+      internalID: 8528423993278184382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_18"
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3ec0dbeec04cfa0800000000000000
+      internalID: -5781481802123385898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_19"
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0df5f7da5ec69320800000000000000
+      internalID: 2564463927399677197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_20"
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381d2197b2acd6590800000000000000
+      internalID: -7679259501533146749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_21"
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefebf73a8f71e6c0800000000000000
+      internalID: -4115868352818450454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_22"
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb255b892657770d0800000000000000
+      internalID: -3425139925262708036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_23"
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1101ca5dff6b50800000000000000
+      internalID: 6588763346093284010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_24"
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7a80aff821c2c20800000000000000
+      internalID: 3182939446228592607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_25"
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4769512f1672a070800000000000000
+      internalID: 8116179354550626123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_26"
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e86e5ff24f6dd100800000000000000
+      internalID: 134385897433884899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_27"
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e64e1ed117717db0800000000000000
+      internalID: -4795921209548192032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_28"
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14c9870dcd089b0800000000000000
+      internalID: -5079817591739104856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_29"
+      rect:
+        serializedVersion: 2
+        x: 3364
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bca9dade509bf40800000000000000
+      internalID: 5744629318065769314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_30"
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3344c7704fa131630800000000000000
+      internalID: 3896487738005537843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_31"
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1cf45712cdef1e0800000000000000
+      internalID: -2162048734831066630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_32"
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa929dff5823ec70800000000000000
+      internalID: 8999080873157630714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_33"
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc4f84fe8fda5920800000000000000
+      internalID: 2979939908540386518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_34"
+      rect:
+        serializedVersion: 2
+        x: 3944
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dea708ba7c07e10800000000000000
+      internalID: 2193472557938306421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_35"
+      rect:
+        serializedVersion: 2
+        x: 4060
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8210b8adfff759720800000000000000
+      internalID: 2852326675869008168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_36"
+      rect:
+        serializedVersion: 2
+        x: 4176
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ace84caf574cf40800000000000000
+      internalID: 5747848744331561479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_37"
+      rect:
+        serializedVersion: 2
+        x: 4292
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21b2d5a129a9f5f0800000000000000
+      internalID: -722360303235190482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_38"
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fa42a4b98866ac0800000000000000
+      internalID: -3862249429878395020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_39"
+      rect:
+        serializedVersion: 2
+        x: 4524
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9631565fa0e32b0800000000000000
+      internalID: -5603028837323281923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_40"
+      rect:
+        serializedVersion: 2
+        x: 4640
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fc04450af5ad240800000000000000
+      internalID: 4817267893639106449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_41"
+      rect:
+        serializedVersion: 2
+        x: 4756
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d1019dd23a51e60800000000000000
+      internalID: 7932425735993564532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_42"
+      rect:
+        serializedVersion: 2
+        x: 4872
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e803f9f7ded5b00800000000000000
+      internalID: 819071839638687389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_43"
+      rect:
+        serializedVersion: 2
+        x: 4988
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a42394e751a9b490800000000000000
+      internalID: -7729969886535670624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_44"
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb63b4e9cd14ee40800000000000000
+      internalID: 5684701382611004415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_45"
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e7a41f8b5dc1200800000000000000
+      internalID: 152231477722643972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_46"
+      rect:
+        serializedVersion: 2
+        x: 5336
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b38629e4f363f540800000000000000
+      internalID: 5040482311492502451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_47"
+      rect:
+        serializedVersion: 2
+        x: 5452
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db63ec8467c4446c0800000000000000
+      internalID: -4160116084872169795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_48"
+      rect:
+        serializedVersion: 2
+        x: 5568
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fc60e5cba382dd0800000000000000
+      internalID: -2510692211553284224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_49"
+      rect:
+        serializedVersion: 2
+        x: 5684
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91aabd38e17064210800000000000000
+      internalID: 1316747768695073305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_50"
+      rect:
+        serializedVersion: 2
+        x: 5800
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d574fad056846a100800000000000000
+      internalID: 118862039030384477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_51"
+      rect:
+        serializedVersion: 2
+        x: 5916
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9a57b0821b1fe50800000000000000
+      internalID: 6841444094501562856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_52"
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b783019f909285ea0800000000000000
+      internalID: -5883907790349518725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_53"
+      rect:
+        serializedVersion: 2
+        x: 6148
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c97d0a97387fcb0800000000000000
+      internalID: -4830247516918801265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_54"
+      rect:
+        serializedVersion: 2
+        x: 6264
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1db9ce9d18ccd920800000000000000
+      internalID: 3016505879975017756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_55"
+      rect:
+        serializedVersion: 2
+        x: 6380
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2656ec9faba650b0800000000000000
+      internalID: -5740211904297150929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_56"
+      rect:
+        serializedVersion: 2
+        x: 6496
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63d4a5ee5353f990800000000000000
+      internalID: -7353442099521072276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_57"
+      rect:
+        serializedVersion: 2
+        x: 6612
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c04e1e85c3d7e30800000000000000
+      internalID: 4502821554884971560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_58"
+      rect:
+        serializedVersion: 2
+        x: 6728
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e1202a80c537eb0800000000000000
+      internalID: -4723330392033976777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_59"
+      rect:
+        serializedVersion: 2
+        x: 6844
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75244df14450a44e0800000000000000
+      internalID: -1996777694635474345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_60"
+      rect:
+        serializedVersion: 2
+        x: 6960
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1827480faf05a2d60800000000000000
+      internalID: 7866188737863250561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_61"
+      rect:
+        serializedVersion: 2
+        x: 7076
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1487bdcc3414e7570800000000000000
+      internalID: 8466276108958660673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_62"
+      rect:
+        serializedVersion: 2
+        x: 7192
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06c067b451368030800000000000000
+      internalID: 3496536400623355403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_63"
+      rect:
+        serializedVersion: 2
+        x: 7308
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda1ff453703a5220800000000000000
+      internalID: 2475344217098885853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_64"
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de14fcee62048cf0800000000000000
+      internalID: -251073003780825384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_65"
+      rect:
+        serializedVersion: 2
+        x: 7540
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01d58933fc138640800000000000000
+      internalID: 5080936635571753229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_66"
+      rect:
+        serializedVersion: 2
+        x: 7656
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febe2b01b370d2a90800000000000000
+      internalID: -7337200267652043793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_67"
+      rect:
+        serializedVersion: 2
+        x: 7772
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aa2b1908b58b490800000000000000
+      internalID: -7730328152623109496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_68"
+      rect:
+        serializedVersion: 2
+        x: 7888
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27be9a34e3159d00800000000000000
+      internalID: 978710364979902255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_69"
+      rect:
+        serializedVersion: 2
+        x: 8004
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016e1f38ccc893c80800000000000000
+      internalID: -8342482024712247792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_70"
+      rect:
+        serializedVersion: 2
+        x: 8120
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461dab5f1d219cd40800000000000000
+      internalID: 5605031904219418980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_71"
+      rect:
+        serializedVersion: 2
+        x: 8236
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da5352982b1ee920800000000000000
+      internalID: 3021382261079759575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_72"
+      rect:
+        serializedVersion: 2
+        x: 8352
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5bce2c8ebac0590800000000000000
+      internalID: -7706595846146706007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_73"
+      rect:
+        serializedVersion: 2
+        x: 8468
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a381b210f0cec2b90800000000000000
+      internalID: -7265172549667186630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_74"
+      rect:
+        serializedVersion: 2
+        x: 8584
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86040dcd1b2556af0800000000000000
+      internalID: -403825667712466840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_75"
+      rect:
+        serializedVersion: 2
+        x: 8700
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc019d0172bd7660800000000000000
+      internalID: 7385255162586139845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_76"
+      rect:
+        serializedVersion: 2
+        x: 8816
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b20198a01ee75ee0800000000000000
+      internalID: -1272286614393912650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_77"
+      rect:
+        serializedVersion: 2
+        x: 8932
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5418a9b3fe68e54a0800000000000000
+      internalID: -6602691641623281339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_78"
+      rect:
+        serializedVersion: 2
+        x: 9048
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b094d9e7c820c2d0800000000000000
+      internalID: -3260561291129614158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_79"
+      rect:
+        serializedVersion: 2
+        x: 9164
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39cc8c132dc07160800000000000000
+      internalID: 7021337369757141306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "LOGO TOR\xD3 3-Sheet_80"
+      rect:
+        serializedVersion: 2
+        x: 9280
+        y: 0
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8fb80923175de90800000000000000
+      internalID: -7001565583690172197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
