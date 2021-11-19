@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1295508862
 Transform:
   m_ObjectHideFlags: 0
@@ -92,7 +92,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5685166040658021089}
   - component: {fileID: 5685166040658021102}
-  - component: {fileID: 5685166040658021103}
+  - component: {fileID: 422537188336035697}
+  - component: {fileID: 668165317332677515}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -167,7 +168,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5685166040658021103
+--- !u!114 &422537188336035697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,9 +177,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 5685166040658021088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c499199935aacf24294ab89a0a374903, type: 3}
+  m_Script: {fileID: 11500000, guid: a8a176f213be4d14fa4839d6f61f5962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &668165317332677515
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5685166040658021088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f224a520a36efb746a4b30ab8449b468, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5685166041823888070
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	static GameObject LifeBar = null;
-	private static int playerHp = 100;
+	static GameObject lifeBar = null, killPlacar = null;
+	private static int playerHp, kills;
 	public static int PlayerHp
 	{
 		get
@@ -18,19 +18,31 @@ public class GameIA : MonoBehaviour
 		set
 		{
 			playerHp = value;
-			if(LifeBar != null)
+			if(lifeBar != null)
 			{
 				if(playerHp > 0)
 				{
-					LifeBar.transform.localScale = new Vector3(playerHp/100f, 1f, 1f);
+					lifeBar.transform.localScale = new Vector3(playerHp/100f, 1f, 1f);
 				}
 				else
 				{
-					LifeBar.transform.localScale = new Vector3(0, 1, 1);
+					lifeBar.transform.localScale = new Vector3(0, 1, 1);
 				}
 			}
 		}
 	}
+	public static int Kills
+    {
+        get
+        {
+			return kills;
+		}
+        set
+        {
+			kills = value;
+			killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
+		}
+    }
 	
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
@@ -51,7 +63,9 @@ public class GameIA : MonoBehaviour
     void Start()
     {
 		playerHp = 100;
-		LifeBar = GameObject.Find("Front");
+		kills = 0;
+		lifeBar = GameObject.Find("Front");
+		killPlacar = GameObject.Find("KillPlacar");
 		PlayerHp = playerHp;
 		
         mainGrid = new Grid(16, 8, 2f, transform.position);
@@ -110,9 +124,13 @@ public class GameIA : MonoBehaviour
 
 		if (Input.GetMouseButtonDown(1))
 		{
-			SpawnTower();
+			SpawnTower("Torre1");
 		}
-    }
+		if (Input.GetMouseButtonDown(0))
+		{
+			SpawnTower("Torre2");
+		}
+	}
 	
 	void GetPath(List<Vector2> path, Vector2 start, Grid grid)
 	{	
@@ -195,14 +213,14 @@ public class GameIA : MonoBehaviour
 		}
 	}
 
-	void SpawnTower()
+	void SpawnTower(string data)
 	{
 		Vector3 spawnPosition = GetMouseWorldPosition();
 		
 		if(ValidatePosition(ref spawnPosition))
 		{
 			GameObject obj = Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
-			obj.GetComponent<TowerRange>().type = (TowerType)Resources.Load("Torre1");
+			obj.GetComponent<TowerGenerator>().CreateTowerType((TowerType)Resources.Load(data));
 		}
 	}
 	

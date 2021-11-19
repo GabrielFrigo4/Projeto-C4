@@ -206,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 210719425}
-        m_TargetAssemblyTypeName: ButtonBack, Assembly-CSharp
-        m_MethodName: ButtonClicked
+      - m_Target: {fileID: 2082092750}
+        m_TargetAssemblyTypeName: UpgradeButton, Assembly-CSharp
+        m_MethodName: OnBack2MenuSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

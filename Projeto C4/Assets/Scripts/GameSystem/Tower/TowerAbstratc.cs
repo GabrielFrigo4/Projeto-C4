@@ -1,0 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using static CodeUtils;
+
+public abstract class TowerAbstratc : MonoBehaviour
+{
+    public TowerType towerType;
+    public List<Enemy> allEnemys = new List<Enemy>();
+    protected GameObject rangeObj;
+    protected IEnumerator coroutine;
+
+    protected abstract IEnumerator AttackTower(float time);
+
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = towerType.animatorControler;
+
+        rangeObj = gameObject.transform.Find("distancia").gameObject;
+        ShowRange(false);
+
+        coroutine = AttackTower(towerType.time);
+        StartCoroutine(coroutine);
+    }
+
+    protected void GetEnemyInRange()
+    {
+        //pega todos os inimigos na scene
+        allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
+
+        //remove os inimigos que estão longe do range
+        List<Enemy> removeEnemys = new List<Enemy>();
+        foreach (Enemy enemy in allEnemys)
+        {
+            if (GetDistance2D(enemy.transform.position, transform.position) <= towerType.range) continue;
+            removeEnemys.Add(enemy);
+        }
+        foreach (Enemy enemy in removeEnemys)
+        {
+            allEnemys.Remove(enemy);
+        }
+
+        rangeObj.transform.localScale = new Vector3(towerType.range, towerType.range, 1);
+    }
+
+    public void ShowRange(bool show)
+    {
+        rangeObj.SetActive(show);
+    }
+}

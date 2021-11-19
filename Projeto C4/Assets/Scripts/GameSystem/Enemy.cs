@@ -60,6 +60,7 @@ public class Enemy : MonoBehaviour, IDamage
 	
 	void Dead()
 	{
+		GameIA.Kills++;
 		Instantiate(inimigoType.dead, transform.position, transform.rotation);
 		Destroy(gameObject);
 	}

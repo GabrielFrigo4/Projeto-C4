@@ -3,49 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class TowerRange: MonoBehaviour, ITower
+public class TowerRange: TowerAbstratc
 {
-	public TowerType type;
 	Vector3 projectileShootFromPositon;
-	GameObject rangeObj;
 	Enemy enemySelect = null;
-	
-	private IEnumerator coroutine;
-
-	public List<Enemy> allEnemys = new List<Enemy>();
 	
     void Awake()
 	{
 		projectileShootFromPositon = transform.Find("projectileShootFromPositon").position;
 	}
 	
-	void Start()
-	{
-		rangeObj = gameObject.transform.Find("distancia").gameObject;
-		
-		coroutine = ShotLoop(type.time);
-        StartCoroutine(coroutine);
-	}
-	
 	void Update()
 	{
-		//pega todos os inimigos na scene
-		allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
-		
-		//remove os inimigos que estão longe do range
-		List<Enemy> removeEnemys = new List<Enemy>();
-		foreach (Enemy enemy in allEnemys)
-        {
-			if (GetDistance2D(enemy.transform.position, transform.position) <= type.range) continue;
-			removeEnemys.Add(enemy);
-        }
-		foreach (Enemy enemy in removeEnemys)
-		{
-			allEnemys.Remove(enemy);
-		}
-		
+		//pega os inimigos no alcance da torre
+		GetEnemyInRange();
+
 		//seleciona o inimigo que estiver mais perto do final
-		if(allEnemys.Count > 0)
+		if (allEnemys.Count > 0)
         {
 			if(enemySelect == null || !allEnemys.Contains(enemySelect))
 			{
@@ -66,12 +40,10 @@ public class TowerRange: MonoBehaviour, ITower
 				}
 			}
 		}
-		
-		rangeObj.transform.localScale = new Vector3(type.range, type.range, 1);
 	}
 	
 	//atira no inimigo selecionado
-	private IEnumerator ShotLoop(float time)
+	protected override IEnumerator AttackTower(float time)
     {
 		while(true)
 		{
@@ -81,10 +53,5 @@ public class TowerRange: MonoBehaviour, ITower
 			}
 			yield return new WaitForSeconds(time);	
 		}
-    }
-
-    void ITower.ShowRange(bool show)
-    {
-        throw new System.NotImplementedException();
     }
 }
