@@ -45,10 +45,9 @@ public class UpgradeMenu : MonoBehaviour
 			} else if (i == level) {
 				buttons[i].interactable = true;
 			} else if (i < level) {
-				if (buttons[i].animator != null) { 
-					buttons[i].interactable = false;
-					buttons[i].animator.SetBool("Purchased", true);
-				}
+				buttons[i].animator.SetBool("Purchased", true);
+				buttons[i].interactable = false;
+				
 			}
 		}
 
