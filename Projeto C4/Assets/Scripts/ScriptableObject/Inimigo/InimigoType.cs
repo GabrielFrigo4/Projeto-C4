@@ -7,6 +7,6 @@ public class InimigoType : ScriptableObject
 {
     public RuntimeAnimatorController animatorControler;
     public int hp, damage;
-    public float speed;
+    public float speed, sizeLifeBar, rangeLifeBar, heightLifeBar;
 	public GameObject dead;
 }
