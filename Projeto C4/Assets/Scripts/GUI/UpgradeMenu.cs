@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpgradeButton : MonoBehaviour
+public class UpgradeMenu : MonoBehaviour
 {
 	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades;
+	Animator animator;
 	public Button[] buttons;
 	public int level;
 	
+	
 	void Start()
 	{
+		animator = GetComponent<Animator>();
 		level = 0;
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
 	}
@@ -37,11 +40,15 @@ public class UpgradeButton : MonoBehaviour
 		level++;
 		for(int i = 0; i < buttons.Length; i++)
 		{
-			Debug.Log(level + " " + i);
-			if (i != level) {
+			if (i > level) {
 				buttons[i].interactable = false;
-			} else {
+			} else if (i == level) {
 				buttons[i].interactable = true;
+			} else if (i < level) {
+				if (buttons[i].animator != null) { 
+					buttons[i].interactable = false;
+					buttons[i].animator.SetBool("Purchased", true);
+				}
 			}
 		}
 
