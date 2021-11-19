@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using static CodeUtils;
 
-public class GameIA : MonoBehaviour
+public class GameIA : MonoBehaviour, ILanguage
 {
 	static GameObject lifeBar = null, killPlacar = null;
 	private static int playerHp, kills;
@@ -40,7 +40,15 @@ public class GameIA : MonoBehaviour
         set
         {
 			kills = value;
-			killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
+			switch(LanguageBehaviour.language)
+			{
+				case Language.Portugues:
+					killPlacar.GetComponent<Text>().text = $"Abates: {kills}";
+					break;
+				case Language.English:
+					killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
+					break;
+			}
 		}
     }
 	
@@ -64,6 +72,7 @@ public class GameIA : MonoBehaviour
 		lifeBar = GameObject.Find("Front");
 		killPlacar = GameObject.Find("KillPlacar");
 		PlayerHp = playerHp;
+		Kills = kills;
 		
         mainGrid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue(mainGrid, mainMap);
@@ -78,6 +87,12 @@ public class GameIA : MonoBehaviour
 			UpdateGridToTilemapValue(mainGrid, maps[i]);
 			UpdateGridToTilemapValue(pathGrid[i], maps[i]);
 			GetPath(paths[i], starts[i], pathGrid[i]);
+		}
+		
+		(this as ILanguage).SetLanguage();
+		if(!LanguageBehaviour.languageBehaviour.Contains(this))
+		{
+			LanguageBehaviour.languageBehaviour.Add(this);
 		}
     }
 
@@ -126,6 +141,19 @@ public class GameIA : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			SpawnTower("Torre2");
+		}
+	}
+	
+	void ILanguage.SetLanguage()
+	{
+		switch(LanguageBehaviour.language)
+		{
+			case Language.Portugues:
+				killPlacar.GetComponent<Text>().text = $"Abates: {kills}";
+				break;
+			case Language.English:
+				killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
+				break;
 		}
 	}
 	

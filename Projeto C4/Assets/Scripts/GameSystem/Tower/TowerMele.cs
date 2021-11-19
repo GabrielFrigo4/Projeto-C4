@@ -15,7 +15,7 @@ public class TowerMele : TowerAbstratc
     {
         while (true)
         {
-            foreach(IDamage enemy in allEnemys)
+            foreach(Enemy enemy in allEnemys)
             {
                 if(enemy != null)
                     enemy.Damage(1);

@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
 			
 			if(Vector2.Distance(transform.position, targetPosition.position) < destroySelfDistance)
 			{
-				targetPosition.gameObject.GetComponent<IDamage>().Damage(1);
+				targetPosition.gameObject.GetComponent<Enemy>().Damage(1);
 				Destroy(gameObject);
 			}	
 		}

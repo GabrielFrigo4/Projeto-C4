@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class Enemy : MonoBehaviour, IDamage
+public class Enemy : MonoBehaviour
 {
 	public InimigoType inimigoType;
 	
@@ -32,6 +32,13 @@ public class Enemy : MonoBehaviour, IDamage
 	public void ShowLifeBar(bool show)
 	{
 		lifeBar.SetActive(show);
+	}
+	
+		
+	public void Damage(int damage)
+	{
+		Hp -= damage;
+		if(Hp <= 0) Dead();
 	}
 
 	// Start is called before the first frame update
@@ -88,12 +95,6 @@ public class Enemy : MonoBehaviour, IDamage
 		Destroy(lifeBar);
 		Destroy(gameObject);
     }
-	
-	void IDamage.Damage(int damage)
-	{
-		Hp -= damage;
-		if(Hp <= 0) Dead();
-	}
 	
 	void Dead()
 	{
