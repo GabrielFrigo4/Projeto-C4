@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
 using System;
-using static PointerMethod;
 
 public class SoundPlay : MonoBehaviour
 {
 	[SerializeField] AudioClip clip;
-	[Range(0, 1)] [SerializeField] float volume = 1f;
+	[Range(0, 1)] [SerializeField] float volume =  1f;
 	[SerializeField] bool isStatic = false, playOnStart = true, loop = false;
 	[SerializeField] SoundVolumeType typeSound;
 	[SerializeField] SoundCreateBehaviour createBehaviour;
@@ -62,18 +61,18 @@ public class SoundPlay : MonoBehaviour
         switch (typeSound)
         {
 			case SoundVolumeType.Normal:
-				PlayClip(clip, GetPointerPtr(ref volume), isStatic, loop, soundTag);
+				PlayClip(clip, new Address<float>(in volume), isStatic, loop, soundTag);
 				break;
 			case SoundVolumeType.Music:
-				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeMusic), isStatic, loop, soundTag);
+				PlayClip(clip, new Address<float>(in SliderScript.volumeMusic), isStatic, loop, soundTag);
 				break;
 			case SoundVolumeType.Sound:
-				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeSound), isStatic, loop, soundTag);
+				PlayClip(clip, new Address<float>(in SliderScript.volumeSound), isStatic, loop, soundTag);
 				break;
 		}
 	}
 	
-	public static GameObject PlayClip(AudioClip clip, IntPtr volume, bool isStatic = false, bool loop = false, string soundTag = "")
+	public static GameObject PlayClip(AudioClip clip, Address<float> volume, bool isStatic = false, bool loop = false, string soundTag = "")
 	{
 		GameObject sound = Instantiate(ClipSound);
 		ClipPlayScript clipScript = sound.GetComponent<ClipPlayScript>();

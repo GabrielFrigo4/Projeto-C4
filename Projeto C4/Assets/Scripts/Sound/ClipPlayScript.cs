@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using static PointerMethod;
 
 public class ClipPlayScript : MonoBehaviour
 {
 	Transform transformCamera;
 	[HideInInspector] public AudioSource source;
 	[HideInInspector] public AudioClip clip;
-	[HideInInspector] public IntPtr volume;
+	[HideInInspector] public Address<float> volume;
 	[HideInInspector] public bool isStatic, loop, pause = false;
 	[HideInInspector] public string soundTag;
 
@@ -24,7 +23,7 @@ public class ClipPlayScript : MonoBehaviour
 		transformCamera = ((Camera)FindObjectOfType(typeof(Camera))).transform;
 		source = GetComponent<AudioSource>();
 		source.clip = clip;
-		source.volume = GetPointerValue<float>(volume);
+		source.volume = volume.Value;
 		source.loop = loop;
 		source.Play();
     }
@@ -45,9 +44,9 @@ public class ClipPlayScript : MonoBehaviour
 			}
 		}
 
-		if (volume != IntPtr.Zero)
+		if (!volume.IsNull)
         {
-			float momentVolume = GetPointerValue<float>(volume);
+			float momentVolume = volume.Value;
 			if (momentVolume != source.volume)
 			{
 				source.volume = momentVolume;

@@ -50,6 +50,9 @@ TagManager:
   - name: Projectile
     uniqueID: 382712215
     locked: 0
+  - name: GamePlayUI
+    uniqueID: 1702066733
+    locked: 0
   - name: UI
     uniqueID: 3453386253
     locked: 0
