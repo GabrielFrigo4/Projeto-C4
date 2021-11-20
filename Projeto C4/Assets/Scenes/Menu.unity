@@ -2851,8 +2851,10 @@ MonoBehaviour:
   volume: 1
   isStatic: 1
   playOnStart: 1
-  loop: 0
+  loop: 1
   typeSound: 1
+  createBehaviour: 1
+  soundTag: Menu
 --- !u!1 &1813458384
 GameObject:
   m_ObjectHideFlags: 0

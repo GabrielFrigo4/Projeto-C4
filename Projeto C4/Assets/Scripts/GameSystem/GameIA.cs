@@ -134,13 +134,16 @@ public class GameIA : MonoBehaviour, ILanguage
 			time2 += maxTime2;
 		}
 
-		if (Input.GetMouseButtonDown(1))
-		{
-			SpawnTower("Torre1");
-		}
-		if (Input.GetMouseButtonDown(0))
-		{
-			SpawnTower("Torre2");
+		if(Time.timeScale != 0)
+        {
+			if (Input.GetMouseButtonDown(1))
+			{
+				SpawnTower("Torre1");
+			}
+			if (Input.GetMouseButtonDown(0))
+			{
+				SpawnTower("Torre2");
+			}
 		}
 	}
 	

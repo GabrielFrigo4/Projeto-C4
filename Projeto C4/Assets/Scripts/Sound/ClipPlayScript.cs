@@ -7,13 +7,14 @@ using static PointerMethod;
 public class ClipPlayScript : MonoBehaviour
 {
 	Transform transformCamera;
-	AudioSource source;
+	[HideInInspector] public AudioSource source;
 	[HideInInspector] public AudioClip clip;
 	[HideInInspector] public IntPtr volume;
-	[HideInInspector] public bool isStatic;
-	
-    // Start is called before the first frame update
-    void Start()
+	[HideInInspector] public bool isStatic, loop, pause = false;
+	[HideInInspector] public string soundTag;
+
+	// Start is called before the first frame update
+	void Start()
     {
 		if(isStatic)
 		{
@@ -24,6 +25,7 @@ public class ClipPlayScript : MonoBehaviour
 		source = GetComponent<AudioSource>();
 		source.clip = clip;
 		source.volume = GetPointerValue<float>(volume);
+		source.loop = loop;
 		source.Play();
     }
 
@@ -51,5 +53,10 @@ public class ClipPlayScript : MonoBehaviour
 				source.volume = momentVolume;
 			}
 		}
+
+		if(!source.isPlaying && !pause)
+        {
+			Destroy(gameObject);
+        }
     }
 }

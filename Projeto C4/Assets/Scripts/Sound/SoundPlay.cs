@@ -11,6 +11,8 @@ public class SoundPlay : MonoBehaviour
 	[Range(0, 1)] [SerializeField] float volume = 1f;
 	[SerializeField] bool isStatic = false, playOnStart = true, loop = false;
 	[SerializeField] SoundVolumeType typeSound;
+	[SerializeField] SoundCreateBehaviour createBehaviour;
+	[SerializeField] string soundTag;
 
 	static GameObject clipSound;
 
@@ -28,7 +30,31 @@ public class SoundPlay : MonoBehaviour
 	
     void Start()
     {
-		if(playOnStart) Play();
+        if (playOnStart)
+        {
+            switch (createBehaviour)
+            {
+				case SoundCreateBehaviour.Ever:
+					Play();
+					break;
+				case SoundCreateBehaviour.OnlyOne:
+					List<ClipPlayScript> clipPlayScripts = new List<ClipPlayScript>(FindObjectsOfType<ClipPlayScript>());
+					bool onlyOne = true;
+
+					foreach (ClipPlayScript clip in clipPlayScripts)
+					{
+						if (clip.soundTag != soundTag) continue;
+						onlyOne = false;
+						break;
+					}
+
+                    if (onlyOne)
+                    {
+						Play();
+					}
+					break;
+			}
+        }
     }
 
     public void Play()
@@ -36,24 +62,26 @@ public class SoundPlay : MonoBehaviour
         switch (typeSound)
         {
 			case SoundVolumeType.Normal:
-				PlayClip(clip, GetPointerPtr(ref volume), isStatic, loop);
+				PlayClip(clip, GetPointerPtr(ref volume), isStatic, loop, soundTag);
 				break;
 			case SoundVolumeType.Music:
-				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeMusic), isStatic, loop);
+				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeMusic), isStatic, loop, soundTag);
 				break;
 			case SoundVolumeType.Sound:
-				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeSound), isStatic, loop);
+				PlayClip(clip, GetPointerPtr(ref SliderScript.volumeSound), isStatic, loop, soundTag);
 				break;
 		}
 	}
 	
-	public static GameObject PlayClip(AudioClip clip, IntPtr volume, bool isStatic, bool loop)
+	public static GameObject PlayClip(AudioClip clip, IntPtr volume, bool isStatic = false, bool loop = false, string soundTag = "")
 	{
 		GameObject sound = Instantiate(ClipSound);
 		ClipPlayScript clipScript = sound.GetComponent<ClipPlayScript>();
 		clipScript.volume = volume;
 		clipScript.clip = clip;
 		clipScript.isStatic = isStatic;
+		clipScript.loop = loop;
+		clipScript.soundTag = soundTag;
 		return sound;
 	}
 
@@ -62,5 +90,11 @@ public class SoundPlay : MonoBehaviour
 		Normal,
 		Music,
 		Sound,
+    }
+
+	public enum SoundCreateBehaviour
+    {
+		Ever,
+		OnlyOne,
     }
 }

@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 	Transform targetPosition;
 	Vector2 lastPositon;
 	float destroySelfDistance = 1f;
+	GameObject projectileDead;
 	
 	public static void Create(Vector3 spawnPosition, Transform targetPosition)
 	{
@@ -16,12 +17,17 @@ public class Projectile : MonoBehaviour
 		Projectile projectile = arrowTranform.GetComponent<Projectile>();
 		projectile.Setup(targetPosition);
 	}
-	
-	void Setup(Transform targetPosition)
+
+    void Setup(Transform targetPosition)
 	{
 		this.targetPosition = targetPosition;
-	}	
-	
+	}
+
+	void Start()
+	{
+		projectileDead = (GameObject)Resources.Load("TiroExplodindo");
+	}
+
 	void Update()
 	{
 		if(targetPosition != null)
@@ -32,6 +38,7 @@ public class Projectile : MonoBehaviour
 			if(Vector2.Distance(transform.position, targetPosition.position) < destroySelfDistance)
 			{
 				targetPosition.gameObject.GetComponent<Enemy>().Damage(1);
+				Instantiate(projectileDead, transform.position, transform.rotation);
 				Destroy(gameObject);
 			}	
 		}
@@ -41,6 +48,7 @@ public class Projectile : MonoBehaviour
 			
 			if(Vector2.Distance(transform.position, lastPositon) < destroySelfDistance)
 			{
+				Instantiate(projectileDead, transform.position, transform.rotation);
 				Destroy(gameObject);
 			}	
 		}
