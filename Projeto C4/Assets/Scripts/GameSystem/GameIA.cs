@@ -240,15 +240,18 @@ public class GameIA : MonoBehaviour, ILanguage
 	void SpawnTower(string data)
 	{
 		Vector3 spawnPosition = GetMouseWorldPosition();
-		
-		if(ValidatePosition(ref spawnPosition))
+		Vector2Int gridPosition;
+
+		if (ValidatePosition(ref spawnPosition, out gridPosition))
 		{
 			GameObject obj = Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
 			obj.GetComponent<TowerGenerator>().CreateTowerType((TowerType)Resources.Load(data));
+			TowerAbstratc tower = obj.GetComponent<TowerAbstratc>();
+			mainGrid.SetValue(gridPosition.x, gridPosition.y, tower);
 		}
 	}
 	
-	bool ValidatePosition(ref Vector3 position)
+	bool ValidatePosition(ref Vector3 position, out Vector2Int gridPosition)
 	{
 		int x, y;
 		mainGrid.GetXY(position, out x, out y);
@@ -256,11 +259,12 @@ public class GameIA : MonoBehaviour, ILanguage
 		if(mainGrid.GetValue(x, y) == GridType.TowerPosition)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
-			mainGrid.SetValue(x,y,GridType.TowerUsing);
+			gridPosition = new Vector2Int(x, y);
 			return true;
 		}
 		else
 		{
+			gridPosition = new Vector2Int(x, y);
 			return false;
 		}
 	}

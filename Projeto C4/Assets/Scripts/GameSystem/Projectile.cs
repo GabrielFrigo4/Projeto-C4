@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 {
 	Transform targetPosition;
 	Vector2 lastPositon;
-	float destroySelfDistance = 1f;
+	float moveSpeed = 60f;
 	GameObject projectileDead;
 	
 	public static void Create(Vector3 spawnPosition, Transform targetPosition)
@@ -33,9 +33,9 @@ public class Projectile : MonoBehaviour
 		if(targetPosition != null)
 		{
 			lastPositon = targetPosition.position;	
-			GotoPosition(lastPositon);
+			GotoPosition(lastPositon, moveSpeed);
 			
-			if(Vector2.Distance(transform.position, targetPosition.position) < destroySelfDistance)
+			if(Vector2.Distance(transform.position, lastPositon) < Time.deltaTime * moveSpeed)
 			{
 				targetPosition.gameObject.GetComponent<Enemy>().Damage(1);
 				Instantiate(projectileDead, transform.position, transform.rotation);
@@ -44,9 +44,9 @@ public class Projectile : MonoBehaviour
 		}
 		else
 		{
-			GotoPosition(lastPositon);
+			GotoPosition(lastPositon, moveSpeed);
 			
-			if(Vector2.Distance(transform.position, lastPositon) < destroySelfDistance)
+			if(Vector2.Distance(transform.position, lastPositon) < Time.deltaTime * moveSpeed)
 			{
 				Instantiate(projectileDead, transform.position, transform.rotation);
 				Destroy(gameObject);
@@ -54,11 +54,9 @@ public class Projectile : MonoBehaviour
 		}
 	}
 	
-	void GotoPosition(Vector2 position)
+	void GotoPosition(Vector2 position, float moveSpeed)
 	{
 		Vector2 moveDir = (position - (Vector2)transform.position).normalized;
-		
-		float moveSpeed = 60f;
 			
 		transform.position += (Vector3)moveDir * moveSpeed * Time.deltaTime;
 			

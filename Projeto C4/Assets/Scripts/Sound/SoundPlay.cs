@@ -58,7 +58,7 @@ public class SoundPlay : MonoBehaviour
 
     public void Play()
 	{
-        switch (typeSound)
+		switch (typeSound)
         {
 			case SoundVolumeType.Normal:
 				PlayClip(clip, new Address<float>(in volume), isStatic, loop, soundTag);
