@@ -5,12 +5,12 @@ using static CodeUtils;
 
 public class TowerRangeSolo: TowerAbstratc
 {
-	Vector3 projectileShootFromPositon;
+	Transform projectileShootFromPositon;
 	Enemy enemySelect = null;
 	
     void Awake()
 	{
-		projectileShootFromPositon = transform.Find("projectileShootFromPositon").position;
+		projectileShootFromPositon = transform.Find("projectileShootFromPositon");
 	}
 	
 	void Update()
@@ -54,7 +54,7 @@ public class TowerRangeSolo: TowerAbstratc
 		{
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
-				Projectile.Create(projectileShootFromPositon, enemySelect);
+				Projectile.Create(projectileShootFromPositon.position, enemySelect);
 			}
 			yield return new WaitForSeconds(time);	
 		}

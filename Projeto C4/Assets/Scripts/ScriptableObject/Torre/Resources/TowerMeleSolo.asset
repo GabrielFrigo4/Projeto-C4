@@ -15,4 +15,4 @@ MonoBehaviour:
   animatorControler: {fileID: 9100000, guid: adc7aa005f7c1604cb93ff1a429430c4, type: 2}
   towerMode: 2
   range: 3
-  time: 0.7
+  time: 0.25

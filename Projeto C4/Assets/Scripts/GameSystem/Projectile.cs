@@ -41,7 +41,7 @@ public class Projectile : MonoBehaviour
 				Vector2 moveDir = (lastTargetPositon - (Vector2)lastPosition).normalized;
 				lastPosition = (Vector3)(lastTargetPositon - (Vector2)moveDir*0.75f);
 		
-				target.gameObject.GetComponent<Enemy>().Damage(1);
+				target.gameObject.GetComponent<Enemy>().Damage(4);
 				Instantiate(projectileDead, lastPosition, transform.rotation);
 				Destroy(gameObject);
 			}	

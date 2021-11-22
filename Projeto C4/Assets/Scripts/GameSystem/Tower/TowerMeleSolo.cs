@@ -7,40 +7,47 @@ public class TowerMeleSolo : TowerAbstratc
 {
 	Enemy enemySelect = null;
 	bool attack = false;
-		
+	
+	
     // Update is called once per frame
     void Update()
     {
 		//pega os inimigos no alcance da torre
 		GetEnemyInRange();
-
-		//seleciona o inimigo que estiver mais perto do final
-		if (allEnemys.Count > 0)
-        {
-			if(enemySelect == null || !allEnemys.Contains(enemySelect))
+			
+		if(!attack)
+		{
+			//seleciona o inimigo que estiver mais perto do final
+			if (allEnemys.Count > 0)
 			{
-				enemySelect = allEnemys[0];
-				foreach(Enemy en in allEnemys)
+				if(enemySelect == null || !allEnemys.Contains(enemySelect))
 				{
-					if(en.path.Count < enemySelect.path.Count)
+					enemySelect = allEnemys[0];
+					foreach(Enemy en in allEnemys)
 					{
-						enemySelect = en;
-					}
-					else if(en.path.Count == enemySelect.path.Count)
-					{
-						if(GetDistance2D(en.path[0], en.transform.position) < GetDistance2D(enemySelect.path[0], enemySelect.transform.position))
+						if(en.path.Count < enemySelect.path.Count)
 						{
 							enemySelect = en;
 						}
+						else if(en.path.Count == enemySelect.path.Count)
+						{
+							if(GetDistance2D(en.path[0], en.transform.position) < GetDistance2D(enemySelect.path[0], enemySelect.transform.position))
+							{
+								enemySelect = en;
+							}
+						}
 					}
-				}
-			}
-			
-			//mirar no inimigo
+				}	
+			}	
+		}
+		
+		//mirar no inimigo
+		if(enemySelect != null || allEnemys.Contains(enemySelect))
+		{
 			Vector2 moveDir = ((Vector2)enemySelect.transform.position - (Vector2)transform.position).normalized;
 			float angle = GetAngleFromVector(moveDir);
 			transform.eulerAngles = new Vector3(0, 0, angle);
-		}
+		}	
     }
 	
 	//atira no inimigo selecionado
@@ -51,25 +58,14 @@ public class TowerMeleSolo : TowerAbstratc
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);
-				time -= 0.3f;
-				yield return new WaitForSeconds(0.3f);
-				if(enemySelect != null && allEnemys.Contains(enemySelect))
-				{
-					enemySelect.Damage(2);
-					attack = true;
-				}
-				else
-				{
-					attack = false;
-				}
-				time -= 0.1f;
-				yield return new WaitForSeconds(0.1f);
-				animator.SetBool("Ataque", false);
-				yield return new WaitForSeconds(time);
+				enemySelect.Damage(1);
+				attack = true;
+				yield return new WaitForSeconds(time/2f);
 			}
 			else
 			{
 				animator.SetBool("Ataque", false);
+				attack = false;
 				yield return new WaitForSeconds(Time.deltaTime);
 			}
 		}
