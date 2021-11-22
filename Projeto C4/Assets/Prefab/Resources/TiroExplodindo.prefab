@@ -119,6 +119,6 @@ MonoBehaviour:
   isStatic: 0
   playOnStart: 1
   loop: 0
-  typeSound: 0
+  typeSound: 2
   createBehaviour: 0
   soundTag: Efect
