@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerMele : TowerAbstratc
+public class TowerMeleArea : TowerAbstratc
 {
     // Update is called once per frame
     void Update()

@@ -5,22 +5,22 @@ using static CodeUtils;
 
 public class Projectile : MonoBehaviour
 {
-	Transform targetPosition;
-	Vector2 lastPositon;
-	float moveSpeed = 60f;
+	Enemy target;
+	Vector2 lastTargetPositon, lastPosition;
+	float moveSpeed = 20f;
 	GameObject projectileDead;
 	
-	public static void Create(Vector3 spawnPosition, Transform targetPosition)
+	public static void Create(Vector3 spawnPosition, Enemy target)
 	{
 		Transform arrowTranform = Instantiate((GameObject)Resources.Load("Projectile"), spawnPosition, Quaternion.identity).transform;
 		
 		Projectile projectile = arrowTranform.GetComponent<Projectile>();
-		projectile.Setup(targetPosition);
+		projectile.Setup(target);
 	}
 
-    void Setup(Transform targetPosition)
+    void Setup(Enemy target)
 	{
-		this.targetPosition = targetPosition;
+		this.target = target;
 	}
 
 	void Start()
@@ -30,23 +30,27 @@ public class Projectile : MonoBehaviour
 
 	void Update()
 	{
-		if(targetPosition != null)
+		if(target != null)
 		{
-			lastPositon = targetPosition.position;	
-			GotoPosition(lastPositon, moveSpeed);
+			lastPosition = transform.position;
+			lastTargetPositon = target.transform.position;	
+			GotoPosition(lastTargetPositon, moveSpeed);
 			
-			if(Vector2.Distance(transform.position, lastPositon) < Time.deltaTime * moveSpeed)
+			if(Vector2.Distance(transform.position, lastTargetPositon) < 0.75f)
 			{
-				targetPosition.gameObject.GetComponent<Enemy>().Damage(1);
-				Instantiate(projectileDead, transform.position, transform.rotation);
+				Vector2 moveDir = (lastTargetPositon - (Vector2)lastPosition).normalized;
+				lastPosition = (Vector3)(lastTargetPositon - (Vector2)moveDir*0.75f);
+		
+				target.gameObject.GetComponent<Enemy>().Damage(1);
+				Instantiate(projectileDead, lastPosition, transform.rotation);
 				Destroy(gameObject);
 			}	
 		}
 		else
 		{
-			GotoPosition(lastPositon, moveSpeed);
+			GotoPosition(lastTargetPositon, moveSpeed);
 			
-			if(Vector2.Distance(transform.position, lastPositon) < Time.deltaTime * moveSpeed)
+			if(Vector2.Distance(transform.position, lastTargetPositon) < Time.deltaTime * moveSpeed)
 			{
 				Instantiate(projectileDead, transform.position, transform.rotation);
 				Destroy(gameObject);

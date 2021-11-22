@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class TowerRange: TowerAbstratc
+public class TowerRangeSolo: TowerAbstratc
 {
 	Vector3 projectileShootFromPositon;
 	Enemy enemySelect = null;
@@ -39,6 +39,11 @@ public class TowerRange: TowerAbstratc
 					}
 				}
 			}
+			
+			//mirar no inimigo
+			Vector2 moveDir = ((Vector2)enemySelect.transform.position - (Vector2)transform.position).normalized;
+			float angle = GetAngleFromVector(moveDir);
+			transform.eulerAngles = new Vector3(0, 0, angle);
 		}
 	}
 	
@@ -47,9 +52,9 @@ public class TowerRange: TowerAbstratc
     {
 		while(true)
 		{
-			if(enemySelect != null)
+			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
-				Projectile.Create(projectileShootFromPositon, enemySelect.gameObject.transform);
+				Projectile.Create(projectileShootFromPositon, enemySelect);
 			}
 			yield return new WaitForSeconds(time);	
 		}

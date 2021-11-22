@@ -12,6 +12,8 @@ public class TowerType : ScriptableObject
 
 public enum TowerMode
 {
-	Range = 0,
-	Mele = 1,
+	RangeSolo = 0,
+	RangeArea = 1,
+	MeleSolo = 2,
+	MeleArea = 3,
 }

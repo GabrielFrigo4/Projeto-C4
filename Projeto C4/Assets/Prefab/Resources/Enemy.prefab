@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6840096132991173286}
   - component: {fileID: 338073010}
   - component: {fileID: 3877526522958822673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,8 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inimigoType: {fileID: 0}
   path: []
-  lifeBar: {fileID: 0}
-  hpBar: {fileID: 0}
 --- !u!95 &3877526522958822673
 Animator:
   serializedVersion: 3
