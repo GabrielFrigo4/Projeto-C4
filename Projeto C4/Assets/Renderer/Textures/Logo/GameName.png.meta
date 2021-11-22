@@ -1,124 +1,103 @@
 fileFormatVersion: 2
-guid: 90fe4972e1cece246be0cbd26edd28ab
+guid: 39afe46fefb733345bb433cb5fd45ad5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7611222663914931867
-    second: "Neutr\xF3filo_0"
+      213: -2124725717196624184
+    second: GameName_0
   - first:
-      213: -4089947662329114108
-    second: "Neutr\xF3filo_1"
+      213: -2154921048614789603
+    second: GameName_1
   - first:
-      213: 5012431304818038545
-    second: "Neutr\xF3filo_2"
+      213: 4279139564209801278
+    second: GameName_2
   - first:
-      213: -2768055360223891748
-    second: "Neutr\xF3filo_3"
+      213: -3252870420659645971
+    second: GameName_3
   - first:
-      213: 1565606360276970319
-    second: "Neutr\xF3filo_4"
+      213: 6336347509041960174
+    second: GameName_4
   - first:
-      213: -1691623298842542916
-    second: "Neutr\xF3filo_5"
+      213: 5088874298403012084
+    second: GameName_5
   - first:
-      213: 8370760227999612283
-    second: "Neutr\xF3filo_6"
+      213: 8101561765802980098
+    second: GameName_6
   - first:
-      213: -2548581170818378106
-    second: "Neutr\xF3filo_7"
+      213: 9127909239786546109
+    second: GameName_7
   - first:
-      213: 5358052651292493113
-    second: "Neutr\xF3filo_8"
+      213: 5703779086159592017
+    second: GameName_8
   - first:
-      213: -7408457489049070786
-    second: "Neutr\xF3filo_9"
+      213: 5288993211230406156
+    second: GameName_9
   - first:
-      213: 1340534600855388106
-    second: "Neutr\xF3filo_10"
+      213: -8192297876600937025
+    second: GameName_10
   - first:
-      213: -2531283657240144341
-    second: "Neutr\xF3filo_11"
+      213: -3352593754732559041
+    second: GameName_11
   - first:
-      213: 713110145331698
-    second: "Neutr\xF3filo_12"
+      213: -2263431189577286492
+    second: GameName_12
   - first:
-      213: 8367898472060007267
-    second: "Neutr\xF3filo_13"
+      213: -5417324411079720954
+    second: GameName_13
   - first:
-      213: 6176786520974967750
-    second: "Neutr\xF3filo_14"
+      213: -6439585074970026812
+    second: GameName_14
   - first:
-      213: -5881202685341355494
-    second: "Neutr\xF3filo_15"
+      213: 8511503578807663435
+    second: GameName_15
   - first:
-      213: 7300853945261905775
-    second: "Neutr\xF3filo_16"
+      213: -257609007159102479
+    second: GameName_16
   - first:
-      213: 7248406780031535144
-    second: "Neutr\xF3filo_17"
+      213: 2576522064467823842
+    second: GameName_17
   - first:
-      213: -9053619809051356794
-    second: "Neutr\xF3filo_18"
+      213: 3644999368351242175
+    second: GameName_18
   - first:
-      213: -8266592909501647231
-    second: "Neutr\xF3filo_19"
+      213: 7721811699205140532
+    second: GameName_19
   - first:
-      213: 7070469834446209565
-    second: "Neutr\xF3filo_20"
+      213: -551928783964148871
+    second: GameName_20
   - first:
-      213: 3623953797760620715
-    second: "Neutr\xF3filo_21"
+      213: 9145574504183317928
+    second: GameName_21
   - first:
-      213: -1735747110974685905
-    second: "Neutr\xF3filo_22"
+      213: 2232218992243755517
+    second: GameName_22
   - first:
-      213: -4251118515262684606
-    second: "Neutr\xF3filo_23"
+      213: -8069958937889460529
+    second: GameName_23
   - first:
-      213: -2741685662850480336
-    second: "Neutr\xF3filo_24"
+      213: -4255280787389381497
+    second: GameName_24
   - first:
-      213: 5464005800232082956
-    second: "Neutr\xF3filo_25"
+      213: -1003297296071664808
+    second: GameName_25
   - first:
-      213: -2433442010475793619
-    second: "Neutr\xF3filo_26"
+      213: 2497535984727683523
+    second: GameName_26
   - first:
-      213: -553743975453456874
-    second: "Neutr\xF3filo_27"
+      213: -6537592988107563628
+    second: GameName_27
   - first:
-      213: -632960439144630792
-    second: "Neutr\xF3filo_28"
+      213: -4960974185774612083
+    second: GameName_28
   - first:
-      213: -7538276016071132235
-    second: "Neutr\xF3filo_29"
+      213: -2714142438233616639
+    second: GameName_29
   - first:
-      213: 228793269082016083
-    second: "Neutr\xF3filo_30"
+      213: 8325823524460747395
+    second: GameName_30
   - first:
-      213: 100222166482723588
-    second: "Neutr\xF3filo_31"
-  - first:
-      213: 2043554866765160047
-    second: "Neutr\xF3filo_32"
-  - first:
-      213: -3812550997596119059
-    second: "Neutr\xF3filo_33"
-  - first:
-      213: -246492313261972376
-    second: "Neutr\xF3filo_34"
-  - first:
-      213: 3516115497013984887
-    second: "Neutr\xF3filo_35"
-  - first:
-      213: -802990589400007001
-    second: "Neutr\xF3filo_36"
-  - first:
-      213: -760206683239847049
-    second: "Neutr\xF3filo_37"
-  - first:
-      213: 6458842931504821720
-    second: "Neutr\xF3filo_38"
+      213: -7782678725446132381
+    second: GameName_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,7 +142,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -182,7 +161,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -194,7 +173,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -208,13 +187,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Neutr\xF3filo_0"
+      name: GameName_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,41 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b964d05dfae70a960800000000000000
-      internalID: 7611222663914931867
+      spriteID: 8ceab5da7357382e0800000000000000
+      internalID: -2124725717196624184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_1"
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4021fe445469d37c0800000000000000
-      internalID: -4089947662329114108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_2"
+      name: GameName_1
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,41 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1171ab8f6bbbf8540800000000000000
-      internalID: 5012431304818038545
+      spriteID: d1e9d4a39be2812e0800000000000000
+      internalID: -2154921048614789603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_3"
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cde2d3fc054e599d0800000000000000
-      internalID: -2768055360223891748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_4"
+      name: GameName_2
       rect:
         serializedVersion: 2
         x: 512
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,41 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4ba66290b62ab510800000000000000
-      internalID: 1565606360276970319
+      spriteID: e388b0503ce826b30800000000000000
+      internalID: 4279139564209801278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_5"
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbc37b282952688e0800000000000000
-      internalID: -1691623298842542916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_6"
+      name: GameName_3
       rect:
         serializedVersion: 2
         x: 768
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7d72e1c31aea2470800000000000000
-      internalID: 8370760227999612283
+      spriteID: de1d43c369b7bd2d0800000000000000
+      internalID: -3252870420659645971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_7"
+      name: GameName_4
       rect:
         serializedVersion: 2
-        x: 896
+        x: 1024
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,41 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6861f189dee91acd0800000000000000
-      internalID: -2548581170818378106
+      spriteID: ee490e1fc7a3fe750800000000000000
+      internalID: 6336347509041960174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_8"
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93501288f70ab5a40800000000000000
-      internalID: 5358052651292493113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_9"
+      name: GameName_5
       rect:
         serializedVersion: 2
         x: 1280
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,41 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e33d5a75a2fdf2990800000000000000
-      internalID: -7408457489049070786
+      spriteID: 4fd3dee56305f9640800000000000000
+      internalID: 5088874298403012084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_10"
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acffa15fd198a9210800000000000000
-      internalID: 1340534600855388106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_11"
+      name: GameName_6
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,41 +327,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b261370dce21fdcd0800000000000000
-      internalID: -2531283657240144341
+      spriteID: 203b29880878e6070800000000000000
+      internalID: 8101561765802980098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_12"
-      rect:
-        serializedVersion: 2
-        x: 1664
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f1f5e4e198820000800000000000000
-      internalID: 713110145331698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_13"
+      name: GameName_7
       rect:
         serializedVersion: 2
         x: 1792
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,41 +348,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363bba7435fb02470800000000000000
-      internalID: 8367898472060007267
+      spriteID: db3ab738719dcae70800000000000000
+      internalID: 9127909239786546109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_14"
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c342246d9a58b550800000000000000
-      internalID: 6176786520974967750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_15"
+      name: GameName_8
       rect:
         serializedVersion: 2
         x: 2048
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,20 +369,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12b7205155c16ea0800000000000000
-      internalID: -5881202685341355494
+      spriteID: 15a38d3ebd4e72f40800000000000000
+      internalID: 5703779086159592017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_16"
+      name: GameName_9
       rect:
         serializedVersion: 2
-        x: 2176
+        x: 2304
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,41 +390,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67585c4bf7d15560800000000000000
-      internalID: 7300853945261905775
+      spriteID: c0647d6ad47466940800000000000000
+      internalID: 5288993211230406156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_17"
-      rect:
-        serializedVersion: 2
-        x: 2432
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 828005f0093879460800000000000000
-      internalID: 7248406780031535144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_18"
+      name: GameName_10
       rect:
         serializedVersion: 2
         x: 2560
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,41 +411,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681dd0670c41b5280800000000000000
-      internalID: -9053619809051356794
+      spriteID: fb5a3036c7c1f4e80800000000000000
+      internalID: -8192297876600937025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_19"
-      rect:
-        serializedVersion: 2
-        x: 2688
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 186346e0c89274d80800000000000000
-      internalID: -8266592909501647231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_20"
+      name: GameName_11
       rect:
         serializedVersion: 2
         x: 2816
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -642,41 +432,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d12084d7ada5f1260800000000000000
-      internalID: 7070469834446209565
+      spriteID: f3509fc2eb13971d0800000000000000
+      internalID: -3352593754732559041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_21"
-      rect:
-        serializedVersion: 2
-        x: 2944
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba813fd47ceda4230800000000000000
-      internalID: 3623953797760620715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_22"
+      name: GameName_12
       rect:
         serializedVersion: 2
         x: 3072
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,41 +453,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d717ee23369e7e0800000000000000
-      internalID: -1735747110974685905
+      spriteID: 4acb4b3435da690e0800000000000000
+      internalID: -2263431189577286492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_23"
-      rect:
-        serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2428ea7db3ef005c0800000000000000
-      internalID: -4251118515262684606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_24"
+      name: GameName_13
       rect:
         serializedVersion: 2
         x: 3328
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,41 +474,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 037040c6a6393f9d0800000000000000
-      internalID: -2741685662850480336
+      spriteID: 6008a8c762cc1d4b0800000000000000
+      internalID: -5417324411079720954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_25"
-      rect:
-        serializedVersion: 2
-        x: 3456
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0ed185635c04db40800000000000000
-      internalID: 5464005800232082956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_26"
+      name: GameName_14
       rect:
         serializedVersion: 2
         x: 3584
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -768,41 +495,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23f318626daa3ed0800000000000000
-      internalID: -2433442010475793619
+      spriteID: 4cc11812e7ff1a6a0800000000000000
+      internalID: -6439585074970026812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Neutr\xF3filo_27"
-      rect:
-        serializedVersion: 2
-        x: 3712
-        y: 0
-        width: 128
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6168596c9c4b058f0800000000000000
-      internalID: -553743975453456874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Neutr\xF3filo_28"
+      name: GameName_15
       rect:
         serializedVersion: 2
         x: 3840
         y: 0
-        width: 128
-        height: 96
+        width: 256
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -810,8 +516,344 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5b8eb85d54737f0800000000000000
-      internalID: -632960439144630792
+      spriteID: b4bfb47b86fee1670800000000000000
+      internalID: 8511503578807663435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_16
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3375d09f9cc6cf0800000000000000
+      internalID: -257609007159102479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_17
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec8f88aa25a1c320800000000000000
+      internalID: 2576522064467823842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_18
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7591d0d93a59230800000000000000
+      internalID: 3644999368351242175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_19
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430f39914d2692b60800000000000000
+      internalID: 7721811699205140532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_20
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97be08af1b72758f0800000000000000
+      internalID: -551928783964148871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_21
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a547b46e8b9bee70800000000000000
+      internalID: 9145574504183317928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_22
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9c19db85f6afe10800000000000000
+      internalID: 2232218992243755517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_23
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce2c1b3a1fb10090800000000000000
+      internalID: -8069958937889460529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_24
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7848c185ba432f4c0800000000000000
+      internalID: -4255280787389381497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_25
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bd987cc629312f0800000000000000
+      internalID: -1003297296071664808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_26
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1f27fdeb709a220800000000000000
+      internalID: 2497535984727683523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_27
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d93c1a0ddc545a0800000000000000
+      internalID: -6537592988107563628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_28
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81850d2344172bb0800000000000000
+      internalID: -4960974185774612083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_29
+      rect:
+        serializedVersion: 2
+        x: 7424
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fc54325dd655ad0800000000000000
+      internalID: -2714142438233616639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_30
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ad21622644b8370800000000000000
+      internalID: 8325823524460747395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameName_31
+      rect:
+        serializedVersion: 2
+        x: 7936
+        y: 0
+        width: 256
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1bc00fee5ef390800000000000000
+      internalID: -7782678725446132381
       vertices: []
       indices: 
       edges: []
@@ -819,7 +861,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: faa3b3bb097fd6a4185d44f0aac7e874
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

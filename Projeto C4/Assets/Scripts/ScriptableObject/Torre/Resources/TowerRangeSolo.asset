@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorControler: {fileID: 9100000, guid: f224a520a36efb746a4b30ab8449b468, type: 2}
   towerMode: 0
-  range: 12
+  range: 10
   time: 1

@@ -7,18 +7,20 @@ public class MenuTorresBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2Int gridPosition;
 	[SerializeField] float size = 1f;
-    [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago;
+    [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago, preview;
 
     // Update is called once per frame
     void Update()
     {
-        CheckButton(miniCélulaDendrítica, TowerMode.MeleArea);
-        CheckButton(miniNeutrófilo, TowerMode.RangeArea);
-        CheckButton(miniCélulaB, TowerMode.RangeSolo);
-        CheckButton(miniMacrófago, TowerMode.MeleSolo);
+        bool active = false;
+        CheckButton(miniCélulaDendrítica, TowerMode.MeleArea, ref active);
+        CheckButton(miniNeutrófilo, TowerMode.RangeArea, ref active);
+        CheckButton(miniCélulaB, TowerMode.RangeSolo, ref active);
+        CheckButton(miniMacrófago, TowerMode.MeleSolo, ref active);
+        if (!active) preview.SetActive(false);
     }
 
-    void CheckButton(GameObject button, TowerMode mode)
+    void CheckButton(GameObject button, TowerMode mode, ref bool active)
     {
         if (size > GetDistance2D(button.transform.position, GetMouseWorldPosition()))
         {
@@ -47,6 +49,8 @@ public class MenuTorresBehaviour : MonoBehaviour
             else
             {
                 button.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
+                preview.SetActive(true);
+                active = true;
             }
         }
         else

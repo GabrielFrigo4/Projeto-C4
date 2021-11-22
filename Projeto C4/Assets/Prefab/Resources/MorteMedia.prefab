@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3919408808790711091}
   - component: {fileID: 3919408808790711089}
-  - component: {fileID: 3919408808790711088}
-  - component: {fileID: 3919408808790711086}
+  - component: {fileID: 7598051089839587260}
   m_Layer: 0
-  m_Name: MorteGrande
+  m_Name: MorteMedia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,26 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3919408808790711088
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3919408808790711090}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2712b19b7327704bbfae72c048e8e5a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3919408808790711086
+--- !u!114 &7598051089839587260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,7 +92,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3919408808790711090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8965f1f8113d84986ea489755c7e6a, type: 3}
+  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.5
+  texture: {fileID: 2800000, guid: 39eae3ff39d1bfb40a6087e5e76c9a61, type: 3}
+  size: {x: 96, y: 96}
+  total: 10
+  pixelPerUnity: 50
+  time: 0.05
+  animationType: 0

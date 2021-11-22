@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2930265735929475731}
   - component: {fileID: 2930265735929475730}
   - component: {fileID: 2930265735929475729}
+  - component: {fileID: -5495267164998759975}
   m_Layer: 0
   m_Name: TiroExplodindo
   m_TagString: Untagged
@@ -95,8 +96,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logo: {fileID: 2800000, guid: f8f92247492f4f94395ac0e142da95c8, type: 3}
-  size: 16
+  texture: {fileID: 2800000, guid: f8f92247492f4f94395ac0e142da95c8, type: 3}
+  size: {x: 16, y: 16}
   total: 7
   pixelPerUnity: 25
   time: 0.025
+  animationType: 0
+--- !u!114 &-5495267164998759975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930265735929475732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a912930cb9df5144ca9c46f3ca80709f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 3cb04114e67f22e468fb5b513e1c72d0, type: 3}
+  volume: 0.6
+  isStatic: 0
+  playOnStart: 1
+  loop: 0
+  typeSound: 0
+  createBehaviour: 0
+  soundTag: Efect

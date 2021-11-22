@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872692, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1489,6 +1489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714015813}
   - component: {fileID: 714015814}
+  - component: {fileID: 714015815}
   m_Layer: 0
   m_Name: Game name
   m_TagString: Untagged
@@ -1550,17 +1551,35 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4d22e9ef4232d2b429e97264fe7ed537, type: 3}
+  m_Sprite: {fileID: -2124725717196624184, guid: 39afe46fefb733345bb433cb5fd45ad5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 3.68}
+  m_Size: {x: 17.066668, y: 12.266666}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &714015815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714015812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: 39afe46fefb733345bb433cb5fd45ad5, type: 3}
+  size: {x: 256, y: 184}
+  total: 32
+  pixelPerUnity: 15
+  time: 0.1
+  animationType: 1
 --- !u!1 &910563118
 GameObject:
   m_ObjectHideFlags: 0
