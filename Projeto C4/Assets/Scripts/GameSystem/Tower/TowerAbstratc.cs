@@ -12,7 +12,7 @@ public abstract class TowerAbstratc : MonoBehaviour
 
     protected abstract IEnumerator AttackTower(float time);
 
-    private Animator animator;
+    protected Animator animator;
 
     void Start()
     {

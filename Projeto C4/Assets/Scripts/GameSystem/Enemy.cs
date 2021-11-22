@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 	
 	private GameObject lifeBar, hpBar;
 	int hp;
-	public int Hp
+	private int Hp
 	{
 		get
 		{

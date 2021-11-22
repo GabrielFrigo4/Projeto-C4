@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
+  m_Name: TowerMeleSolo
+  m_EditorClassIdentifier: 
+  animatorControler: {fileID: 9100000, guid: adc7aa005f7c1604cb93ff1a429430c4, type: 2}
+  towerMode: 2
+  range: 3
+  time: 0.7
