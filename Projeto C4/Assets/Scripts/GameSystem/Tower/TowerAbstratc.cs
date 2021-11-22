@@ -5,6 +5,20 @@ using static CodeUtils;
 
 public abstract class TowerAbstratc : MonoBehaviour
 {
+    private bool showRange;
+    public bool ShowRange
+    {
+        get
+        {
+            return showRange;
+        }
+            
+        set
+        {
+            showRange = value;
+            rangeObj.SetActive(showRange);
+        }
+    }
     public TowerType towerType;
     public List<Enemy> allEnemys = new List<Enemy>();
     protected GameObject rangeObj;
@@ -20,7 +34,7 @@ public abstract class TowerAbstratc : MonoBehaviour
         animator.runtimeAnimatorController = towerType.animatorControler;
 
         rangeObj = gameObject.transform.Find("distancia").gameObject;
-        ShowRange(false);
+        ShowRange = false;
 
         coroutine = AttackTower(towerType.time);
         StartCoroutine(coroutine);
@@ -46,8 +60,8 @@ public abstract class TowerAbstratc : MonoBehaviour
         rangeObj.transform.localScale = new Vector3(towerType.range, towerType.range, 1);
     }
 
-    public void ShowRange(bool show)
+    protected void UpdateRotateRange()
     {
-        rangeObj.SetActive(show);
+        rangeObj.transform.localEulerAngles = new Vector3(-transform.eulerAngles.x, -transform.eulerAngles.y, -transform.eulerAngles.z);
     }
 }

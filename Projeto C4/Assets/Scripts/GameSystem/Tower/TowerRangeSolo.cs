@@ -45,6 +45,8 @@ public class TowerRangeSolo: TowerAbstratc
 			float angle = GetAngleFromVector(moveDir);
 			transform.eulerAngles = new Vector3(0, 0, angle);
 		}
+
+		UpdateRotateRange();
 	}
 	
 	//atira no inimigo selecionado

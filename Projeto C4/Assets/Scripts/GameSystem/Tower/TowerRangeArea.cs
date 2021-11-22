@@ -9,6 +9,7 @@ public class TowerRangeArea : TowerAbstratc
     {
         //pega os inimigos no alcance da torre
 		GetEnemyInRange();
+        UpdateRotateRange();
     }
 	
 	//atira no inimigo selecionado

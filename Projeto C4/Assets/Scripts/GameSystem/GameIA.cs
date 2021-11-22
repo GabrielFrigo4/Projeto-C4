@@ -51,7 +51,9 @@ public class GameIA : MonoBehaviour, ILanguage
 			}
 		}
     }
-	
+	GameObject miniMenuTorres = null; 
+	TowerAbstratc towerRageShow = null;
+
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
 	[SerializeField] List<Vector2> starts, indentationStarts;
@@ -60,7 +62,7 @@ public class GameIA : MonoBehaviour, ILanguage
 	[SerializeField] List<TileBase> tileTowerPositon;
 	List<List<Vector2>> paths = new List<List<Vector2>>();
 	List<Grid> pathGrid = new List<Grid>(); 
-	Grid mainGrid;
+	static Grid mainGrid;
 
 	const float maxTime = 1, maxTime2 = 5;
 	float time = maxTime, time2 = maxTime2;
@@ -96,7 +98,7 @@ public class GameIA : MonoBehaviour, ILanguage
 		}
     }
 
-    void Update()
+    void LateUpdate()
     {
 		time -= Time.deltaTime;
 		if(time <= 0)
@@ -136,13 +138,9 @@ public class GameIA : MonoBehaviour, ILanguage
 
 		if(Time.timeScale != 0)
         {
-			if (Input.GetMouseButtonDown(1))
-			{
-				SpawnTower("TowerRangeSolo");
-			}
 			if (Input.GetMouseButtonDown(0))
 			{
-				SpawnTower("TowerMeleSolo");
+				ShowChunkData();
 			}
 		}
 	}
@@ -237,26 +235,60 @@ public class GameIA : MonoBehaviour, ILanguage
 		}
 	}
 
-	void SpawnTower(string data)
-	{
+	void ShowChunkData()
+    {
 		Vector3 spawnPosition = GetMouseWorldPosition();
 		Vector2Int gridPosition;
 
 		if (ValidatePosition(ref spawnPosition, out gridPosition))
 		{
-			GameObject obj = Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
-			obj.GetComponent<TowerGenerator>().CreateTowerType((TowerType)Resources.Load(data));
-			TowerAbstratc tower = obj.GetComponent<TowerAbstratc>();
-			mainGrid.SetValue(gridPosition.x, gridPosition.y, tower);
+			GridData data = mainGrid.GetValue(gridPosition.x, gridPosition.y);
+			if (data.tower == null)
+            {
+				if (towerRageShow != null) towerRageShow.ShowRange = false;
+				SpawnTowerOptions(spawnPosition, gridPosition);
+			}
+            else
+            {
+				if (towerRageShow != null) towerRageShow.ShowRange = false;
+				towerRageShow = data.tower;
+				towerRageShow.ShowRange = true;
+				Destroy(miniMenuTorres);
+			}
+		}
+        else
+        {
+			Destroy(miniMenuTorres);
+			if (towerRageShow != null)
+			{
+				towerRageShow.ShowRange = false;
+				towerRageShow = null;
+			}
 		}
 	}
-	
+
+	void SpawnTowerOptions(Vector3 spawnPosition, Vector2Int gridPosition)
+    {
+		if (miniMenuTorres != null) Destroy(miniMenuTorres);
+		miniMenuTorres = Instantiate((GameObject)Resources.Load("MiniMenuTorres"), spawnPosition, Quaternion.identity);
+		MenuTorresBehaviour menuTorres = miniMenuTorres.GetComponent<MenuTorresBehaviour>();
+		menuTorres.gridPosition = gridPosition;
+	}
+
+	public static void SpawnTower(string data, Vector3 spawnPosition, Vector2Int gridPosition)
+	{
+		GameObject obj = Instantiate((GameObject)Resources.Load("Tower"), spawnPosition, Quaternion.identity);
+		obj.GetComponent<TowerGenerator>().CreateTowerType((TowerType)Resources.Load(data));
+		TowerAbstratc tower = obj.GetComponent<TowerAbstratc>();
+		mainGrid.SetValue(gridPosition.x, gridPosition.y, tower);
+	}
+
 	bool ValidatePosition(ref Vector3 position, out Vector2Int gridPosition)
 	{
 		int x, y;
 		mainGrid.GetXY(position, out x, out y);
 		
-		if(mainGrid.GetValue(x, y) == GridType.TowerPosition)
+		if(mainGrid.GetValue(x, y) == GridType.TowerPosition || mainGrid.GetValue(x, y) == GridType.TowerUsing)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
 			gridPosition = new Vector2Int(x, y);

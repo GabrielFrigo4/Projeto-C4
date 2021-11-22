@@ -21,6 +21,7 @@ public class Projectile : MonoBehaviour
     void Setup(Enemy target)
 	{
 		this.target = target;
+		lastTargetPositon = target.transform.position;
 	}
 
 	void Start()
@@ -35,8 +36,8 @@ public class Projectile : MonoBehaviour
 			lastPosition = transform.position;
 			lastTargetPositon = target.transform.position;	
 			GotoPosition(lastTargetPositon, moveSpeed);
-			
-			if(Vector2.Distance(transform.position, lastTargetPositon) < 0.75f)
+
+			if (Vector2.Distance(transform.position, lastTargetPositon) < 0.75f) 
 			{
 				Vector2 moveDir = (lastTargetPositon - (Vector2)lastPosition).normalized;
 				lastPosition = (Vector3)(lastTargetPositon - (Vector2)moveDir*0.75f);

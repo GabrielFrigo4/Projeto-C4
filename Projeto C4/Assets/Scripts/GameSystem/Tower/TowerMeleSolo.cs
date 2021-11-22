@@ -47,8 +47,10 @@ public class TowerMeleSolo : TowerAbstratc
 			Vector2 moveDir = ((Vector2)enemySelect.transform.position - (Vector2)transform.position).normalized;
 			float angle = GetAngleFromVector(moveDir);
 			transform.eulerAngles = new Vector3(0, 0, angle);
-		}	
-    }
+		}
+
+		UpdateRotateRange();
+	}
 	
 	//atira no inimigo selecionado
 	protected override IEnumerator AttackTower(float time)

@@ -9,6 +9,7 @@ public class TowerMeleArea : TowerAbstratc
     {
         //pega os inimigos no alcance da torre
         GetEnemyInRange();
+        UpdateRotateRange();
     }
 
     protected override IEnumerator AttackTower(float time)
