@@ -2314,7 +2314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 1976763482}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
