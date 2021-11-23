@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 21b36f9a2cab0cd4096dd9a1636dc944
+guid: 0b099e79f96df0a4c9de9862a73f8419
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4027958298449142860
-    second: LOLJA-Sheet (1)_0
+      213: -6272562901009062367
+    second: LOLJA-Sheet_0
   - first:
-      213: 5765606982710277345
-    second: LOLJA-Sheet (1)_1
+      213: 6317381948698107728
+    second: LOLJA-Sheet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -71,7 +71,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -83,7 +83,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LOLJA-Sheet (1)_0
+      name: LOLJA-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 90
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bb1ad2c441d918c0800000000000000
-      internalID: -4027958298449142860
+      spriteID: 126af06664163f8a0800000000000000
+      internalID: -6272562901009062367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LOLJA-Sheet (1)_1
+      name: LOLJA-Sheet_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 320
         y: 0
-        width: 160
-        height: 90
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e435f6d00d830050800000000000000
-      internalID: 5765606982710277345
+      spriteID: 05f9d925969dba750800000000000000
+      internalID: 6317381948698107728
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7cc32984d2ce6bc4db243568743d6405
+    spriteID: 9b32a3790d0a4134a9ae648836d361aa
     internalID: 0
     vertices: []
     indices: 
