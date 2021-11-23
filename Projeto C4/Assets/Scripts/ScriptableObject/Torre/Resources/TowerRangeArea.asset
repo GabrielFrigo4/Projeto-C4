@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
   m_Name: TowerRangeArea
   m_EditorClassIdentifier: 
-  animatorControler: {fileID: 0}
+  animatorControler: {fileID: 9100000, guid: bfc4804ae097ade498cd353fb6cb5498, type: 2}
   towerMode: 1
-  range: 0
-  time: 0
+  range: 5
+  time: 1.5

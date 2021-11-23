@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridPosition: {x: 0, y: 0}
-  size: 1
+  size: 0.6
   "miniC\xE9lulaDendr\xEDtica": {fileID: 9213430662772225908}
   "miniNeutr\xF3filo": {fileID: 9213430660830946213}
   "miniC\xE9lulaB": {fileID: 9213430662837826170}

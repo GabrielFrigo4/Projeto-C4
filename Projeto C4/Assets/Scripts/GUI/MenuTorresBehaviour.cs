@@ -6,14 +6,14 @@ using static CodeUtils;
 public class MenuTorresBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2Int gridPosition;
-	[SerializeField] float size = 1f;
+	[SerializeField] float size = 0.6f;
     [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago;
     [SerializeField] GameObject previewCélulaDendrítica, previewNeutrófilo, previewCélulaB, previewMacrófago;
 
     void Start()
     {
         SetRangeScale(previewCélulaDendrítica, "TowerMeleArea");
-        SetRangeScale(previewNeutrófilo, "TowerRangeSolo");
+        SetRangeScale(previewNeutrófilo, "TowerRangeArea");
         SetRangeScale(previewCélulaB, "TowerRangeSolo");
         SetRangeScale(previewMacrófago, "TowerMeleSolo");
     }
