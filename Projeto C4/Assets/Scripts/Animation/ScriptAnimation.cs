@@ -9,7 +9,7 @@ public class ScriptAnimation : MonoBehaviour
     [SerializeField] int total, pixelPerUnity;
     [SerializeField] float time;
     [SerializeField] AnimationType animationType;
-    private IEnumerator coroutineDestroy, coroutineLoop;
+    private IEnumerator coroutineDestroy, coroutineLoop, coroutineNormal;
     private SpriteRenderer spriteRender;
 
     // Start is called before the first frame update
@@ -18,6 +18,7 @@ public class ScriptAnimation : MonoBehaviour
         spriteRender = GetComponent<SpriteRenderer>();
         coroutineDestroy = AnimationPlayDestroy(time);
         coroutineLoop = AnimationPlayLoop(time);
+		coroutineNormal = AnimationPlayNormal(time);
         switch (animationType)
         {
             case AnimationType.Destroy:
@@ -26,6 +27,18 @@ public class ScriptAnimation : MonoBehaviour
             case AnimationType.Loop:
                 StartCoroutine(coroutineLoop);
                 break;
+			case AnimationType.Normal:
+                StartCoroutine(coroutineNormal);
+                break;
+        }
+    }
+	
+	IEnumerator AnimationPlayNormal(float timeSecondFrame)
+    {
+        for (int i = 0; i < total; i++)
+        {
+            spriteRender.sprite = Sprite.Create(texture, new Rect(new Vector2(size.x * i, 0), size), new Vector2(0.5f, 0.5f), pixelPerUnity, 1);
+            yield return new WaitForSeconds(timeSecondFrame);
         }
     }
 
@@ -55,5 +68,6 @@ public class ScriptAnimation : MonoBehaviour
     {
         Destroy,
         Loop,
+		Normal,
     }
 }

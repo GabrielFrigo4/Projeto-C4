@@ -56,7 +56,7 @@ public class GameIA : MonoBehaviour, ILanguage
 
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
-	[SerializeField] List<Vector2> starts, indentationStarts;
+	[SerializeField] List<Vector2> starts, ends, indentationStarts;
 	[SerializeField] List<TileBase> tileGround;
 	[SerializeField] List<TileBase> tilePath;
 	[SerializeField] List<TileBase> tileTowerPositon;
@@ -95,6 +95,18 @@ public class GameIA : MonoBehaviour, ILanguage
 		if(!LanguageBehaviour.languageBehaviour.Contains(this))
 		{
 			LanguageBehaviour.languageBehaviour.Add(this);
+		}
+		
+		foreach(Vector2 pos in starts)
+		{
+			Vector2 _pos = new Vector3(pos.x*2 - 15f, pos.y*2 - 8f, 0);
+			Instantiate((GameObject)Resources.Load("start"), _pos, transform.rotation);
+		}
+		
+		foreach(Vector2 pos in ends)
+		{
+			Vector2 _pos = new Vector3(pos.x*2 - 15f, pos.y*2 - 8f, 0);
+			Instantiate((GameObject)Resources.Load("end"), _pos, transform.rotation);
 		}
     }
 

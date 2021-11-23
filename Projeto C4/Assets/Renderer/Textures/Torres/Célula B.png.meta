@@ -202,7 +202,7 @@ TextureImporter:
       name: "C\xE9lula B_4"
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 0
         width: 96
         height: 72
@@ -215,69 +215,6 @@ TextureImporter:
       bones: []
       spriteID: 093274c5a8c447b40800000000000000
       internalID: 5437054807280395152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "C\xE9lula B_5"
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 96
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f419d1d984e0cdc0800000000000000
-      internalID: -3620642819823561488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "C\xE9lula B_6"
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 96
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efb4f9fc6affe38d0800000000000000
-      internalID: -2864571221048079362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "C\xE9lula B_7"
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 96
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d49acc705fc98020800000000000000
-      internalID: 2344633025621038288
       vertices: []
       indices: 
       edges: []
