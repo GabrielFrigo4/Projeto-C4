@@ -7,20 +7,26 @@ public class MenuTorresBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2Int gridPosition;
 	[SerializeField] float size = 1f;
-    [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago, preview;
+    [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago;
+    [SerializeField] GameObject previewCélulaDendrítica, previewNeutrófilo, previewCélulaB, previewMacrófago;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        bool active = false;
-        CheckButton(miniCélulaDendrítica, TowerMode.MeleArea, ref active);
-        CheckButton(miniNeutrófilo, TowerMode.RangeArea, ref active);
-        CheckButton(miniCélulaB, TowerMode.RangeSolo, ref active);
-        CheckButton(miniMacrófago, TowerMode.MeleSolo, ref active);
-        if (!active) preview.SetActive(false);
+        SetRangeScale(previewCélulaDendrítica, "TowerMeleArea");
+        SetRangeScale(previewNeutrófilo, "TowerRangeSolo");
+        SetRangeScale(previewCélulaB, "TowerRangeSolo");
+        SetRangeScale(previewMacrófago, "TowerMeleSolo");
     }
 
-    void CheckButton(GameObject button, TowerMode mode, ref bool active)
+    void Update()
+    {
+        CheckButton(miniCélulaDendrítica, previewCélulaDendrítica, TowerMode.MeleArea);
+        CheckButton(miniNeutrófilo, previewNeutrófilo, TowerMode.RangeArea);
+        CheckButton(miniCélulaB, previewCélulaB, TowerMode.RangeSolo);
+        CheckButton(miniMacrófago, previewMacrófago, TowerMode.MeleSolo);
+    }
+
+    void CheckButton(GameObject button, GameObject preview, TowerMode mode)
     {
         if (size > GetDistance2D(button.transform.position, GetMouseWorldPosition()))
         {
@@ -50,12 +56,18 @@ public class MenuTorresBehaviour : MonoBehaviour
             {
                 button.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
                 preview.SetActive(true);
-                active = true;
             }
         }
         else
         {
             button.transform.localScale = new Vector3(1f, 1f, 1f);
+            preview.SetActive(false);
         }
+    }
+
+    void SetRangeScale(GameObject previewRange, string data)
+    {
+        float scale = ((TowerType)Resources.Load(data)).range;
+        previewRange.transform.Find("Range").localScale = new Vector3(scale, scale, 1);
     }
 }
