@@ -56,7 +56,7 @@ public class TowerRangeSolo: TowerAbstratc
 		{
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
-				Projectile.Create(projectileShootFromPositon.position, enemySelect);
+				ProjectileCelulaB.Create(projectileShootFromPositon.position, enemySelect, towerType.damage);
 			}
 			yield return new WaitForSeconds(time);	
 		}

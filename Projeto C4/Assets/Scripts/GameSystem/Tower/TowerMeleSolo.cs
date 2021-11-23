@@ -8,8 +8,6 @@ public class TowerMeleSolo : TowerAbstratc
 	Enemy enemySelect = null;
 	bool attack = false;
 	
-	
-    // Update is called once per frame
     void Update()
     {
 		//pega os inimigos no alcance da torre
@@ -60,9 +58,9 @@ public class TowerMeleSolo : TowerAbstratc
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);
-				enemySelect.Damage(1);
+				enemySelect.Damage(towerType.damage);
 				attack = true;
-				yield return new WaitForSeconds(time/2f);
+				yield return new WaitForSeconds(time);
 			}
 			else
 			{

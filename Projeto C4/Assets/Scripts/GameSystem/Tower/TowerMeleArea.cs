@@ -19,7 +19,7 @@ public class TowerMeleArea : TowerAbstratc
             foreach(Enemy enemy in allEnemys)
             {
                 if(enemy != null)
-                    enemy.Damage(1);
+                    enemy.Damage(towerType.damage);
             }
             yield return new WaitForSeconds(time);
         }

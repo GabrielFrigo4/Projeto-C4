@@ -16,3 +16,4 @@ MonoBehaviour:
   towerMode: 3
   range: 3
   time: 0.25
+  damage: 1

@@ -3,26 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class Projectile : MonoBehaviour
+public abstract class ProjectileAbstract : MonoBehaviour
 {
 	Enemy target;
 	Vector2 lastTargetPositon, lastPosition;
 	float moveSpeed = 20f;
 	GameObject projectileDead;
-	
-	public static void Create(Vector3 spawnPosition, Enemy target)
-	{
-		Transform arrowTranform = Instantiate((GameObject)Resources.Load("Projectile"), spawnPosition, Quaternion.identity).transform;
-		
-		Projectile projectile = arrowTranform.GetComponent<Projectile>();
-		projectile.Setup(target);
-	}
-
-    void Setup(Enemy target)
-	{
-		this.target = target;
-		lastTargetPositon = target.transform.position;
-	}
+	int damage;
 
 	void Start()
 	{
@@ -42,7 +29,7 @@ public class Projectile : MonoBehaviour
 				Vector2 moveDir = (lastTargetPositon - (Vector2)lastPosition).normalized;
 				lastPosition = (Vector3)(lastTargetPositon - (Vector2)moveDir*0.75f);
 		
-				target.gameObject.GetComponent<Enemy>().Damage(4);
+				target.gameObject.GetComponent<Enemy>().Damage(damage);
 				Instantiate(projectileDead, lastPosition, transform.rotation);
 				Destroy(gameObject);
 			}	
@@ -59,7 +46,18 @@ public class Projectile : MonoBehaviour
 		}
 	}
 	
-	void GotoPosition(Vector2 position, float moveSpeed)
+	protected void SetDamage(int newDamage)
+	{
+		this.damage = newDamage;
+	}
+	
+    protected void Setup(Enemy target)
+	{
+		this.target = target;
+		lastTargetPositon = target.transform.position;
+	}
+	
+	protected void GotoPosition(Vector2 position, float moveSpeed)
 	{
 		Vector2 moveDir = (position - (Vector2)transform.position).normalized;
 			

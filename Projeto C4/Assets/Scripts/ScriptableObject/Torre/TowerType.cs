@@ -8,6 +8,7 @@ public class TowerType : ScriptableObject
 	public RuntimeAnimatorController animatorControler;
 	public TowerMode towerMode;
 	public float range, time;
+	public int damage;
 }
 
 public enum TowerMode
