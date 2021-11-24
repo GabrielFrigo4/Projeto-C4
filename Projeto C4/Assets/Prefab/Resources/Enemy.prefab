@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6840096132991173287}
   - component: {fileID: 6840096132991173286}
   - component: {fileID: 338073010}
-  - component: {fileID: 3877526522958822673}
+  - component: {fileID: 8570061881270063137}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -99,22 +99,22 @@ MonoBehaviour:
   inimigoType: {fileID: 0}
   clipDie: {fileID: 8300000, guid: 046e3eb0d51d69b43b5226ac6ace9ab9, type: 3}
   path: []
---- !u!95 &3877526522958822673
-Animator:
-  serializedVersion: 3
+--- !u!114 &8570061881270063137
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6840096132991173285}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 0}
+  size: {x: 0, y: 0}
+  startInd: 0
+  total: 0
+  pixelPerUnity: 0
+  time: 0
+  animationType: 0

@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
 	public List<Vector2> path = new List<Vector2>();
 	Vector2 randomPos;
 	float destroySelfDistance, speed;
-	private Animator animator;
 	
 	private GameObject lifeBar, hpBar;
 	int hp;
@@ -49,14 +48,13 @@ public class Enemy : MonoBehaviour
 		lifeBar.transform.localScale = new Vector3(inimigoType.sizeLifeBar * lifeBar.transform.localScale.x, lifeBar.transform.localScale.y, lifeBar.transform.localScale.z);
 		hpBar = lifeBar.transform.GetChild(2).gameObject;
 		ShowLifeBar(false);
-		
-		animator = GetComponent<Animator>();
-		animator.runtimeAnimatorController = inimigoType.animatorControler;
 
 		randomPos = new Vector2(Random.Range(-0.35f, 0.35f), Random.Range(-0.35f, 0.35f));
 		destroySelfDistance = Random.Range(0.35f, 0.65f);
 		
 		Hp = inimigoType.hp;
+		
+		GetComponent<ScriptAnimation>().SetDataAnimation(inimigoType.texture, inimigoType.size, inimigoType.startInd, inimigoType.total, inimigoType.pixelPerUnity, inimigoType.time, AnimationType.Loop);
 	}
 
     // Update is called once per frame

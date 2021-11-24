@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf8453978cf911d4b98de4fec4c4292f, type: 3}
-  m_Name: Virus2
+  m_Name: "G\xEDrus2"
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 6baa3b51fcf81be43b53c16cb48a637a, type: 3}
-  size: {x: 32, y: 32}
+  texture: {fileID: 2800000, guid: 3addbd36f924fc74d8ae70c24e54bec9, type: 3}
+  size: {x: 96, y: 96}
   startInd: 0
-  total: 2
+  total: 8
   pixelPerUnity: 50
   time: 0.1
-  hp: 3
-  damage: 1
-  moneyInDamage: 5
-  speed: 5
-  sizeLifeBar: 1
-  rangeLifeBar: 0.75
-  heightLifeBar: 0.45
-  dead: {fileID: 3863438606076705272, guid: 47210e397d197774892c10a18bd4dfc7, type: 3}
+  hp: 12
+  damage: 5
+  moneyInDamage: 15
+  speed: 3
+  sizeLifeBar: 2
+  rangeLifeBar: 1
+  heightLifeBar: 0.8
+  dead: {fileID: 3919408808790711090, guid: 8e1e8ccc712d9894bb91008efb039964, type: 3}

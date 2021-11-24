@@ -9,7 +9,7 @@ public class TowerRangeArea : TowerAbstratc
 	float timeDestroy = 84f/60f;
 	Transform projectileShootFromPositon;
 	Enemy enemySelect = null;
-	IEnumerator corroutineDestroy;
+	IEnumerator corroutineDestroy, corroutineDie;
 	bool attack = false, isDie = false;
 	int bullet = 10;
 	Vector3 lastEnemyPosition;
@@ -18,6 +18,7 @@ public class TowerRangeArea : TowerAbstratc
 	{
 		projectileShootFromPositon = transform.Find("projectileShootFromPositon");
 		corroutineDestroy = DieDestroy(timeDestroy);
+		corroutineDie = DieDamage(0.8f);
 	}
 	
 	void Update()
@@ -97,7 +98,7 @@ public class TowerRangeArea : TowerAbstratc
 					animator.SetBool("Morto", true);
 					isDie = true;
 					StartCoroutine(corroutineDestroy);
-					DamageAllEnemyInRangeDie();
+					StartCoroutine(corroutineDie);
 				}
 			}
 			else
@@ -113,5 +114,11 @@ public class TowerRangeArea : TowerAbstratc
 	{
 		yield return new WaitForSeconds(time);
 		Destroy(gameObject);
+	}
+	
+	IEnumerator DieDamage(float time)
+	{
+		yield return new WaitForSeconds(time);
+		DamageAllEnemyInRangeDie();
 	}
 }

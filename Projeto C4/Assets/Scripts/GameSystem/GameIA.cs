@@ -9,8 +9,8 @@ public class GameIA : MonoBehaviour
 {
 	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	
-	static GameObject lifeBar = null, killPlacar = null;
-	private static int playerHp, kills;
+	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
+	private static int playerHp, kills, staticMoney, globalMoney;
 	[SerializeField] int money;
 	public static int PlayerHp
 	{
@@ -46,6 +46,18 @@ public class GameIA : MonoBehaviour
 			killPlacar.GetComponent<Text>().text = kills.ToString();
 		}
     }
+	public static int Money
+    {
+        get
+        {
+			return staticMoney;
+		}
+        set
+        {
+			staticMoney = value;
+			moneyPlacar.GetComponent<Text>().text = staticMoney.ToString();
+		}
+    }
 	GameObject miniMenuTorres = null; 
 	TowerAbstratc towerRageShow = null;
 
@@ -68,8 +80,10 @@ public class GameIA : MonoBehaviour
 		kills = 0;
 		lifeBar = GameObject.Find("Front");
 		killPlacar = GameObject.Find("KillPlacar");
+		moneyPlacar = GameObject.Find("MoneyPlacar");
 		PlayerHp = playerHp;
 		Kills = kills;
+		Money = money;
 		
         mainGrid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue(mainGrid, mainMap);
@@ -130,7 +144,7 @@ public class GameIA : MonoBehaviour
 						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Gírus1"));
 						break;
 					default:
-						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus1"));
+						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Gírus2"));
 						break;
 				};
 			}

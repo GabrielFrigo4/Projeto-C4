@@ -33,6 +33,17 @@ public class ScriptAnimation : MonoBehaviour
         }
     }
 	
+	public void SetDataAnimation(Texture2D texture, Vector2 size, int startInd, int total, int pixelPerUnity, float time, AnimationType animationType)
+	{
+		this.texture = texture;
+		this.size = size;
+		this.startInd = startInd;
+		this.total = total;
+		this.pixelPerUnity = pixelPerUnity;
+		this.time = time;
+		this.animationType = animationType;
+	}
+	
 	IEnumerator AnimationPlayNormal(float timeSecondFrame)
     {
         for (int i = startInd; i < total + startInd; i++)
@@ -63,11 +74,11 @@ public class ScriptAnimation : MonoBehaviour
         }
         Destroy(gameObject);
 	}
+}
 
-    public enum AnimationType
-    {
-        Destroy,
-        Loop,
-		Normal,
-    }
+public enum AnimationType
+{
+    Destroy,
+    Loop,
+	Normal,
 }
