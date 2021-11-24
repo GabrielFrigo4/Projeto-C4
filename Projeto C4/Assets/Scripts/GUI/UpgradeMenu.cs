@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class UpgradeMenu : MonoBehaviour
 {
-	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades;
+	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades, parallelUpgrades;
 	Animator animator;
 	public Button[] buttons;
+	public Button[] button_parallel;
 	public int level;
 	
 	
@@ -16,6 +17,7 @@ public class UpgradeMenu : MonoBehaviour
 		animator = GetComponent<Animator>();
 		level = 0;
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
+		button_parallel = parallelUpgrades.GetComponentsInChildren<Button>();
 
 	}
 	
@@ -61,15 +63,22 @@ public class UpgradeMenu : MonoBehaviour
 	}
 	public void VaccinePurchased()
 	{
-		
+		GameIA.vaccine = true;
+		button_parallel[2].animator.SetBool("Purchased", true);
+		//Debug.Log(GameIA.vaccine);
 	}
 	public void AntiviralPurchased()
 	{
+		GameIA.antiviral = true;
+		button_parallel[1].animator.SetBool("Purchased", true);
+		//Debug.Log(GameIA.antiviral);
 		
 	}
 	public void AntibioticsPurchased()
 	{
-		
+		GameIA.antibiotics = true;
+		button_parallel[0].animator.SetBool("Purchased", true);
+		//Debug.Log(GameIA.antibiotics);
 	}
 	
 	public void OnFase1Selected() 

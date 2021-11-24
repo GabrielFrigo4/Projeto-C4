@@ -35,4 +35,5 @@ public class UpgradeButtons : MonoBehaviour
 		sprite.enabled = false;
 		textbox.enabled = false;
 	}
+	
 }

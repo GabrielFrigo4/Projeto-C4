@@ -2516,7 +2516,7 @@ MonoBehaviour:
   textbox: {fileID: 1751457638}
   title: {fileID: 1475015757}
   port: "O n\xF3dulo linf\xE1tico filtra o sangue para eliminar os ant\xEDgenos.
-    No evento de uma infec\xE7\xE3o, o linfonodo inchar."
+    No evento de uma infec\xE7\xE3o, o linfonodo incha."
   ing: The lymph node filters the blood to eliminate the antigens. In the event of
     an infection, the lymph node gets swollen.
   titletextp: Linfonodo
