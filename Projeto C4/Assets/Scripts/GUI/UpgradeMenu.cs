@@ -69,6 +69,10 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		SceneScript.GoScene("Bestiary");
 	}
+	public void OnTowerManualSelected() 
+	{
+		SceneScript.GoScene("TowerManual");
+	}
 	
 }
 //Para criar outra fileira de upgrades, duplica o ChainUpgrades, e poem os gameObjects dos botões na ordem, pq o GetComponentsInChildren vai de cima para baixo.
