@@ -727,10 +727,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
-  textdescriptionp: "\xC9 composta de pat\xF3genos mortos ou inativados. Faz com
-    que o sistema imune tenha uma resposta a um ant\xEDgeno espec\xEDfico. "
-  textdescriptioni: It contains dead or weakened pathogens. The vaccine makes the
-    immune system develop a response against a specific antigen.
+  textdescriptionp: "A vacina \xE9 composta de pat\xF3genos mortos ou inativados.
+    Faz com que o sistema imune tenha uma resposta forte contra um ant\xEDgeno espec\xEDfico.
+    A vacina faz com que todas as c\xE9lulas causem o dobro de dano. "
+  textdescriptioni: The vaccine contains dead or weakened pathogens. The vaccine
+    makes the immune system develop a strong response against a determined antigen.
+    It doubles the damage of all the cells.
 --- !u!61 &350144772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1215,8 +1217,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
   textdescriptionp: "Elimina uma grande quantidade de v\xEDrus e bact\xE9rias.  Reduz
-    a carga viral e bacteriana em uma pequena porcentagem (15%) "
-  textdescriptioni: soap
+    a carga viral e bacteriana (15%)."
+  textdescriptioni: Eliminates a great amount of viruses and bacteria. Reduces both
+    charges (15%).
 --- !u!95 &979981786
 Animator:
   serializedVersion: 3
@@ -1430,10 +1433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
   textdescriptionp: "A m\xE1scara diminui a circula\xE7\xE3o de v\xEDrus, reduzindo
-    a chance de infec\xE7\xE3o.  Reduz a carga viral em uma porcentagem m\xE9dia
-    (20%) "
+    a chance de infec\xE7\xE3o.  Reduz a carga viral (20%). "
   textdescriptioni: The face mask reduces the circulation of viruses, reducing the
-    chance of infection.  Reduces both by a certain amount (20%)
+    chance of infection.  Reduces both (20%).
 --- !u!61 &1038860078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1786,9 +1788,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
   textdescriptionp: "Combate as infec\xE7\xF5es bacterianas. N\xE3o \xE9 eficaz contra
-    v\xEDrus e superbact\xE9rias. Reduz a carga bacteriana (40%)"
+    v\xEDrus e superbact\xE9rias. Reduz a carga bacteriana (40%)."
   textdescriptioni: Fights against bacterial infections. Isn't effective against
-    superbacteria.  Reduces the amount of bacteria (40%)
+    superbacteria.  Reduces the amount of bacteria (40%).
 --- !u!61 &1142545127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2174,9 +2176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
   textdescriptionp: "Combate as infec\xE7\xF5es por v\xEDrus. N\xE3o \xE9 eficaz
-    contra bact\xE9rias. Reduz a quantidade de v\xEDrus em uma alta porcentagem (40%)"
+    contra bact\xE9rias. Reduz a quantidade de v\xEDrus (40%)."
   textdescriptioni: "Fights viral infections. Isn\u2019t effective against bacteria.
-    Reduces the amount of viruses by a high percentage (40%)"
+    Reduces the amount of viruses (40%)."
 --- !u!61 &1321105092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2350,8 +2352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.6, y: -0.000002712}
-  m_SizeDelta: {x: 256.77, y: 79.66}
+  m_AnchoredPosition: {x: -6.6, y: -0.78}
+  m_SizeDelta: {x: 256.77, y: 129.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426608179
 MonoBehaviour:
@@ -2505,8 +2507,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -194.7, y: -123.2}
-  m_SizeDelta: {x: -517.75, y: -357.22}
+  m_AnchoredPosition: {x: -194.7, y: -150.9}
+  m_SizeDelta: {x: -517.75, y: -301.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686426926
 MonoBehaviour:
@@ -3015,9 +3017,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogbox: {fileID: 1686426924}
   textdescriptionp: "Elimina uma grande quantidade de v\xEDrus e bact\xE9rias. Reduz
-    a carga viral e bacteriana em uma pequena porcentagem (10%)"
+    a carga viral e bacteriana (10%)."
   textdescriptioni: Eliminates a great amount of viruses and bacteria.  Reduces both
-    viral and bacterial amount by a small amount (10%)
+    viral and bacterial amount (10%).
 --- !u!61 &1818551035
 BoxCollider2D:
   m_ObjectHideFlags: 0
