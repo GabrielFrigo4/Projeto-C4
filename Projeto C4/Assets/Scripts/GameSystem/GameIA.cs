@@ -7,6 +7,8 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
+	public static bool vaccine = false, antibiotics = false, antiviral = false;
+	
 	static GameObject lifeBar = null, killPlacar = null;
 	private static int playerHp, kills;
 	[SerializeField] int money;

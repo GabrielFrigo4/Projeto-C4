@@ -58,7 +58,18 @@ public class UpgradeMenu : MonoBehaviour
 			}
 		}
 		
-
+	}
+	public void VaccinePurchased()
+	{
+		
+	}
+	public void AntiviralPurchased()
+	{
+		
+	}
+	public void AntibioticsPurchased()
+	{
+		
 	}
 	
 	public void OnFase1Selected() 
