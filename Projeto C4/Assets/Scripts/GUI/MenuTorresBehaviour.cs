@@ -35,20 +35,36 @@ public class MenuTorresBehaviour : MonoBehaviour
                 switch (mode)
                 {
                     case TowerMode.MeleArea:
-                        GameIA.SpawnTower("TowerMeleArea", transform.position, gridPosition);
-                        Destroy(gameObject);
+						if(GameIA.Money >= 200)
+						{
+							GameIA.SpawnTower("TowerMeleArea", transform.position, gridPosition);
+							Destroy(gameObject);
+							GameIA.Money -= 200;
+						}
                         break;
                     case TowerMode.MeleSolo:
-                        GameIA.SpawnTower("TowerMeleSolo", transform.position, gridPosition);
-                        Destroy(gameObject);
+						if(GameIA.Money >= 50)
+						{
+							GameIA.SpawnTower("TowerMeleSolo", transform.position, gridPosition);
+							Destroy(gameObject);
+							GameIA.Money -= 50;
+						}
                         break;
                     case TowerMode.RangeArea:
-                        GameIA.SpawnTower("TowerRangeArea", transform.position, gridPosition);
-                        Destroy(gameObject);
+						if(GameIA.Money >= 250)
+						{
+							GameIA.SpawnTower("TowerRangeArea", transform.position, gridPosition);
+							Destroy(gameObject);
+							GameIA.Money -= 250;
+						}
                         break;
                     case TowerMode.RangeSolo:
-                        GameIA.SpawnTower("TowerRangeSolo", transform.position, gridPosition);
-                        Destroy(gameObject);
+						if(GameIA.Money >= 150)
+						{
+							GameIA.SpawnTower("TowerRangeSolo", transform.position, gridPosition);
+							Destroy(gameObject);
+							GameIA.Money -= 150;
+						}
                         break;
                 }
             }
