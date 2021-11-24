@@ -100,7 +100,7 @@ public struct GridData
 	public static implicit operator GridData(TowerAbstratc tower)
 	{
 		GridData data = new GridData();
-		data.type = GridType.TowerUsing;
+		data.type = GridType.TowerPosition;
 		data.tower = tower;
 		return data;
 	}
@@ -113,5 +113,4 @@ public enum GridType : int
 	Ground = 1,
 	Path = 2,
 	TowerPosition = 3,
-	TowerUsing = 4,
 }

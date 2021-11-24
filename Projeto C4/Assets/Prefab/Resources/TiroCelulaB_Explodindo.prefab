@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2930265735929475729}
   - component: {fileID: -5495267164998759975}
   m_Layer: 0
-  m_Name: TiroExplodindo
+  m_Name: TiroCelulaB_Explodindo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

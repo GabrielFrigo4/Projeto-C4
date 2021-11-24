@@ -56,12 +56,11 @@ public abstract class TowerAbstratc : MonoBehaviour
         {
             allEnemys.Remove(enemy);
         }
-
-        rangeObj.transform.localScale = new Vector3(towerType.range, towerType.range, 1);
     }
 
     protected void UpdateRotateRange()
     {
         rangeObj.transform.localEulerAngles = new Vector3(-transform.eulerAngles.x, -transform.eulerAngles.y, -transform.eulerAngles.z);
+        rangeObj.transform.localScale = new Vector3(towerType.range, towerType.range, 1);
     }
 }

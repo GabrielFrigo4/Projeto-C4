@@ -7,23 +7,23 @@ public class MenuTorresBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2Int gridPosition;
 	[SerializeField] float size = 0.6f;
-    [SerializeField] GameObject miniCélulaDendrítica, miniNeutrófilo, miniCélulaB, miniMacrófago;
-    [SerializeField] GameObject previewCélulaDendrítica, previewNeutrófilo, previewCélulaB, previewMacrófago;
+    [SerializeField] GameObject miniCelulaDendritica, miniNeutrofilo, miniCelulaB, miniMacrofago;
+    [SerializeField] GameObject previewCelulaDendritica, previewNeutrofilo, previewCelulaB, previewMacrofago;
 
     void Start()
     {
-        SetRangeScale(previewCélulaDendrítica, "TowerMeleArea");
-        SetRangeScale(previewNeutrófilo, "TowerRangeArea");
-        SetRangeScale(previewCélulaB, "TowerRangeSolo");
-        SetRangeScale(previewMacrófago, "TowerMeleSolo");
+        SetRangeScale(previewCelulaDendritica, "TowerMeleArea");
+        SetRangeScale(previewNeutrofilo, "TowerRangeArea");
+        SetRangeScale(previewCelulaB, "TowerRangeSolo");
+        SetRangeScale(previewMacrofago, "TowerMeleSolo");
     }
 
     void Update()
     {
-        CheckButton(miniCélulaDendrítica, previewCélulaDendrítica, TowerMode.MeleArea);
-        CheckButton(miniNeutrófilo, previewNeutrófilo, TowerMode.RangeArea);
-        CheckButton(miniCélulaB, previewCélulaB, TowerMode.RangeSolo);
-        CheckButton(miniMacrófago, previewMacrófago, TowerMode.MeleSolo);
+        CheckButton(miniCelulaDendritica, previewCelulaDendritica, TowerMode.MeleArea);
+        CheckButton(miniNeutrofilo, previewNeutrofilo, TowerMode.RangeArea);
+        CheckButton(miniCelulaB, previewCelulaB, TowerMode.RangeSolo);
+        CheckButton(miniMacrofago, previewMacrofago, TowerMode.MeleSolo);
     }
 
     void CheckButton(GameObject button, GameObject preview, TowerMode mode)

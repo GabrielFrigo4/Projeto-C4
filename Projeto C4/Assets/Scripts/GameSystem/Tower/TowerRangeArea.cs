@@ -5,14 +5,18 @@ using static CodeUtils;
 
 public class TowerRangeArea : TowerAbstratc
 {
+	float timeDestroy = 84f/60f;
 	Transform projectileShootFromPositon;
 	Enemy enemySelect = null;
-	bool attack = false;
+	IEnumerator corroutineDestroy;
+	bool attack = false, isDie = false;
 	int bullet = 10;
+	Vector3 lastEnemyPosition;
 	
     void Awake()
 	{
 		projectileShootFromPositon = transform.Find("projectileShootFromPositon");
+		corroutineDestroy = DieDestroy(timeDestroy);
 	}
 	
 	void Update()
@@ -20,7 +24,7 @@ public class TowerRangeArea : TowerAbstratc
 		//pega os inimigos no alcance da torre
 		GetEnemyInRange();
 
-		if(!attack)
+		if(!attack && !isDie)
 		{
 			//seleciona o inimigo que estiver mais perto do final
 			if (allEnemys.Count > 0)
@@ -47,27 +51,51 @@ public class TowerRangeArea : TowerAbstratc
 		}
 		
 		//mirar no inimigo
-		if(enemySelect != null || allEnemys.Contains(enemySelect))
+		if(enemySelect != null && allEnemys.Contains(enemySelect) && !isDie)
 		{
+			lastEnemyPosition = enemySelect.transform.position;
 			Vector2 moveDir = ((Vector2)enemySelect.transform.position - (Vector2)transform.position).normalized;
 			float angle = GetAngleFromVector(moveDir);
 			transform.eulerAngles = new Vector3(0, 0, angle);
 		}
+        else if(isDie)
+        {
+			transform.eulerAngles = new Vector3(0, 0, 0);
+		}
 		
 		UpdateRotateRange();
 	}
-	
+
+	void DamageAllEnemyInRangeDie()
+	{
+		//pega todos os inimigos na scene
+		allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
+
+		foreach (Enemy enemy in allEnemys)
+		{
+			if (GetDistance2D(enemy.transform.position, transform.position) <= 3f) enemy.Damage(towerType.damage);
+		}
+	}
+
 	//atira no inimigo selecionado
 	protected override IEnumerator AttackTower(float time)
     {
 		while(true)
 		{	
-			if(enemySelect != null && allEnemys.Contains(enemySelect))
+			if(enemySelect != null && allEnemys.Contains(enemySelect) && !isDie)
 			{
 				animator.SetBool("Ataque", true);
 				attack = true;
 				yield return new WaitForSeconds(time);
-				ProjectileNeutrofilo.Create(projectileShootFromPositon.position, enemySelect, towerType.damage);
+				ProjectileNeutrofilo.Create(projectileShootFromPositon.position, lastEnemyPosition, towerType.damage);
+				bullet--;
+				if (bullet <= 0 && !isDie)
+				{
+					animator.SetBool("Morto", true);
+					isDie = true;
+					StartCoroutine(corroutineDestroy);
+					DamageAllEnemyInRangeDie();
+				}
 			}
 			else
 			{
@@ -77,4 +105,10 @@ public class TowerRangeArea : TowerAbstratc
 			}
 		}
     }
+
+	IEnumerator DieDestroy(float time)
+	{
+		yield return new WaitForSeconds(time);
+		Destroy(gameObject);
+	}
 }

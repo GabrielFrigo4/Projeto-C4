@@ -300,7 +300,7 @@ public class GameIA : MonoBehaviour, ILanguage
 		int x, y;
 		mainGrid.GetXY(position, out x, out y);
 		
-		if(mainGrid.GetValue(x, y) == GridType.TowerPosition || mainGrid.GetValue(x, y) == GridType.TowerUsing)
+		if(mainGrid.GetValue(x, y) == GridType.TowerPosition)
 		{
 			position = new Vector3(x*2 - 15f, y*2 - 8f, 0);
 			gridPosition = new Vector2Int(x, y);

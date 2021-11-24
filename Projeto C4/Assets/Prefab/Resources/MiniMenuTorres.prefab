@@ -847,14 +847,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridPosition: {x: 0, y: 0}
   size: 0.6
-  "miniC\xE9lulaDendr\xEDtica": {fileID: 9213430662772225908}
-  "miniNeutr\xF3filo": {fileID: 9213430660830946213}
-  "miniC\xE9lulaB": {fileID: 9213430662837826170}
-  "miniMacr\xF3fago": {fileID: 9213430662305283452}
-  "previewC\xE9lulaDendr\xEDtica": {fileID: 2038475705}
-  "previewNeutr\xF3filo": {fileID: 990380056789888736}
-  "previewC\xE9lulaB": {fileID: 1064693478049145686}
-  "previewMacr\xF3fago": {fileID: 3521077840439375596}
+  miniCelulaDendritica: {fileID: 9213430662772225908}
+  miniNeutrofilo: {fileID: 9213430660830946213}
+  miniCelulaB: {fileID: 9213430662837826170}
+  miniMacrofago: {fileID: 9213430662305283452}
+  previewCelulaDendritica: {fileID: 2038475705}
+  previewNeutrofilo: {fileID: 990380056789888736}
+  previewCelulaB: {fileID: 1064693478049145686}
+  previewMacrofago: {fileID: 3521077840439375596}
 --- !u!1 &9213430662305283452
 GameObject:
   m_ObjectHideFlags: 0
