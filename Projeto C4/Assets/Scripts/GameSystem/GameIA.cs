@@ -10,7 +10,8 @@ public class GameIA : MonoBehaviour
 	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
-	private static int playerHp, kills, staticMoney, globalMoney;
+	private static int playerHp, kills, staticMoney;
+	public static int globalMoney;
 	[SerializeField] int money;
 	public static int PlayerHp
 	{
