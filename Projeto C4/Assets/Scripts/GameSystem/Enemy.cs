@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
 	public InimigoType inimigoType;
 	[SerializeField] AudioClip clipDie;
+	[HideInInspector] public EnemyType type;
 	
 	public List<Vector2> path = new List<Vector2>();
 	Vector2 randomPos;
@@ -55,6 +56,7 @@ public class Enemy : MonoBehaviour
 		Hp = inimigoType.hp;
 		
 		GetComponent<ScriptAnimation>().SetDataAnimation(inimigoType.texture, inimigoType.size, inimigoType.startInd, inimigoType.total, inimigoType.pixelPerUnity, inimigoType.time, AnimationType.Loop);
+		type = inimigoType.enemyType;
 	}
 
     // Update is called once per frame
