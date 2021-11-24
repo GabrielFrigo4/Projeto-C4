@@ -766,7 +766,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 1153476243}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 1330628026}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
@@ -1025,8 +1025,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 139.85, y: 104.88}
-  m_Pivot: {x: 0.38080537, y: 0.5}
+  m_SizeDelta: {x: 204.93, y: 153.69}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337062545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 1365533179}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
@@ -1911,7 +1911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 1683522574}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1590572826}
+      - m_Target: {fileID: 2087214163}
         m_TargetAssemblyTypeName: BestiaryButtons, Assembly-CSharp
         m_MethodName: OnButtonClicked
         m_Mode: 1
