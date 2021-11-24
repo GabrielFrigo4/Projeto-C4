@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using static CodeUtils;
 
-public class GameIA : MonoBehaviour, ILanguage
+public class GameIA : MonoBehaviour
 {
 	static GameObject lifeBar = null, killPlacar = null;
 	private static int playerHp, kills;
@@ -84,12 +84,6 @@ public class GameIA : MonoBehaviour, ILanguage
 			GetPath(paths[i], starts[i], pathGrid[i]);
 		}
 		
-		(this as ILanguage).SetLanguage();
-		if(!LanguageBehaviour.languageBehaviour.Contains(this))
-		{
-			LanguageBehaviour.languageBehaviour.Add(this);
-		}
-		
 		foreach(Vector2 pos in starts)
 		{
 			Vector2 _pos = new Vector3(pos.x*2 - 15f, pos.y*2 - 8f, 0);
@@ -147,19 +141,6 @@ public class GameIA : MonoBehaviour, ILanguage
 			{
 				ShowChunkData();
 			}
-		}
-	}
-	
-	void ILanguage.SetLanguage()
-	{
-		switch(LanguageBehaviour.language)
-		{
-			case Language.Portugues:
-				killPlacar.GetComponent<Text>().text = $"Abates: {kills}";
-				break;
-			case Language.English:
-				killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
-				break;
 		}
 	}
 	
