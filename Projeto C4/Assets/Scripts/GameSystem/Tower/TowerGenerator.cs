@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TowerGenerator : MonoBehaviour
 {
+	public AudioClip soundDeadNeutrofilo;
+	
     public void CreateTowerType(TowerType towerType)
     {
         switch(towerType.towerMode)
@@ -15,7 +17,9 @@ public class TowerGenerator : MonoBehaviour
                 gameObject.AddComponent<TowerMeleSolo>().towerType = towerType;
                 break;
             case TowerMode.RangeArea:
-                gameObject.AddComponent<TowerRangeArea>().towerType = towerType;
+                TowerRangeArea range = gameObject.AddComponent<TowerRangeArea>();
+				range.towerType = towerType;
+				range.clipDie = soundDeadNeutrofilo;
                 break;
 			case TowerMode.RangeSolo:
                 gameObject.AddComponent<TowerRangeSolo>().towerType = towerType;

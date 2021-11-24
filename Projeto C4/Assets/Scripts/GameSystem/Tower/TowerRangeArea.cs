@@ -5,6 +5,7 @@ using static CodeUtils;
 
 public class TowerRangeArea : TowerAbstratc
 {
+	[HideInInspector] public AudioClip clipDie;
 	float timeDestroy = 84f/60f;
 	Transform projectileShootFromPositon;
 	Enemy enemySelect = null;
@@ -68,6 +69,8 @@ public class TowerRangeArea : TowerAbstratc
 
 	void DamageAllEnemyInRangeDie()
 	{
+		SoundPlay.PlayClip(clipDie, new Address<float>(in SliderScript.volumeSound), false, false, "Torre Morrendo");
+		
 		//pega todos os inimigos na scene
 		allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
 
