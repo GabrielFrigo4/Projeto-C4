@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using static CodeUtils;
 
-public class ProjectileCelulaB : ProjectileAbstract
+public class ProjectileCelulaB : MonoBehaviour
 {
 	Enemy target;
 	Vector2 lastTargetPositon;
+	GameObject projectileDead;
+	Vector2 lastPosition;
+	float moveSpeed = 20f;
+	int damage;
 
 	void Start()
 	{

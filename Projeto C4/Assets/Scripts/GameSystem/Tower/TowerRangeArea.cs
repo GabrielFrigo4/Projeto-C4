@@ -73,7 +73,7 @@ public class TowerRangeArea : TowerAbstratc
 
 		foreach (Enemy enemy in allEnemys)
 		{
-			if (GetDistance2D(enemy.transform.position, transform.position) <= 3f) enemy.Damage(towerType.damage);
+			if (GetDistance2D(enemy.transform.position, transform.position) <= 3.5f) enemy.Damage(towerType.damage);
 		}
 	}
 

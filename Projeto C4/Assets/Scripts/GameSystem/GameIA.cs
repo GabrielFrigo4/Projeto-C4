@@ -9,6 +9,7 @@ public class GameIA : MonoBehaviour, ILanguage
 {
 	static GameObject lifeBar = null, killPlacar = null;
 	private static int playerHp, kills;
+	[SerializeField] int money;
 	public static int PlayerHp
 	{
 		get
@@ -40,15 +41,7 @@ public class GameIA : MonoBehaviour, ILanguage
         set
         {
 			kills = value;
-			switch(LanguageBehaviour.language)
-			{
-				case Language.Portugues:
-					killPlacar.GetComponent<Text>().text = $"Abates: {kills}";
-					break;
-				case Language.English:
-					killPlacar.GetComponent<Text>().text = $"Kill: {kills}";
-					break;
-			}
+			killPlacar.GetComponent<Text>().text = kills.ToString();
 		}
     }
 	GameObject miniMenuTorres = null; 
