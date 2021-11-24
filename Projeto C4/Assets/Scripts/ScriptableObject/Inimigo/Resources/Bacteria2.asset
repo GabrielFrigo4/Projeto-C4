@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8453978cf911d4b98de4fec4c4292f, type: 3}
   m_Name: Bacteria2
   m_EditorClassIdentifier: 
-  texture: {fileID: 0}
-  size: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 89f3c75efd5063a468184e26f0f9d8d1, type: 3}
+  size: {x: 90, y: 90}
   startInd: 0
-  total: 0
-  pixelPerUnity: 0
-  time: 0
-  hp: 0
-  damage: 0
-  moneyInDamage: 0
-  speed: 0
-  sizeLifeBar: 0
-  rangeLifeBar: 0
-  heightLifeBar: 0
-  dead: {fileID: 0}
+  total: 4
+  pixelPerUnity: 50
+  time: 0.1
+  hp: 5
+  damage: 1
+  moneyInDamage: 5
+  speed: 3
+  sizeLifeBar: 1
+  rangeLifeBar: 0.75
+  heightLifeBar: 0.45
+  dead: {fileID: 3863438606076705272, guid: 47210e397d197774892c10a18bd4dfc7, type: 3}

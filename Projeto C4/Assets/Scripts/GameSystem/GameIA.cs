@@ -8,10 +8,10 @@ using static CodeUtils;
 public class GameIA : MonoBehaviour
 {
 	public static bool vaccine = false, antibiotics = false, antiviral = false;
-	
+	public static int globalMoney;
+
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
 	private static int playerHp, kills, staticMoney;
-	public static int globalMoney;
 	[SerializeField] int money;
 	public static int PlayerHp
 	{
@@ -62,6 +62,7 @@ public class GameIA : MonoBehaviour
 	GameObject miniMenuTorres = null; 
 	TowerAbstratc towerRageShow = null;
 
+	[SerializeField] Wave wave;
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
 	[SerializeField] List<Vector2> starts, ends, indentationStarts;
@@ -72,8 +73,7 @@ public class GameIA : MonoBehaviour
 	List<Grid> pathGrid = new List<Grid>(); 
 	static Grid mainGrid;
 
-	const float maxTime = 1, maxTime2 = 5;
-	float time = maxTime, time2 = maxTime2;
+	IEnumerator corroutineEnemyWave;
 	
     void Start()
     {
@@ -112,46 +112,16 @@ public class GameIA : MonoBehaviour
 			Vector2 _pos = new Vector3(pos.x*2 - 15f, pos.y*2 - 8f, 0);
 			Instantiate((GameObject)Resources.Load("end"), _pos, transform.rotation);
 		}
-    }
 
-    void LateUpdate()
+		corroutineEnemyWave = CreateEnemyWave(wave.enemyWaves[0].time);
+		StartCoroutine(corroutineEnemyWave);
+		count = wave.enemyWaves[0].count;
+	}
+	int count;
+
+
+	void LateUpdate()
     {
-		time -= Time.deltaTime;
-		if(time <= 0)
-        {
-			for(int i = 0; i < maps.Count; i++)
-			{
-                switch (i)
-                {
-					case 1:
-						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus2"));
-						break;
-					default:
-						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Virus1"));
-						break;
-                }
-			}
-			time += maxTime;
-		}
-
-		time2 -= Time.deltaTime;
-		if (time2 <= 0)
-		{
-			for (int i = 0; i < maps.Count; i++)
-			{
-				switch (i)
-				{
-					case 0:
-						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Gírus1"));
-						break;
-					default:
-						SpawnEnemy(paths[i], starts[i], indentationStarts[i], (InimigoType)Resources.Load("Gírus2"));
-						break;
-				};
-			}
-			time2 += maxTime2;
-		}
-
 		if(Time.timeScale != 0)
         {
 			if (Input.GetMouseButtonDown(0))
@@ -159,6 +129,23 @@ public class GameIA : MonoBehaviour
 				ShowChunkData();
 			}
 		}
+	}
+
+	IEnumerator CreateEnemyWave(float time)
+    {
+		while(true)
+        {
+			yield return new WaitForSeconds(time);
+			if (count > 0)
+			{
+				count--;
+				SpawnEnemy(paths[wave.paths[0]], starts[wave.paths[0]], indentationStarts[wave.paths[0]], wave.enemyWaves[0].InimigoType);
+			}
+			else
+			{
+				yield break;
+			}
+        }
 	}
 	
 	void GetPath(List<Vector2> path, Vector2 start, Grid grid)

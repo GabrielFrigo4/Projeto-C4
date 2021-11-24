@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8453978cf911d4b98de4fec4c4292f, type: 3}
   m_Name: "G\xEDrus2"
   m_EditorClassIdentifier: 
+  enemyType: 1
   texture: {fileID: 2800000, guid: 3addbd36f924fc74d8ae70c24e54bec9, type: 3}
   size: {x: 96, y: 96}
   startInd: 0

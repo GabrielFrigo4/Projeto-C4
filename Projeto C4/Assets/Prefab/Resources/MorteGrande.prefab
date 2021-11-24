@@ -100,7 +100,7 @@ MonoBehaviour:
   size: {x: 128, y: 48}
   startInd: 0
   total: 11
-  pixelPerUnity: 25
+  pixelPerUnity: 50
   time: 0.05
   animationType: 0
 --- !u!114 &2297405211234017014

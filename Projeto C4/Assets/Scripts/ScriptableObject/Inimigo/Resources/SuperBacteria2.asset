@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8453978cf911d4b98de4fec4c4292f, type: 3}
   m_Name: SuperBacteria2
   m_EditorClassIdentifier: 
-  texture: {fileID: 0}
-  size: {x: 0, y: 0}
+  enemyType: 0
+  texture: {fileID: 2800000, guid: 778c8b144bb5490418aa9ca92642210b, type: 3}
+  size: {x: 128, y: 48}
   startInd: 0
-  total: 0
-  pixelPerUnity: 0
-  time: 0
-  hp: 0
-  damage: 0
-  moneyInDamage: 0
-  speed: 0
-  sizeLifeBar: 0
-  rangeLifeBar: 0
-  heightLifeBar: 0
-  dead: {fileID: 0}
+  total: 4
+  pixelPerUnity: 50
+  time: 0.1
+  hp: 20
+  damage: 5
+  moneyInDamage: 15
+  speed: 1
+  sizeLifeBar: 2
+  rangeLifeBar: 1
+  heightLifeBar: 0.65
+  dead: {fileID: 3919408808790711090, guid: 8e1e8ccc712d9894bb91008efb039964, type: 3}
