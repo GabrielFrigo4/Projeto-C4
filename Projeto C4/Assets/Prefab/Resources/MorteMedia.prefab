@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3919408808790711091}
   - component: {fileID: 3919408808790711089}
   - component: {fileID: 7598051089839587260}
+  - component: {fileID: 4516766265305675789}
   m_Layer: 0
   m_Name: MorteMedia
   m_TagString: Untagged
@@ -97,7 +98,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texture: {fileID: 2800000, guid: 39eae3ff39d1bfb40a6087e5e76c9a61, type: 3}
   size: {x: 96, y: 96}
+  startInd: 0
   total: 10
   pixelPerUnity: 50
   time: 0.05
   animationType: 0
+--- !u!114 &4516766265305675789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3919408808790711090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a912930cb9df5144ca9c46f3ca80709f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 8975f4ffb2da2c34199e1189d454942b, type: 3}
+  volume: 1
+  isStatic: 0
+  playOnStart: 1
+  loop: 0
+  typeSound: 2
+  createBehaviour: 0
+  soundTag: 

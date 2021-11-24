@@ -3153,6 +3153,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787492, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 34ba03ee6cada294fa8c3fa27ccedfe6, type: 3}
     - target: {fileID: 1621524230390259762, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: mainMap
       value: 

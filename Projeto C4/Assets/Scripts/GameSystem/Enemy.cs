@@ -6,6 +6,7 @@ using static CodeUtils;
 public class Enemy : MonoBehaviour
 {
 	public InimigoType inimigoType;
+	[SerializeField] AudioClip clipDie;
 	
 	public List<Vector2> path = new List<Vector2>();
 	Vector2 randomPos;
@@ -92,6 +93,7 @@ public class Enemy : MonoBehaviour
 	void PassedOn()
     {
 		GameIA.PlayerHp -= inimigoType.damage;
+		SoundPlay.PlayClip(clipDie, new Address<float>(in SliderScript.volumeSound), false, false, "Inimigo Morrendo");
 		Destroy(lifeBar);
 		Destroy(gameObject);
     }

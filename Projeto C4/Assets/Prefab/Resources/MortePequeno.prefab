@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3863438606076705273}
   - component: {fileID: 3863438606076705255}
   - component: {fileID: -2144747516641951962}
+  - component: {fileID: -8336112588397623847}
   m_Layer: 0
   m_Name: MortePequeno
   m_TagString: Untagged
@@ -97,7 +98,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texture: {fileID: 2800000, guid: 40fd203d91b193c449ce372ef3a12843, type: 3}
   size: {x: 48, y: 48}
+  startInd: 0
   total: 8
   pixelPerUnity: 50
   time: 0.05
   animationType: 0
+--- !u!114 &-8336112588397623847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863438606076705272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a912930cb9df5144ca9c46f3ca80709f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 8975f4ffb2da2c34199e1189d454942b, type: 3}
+  volume: 1
+  isStatic: 0
+  playOnStart: 1
+  loop: 0
+  typeSound: 2
+  createBehaviour: 0
+  soundTag: 

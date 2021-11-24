@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inimigoType: {fileID: 0}
+  clipDie: {fileID: 8300000, guid: 046e3eb0d51d69b43b5226ac6ace9ab9, type: 3}
   path: []
 --- !u!95 &3877526522958822673
 Animator:
