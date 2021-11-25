@@ -8,11 +8,12 @@ public class UpgradeMenu : MonoBehaviour
 {
 	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades, parallelUpgrades;
 	[SerializeField]Text globalMoneyLabel;
+	const int VACCINECOST = 500, ANTIBIOTICSCOST = 350, ANTIVIRALCOST = 350;
+	readonly int[] upgradeCosts = new int[] {50,75,100};
 	Animator animator;
 	public Button[] buttons;
 	public Button[] button_parallel;
 	public int level = 0;
-	int upgradeCost = 50;
 	static Upgrades lastUpgrade;
 	
 	void Start()
@@ -43,23 +44,17 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		SceneScript.GoScene("Menu");
 	}
-	public void TryUpgradePurchased()
-	{
-		if (GameIA.globalMoney >= upgradeCost)
-		{
-			GameIA.globalMoney-=upgradeCost;
-			OnUpgradePurchased();
-		}
-		else 
-		{
-			Debug.Log("sem dinheiro");
-		}
-		UptadeMoneyLabel();
-	}
+
 	public void OnUpgradePurchased()
 	{
-		level++;
-		RefreshButtons();
+		if (GameIA.globalMoney >= upgradeCosts[level])
+		{
+			GameIA.globalMoney -= upgradeCosts[level];
+			level++;
+			RefreshButtons();
+			UptadeMoneyLabel();
+		}
+
 	}
 	public void RefreshButtons()
 	{
@@ -94,24 +89,30 @@ public class UpgradeMenu : MonoBehaviour
 	
 	public void VaccinePurchased()
 	{
-		GameIA.vaccine = true;
-		RefreshButtons();
-		UptadeMoneyLabel();
-
+		if (GameIA.globalMoney >= VACCINECOST) 
+		{
+			GameIA.vaccine = true;
+			RefreshButtons();
+			UptadeMoneyLabel();
+		}
 	}
 	public void AntiviralPurchased()
 	{
-		GameIA.antiviral = true;
-		RefreshButtons();
-		UptadeMoneyLabel();
-
-		
+		if (GameIA.globalMoney >= ANTIVIRALCOST) 
+		{
+			GameIA.antiviral = true;
+			RefreshButtons();
+			UptadeMoneyLabel();
+		}
 	}
 	public void AntibioticsPurchased()
 	{
-		GameIA.antibiotics = true;
-		RefreshButtons();
-		UptadeMoneyLabel();
+		if (GameIA.globalMoney >= ANTIBIOTICSCOST) 
+		{
+			GameIA.antibiotics = true;
+			RefreshButtons();
+			UptadeMoneyLabel();
+		}
 
 	}
 	public void UptadeMoneyLabel()
@@ -130,6 +131,7 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		SceneScript.GoScene("TowerManual");
 	}
+
 	
 }
 //Para criar outra fileira de upgrades, duplica o ChainUpgrades, e poem os gameObjects dos botões na ordem, pq o GetComponentsInChildren vai de cima para baixo.

@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UpgradeButtons : MonoBehaviour
 {
-	[SerializeField] GameObject dialogbox;
-	Text textbox;
+	[SerializeField] GameObject dialogbox;//, pricetag
+	Text textbox, pricetext;
 	Image sprite;
 	public string textdescriptionp, textdescriptioni;
 	void Start()
 	{
 		textbox = dialogbox.GetComponentInChildren<Text>();
+		//pricetext = pricetag.GetComponentInChildren<Text>();
 		sprite = dialogbox.GetComponent<Image>();
 		sprite.enabled = false;
 		textbox.enabled = false;
