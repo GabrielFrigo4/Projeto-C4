@@ -9,6 +9,7 @@ public class GameIA : MonoBehaviour
 {
 	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	public static int globalMoney;
+	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
 	Text TotalWaves, TimeNextWave;
@@ -92,6 +93,7 @@ public class GameIA : MonoBehaviour
 		PlayerHp = playerHp;
 		Kills = kills;
 		Money = startMoney;
+		gameState = GameState.Normal;
 		
         mainGrid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue(mainGrid, mainMap);
