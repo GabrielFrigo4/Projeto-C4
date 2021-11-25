@@ -33,6 +33,7 @@ public class GameIA : MonoBehaviour
 				else
 				{
 					lifeBar.transform.localScale = new Vector3(0, 1, 1);
+					Debug.Log("Perdemo");
 				}
 			}
 		}
@@ -139,7 +140,7 @@ public class GameIA : MonoBehaviour
 		}
 		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd)
         {
-
+			Debug.Log("Ganhamo");
         }
 	}
 
@@ -351,4 +352,11 @@ public class GameIA : MonoBehaviour
 			return false;
 		}
 	}
+}
+
+public enum GameState
+{
+	Normal,
+	Victory,
+	Defeat,
 }

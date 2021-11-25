@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class BestiaryButtons : MonoBehaviour
 {
 	[SerializeField] Text textbox, title;
-	public string port, ing, titletextp, titletexti;
+	[TextArea(3,10)]
+	public string port, ing;
+	public string titletextp, titletexti;
     public void OnButtonClicked()
     {
 		
