@@ -86,9 +86,9 @@ public class ButtonPauseScript : MonoBehaviour
 		option.transform.position = new Vector3(32, 0, 0);
 	}
 	
-	public void ExitGame()
+	public void GoToLevelSelect()
 	{
-		Time.timeScale = 1;
+		Time.timeScale = 1f;
 		isPaused = false;
 		SceneScript.GoScene("LevelSelect");
 	}

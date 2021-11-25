@@ -7,6 +7,9 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
+	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
+	static GameObject victory, vitoria, defeat, derrota;
+		
 	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	public static int globalMoney;
 	public static GameState gameState = GameState.Normal;
@@ -34,7 +37,19 @@ public class GameIA : MonoBehaviour
 				else
 				{
 					lifeBar.transform.localScale = new Vector3(0, 1, 1);
-					Debug.Log("Perdemo");
+					victoryOrDefeat.transform.position = new Vector3(0, 0, 0);
+					menuPause.transform.position = new Vector3(32, 0, 0);
+					gameGUI.transform.position = new Vector3(64, 0, 0);
+					option.transform.position = new Vector3(96, 0, 0);
+					Time.timeScale = 0f;
+					if(LanguageBehaviour.language == Language.Portugues)
+					{
+						derrota.SetActive(true);
+					}
+					else
+					{
+						defeat.SetActive(true);
+					}
 				}
 			}
 		}
@@ -83,6 +98,20 @@ public class GameIA : MonoBehaviour
 
     void Start()
     {
+		menuPause = GameObject.Find("MenuPause");
+		gameGUI = GameObject.Find("GameGUI");
+		option = GameObject.Find("Opções");
+		victoryOrDefeat = GameObject.Find("Vitoria/Derrota");
+		
+		victory = victoryOrDefeat.transform.Find("Victory").gameObject;
+		vitoria = victoryOrDefeat.transform.Find("Vitoria").gameObject;
+		defeat = victoryOrDefeat.transform.Find("Defeat").gameObject;
+		derrota = victoryOrDefeat.transform.Find("Derrota").gameObject;
+		victory.SetActive(false);
+		vitoria.SetActive(false);
+		defeat.SetActive(false);
+		derrota.SetActive(false);
+		
 		playerHp = 100;
 		kills = 0;
 		lifeBar = GameObject.Find("Front");
@@ -142,7 +171,20 @@ public class GameIA : MonoBehaviour
 		}
 		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd)
         {
-			Debug.Log("Ganhamo");
+			lifeBar.transform.localScale = new Vector3(0, 1, 1);
+			victoryOrDefeat.transform.position = new Vector3(0, 0, 0);
+			menuPause.transform.position = new Vector3(32, 0, 0);
+			gameGUI.transform.position = new Vector3(64, 0, 0);
+			option.transform.position = new Vector3(96, 0, 0);
+			Time.timeScale = 0f;
+			if(LanguageBehaviour.language == Language.Portugues)
+			{
+				vitoria.SetActive(true);
+			}
+			else
+			{
+				victory.SetActive(true);
+			}
         }
 	}
 
