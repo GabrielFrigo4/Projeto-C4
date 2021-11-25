@@ -8,8 +8,8 @@ public class UpgradeMenu : MonoBehaviour
 {
 	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades, parallelUpgrades;
 	[SerializeField]Text globalMoneyLabel;
-	const int VACCINECOST = 500, ANTIBIOTICSCOST = 350, ANTIVIRALCOST = 350;
-	readonly int[] upgradeCosts = new int[] {50,75,100};
+	public const int VACCINECOST = 500, ANTIBIOTICSCOST = 350, ANTIVIRALCOST = 350;
+	public static readonly int[] upgradeCosts = new int[] {50,75,100};
 	Animator animator;
 	public Button[] buttons;
 	public Button[] button_parallel;

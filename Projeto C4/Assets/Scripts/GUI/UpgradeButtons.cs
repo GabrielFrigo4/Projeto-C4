@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class UpgradeButtons : MonoBehaviour
 {
-	[SerializeField] GameObject dialogbox;//, pricetag
+	[SerializeField] GameObject dialogbox;
+	GameObject pricetag;
 	Text textbox, pricetext;
 	Image sprite;
 	public string textdescriptionp, textdescriptioni;
 	void Start()
 	{
 		textbox = dialogbox.GetComponentInChildren<Text>();
-		//pricetext = pricetag.GetComponentInChildren<Text>();
+		pricetag = gameObject.transform.GetChild(0).gameObject;
+		pricetext = pricetag.GetComponentInChildren<Text>();
 		sprite = dialogbox.GetComponent<Image>();
 		sprite.enabled = false;
 		textbox.enabled = false;
@@ -21,6 +23,7 @@ public class UpgradeButtons : MonoBehaviour
 	{
 		sprite.enabled = true;
 		textbox.enabled = true;
+		pricetag.SetActive(true);
 		if (LanguageBehaviour.language == Language.Portugues) 
 		{
 			textbox.text = textdescriptionp;
@@ -35,6 +38,7 @@ public class UpgradeButtons : MonoBehaviour
 	{
 		sprite.enabled = false;
 		textbox.enabled = false;
+		pricetag.SetActive(false);
 	}
 	
 }
