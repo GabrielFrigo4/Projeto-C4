@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &216209499 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1621524230126757203, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-  m_PrefabInstance: {fileID: 1621524230150787490}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1275a683435c14e4880dcd40adac9213, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &252429721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,17 +1095,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &970507800 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-  m_PrefabInstance: {fileID: 1621524230150787490}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1039055585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,42 +3019,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 970507798, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_Name
-      value: S.O
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 216209499}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ComplementarySystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonPauseScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507800, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 970507801, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -4548901342387080558, guid: 256463fd87cd2a34f963bc3c5b277c7d, type: 3}
     - target: {fileID: 1355736424289932559, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3089,10 +3031,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1621524230126757203, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
-      propertyPath: buttonComplementarySystem
-      value: 
-      objectReference: {fileID: 970507800}
     - target: {fileID: 1621524230667274034, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_Name
       value: GameMap
