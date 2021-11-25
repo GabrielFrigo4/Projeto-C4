@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
-  m_Name: TowerMeleArea
+  m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
+  m_Name: 50_virus1 0.1
   m_EditorClassIdentifier: 
-  animatorControler: {fileID: 9100000, guid: ed3176a5ecca3bc41a150c299c60f767, type: 2}
-  towerMode: 3
-  range: 3
-  time: 0.35
-  damage: 1
+  InimigoType: {fileID: 11400000, guid: 941b5a8430a70d249a40a1c8db5929a1, type: 2}
+  count: 50
+  time: 0.1

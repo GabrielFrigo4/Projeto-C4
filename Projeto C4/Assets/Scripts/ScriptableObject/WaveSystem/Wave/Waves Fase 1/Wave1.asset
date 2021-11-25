@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
-  m_Name: TowerMeleArea
+  m_Script: {fileID: 11500000, guid: 2501bd47dd33b2b4390e10d2e3da6246, type: 3}
+  m_Name: Wave1
   m_EditorClassIdentifier: 
-  animatorControler: {fileID: 9100000, guid: ed3176a5ecca3bc41a150c299c60f767, type: 2}
-  towerMode: 3
-  range: 3
-  time: 0.35
-  damage: 1
+  enemyWaves:
+  - {fileID: 11400000, guid: 01a573d243b379d42b0134c1add9e913, type: 2}
+  paths: 01000000
+  money: 50
