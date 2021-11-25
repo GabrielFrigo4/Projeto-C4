@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ButtonPauseScript : MonoBehaviour
 {
-	[SerializeField] GameObject menuPause, gameGUI, option;
+	[SerializeField] GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	[SerializeField] RuntimeAnimatorController animatorNormal, animatorSpeed;
 	[SerializeField] Animator animatorSetVelocity;
 	[SerializeField] Slider music, sound;
@@ -54,6 +54,7 @@ public class ButtonPauseScript : MonoBehaviour
 	{
 		Time.timeScale = 0;
 		isPaused = true;
+		victoryOrDefeat.transform.position = new Vector3(-32, 0, 0);
 		menuPause.transform.position = new Vector3(0, 0, 0);
 		gameGUI.transform.position = new Vector3(32, 0, 0);
 		option.transform.position = new Vector3(64, 0, 0);
@@ -61,6 +62,7 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void OptionGame()
 	{
+		victoryOrDefeat.transform.position = new Vector3(-96, 0, 0);
 		menuPause.transform.position = new Vector3(-64, 0, 0);
 		gameGUI.transform.position = new Vector3(-32, 0, 0);
 		option.transform.position = new Vector3(0, 0, 0);
@@ -78,6 +80,7 @@ public class ButtonPauseScript : MonoBehaviour
 		}
 		
 		isPaused = false;
+		victoryOrDefeat.transform.position = new Vector3(-64, 0, 0);
 		menuPause.transform.position = new Vector3(-32, 0, 0);
 		gameGUI.transform.position = new Vector3(0, 0, 0);
 		option.transform.position = new Vector3(32, 0, 0);
