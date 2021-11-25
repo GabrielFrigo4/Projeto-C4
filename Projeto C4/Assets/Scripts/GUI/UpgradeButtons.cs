@@ -23,7 +23,7 @@ public class UpgradeButtons : MonoBehaviour
 	{
 		sprite.enabled = true;
 		textbox.enabled = true;
-		pricetag.SetActive(true);
+		if (pricetag != null){pricetag.SetActive(true);}
 		if (LanguageBehaviour.language == Language.Portugues) 
 		{
 			textbox.text = textdescriptionp;
@@ -38,7 +38,7 @@ public class UpgradeButtons : MonoBehaviour
 	{
 		sprite.enabled = false;
 		textbox.enabled = false;
-		pricetag.SetActive(false);
+		if (pricetag != null){pricetag.SetActive(false);}
 	}
 	
 }
