@@ -19,10 +19,10 @@ MonoBehaviour:
   total: 8
   pixelPerUnity: 50
   time: 0.1
-  hp: 14
+  hp: 30
   damage: 5
   moneyInDie: 15
-  speed: 5
+  speed: 7
   sizeLifeBar: 2
   rangeLifeBar: 1
   heightLifeBar: 0.8

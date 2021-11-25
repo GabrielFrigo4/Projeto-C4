@@ -121,7 +121,7 @@ public class UpgradeMenu : MonoBehaviour
 	}
 	public void OnFase1Selected() 
 	{
-		SceneScript.GoScene("Game");
+		SceneScript.GoScene("Fase 1");
 	}
 	public void OnBestiarySelected() 
 	{
