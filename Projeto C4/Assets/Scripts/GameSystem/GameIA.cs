@@ -362,3 +362,10 @@ public enum GameState
 	Victory,
 	Defeat,
 }
+
+public enum Upgrades : int
+{
+	Soap,
+	Mask,
+	Sanitizer,
+}

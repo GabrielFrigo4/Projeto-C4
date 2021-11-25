@@ -13,15 +13,18 @@ public class UpgradeMenu : MonoBehaviour
 	public Button[] button_parallel;
 	public int level = 0;
 	int upgradeCost = 50;
-	
+	static Upgrades lastUpgrade;
 	
 	void Start()
 	{
+		GameIA.globalMoney = 10000;
 		animator = GetComponent<Animator>();
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
 		button_parallel = parallelUpgrades.GetComponentsInChildren<Button>();
 		UptadeMoneyLabel();
-
+		level = (int)lastUpgrade;
+		Debug.Log(level);
+						
 	}
 	
 	public void OnUpradesSelected() 
@@ -71,6 +74,7 @@ public class UpgradeMenu : MonoBehaviour
 				buttons[i].animator.SetBool("Purchased", true);
 				buttons[i].animator.SetBool("Interactable", true);
 				buttons[i].interactable = false;
+				lastUpgrade = (Upgrades)level;
 				upgradeCost += 25;
 				
 				
