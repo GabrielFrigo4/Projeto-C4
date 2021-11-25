@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static CodeUtils;
 
 public class ComplementarySystem : MonoBehaviour
 {
@@ -19,6 +20,35 @@ public class ComplementarySystem : MonoBehaviour
 
     IEnumerator StartDamage(float time)
     {
-        yield return new WaitForSeconds(time);
+        while(total > 0)
+        {
+            yield return new WaitForSeconds(time);
+            total--;
+            foreach(Enemy enemy in GetEnemyInRange())
+            {
+                enemy.Damage(damage);
+            }
+        }
+        yield break;
+    }
+
+    List<Enemy> GetEnemyInRange()
+    {
+        //pega todos os inimigos na scene
+        List<Enemy> allEnemys = new List<Enemy>(FindObjectsOfType<Enemy>());
+
+        //remove os inimigos que estão longe do range
+        List<Enemy> removeEnemys = new List<Enemy>();
+        foreach (Enemy enemy in allEnemys)
+        {
+            if (GetDistance2D(enemy.transform.position, transform.position) <= 1f) continue;
+            removeEnemys.Add(enemy);
+        }
+        foreach (Enemy enemy in removeEnemys)
+        {
+            allEnemys.Remove(enemy);
+        }
+
+        return allEnemys;
     }
 }
