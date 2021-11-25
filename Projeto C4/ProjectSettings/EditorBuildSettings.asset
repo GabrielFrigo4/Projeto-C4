@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TowerManual.unity
     guid: bd3823ac9db46c4488d12a7d16997ffe
+  - enabled: 1
+    path: Assets/Scenes/Fase 1.unity
+    guid: 840e5dd52256dba4da41222e9fa5f335
   m_configObjects: {}
