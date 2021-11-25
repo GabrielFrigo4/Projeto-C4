@@ -239,12 +239,12 @@ public class GameIA : MonoBehaviour
     {
 		for (int i = 0; i < waves[ind].enemyWaves.Length; i++)
 		{
-			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, waves[ind].enemyWaves[i].count, i);
+			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, waves[ind].enemyWaves[i].count, i, ind);
 			StartCoroutine(corroutineEnemyWave);
 		}
 	}
 
-	IEnumerator CreateEnemyWave(float time, int count, int ind)
+	IEnumerator CreateEnemyWave(float time, int count, int ind, int waveInd)
     {
 		while(true)
         {
@@ -252,7 +252,7 @@ public class GameIA : MonoBehaviour
 			if (count > 0)
 			{
 				count--;
-				SpawnEnemy(paths[waves[0].paths[ind]], starts[waves[0].paths[ind]], indentationStarts[waves[0].paths[ind]], waves[0].enemyWaves[ind].InimigoType);
+				SpawnEnemy(paths[waves[waveInd].paths[ind] - 1], starts[waves[waveInd].paths[ind] - 1], indentationStarts[waves[waveInd].paths[ind] - 1], waves[waveInd].enemyWaves[ind].InimigoType);
 			}
 			else
 			{
