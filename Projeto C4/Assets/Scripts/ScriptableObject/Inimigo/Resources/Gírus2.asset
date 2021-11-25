@@ -19,7 +19,7 @@ MonoBehaviour:
   total: 8
   pixelPerUnity: 50
   time: 0.1
-  hp: 30
+  hp: 25
   damage: 5
   moneyInDie: 15
   speed: 7
