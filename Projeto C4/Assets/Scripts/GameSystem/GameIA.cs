@@ -169,7 +169,7 @@ public class GameIA : MonoBehaviour
 			Money += waves[waveInd - 1].money;
 			StartNextWave(6, waveInd);
 		}
-		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd)
+		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && Time.timeScale != 0)
         {
 			lifeBar.transform.localScale = new Vector3(0, 1, 1);
 			victoryOrDefeat.transform.position = new Vector3(0, 0, 0);
