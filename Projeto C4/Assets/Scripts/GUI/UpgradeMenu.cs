@@ -11,17 +11,15 @@ public class UpgradeMenu : MonoBehaviour
 	Animator animator;
 	public Button[] buttons;
 	public Button[] button_parallel;
-	public int level;
+	public int level = 0;
 	int upgradeCost = 50;
 	
 	
 	void Start()
 	{
 		animator = GetComponent<Animator>();
-		level = 0;
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
 		button_parallel = parallelUpgrades.GetComponentsInChildren<Button>();
-		GameIA.globalMoney = 100;
 		UptadeMoneyLabel();
 
 	}

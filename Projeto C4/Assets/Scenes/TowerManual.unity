@@ -2267,7 +2267,7 @@ MonoBehaviour:
   port: "A c\xE9lula B produz anticorpos contra os ant\xEDgenos. Atira anticorpos
     que acertam alvos \xFAnicos a longas dist\xE2ncias."
   ing: The B cell produces antibodies against the antigens. They shoot antibodies
-    with long distance range.
+    with long range.
   titletextp: "C\xE9lula B"
   titletexti: B Cell
 --- !u!114 &1976763483
