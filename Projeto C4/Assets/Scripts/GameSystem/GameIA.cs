@@ -190,6 +190,8 @@ public class GameIA : MonoBehaviour
 			{
 				victory.SetActive(true);
 			}
+			
+			globalMoney += DNAMoney;
         }
 	}
 

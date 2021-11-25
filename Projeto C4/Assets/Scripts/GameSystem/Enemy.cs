@@ -101,7 +101,7 @@ public class Enemy : MonoBehaviour
 	void Dead()
 	{
 		GameIA.Kills++;
-		GameIA.Money += inimigoType.moneyInDamage;
+		GameIA.Money += inimigoType.moneyInDie;
 		Instantiate(inimigoType.dead, transform.position, transform.rotation);
 		Destroy(lifeBar);
 		Destroy(gameObject);

@@ -11,7 +11,7 @@ public class InimigoType : ScriptableObject
     public int startInd, total, pixelPerUnity;
     public float time;
     public int hp, damage;
-	public int moneyInDamage;
+	public int moneyInDie;
     public float speed, sizeLifeBar, rangeLifeBar, heightLifeBar;
 	public GameObject dead;
 }
