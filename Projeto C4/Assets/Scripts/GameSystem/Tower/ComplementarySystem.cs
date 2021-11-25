@@ -8,14 +8,16 @@ public class ComplementarySystem : MonoBehaviour
     [SerializeField] int damage, total;
     [SerializeField] float time;
     private Animator animator;
-    private IEnumerator corroutine;
+    private IEnumerator corroutineDamage, corroutineDie;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        corroutine = StartDamage(time);
-        StartCoroutine(corroutine);
+        corroutineDamage = StartDamage(time);
+        StartCoroutine(corroutineDamage);
+        corroutineDie = StartDie(time*total);
+        StartCoroutine(corroutineDie);
     }
 
     IEnumerator StartDamage(float time)
@@ -30,6 +32,12 @@ public class ComplementarySystem : MonoBehaviour
             }
         }
         yield break;
+    }
+
+    IEnumerator StartDie(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 
     List<Enemy> GetEnemyInRange()
