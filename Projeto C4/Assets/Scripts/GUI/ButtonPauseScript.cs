@@ -10,7 +10,8 @@ public class ButtonPauseScript : MonoBehaviour
 	[SerializeField] Animator animatorSetVelocity;
 	[SerializeField] Slider music, sound;
 	[SerializeField] Dropdown language;
-	public static bool isPaused = false, isSpeed = false;
+	[SerializeField] Button buttonComplementarySystem;
+	public static bool isPaused = false, isSpeed = false, isComplementarySystemActive = false;
 	
 	public void Start()
 	{
@@ -31,6 +32,15 @@ public class ButtonPauseScript : MonoBehaviour
 		else if(esc && isPaused)
 		{
 			ReturnGame();
+		}
+
+        if (GameIA.Money < 100)
+        {
+			buttonComplementarySystem.interactable = false;
+		}
+		else
+        {
+			buttonComplementarySystem.interactable = true;
 		}
 	}
 	
@@ -96,4 +106,9 @@ public class ButtonPauseScript : MonoBehaviour
 	{
 		SceneScript.Restart();
 	}
+
+	public void ComplementarySystem()
+    {
+		isComplementarySystemActive = true;
+    }
 }

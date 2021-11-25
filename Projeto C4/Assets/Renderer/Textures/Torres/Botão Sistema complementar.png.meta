@@ -23,6 +23,12 @@ TextureImporter:
   - first:
       213: 9024985063265053649
     second: "Bot\xE3o Sistema complementar_6"
+  - first:
+      213: -8353292657658886884
+    second: "Bot\xE3o Sistema complementar_7"
+  - first:
+      213: -5032915829042464988
+    second: "Bot\xE3o Sistema complementar_8"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,7 +142,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_1"
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
         width: 64
         height: 64
@@ -157,7 +163,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_2"
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -178,7 +184,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_3"
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 0
         width: 64
         height: 64
@@ -199,7 +205,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_4"
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 0
         width: 64
         height: 64
@@ -220,7 +226,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_5"
       rect:
         serializedVersion: 2
-        x: 448
+        x: 320
         y: 0
         width: 64
         height: 64
@@ -241,7 +247,7 @@ TextureImporter:
       name: "Bot\xE3o Sistema complementar_6"
       rect:
         serializedVersion: 2
-        x: 576
+        x: 448
         y: 0
         width: 64
         height: 64
@@ -254,6 +260,48 @@ TextureImporter:
       bones: []
       spriteID: 1dbae1f39103f3d70800000000000000
       internalID: 9024985063265053649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sistema complementar_7"
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c150d53e594231c80800000000000000
+      internalID: -8353292657658886884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Sistema complementar_8"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427bb7118bd772ab0800000000000000
+      internalID: -5032915829042464988
       vertices: []
       indices: 
       edges: []

@@ -80,7 +80,8 @@ public class GameIA : MonoBehaviour
 			moneyPlacar.GetComponent<Text>().text = staticMoney.ToString();
 		}
     }
-	GameObject miniMenuTorres = null; 
+	GameObject miniMenuTorres = null, complementarySystemSquare = null;
+	SpriteRenderer renderComplementartSystemSquare = null;
 	TowerAbstratc towerRageShow = null;
 
 	[SerializeField] List<Wave> waves;
@@ -120,8 +121,11 @@ public class GameIA : MonoBehaviour
 		lifeBar = GameObject.Find("Front");
 		killPlacar = GameObject.Find("KillPlacar");
 		moneyPlacar = GameObject.Find("MoneyPlacar");
+		complementarySystemSquare = Instantiate((GameObject)Resources.Load("SistemaComplementarAlvo"), transform.position, transform.rotation);
+		renderComplementartSystemSquare = complementarySystemSquare.GetComponent<SpriteRenderer>();
 		TotalWaves = GameObject.Find("WavesCount").GetComponent<Text>();
 		TimeNextWave = GameObject.Find("WavesTime").GetComponent<Text>();
+		complementarySystemSquare.SetActive(false);
 		PlayerHp = playerHp;
 		Kills = kills;
 		Money = startMoney;
@@ -193,6 +197,39 @@ public class GameIA : MonoBehaviour
 			
 			globalMoney += DNAMoney;
         }
+
+		if(!complementarySystemSquare.activeSelf && ButtonPauseScript.isComplementarySystemActive)
+        {
+			complementarySystemSquare.SetActive(true);
+        }
+		else if (ButtonPauseScript.isComplementarySystemActive)
+        {
+			int x, y;
+			mainGrid.GetXY(GetMouseWorldPosition(), out x, out y);
+			complementarySystemSquare.transform.position = new Vector3(x * 2 - 15f, y * 2 - 8f, 0);
+            if (mainGrid.GetValue(x,y) == GridType.Path)
+            {
+				renderComplementartSystemSquare.color = new Color(0, 1, 0, 0.5f);
+                if (Input.GetMouseButtonDown(0))
+                {
+					ButtonPauseScript.isComplementarySystemActive = false;
+					Money -= 100;
+					Instantiate((GameObject)Resources.Load("SistemaComplementar"), complementarySystemSquare.transform.position, complementarySystemSquare.transform.rotation);
+				}
+			}
+            else
+            {
+				renderComplementartSystemSquare.color = new Color(1, 0, 0, 0.5f);
+				if (Input.GetMouseButtonDown(0))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
+			}
+		}
+		else if (!ButtonPauseScript.isComplementarySystemActive)
+        {
+			complementarySystemSquare.SetActive(false);
+		}
 	}
 
 	void StartNextWave(int time, int ind)
