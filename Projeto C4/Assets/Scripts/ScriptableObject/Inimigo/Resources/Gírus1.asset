@@ -26,4 +26,4 @@ MonoBehaviour:
   sizeLifeBar: 2
   rangeLifeBar: 1
   heightLifeBar: 0.65
-  dead: {fileID: 1668665753399655881, guid: ca7360407127dec4f8eddb95e32f086e, type: 3}
+  dead: {fileID: 3919408808790711090, guid: 8e1e8ccc712d9894bb91008efb039964, type: 3}

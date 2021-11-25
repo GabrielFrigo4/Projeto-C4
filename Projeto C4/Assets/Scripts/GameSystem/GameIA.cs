@@ -216,11 +216,19 @@ public class GameIA : MonoBehaviour
 					Money -= 100;
 					Instantiate((GameObject)Resources.Load("SistemaComplementar"), complementarySystemSquare.transform.position, complementarySystemSquare.transform.rotation);
 				}
+				else if (Input.GetMouseButtonDown(1))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
 			}
             else
             {
 				renderComplementartSystemSquare.color = new Color(1, 0, 0, 0.5f);
 				if (Input.GetMouseButtonDown(0))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
+				else if (Input.GetMouseButtonDown(1))
 				{
 					ButtonPauseScript.isComplementarySystemActive = false;
 				}
