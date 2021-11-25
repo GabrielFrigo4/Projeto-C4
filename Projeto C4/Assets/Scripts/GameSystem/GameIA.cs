@@ -14,7 +14,7 @@ public class GameIA : MonoBehaviour
 	Text TotalWaves, TimeNextWave;
 
 	private static int playerHp, kills, staticMoney;
-	[SerializeField] int money;
+	[SerializeField] int startMoney, DNAMoney;
 	public static int PlayerHp
 	{
 		get
@@ -90,7 +90,7 @@ public class GameIA : MonoBehaviour
 		TimeNextWave = GameObject.Find("WavesTime").GetComponent<Text>();
 		PlayerHp = playerHp;
 		Kills = kills;
-		Money = money;
+		Money = startMoney;
 		
         mainGrid = new Grid(16, 8, 2f, transform.position);
 		UpdateGridToTilemapValue(mainGrid, mainMap);
