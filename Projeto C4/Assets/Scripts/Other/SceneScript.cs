@@ -11,6 +11,8 @@ public static class SceneScript
 	{
 		lastScene = SceneManager.GetActiveScene().name;
 		LanguageBehaviour.languageBehaviour.Clear();
+		Time.timeScale = 1f;
 		SceneManager.LoadScene(scene);
+		Time.timeScale = 1f;
 	}
 }

@@ -15,8 +15,9 @@ public class GameIA : MonoBehaviour
 	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
+	static bool finishGame = false;
 	Text TotalWaves, TimeNextWave;
-
+	
 	private static int playerHp, kills, staticMoney;
 	[SerializeField] int startMoney, DNAMoney;
 	public static int PlayerHp
@@ -41,7 +42,8 @@ public class GameIA : MonoBehaviour
 					menuPause.transform.position = new Vector3(32, 0, 0);
 					gameGUI.transform.position = new Vector3(64, 0, 0);
 					option.transform.position = new Vector3(96, 0, 0);
-					Time.timeScale = 0f;
+					Time.timeScale = 0;
+					finishGame = false;
 					if(LanguageBehaviour.language == Language.Portugues)
 					{
 						derrota.SetActive(true);
@@ -98,6 +100,7 @@ public class GameIA : MonoBehaviour
 
     void Start()
     {
+		finishGame = false;
 		menuPause = GameObject.Find("MenuPause");
 		gameGUI = GameObject.Find("GameGUI");
 		option = GameObject.Find("Opções");
@@ -164,19 +167,21 @@ public class GameIA : MonoBehaviour
 			}
 		}
 
-		if(FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && waveInd < waves.Count)
+		if(FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && waveInd < waves.Count && !finishGame)
         {
 			Money += waves[waveInd - 1].money;
 			StartNextWave(6, waveInd);
 		}
-		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && Time.timeScale != 0)
+		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && !finishGame)
         {
 			lifeBar.transform.localScale = new Vector3(0, 1, 1);
 			victoryOrDefeat.transform.position = new Vector3(0, 0, 0);
 			menuPause.transform.position = new Vector3(32, 0, 0);
 			gameGUI.transform.position = new Vector3(64, 0, 0);
 			option.transform.position = new Vector3(96, 0, 0);
-			Time.timeScale = 0f;
+			Time.timeScale = 0;
+			finishGame = true;
+			
 			if(LanguageBehaviour.language == Language.Portugues)
 			{
 				vitoria.SetActive(true);
