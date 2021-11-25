@@ -11,6 +11,8 @@ public class GameIA : MonoBehaviour
 	public static int globalMoney;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
+	Text TotalWaves, TimeNextWave;
+
 	private static int playerHp, kills, staticMoney;
 	[SerializeField] int money;
 	public static int PlayerHp
@@ -62,7 +64,7 @@ public class GameIA : MonoBehaviour
 	GameObject miniMenuTorres = null; 
 	TowerAbstratc towerRageShow = null;
 
-	[SerializeField] Wave wave;
+	[SerializeField] List<Wave> waves;
 	[SerializeField] Tilemap mainMap;
 	[SerializeField] List<Tilemap> maps;
 	[SerializeField] List<Vector2> starts, ends, indentationStarts;
@@ -73,8 +75,10 @@ public class GameIA : MonoBehaviour
 	List<Grid> pathGrid = new List<Grid>(); 
 	static Grid mainGrid;
 
-	IEnumerator corroutineEnemyWave;
-	
+	IEnumerator corroutineEnemyWave, corroutineTimeWave, corroutineMinTime;
+	int waveInd = 0;
+	bool minTimeWaveEnd = false;
+
     void Start()
     {
 		playerHp = 100;
@@ -82,6 +86,8 @@ public class GameIA : MonoBehaviour
 		lifeBar = GameObject.Find("Front");
 		killPlacar = GameObject.Find("KillPlacar");
 		moneyPlacar = GameObject.Find("MoneyPlacar");
+		TotalWaves = GameObject.Find("WavesCount").GetComponent<Text>();
+		TimeNextWave = GameObject.Find("WavesTime").GetComponent<Text>();
 		PlayerHp = playerHp;
 		Kills = kills;
 		Money = money;
@@ -113,12 +119,8 @@ public class GameIA : MonoBehaviour
 			Instantiate((GameObject)Resources.Load("end"), _pos, transform.rotation);
 		}
 
-		corroutineEnemyWave = CreateEnemyWave(wave.enemyWaves[0].time);
-		StartCoroutine(corroutineEnemyWave);
-		count = wave.enemyWaves[0].count;
+		StartNextWave(12,waveInd);
 	}
-	int count;
-
 
 	void LateUpdate()
     {
@@ -129,9 +131,68 @@ public class GameIA : MonoBehaviour
 				ShowChunkData();
 			}
 		}
+
+		if(FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && waveInd < waves.Count)
+        {
+			Money += waves[waveInd - 1].money;
+			StartNextWave(6, waveInd);
+		}
+		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd)
+        {
+
+        }
 	}
 
-	IEnumerator CreateEnemyWave(float time)
+	void StartNextWave(int time, int ind)
+    {
+		minTimeWaveEnd = false;
+		corroutineTimeWave = TimeToNextWave(time, ind);
+		StartCoroutine(corroutineTimeWave);
+	}
+
+	IEnumerator TimeToNextWave(int time, int ind)
+    {
+		TimeNextWave.text = time.ToString();
+		TotalWaves.text = $"{waves.Count + (1 + ind - waves.Count)}/{waves.Count}";
+		while (time > 0)
+        {
+			yield return new WaitForSeconds(1);
+			time--;
+			TimeNextWave.text = time.ToString();
+		}
+		TimeNextWave.text = time.ToString();
+		StartNextWave(ind);
+		StartCountMinTime(waveInd);
+		waveInd++;
+	}
+
+	void StartCountMinTime(int ind)
+    {
+		float time = waves[ind].enemyWaves[0].count * waves[ind].enemyWaves[0].time;
+		foreach(EnemyWave enemyWave in waves[ind].enemyWaves)
+        {
+			if (time < enemyWave.count * enemyWave.time) time = enemyWave.count * enemyWave.time;
+		}
+		corroutineMinTime = CountMinTime(time);
+		StartCoroutine(corroutineMinTime);
+	}
+
+	IEnumerator CountMinTime(float time)
+    {
+		yield return new WaitForSeconds(time);
+		minTimeWaveEnd = true;
+    }
+
+	void StartNextWave(int ind)
+    {
+		for (int i = 0; i < waves[ind].enemyWaves.Length; i++)
+		{
+			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, waves[ind].enemyWaves[i].count, i);
+			StartCoroutine(corroutineEnemyWave);
+		}
+	}
+
+	IEnumerator CreateEnemyWave(float time, int count, int ind)
     {
 		while(true)
         {
@@ -139,7 +200,7 @@ public class GameIA : MonoBehaviour
 			if (count > 0)
 			{
 				count--;
-				SpawnEnemy(paths[wave.paths[0]], starts[wave.paths[0]], indentationStarts[wave.paths[0]], wave.enemyWaves[0].InimigoType);
+				SpawnEnemy(paths[waves[0].paths[ind]], starts[waves[0].paths[ind]], indentationStarts[waves[0].paths[ind]], waves[0].enemyWaves[ind].InimigoType);
 			}
 			else
 			{

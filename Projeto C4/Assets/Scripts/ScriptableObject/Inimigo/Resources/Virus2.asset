@@ -18,7 +18,7 @@ MonoBehaviour:
   startInd: 0
   total: 2
   pixelPerUnity: 50
-  time: 0.1
+  time: 0.5
   hp: 3
   damage: 1
   moneyInDamage: 5

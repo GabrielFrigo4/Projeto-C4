@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static CodeUtils;
 
 public class MenuTorresBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2Int gridPosition;
 	[SerializeField] float size = 0.6f;
+    [SerializeField] int costCelulaDendritica, costNeutrofilo, costCelulaB, costMacrofago;
     [SerializeField] GameObject miniCelulaDendritica, miniNeutrofilo, miniCelulaB, miniMacrofago;
     [SerializeField] GameObject previewCelulaDendritica, previewNeutrofilo, previewCelulaB, previewMacrofago;
+
+    private Text textCelulaDendritica, textNeutrofilo, textCelulaB, textMacrofago;
 
     void Start()
     {
@@ -16,6 +20,11 @@ public class MenuTorresBehaviour : MonoBehaviour
         SetRangeScale(previewNeutrofilo, "TowerRangeArea");
         SetRangeScale(previewCelulaB, "TowerRangeSolo");
         SetRangeScale(previewMacrofago, "TowerMeleSolo");
+
+        textCelulaDendritica = previewCelulaDendritica.transform.Find("Canvas").Find("Text").GetComponent<Text>();
+        textNeutrofilo = previewNeutrofilo.transform.Find("Canvas").Find("Text").GetComponent<Text>();
+        textCelulaB = previewCelulaB.transform.Find("Canvas").Find("Text").GetComponent<Text>();
+        textMacrofago = previewMacrofago.transform.Find("Canvas").Find("Text").GetComponent<Text>();
     }
 
     void Update()
@@ -24,6 +33,42 @@ public class MenuTorresBehaviour : MonoBehaviour
         CheckButton(miniNeutrofilo, previewNeutrofilo, TowerMode.RangeArea);
         CheckButton(miniCelulaB, previewCelulaB, TowerMode.RangeSolo);
         CheckButton(miniMacrofago, previewMacrofago, TowerMode.MeleSolo);
+
+        if (GameIA.Money < costMacrofago)
+        {
+            textMacrofago.color = Color.red;
+            textCelulaB.color = Color.red;
+            textCelulaDendritica.color = Color.red;
+            textNeutrofilo.color = Color.red;
+        }
+        else if (GameIA.Money < costCelulaB)
+        {
+            textMacrofago.color = Color.yellow;
+            textCelulaB.color = Color.red;
+            textCelulaDendritica.color = Color.red;
+            textNeutrofilo.color = Color.red;
+        }
+        else if (GameIA.Money < costCelulaDendritica)
+        {
+            textMacrofago.color = Color.yellow;
+            textCelulaB.color = Color.yellow;
+            textCelulaDendritica.color = Color.red;
+            textNeutrofilo.color = Color.red;
+        }
+        else if (GameIA.Money < costNeutrofilo)
+        {
+            textMacrofago.color = Color.yellow;
+            textCelulaB.color = Color.yellow;
+            textCelulaDendritica.color = Color.yellow;
+            textNeutrofilo.color = Color.red;
+        }
+        else
+        {
+            textMacrofago.color = Color.yellow;
+            textCelulaB.color = Color.yellow;
+            textCelulaDendritica.color = Color.yellow;
+            textNeutrofilo.color = Color.yellow;
+        }
     }
 
     void CheckButton(GameObject button, GameObject preview, TowerMode mode)
@@ -35,35 +80,35 @@ public class MenuTorresBehaviour : MonoBehaviour
                 switch (mode)
                 {
                     case TowerMode.MeleArea:
-						if(GameIA.Money >= 200)
+						if(GameIA.Money >= costCelulaDendritica)
 						{
 							GameIA.SpawnTower("TowerMeleArea", transform.position, gridPosition);
 							Destroy(gameObject);
-							GameIA.Money -= 200;
+							GameIA.Money -= costCelulaDendritica;
 						}
                         break;
                     case TowerMode.MeleSolo:
-						if(GameIA.Money >= 50)
+						if(GameIA.Money >= costMacrofago)
 						{
 							GameIA.SpawnTower("TowerMeleSolo", transform.position, gridPosition);
 							Destroy(gameObject);
-							GameIA.Money -= 50;
+							GameIA.Money -= costMacrofago;
 						}
                         break;
                     case TowerMode.RangeArea:
-						if(GameIA.Money >= 250)
+						if(GameIA.Money >= costNeutrofilo)
 						{
 							GameIA.SpawnTower("TowerRangeArea", transform.position, gridPosition);
 							Destroy(gameObject);
-							GameIA.Money -= 250;
+							GameIA.Money -= costNeutrofilo;
 						}
                         break;
                     case TowerMode.RangeSolo:
-						if(GameIA.Money >= 150)
+						if(GameIA.Money >= costCelulaB)
 						{
 							GameIA.SpawnTower("TowerRangeSolo", transform.position, gridPosition);
 							Destroy(gameObject);
-							GameIA.Money -= 150;
+							GameIA.Money -= costCelulaB;
 						}
                         break;
                 }

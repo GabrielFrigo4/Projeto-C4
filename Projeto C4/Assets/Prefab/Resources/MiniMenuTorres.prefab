@@ -1871,6 +1871,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridPosition: {x: 0, y: 0}
   size: 0.6
+  costCelulaDendritica: 200
+  costNeutrofilo: 250
+  costCelulaB: 150
+  costMacrofago: 50
   miniCelulaDendritica: {fileID: 9213430662772225908}
   miniNeutrofilo: {fileID: 9213430660830946213}
   miniCelulaB: {fileID: 9213430662837826170}
