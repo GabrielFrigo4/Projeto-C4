@@ -91,4 +91,9 @@ public class ButtonPauseScript : MonoBehaviour
 		isPaused = false;
 		SceneScript.GoScene("LevelSelect");
 	}
+	
+	public void RestartLevel()
+	{
+		SceneScript.Restart();
+	}
 }

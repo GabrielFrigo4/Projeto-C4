@@ -13,6 +13,10 @@ public static class SceneScript
 		LanguageBehaviour.languageBehaviour.Clear();
 		Time.timeScale = 1f;
 		SceneManager.LoadScene(scene);
-		Time.timeScale = 1f;
+	}
+	
+	public static void Restart()
+	{
+		GoScene(SceneManager.GetActiveScene().name);
 	}
 }
