@@ -246,14 +246,14 @@ public class GameIA : MonoBehaviour
 			complementarySystemSquare.SetActive(false);
 		}
 		
-		bool f = Input.GetKeyDown(KeyCode.Escape);
-		if(f)
+		bool f = Input.GetKeyDown(KeyCode.F);
+		if(f && !ButtonPauseScript.isComplementarySystemActive)
 		{
-			
+			ButtonPauseScript.isComplementarySystemActive = true;
 		}
-		else
+		else if(f && ButtonPauseScript.isComplementarySystemActive)
 		{
-			
+			ButtonPauseScript.isComplementarySystemActive = false;
 		}
 	}
 
