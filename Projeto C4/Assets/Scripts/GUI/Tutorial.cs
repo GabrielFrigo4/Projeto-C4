@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
 	List<Transform> ListaTutorial = new List<Transform>();
-	int tutorialStep = 0;
+	int tutorialStep = 1;
 	void Start()
 	{
 		foreach (Transform child in transform)
@@ -19,6 +19,12 @@ public class Tutorial : MonoBehaviour
 		{
 			UpdateTutorial();
 			tutorialStep++;
+		}
+		if (tutorialStep > ListaTutorial.Count)
+		{
+			Time.timeScale = 1;
+		} else {
+			Time.timeScale = 0;
 		}
 	}
 	void UpdateTutorial() 
