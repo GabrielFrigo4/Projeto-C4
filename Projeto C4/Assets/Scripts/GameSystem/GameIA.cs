@@ -20,7 +20,7 @@ public class GameIA : MonoBehaviour
 	
 	private static int playerHp, kills, staticMoney;
 	private static AudioClip clipLose, clipWin, clipNextWave;
-	[SerializeField] int startMoney, DNAMoney;
+	[SerializeField] int startTime, startMoney, DNAMoney;
 	public static int PlayerHp
 	{
 		get
@@ -164,7 +164,7 @@ public class GameIA : MonoBehaviour
 			Instantiate((GameObject)Resources.Load("end"), _pos, transform.rotation);
 		}
 
-		StartNextWave(12,waveInd);
+		StartNextWave(startTime,waveInd);
 	}
 
 	void LateUpdate()
@@ -244,6 +244,16 @@ public class GameIA : MonoBehaviour
 		else if (!ButtonPauseScript.isComplementarySystemActive)
         {
 			complementarySystemSquare.SetActive(false);
+		}
+		
+		bool f = Input.GetKeyDown(KeyCode.Escape);
+		if(f)
+		{
+			
+		}
+		else
+		{
+			
 		}
 	}
 
