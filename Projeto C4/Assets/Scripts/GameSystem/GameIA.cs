@@ -322,15 +322,13 @@ public class GameIA : MonoBehaviour
 			{
 				totalEnemy = (int)(totalEnemy*85f/100f);
 			}
-			
-			if(UpgradeMenu.lastUpgrade == Upgrades.Mask)
+			else if(UpgradeMenu.lastUpgrade == Upgrades.Mask)
 			{
-				totalEnemy = (int)(totalEnemy*60f/100f);
+				totalEnemy = (int)(totalEnemy*65f/100f);
 			}
-				
-			if(UpgradeMenu.lastUpgrade == Upgrades.Sanitizer)
+			else if(UpgradeMenu.lastUpgrade == Upgrades.Sanitizer)
 			{
-				totalEnemy = (int)(totalEnemy*60f/100f);
+				totalEnemy = (int)(totalEnemy*55f/100f);
 			}
 		
 			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, totalEnemy, i, ind);
