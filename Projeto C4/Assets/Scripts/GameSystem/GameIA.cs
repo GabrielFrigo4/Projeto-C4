@@ -309,18 +309,6 @@ public class GameIA : MonoBehaviour
 		{
 			int totalEnemy =  waves[ind].enemyWaves[i].count;
 			
-			/*
-			if(waves[ind].enemyWaves[i].inimigoType.enemyType == EnemyType.Bacterium && UpgradeMenu.antibiotics)
-			{
-				totalEnemy = (int)(totalEnemy*60f/100f);
-			}
-			
-			if(waves[ind].enemyWaves[i].inimigoType.enemyType == EnemyType.Virus && UpgradeMenu.antiviral)
-			{
-				totalEnemy = (int)(totalEnemy*60f/100f);
-			}
-			*/
-			
 			if(UpgradeMenu.lastUpgrade == Upgrades.Soap)
 			{
 				totalEnemy = (int)((float)totalEnemy*85f/100f);
