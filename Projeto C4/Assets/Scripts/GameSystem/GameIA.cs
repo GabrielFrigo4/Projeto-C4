@@ -10,7 +10,7 @@ public class GameIA : MonoBehaviour
 	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	static GameObject victory, vitoria, defeat, derrota;
 		
-	public static int globalMoney = 0;
+	public static int globalMoney = 10000;
 	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
@@ -303,9 +303,22 @@ public class GameIA : MonoBehaviour
 
 	void StartNextWave(int ind)
     {
-		for (int i = 0; i < waves[ind].enemyWaves.Length; i++)
+		int totalWaves = waves[ind].enemyWaves.Length;
+		
+		for (int i = 0; i < totalWaves; i++)
 		{
-			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, waves[ind].enemyWaves[i].count, i, ind);
+			int totalEnemy =  waves[ind].enemyWaves[i].count;
+			if(waves[ind].enemyWaves[i].inimigoType.enemyType == EnemyType.Bacterium && UpgradeMenu.antibiotics)
+			{
+				totalEnemy = (int)(totalEnemy*60f/100f);
+			}
+			
+			if(waves[ind].enemyWaves[i].inimigoType.enemyType == EnemyType.Virus && UpgradeMenu.antiviral)
+			{
+				totalEnemy = (int)(totalEnemy*60f/100f);
+			}
+		
+			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, totalEnemy, i, ind);
 			StartCoroutine(corroutineEnemyWave);
 		}
 	}
@@ -318,7 +331,7 @@ public class GameIA : MonoBehaviour
 			if (count > 0)
 			{
 				count--;
-				SpawnEnemy(paths[waves[waveInd].paths[ind] - 1], starts[waves[waveInd].paths[ind] - 1], indentationStarts[waves[waveInd].paths[ind] - 1], waves[waveInd].enemyWaves[ind].InimigoType);
+				SpawnEnemy(paths[waves[waveInd].paths[ind] - 1], starts[waves[waveInd].paths[ind] - 1], indentationStarts[waves[waveInd].paths[ind] - 1], waves[waveInd].enemyWaves[ind].inimigoType);
 			}
 			else
 			{
