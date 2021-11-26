@@ -18,7 +18,6 @@ public class UpgradeMenu : MonoBehaviour
 	
 	void Start()
 	{
-		GameIA.globalMoney = 10000;
 		animator = GetComponent<Animator>();
 		buttons = ChainUpgrades.GetComponentsInChildren<Button>();
 		button_parallel = parallelUpgrades.GetComponentsInChildren<Button>();
