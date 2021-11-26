@@ -91,30 +91,30 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		if (GameIA.globalMoney >= VACCINECOST) 
 		{
+			GameIA.globalMoney -= VACCINECOST;
 			vaccine = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
-			GameIA.globalMoney -= VACCINECOST;
 		}
 	}
 	public void AntiviralPurchased()
 	{
 		if (GameIA.globalMoney >= ANTIVIRALCOST) 
 		{
+			GameIA.globalMoney -= ANTIVIRALCOST;
 			antiviral = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
-			GameIA.globalMoney -= ANTIVIRALCOST;
 		}
 	}
 	public void AntibioticsPurchased()
 	{
 		if (GameIA.globalMoney >= ANTIBIOTICSCOST) 
 		{
+			GameIA.globalMoney -= ANTIBIOTICSCOST;
 			antibiotics = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
-			GameIA.globalMoney -= ANTIBIOTICSCOST;
 		}
 
 	}
