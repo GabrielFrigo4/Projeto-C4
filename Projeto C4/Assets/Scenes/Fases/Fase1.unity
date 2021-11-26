@@ -1963,6 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd81ccdc4403aea4bb1648bc58b93b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startTime: 12
   startMoney: 150
   DNAMoney: 100
   waves:

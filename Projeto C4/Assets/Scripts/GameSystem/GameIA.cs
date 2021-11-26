@@ -10,7 +10,7 @@ public class GameIA : MonoBehaviour
 	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	static GameObject victory, vitoria, defeat, derrota;
 		
-	public static int globalMoney = 500;
+	public static int globalMoney = 0;
 	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
@@ -19,7 +19,7 @@ public class GameIA : MonoBehaviour
 	
 	private static int playerHp, kills, staticMoney;
 	private static AudioClip clipLose, clipWin, clipNextWave;
-	[SerializeField] int startTime, startMoney, DNAMoney;
+	[SerializeField] int startTime = 12, startMoney, DNAMoney;
 	public static int PlayerHp
 	{
 		get
