@@ -94,6 +94,7 @@ public class UpgradeMenu : MonoBehaviour
 			vaccine = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
+			GameIA.globalMoney -= VACCINECOST;
 		}
 	}
 	public void AntiviralPurchased()
@@ -103,6 +104,7 @@ public class UpgradeMenu : MonoBehaviour
 			antiviral = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
+			GameIA.globalMoney -= ANTIVIRALCOST;
 		}
 	}
 	public void AntibioticsPurchased()
@@ -112,6 +114,7 @@ public class UpgradeMenu : MonoBehaviour
 			antibiotics = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
+			GameIA.globalMoney -= ANTIBIOTICSCOST;
 		}
 
 	}
