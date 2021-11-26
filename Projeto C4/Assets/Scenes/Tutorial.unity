@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 76767434}
   - component: {fileID: 76767436}
   - component: {fileID: 76767435}
+  - component: {fileID: 76767437}
   m_Layer: 5
   m_Name: Explicacao (1)
   m_TagString: Untagged
@@ -278,6 +279,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76767433}
   m_CullTransparentMesh: 1
+--- !u!114 &76767437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76767433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Os inimigos tentar\xE3o chegar aqui. Impe\xE7a-os usando as c\xE9lulas."
+  ingles: The enemies will try to get here. Defeat them using the cells.
+  text: {fileID: 1915656230}
 --- !u!1 &235874475
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +491,7 @@ GameObject:
   - component: {fileID: 774612393}
   - component: {fileID: 774612395}
   - component: {fileID: 774612394}
+  - component: {fileID: 774612396}
   m_Layer: 5
   m_Name: Explicacao (2)
   m_TagString: Untagged
@@ -540,6 +557,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774612392}
   m_CullTransparentMesh: 1
+--- !u!114 &774612396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774612392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Toda vez que um inimigo passar, sua vida diminuir\xE1. Se chegar a
+    zero voc\xEA foi infectado."
+  ingles: Every time an enemy gets through your health will decrease. If it gets
+    to zero you are infected.
+  text: {fileID: 1443593722}
 --- !u!1 &804386756
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000047088, y: 18.1}
-  m_SizeDelta: {x: 166.58, y: 57.55}
+  m_AnchoredPosition: {x: -0.0000047088, y: 16.35}
+  m_SizeDelta: {x: 166.58, y: 56.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804386758
 MonoBehaviour:
@@ -604,7 +638,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -620,6 +654,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804386756}
   m_CullTransparentMesh: 1
+--- !u!1 &838374588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1621524229848070185, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+  m_PrefabInstance: {fileID: 928073631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &928073631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -838,6 +877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 372547e32cdcfca4a8405cd941a10cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pause: {fileID: 838374588}
 --- !u!1 &974216025
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +968,7 @@ GameObject:
   - component: {fileID: 1052949258}
   - component: {fileID: 1052949260}
   - component: {fileID: 1052949259}
+  - component: {fileID: 1052949261}
   m_Layer: 5
   m_Name: Explicacao (6)
   m_TagString: Untagged
@@ -993,6 +1034,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052949257}
   m_CullTransparentMesh: 1
+--- !u!114 &1052949261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052949257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Esse \xE9 o tempo para criar uma estrat\xE9gia. Ao t\xE9rmino do tempo
+    os inimigos ir\xE3o atacar."
+  ingles: This is the time to make a strategy. When the time is over the enemies
+    will attack.
+  text: {fileID: 1598450302}
 --- !u!1 &1100036078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1062,7 @@ GameObject:
   - component: {fileID: 1100036079}
   - component: {fileID: 1100036081}
   - component: {fileID: 1100036080}
+  - component: {fileID: 1100036082}
   m_Layer: 5
   m_Name: Explicacao (7)
   m_TagString: Untagged
@@ -1069,6 +1128,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100036078}
   m_CullTransparentMesh: 1
+--- !u!114 &1100036082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100036078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Esse \xE9 o sistema complementar. Seu custo \xE9 100 moedas e pode
+    ser usado nos caminhos para causar dano em \xE1rea aos inimigos "
+  ingles: This is the complement system. The cost to use it is 100 coins and can
+    be used in the paths to cause area damage to the enemies.
+  text: {fileID: 1662790614}
 --- !u!1 &1102512953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1156,7 @@ GameObject:
   - component: {fileID: 1102512954}
   - component: {fileID: 1102512956}
   - component: {fileID: 1102512955}
+  - component: {fileID: 1102512957}
   m_Layer: 5
   m_Name: Explicacao (5)
   m_TagString: Untagged
@@ -1145,6 +1222,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102512953}
   m_CullTransparentMesh: 1
+--- !u!114 &1102512957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102512953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Os inimigos atacam em ondas. Essa \xE9 a quantidade de ondas da fase."
+  ingles: The enemies will attack in waves. This is the number of waves at this level.
+  text: {fileID: 974216027}
 --- !u!1 &1173862396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1248,7 @@ GameObject:
   - component: {fileID: 1173862397}
   - component: {fileID: 1173862399}
   - component: {fileID: 1173862398}
+  - component: {fileID: 1173862400}
   m_Layer: 5
   m_Name: Explicacao (4)
   m_TagString: Untagged
@@ -1221,6 +1314,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173862396}
   m_CullTransparentMesh: 1
+--- !u!114 &1173862400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173862396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Compre c\xE9lulas com moedas de prote\xEDna. Quando os inimigos morrem,
+    voc\xEA ganha moedas. "
+  ingles: Buy cells with protein coins. When an enemy dies you earn coins.
+  text: {fileID: 1632050272}
 --- !u!1 &1180288021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1341,7 @@ GameObject:
   - component: {fileID: 1180288022}
   - component: {fileID: 1180288024}
   - component: {fileID: 1180288023}
+  - component: {fileID: 1180288025}
   m_Layer: 5
   m_Name: Explicacao (0)
   m_TagString: Untagged
@@ -1297,6 +1407,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180288021}
   m_CullTransparentMesh: 1
+--- !u!114 &1180288025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180288021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Aperte Espa\xE7o para avan\xE7ar nas etapas do tutorial!"
+  ingles: Press Space to go through the tutorial steps.
+  text: {fileID: 17881505}
 --- !u!1 &1304833055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,8 +3278,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.47, y: 5.93}
-  m_SizeDelta: {x: 166.58, y: 57.55}
+  m_AnchoredPosition: {x: 0.31, y: 5.41}
+  m_SizeDelta: {x: 167.6, y: 65.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443593722
 MonoBehaviour:
@@ -3210,6 +3335,7 @@ GameObject:
   - component: {fileID: 1452151548}
   - component: {fileID: 1452151550}
   - component: {fileID: 1452151549}
+  - component: {fileID: 1452151551}
   m_Layer: 5
   m_Name: Explicacao
   m_TagString: Untagged
@@ -3275,6 +3401,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452151547}
   m_CullTransparentMesh: 1
+--- !u!114 &1452151551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452151547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Os inimigos sair\xE3o desse ponto."
+  ingles: The enemies will leave from this spot.
+  text: {fileID: 483778381}
 --- !u!1 &1598450300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +4071,7 @@ GameObject:
   - component: {fileID: 1836541607}
   - component: {fileID: 1836541609}
   - component: {fileID: 1836541608}
+  - component: {fileID: 1836541610}
   m_Layer: 5
   m_Name: Explicacao (3)
   m_TagString: Untagged
@@ -3995,6 +4137,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836541606}
   m_CullTransparentMesh: 1
+--- !u!114 &1836541610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836541606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portugues: "Para colocar uma c\xE9lula clique em um dos c\xEDrculos e selecione
+    a c\xE9lula."
+  ingles: To place a cell click on one of the circles and choose a cell.
+  text: {fileID: 804386758}
 --- !u!1 &1915656228
 GameObject:
   m_ObjectHideFlags: 0
