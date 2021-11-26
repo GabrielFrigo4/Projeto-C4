@@ -10,7 +10,6 @@ public class GameIA : MonoBehaviour
 	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	static GameObject victory, vitoria, defeat, derrota;
 		
-	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	public static int globalMoney;
 	public static GameState gameState = GameState.Normal;
 

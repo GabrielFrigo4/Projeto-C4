@@ -14,7 +14,8 @@ public class UpgradeMenu : MonoBehaviour
 	public Button[] buttons;
 	public Button[] button_parallel;
 	public int level = 0;
-	static Upgrades lastUpgrade;
+	public static Upgrades lastUpgrade;
+	public static bool vaccine = false, antibiotics = false, antiviral = false;
 	
 	void Start()
 	{
@@ -75,13 +76,13 @@ public class UpgradeMenu : MonoBehaviour
 				lastUpgrade = (Upgrades)level;
 			}
 		}
-		if (GameIA.vaccine == true){
+		if (vaccine == true){
 			button_parallel[2].animator.SetBool("Purchased", true);
 		}
-		if (GameIA.antiviral == true){
+		if (antiviral == true){
 			button_parallel[1].animator.SetBool("Purchased", true);
 		}
-		if (GameIA.antibiotics == true){
+		if (antibiotics == true){
 			button_parallel[0].animator.SetBool("Purchased", true);
 		}
 	}
@@ -90,7 +91,7 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		if (GameIA.globalMoney >= VACCINECOST) 
 		{
-			GameIA.vaccine = true;
+			vaccine = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
 		}
@@ -99,7 +100,7 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		if (GameIA.globalMoney >= ANTIVIRALCOST) 
 		{
-			GameIA.antiviral = true;
+			antiviral = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
 		}
@@ -108,7 +109,7 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		if (GameIA.globalMoney >= ANTIBIOTICSCOST) 
 		{
-			GameIA.antibiotics = true;
+			antibiotics = true;
 			RefreshButtons();
 			UptadeMoneyLabel();
 		}
