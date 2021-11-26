@@ -247,11 +247,15 @@ public class GameIA : MonoBehaviour
 		}
 		
 		bool f = Input.GetKeyDown(KeyCode.F);
-		if(f && !ButtonPauseScript.isComplementarySystemActive)
+		if(f && !ButtonPauseScript.isComplementarySystemActive && Money >= 100)
 		{
 			ButtonPauseScript.isComplementarySystemActive = true;
 		}
 		else if(f && ButtonPauseScript.isComplementarySystemActive)
+		{
+			ButtonPauseScript.isComplementarySystemActive = false;
+		}
+		else if(finishGame || Time.timeScale == 0)
 		{
 			ButtonPauseScript.isComplementarySystemActive = false;
 		}
