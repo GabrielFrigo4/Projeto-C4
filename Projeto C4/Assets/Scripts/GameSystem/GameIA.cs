@@ -10,7 +10,7 @@ public class GameIA : MonoBehaviour
 	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	static GameObject victory, vitoria, defeat, derrota;
 		
-	public static int globalMoney;
+	public static int globalMoney = 500;
 	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
