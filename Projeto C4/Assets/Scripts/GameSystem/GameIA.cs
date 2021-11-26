@@ -318,17 +318,22 @@ public class GameIA : MonoBehaviour
 				totalEnemy = (int)(totalEnemy*60f/100f);
 			}
 			
+			Debug.Log("abilidade 0");
+			
 			if(UpgradeMenu.lastUpgrade == Upgrades.Soap)
 			{
 				totalEnemy = (int)(totalEnemy*85f/100f);
+				Debug.Log("abilidade 1");
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Mask)
 			{
 				totalEnemy = (int)(totalEnemy*65f/100f);
+				Debug.Log("abilidade 2");
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Sanitizer)
 			{
 				totalEnemy = (int)(totalEnemy*55f/100f);
+				Debug.Log("abilidade 3");
 			}
 		
 			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, totalEnemy, i, ind);
