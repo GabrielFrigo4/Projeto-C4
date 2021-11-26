@@ -8,37 +8,45 @@ public class TowerGenerator : MonoBehaviour
 	
     public void CreateTowerType(TowerType towerType)
     {
+		int damage = towerType.damage;
         switch(towerType.towerMode)
         {
             case TowerMode.MeleArea:
 				if(UpgradeMenu.vaccine)
 				{
-					towerType.damage *= 2;
+					damage *= 2;
 				}
-                gameObject.AddComponent<TowerMeleArea>().towerType = towerType;
+                TowerMeleArea towerMeleArea = gameObject.AddComponent<TowerMeleArea>();
+				towerMeleArea.towerType = towerType;
+				towerMeleArea.damage = damage;
                 break;
 			case TowerMode.MeleSolo:
 				if(UpgradeMenu.vaccine)
 				{
-					towerType.damage *= 2;
+					damage *= 2;
 				}
-                gameObject.AddComponent<TowerMeleSolo>().towerType = towerType;
+                TowerMeleSolo towerMeleSolo = gameObject.AddComponent<TowerMeleSolo>();
+				towerMeleSolo.towerType = towerType;
+				towerMeleSolo.damage = damage;
                 break;
             case TowerMode.RangeArea:
 				if(UpgradeMenu.vaccine)
 				{
-					towerType.damage *= 2;
+					damage *= 2;
 				}
-                TowerRangeArea range = gameObject.AddComponent<TowerRangeArea>();
-				range.towerType = towerType;
-				range.clipDie = soundDeadNeutrofilo;
+                TowerRangeArea towerRangeArea = gameObject.AddComponent<TowerRangeArea>();
+				towerRangeArea.towerType = towerType;
+				towerRangeArea.clipDie = soundDeadNeutrofilo;
+				towerRangeArea.damage = damage;
                 break;
 			case TowerMode.RangeSolo:
 				if(UpgradeMenu.vaccine)
 				{
-					towerType.damage *= 2;
+					damage *= 2;
 				}
-                gameObject.AddComponent<TowerRangeSolo>().towerType = towerType;
+                TowerRangeSolo towerRangeSolo = gameObject.AddComponent<TowerRangeSolo>();
+				towerRangeSolo.towerType = towerType;
+				towerRangeSolo.damage = damage;
                 break;
         }
         Destroy(this);

@@ -58,7 +58,7 @@ public class TowerMeleSolo : TowerAbstratc
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);
-				enemySelect.Damage(towerType.damage);
+				enemySelect.Damage(damage);
 				attack = true;
 				yield return new WaitForSeconds(time); 
 				UpdateAtaque();

@@ -91,7 +91,7 @@ public class TowerRangeArea : TowerAbstratc
 				animator.SetBool("Ataque", true);
 				attack = true;
 				yield return new WaitForSeconds(time);
-				ProjectileNeutrofilo.Create(projectileShootFromPositon.position, lastEnemyPosition, towerType.damage);
+				ProjectileNeutrofilo.Create(projectileShootFromPositon.position, lastEnemyPosition, damage);
 				bullet--;
 				if (bullet <= 0 && !isDie)
 				{

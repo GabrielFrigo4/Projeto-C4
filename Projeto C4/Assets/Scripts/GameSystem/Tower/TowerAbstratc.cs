@@ -23,6 +23,7 @@ public abstract class TowerAbstratc : MonoBehaviour
     public List<Enemy> allEnemys = new List<Enemy>();
     protected GameObject rangeObj;
     protected IEnumerator coroutine;
+	public int damage;
 
     protected abstract IEnumerator AttackTower(float time);
 
