@@ -19,6 +19,7 @@ public class GameIA : MonoBehaviour
 	Text TotalWaves, TimeNextWave;
 	
 	private static int playerHp, kills, staticMoney;
+	private static AudioClip clipLose, clipWin, clipNextWave;
 	[SerializeField] int startMoney, DNAMoney;
 	public static int PlayerHp
 	{
@@ -52,6 +53,7 @@ public class GameIA : MonoBehaviour
 					{
 						defeat.SetActive(true);
 					}
+					SoundPlay.PlayClip(clipLose, new Address<float>(in SliderScript.volumeSound), false, false, "Perdemo");
 				}
 			}
 		}
@@ -101,6 +103,10 @@ public class GameIA : MonoBehaviour
 
     void Start()
     {
+		clipLose = (AudioClip)Resources.Load("Perdemo");
+		clipWin = (AudioClip)Resources.Load("Ganhamo");
+		clipNextWave = (AudioClip)Resources.Load("NovaWave");
+		
 		finishGame = false;
 		menuPause = GameObject.Find("MenuPause");
 		gameGUI = GameObject.Find("GameGUI");
@@ -194,6 +200,7 @@ public class GameIA : MonoBehaviour
 			{
 				victory.SetActive(true);
 			}
+			SoundPlay.PlayClip(clipWin, new Address<float>(in SliderScript.volumeSound), false, false, "Perdemo");
 			
 			globalMoney += DNAMoney;
         }
@@ -259,6 +266,7 @@ public class GameIA : MonoBehaviour
 		}
 		TimeNextWave.text = time.ToString();
 		StartNextWave(ind);
+		SoundPlay.PlayClip(clipNextWave, new Address<float>(in SliderScript.volumeSound), false, false, "NextWave");
 		StartCountMinTime(waveInd);
 		waveInd++;
 	}

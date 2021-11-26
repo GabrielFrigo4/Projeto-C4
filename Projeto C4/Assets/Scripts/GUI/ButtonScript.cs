@@ -9,12 +9,6 @@ public class ButtonScript:MonoBehaviour
 	[SerializeField] Slider music, sound;
 	[SerializeField] Dropdown language;
 
-	void Awake()
-	{
-		QualitySettings.vSyncCount = 1;
-		Application.targetFrameRate = 60;
-	}
-
 	public void Start()
 	{
 		music.value = SliderScript.volumeMusic;
