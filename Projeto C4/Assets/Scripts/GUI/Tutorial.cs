@@ -17,14 +17,14 @@ public class Tutorial : MonoBehaviour
 	{
 		if (Input.GetKeyDown("space"))
 		{
-			tutorialStep++;
 			UpdateTutorial();
+			tutorialStep++;
 		}
 	}
 	void UpdateTutorial() 
 	{
 		Debug.Log("tutorialStep: "+tutorialStep+"ListaTutorial.Count: "+ListaTutorial.Count);
-		for(int i = 0;i <= ListaTutorial.Count; i++) {
+		for(int i = 0;i < ListaTutorial.Count; i++) {
 			Debug.Log("i: "+i);
 			if (tutorialStep != i) {
 				ListaTutorial[i].gameObject.SetActive(false);
