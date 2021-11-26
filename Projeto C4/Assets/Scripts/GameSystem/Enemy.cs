@@ -93,6 +93,7 @@ public class Enemy : MonoBehaviour
 	void PassedOn()
     {
 		GameIA.PlayerHp -= inimigoType.damage;
+		GameIA.Money += inimigoType.moneyInDie;
 		SoundPlay.PlayClip(clipDie, new Address<float>(in SliderScript.volumeSound), false, false, "Inimigo Morrendo");
 		Destroy(lifeBar);
 		Destroy(gameObject);
