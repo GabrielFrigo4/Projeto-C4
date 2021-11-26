@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 595078397}
   - component: {fileID: 595078396}
   m_Layer: 5
-  m_Name: Fase 1 (1)
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2082092745}
         m_TargetAssemblyTypeName: UpgradeMenu, Assembly-CSharp
-        m_MethodName: OnFase1Selected
+        m_MethodName: OnTutorialSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
