@@ -138,7 +138,12 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		SceneScript.GoScene("TowerManual");
 	}
+}
 
-	
+public enum Upgrades : int
+{
+	Soap,
+	Mask,
+	Sanitizer,
 }
 //Para criar outra fileira de upgrades, duplica o ChainUpgrades, e poem os gameObjects dos botões na ordem, pq o GetComponentsInChildren vai de cima para baixo.
