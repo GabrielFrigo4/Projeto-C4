@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
   m_Name: 5_girus1 2
   m_EditorClassIdentifier: 
-  InimigoType: {fileID: 11400000, guid: b195c82a392e66f4eafcf31fecd7d343, type: 2}
+  inimigoType: {fileID: 11400000, guid: 9b30606ad2d1d514dbf6bf4c3a152a33, type: 2}
   count: 5
   time: 2
