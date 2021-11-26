@@ -142,6 +142,7 @@ public class UpgradeMenu : MonoBehaviour
 
 public enum Upgrades : int
 {
+	Noone,
 	Soap,
 	Mask,
 	Sanitizer,

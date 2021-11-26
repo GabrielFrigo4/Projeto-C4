@@ -308,6 +308,8 @@ public class GameIA : MonoBehaviour
 		for (int i = 0; i < totalWaves; i++)
 		{
 			int totalEnemy =  waves[ind].enemyWaves[i].count;
+			
+			/*
 			if(waves[ind].enemyWaves[i].inimigoType.enemyType == EnemyType.Bacterium && UpgradeMenu.antibiotics)
 			{
 				totalEnemy = (int)(totalEnemy*60f/100f);
@@ -317,26 +319,24 @@ public class GameIA : MonoBehaviour
 			{
 				totalEnemy = (int)(totalEnemy*60f/100f);
 			}
-			
-			Debug.Log("abilidade 0");
+			*/
 			
 			if(UpgradeMenu.lastUpgrade == Upgrades.Soap)
 			{
-				totalEnemy = (int)(totalEnemy*85f/100f);
-				Debug.Log("abilidade 1");
+				totalEnemy = (int)((float)totalEnemy*85f/100f);
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Mask)
 			{
-				totalEnemy = (int)(totalEnemy*65f/100f);
-				Debug.Log("abilidade 2");
+				totalEnemy = (int)((float)totalEnemy*65f/100f);
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Sanitizer)
 			{
-				totalEnemy = (int)(totalEnemy*55f/100f);
-				Debug.Log("abilidade 3");
+				totalEnemy = (int)((float)totalEnemy*55f/100f);
 			}
+			
+			float time = waves[ind].enemyWaves[i].time * ((float)waves[ind].enemyWaves[i].count/(float)totalEnemy);
 		
-			corroutineEnemyWave = CreateEnemyWave(waves[ind].enemyWaves[i].time, totalEnemy, i, ind);
+			corroutineEnemyWave = CreateEnemyWave(time, totalEnemy, i, ind);
 			StartCoroutine(corroutineEnemyWave);
 		}
 	}
