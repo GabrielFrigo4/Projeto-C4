@@ -8,7 +8,7 @@ public class TowerMeleSolo : TowerAbstratc
 	Enemy enemySelect = null;
 	bool attack = false;
 	
-    void Update()
+    void UpdateAtaque()
     {
 		//pega os inimigos no alcance da torre
 		GetEnemyInRange();
@@ -60,13 +60,15 @@ public class TowerMeleSolo : TowerAbstratc
 				animator.SetBool("Ataque", true);
 				enemySelect.Damage(towerType.damage);
 				attack = true;
-				yield return new WaitForSeconds(time);
+				yield return new WaitForSeconds(time); 
+				UpdateAtaque();
 			}
 			else
 			{
 				animator.SetBool("Ataque", false);
 				attack = false;
-				yield return new WaitForSeconds(Time.deltaTime);
+				UpdateAtaque();
+				yield return new WaitForSeconds(0f);
 			}
 		}
     }
