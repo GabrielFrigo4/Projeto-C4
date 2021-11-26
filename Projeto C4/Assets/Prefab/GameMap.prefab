@@ -571,7 +571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &691999059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &702060039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -868,6 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741002877}
   - component: {fileID: 741002878}
+  - component: {fileID: 1621524230150787497}
   m_Layer: 0
   m_Name: Vitoria
   m_TagString: Untagged
@@ -941,6 +942,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621524230150787497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741002876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92100ed14186f8547bdab6a2107845fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 2428270612886363005}
 --- !u!1 &773434817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793518531}
   - component: {fileID: 793518532}
+  - component: {fileID: 1621524230150787495}
   m_Layer: 0
   m_Name: Derrota
   m_TagString: Untagged
@@ -1100,6 +1116,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621524230150787495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793518530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92100ed14186f8547bdab6a2107845fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 7620853001919522545}
+  - {fileID: 691999058}
 --- !u!1 &836838167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,7 +1457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1044355524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1570,6 +1601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058580352}
   - component: {fileID: 1058580353}
+  - component: {fileID: 1621524230150787498}
   m_Layer: 0
   m_Name: Victory
   m_TagString: Untagged
@@ -1643,6 +1675,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621524230150787498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058580351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92100ed14186f8547bdab6a2107845fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1044355523}
 --- !u!1 &1059587189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2088755768}
   - component: {fileID: 2088755769}
+  - component: {fileID: 1621524230150787496}
   m_Layer: 0
   m_Name: Defeat
   m_TagString: Untagged
@@ -2374,6 +2421,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1621524230150787496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088755767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92100ed14186f8547bdab6a2107845fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 3479288309301957956}
+  - {fileID: 702060038}
 --- !u!1 &146191829106421468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,7 +4633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3541890295519249173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5172,7 +5234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2362018781659142337
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6799,7 +6861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5750851731309899819
 RectTransform:
   m_ObjectHideFlags: 0

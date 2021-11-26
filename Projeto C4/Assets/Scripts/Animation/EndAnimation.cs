@@ -6,7 +6,7 @@ public class EndAnimation : MonoBehaviour
 {
 	SpriteRenderer spriteRenderer;
 	IEnumerator corroutine;
-	[HideInInspector] public bool active = false;
+	[SerializeField] GameObject[] buttons;
 	
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,22 @@ public class EndAnimation : MonoBehaviour
 		spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void StartAnimation()
+	{
+		corroutine = StartAnimation(0f);
+		StartCoroutine(corroutine);
+	}
+	
+	IEnumerator StartAnimation(float time)
+	{
+		while(spriteRenderer.color.a < 1)
+		{
+			yield return new WaitForSeconds(time);
+			spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, spriteRenderer.color.a + 0.01f);
+		}
+		foreach(GameObject obj in buttons)
+		{
+			obj.SetActive(true);
+		}
+	}
 }

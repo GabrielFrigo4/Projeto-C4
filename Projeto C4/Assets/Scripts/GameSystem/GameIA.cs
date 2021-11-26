@@ -46,11 +46,11 @@ public class GameIA : MonoBehaviour
 					finishGame = false;
 					if(LanguageBehaviour.language == Language.Portugues)
 					{
-						derrota.SetActive(true);
+						derrota.GetComponent<EndAnimation>().StartAnimation();
 					}
 					else
 					{
-						defeat.SetActive(true);
+						defeat.GetComponent<EndAnimation>().StartAnimation();
 					}
 					SoundPlay.PlayClip(clipLose, new Address<float>(in SliderScript.volumeSound), false, false, "Perdemo");
 				}
@@ -116,10 +116,6 @@ public class GameIA : MonoBehaviour
 		vitoria = victoryOrDefeat.transform.Find("Vitoria").gameObject;
 		defeat = victoryOrDefeat.transform.Find("Defeat").gameObject;
 		derrota = victoryOrDefeat.transform.Find("Derrota").gameObject;
-		victory.SetActive(false);
-		vitoria.SetActive(false);
-		defeat.SetActive(false);
-		derrota.SetActive(false);
 		
 		playerHp = 100;
 		kills = 0;
@@ -193,12 +189,11 @@ public class GameIA : MonoBehaviour
 			
 			if(LanguageBehaviour.language == Language.Portugues)
 			{
-				vitoria.SetActive(true);
-				vitoria.GetComponent<EndAnimation>().active = true;
+				vitoria.GetComponent<EndAnimation>().StartAnimation();
 			}
 			else
 			{
-				victory.SetActive(true);
+				victory.GetComponent<EndAnimation>().StartAnimation();
 			}
 			SoundPlay.PlayClip(clipWin, new Address<float>(in SliderScript.volumeSound), false, false, "Perdemo");
 			
