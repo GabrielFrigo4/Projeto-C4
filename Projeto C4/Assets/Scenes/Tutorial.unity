@@ -308,11 +308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd81ccdc4403aea4bb1648bc58b93b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 30
-  startMoney: 150
+  startTime: 20
+  startMoney: 200
   DNAMoney: 100
   waves:
-  - {fileID: 11400000, guid: 26d0c0579d0d78d4787c0142ceef76a1, type: 2}
+  - {fileID: 11400000, guid: 090fda1f5a68dee41860d26e93de3297, type: 2}
+  - {fileID: 11400000, guid: 560098908e0642f46a98185fd699092d, type: 2}
   mainMap: {fileID: 1304833056}
   maps:
   - {fileID: 1749293990}
@@ -1237,7 +1238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1180288022
 RectTransform:
   m_ObjectHideFlags: 0
