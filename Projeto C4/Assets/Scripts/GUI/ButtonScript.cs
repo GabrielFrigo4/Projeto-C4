@@ -14,6 +14,8 @@ public class ButtonScript:MonoBehaviour
 		music.value = SliderScript.volumeMusic;
 		sound.value = SliderScript.volumeSound;
 		language.value = DropDownScript.languageValue;
+		
+		Application.targetFrameRate = 60;
 	}
 	
     public void StartGame()

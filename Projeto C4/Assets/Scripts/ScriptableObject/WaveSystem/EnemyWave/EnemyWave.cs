@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyWave", menuName = "ScriptableObjects/WaveSystem/EnemyWave")]
 public class EnemyWave : ScriptableObject
 {
-    public InimigoType InimigoType;
+    public InimigoType inimigoType;
     public int count;
     public float time;
 }
