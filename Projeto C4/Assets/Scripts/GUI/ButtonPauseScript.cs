@@ -25,11 +25,11 @@ public class ButtonPauseScript : MonoBehaviour
 	public void Update()
 	{
 		bool esc = Input.GetKeyDown(KeyCode.Escape);
-		if(esc && !isPaused)
+		if(esc && !isPaused && Time.timeScale != 0)
 		{
 			PauseGame();
 		}
-		else if(esc && isPaused)
+		else if(esc && isPaused && Time.timeScale == 0)
 		{
 			ReturnGame();
 		}
