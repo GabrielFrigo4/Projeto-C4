@@ -21,7 +21,7 @@ MonoBehaviour:
   time: 0.1
   hp: 5
   damage: 1
-  moneyInDie: 5
+  moneyInDie: 2
   speed: 3
   sizeLifeBar: 1
   rangeLifeBar: 0.75
