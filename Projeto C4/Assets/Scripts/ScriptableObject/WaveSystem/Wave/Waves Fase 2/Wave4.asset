@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2501bd47dd33b2b4390e10d2e3da6246, type: 3}
-  m_Name: Wave3
+  m_Name: Wave4
   m_EditorClassIdentifier: 
-  enemyWaves:
-  - {fileID: 11400000, guid: bf7a026506c1e6549940724d3013c741, type: 2}
-  - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
-  paths: 0100000002000000
-  money: 400
+  enemyWaves: []
+  paths: 
+  money: 0

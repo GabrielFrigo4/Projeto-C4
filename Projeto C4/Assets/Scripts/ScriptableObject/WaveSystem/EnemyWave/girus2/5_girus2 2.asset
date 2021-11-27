@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2501bd47dd33b2b4390e10d2e3da6246, type: 3}
-  m_Name: Wave3
+  m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
+  m_Name: 5_girus2 2
   m_EditorClassIdentifier: 
-  enemyWaves:
-  - {fileID: 11400000, guid: bf7a026506c1e6549940724d3013c741, type: 2}
-  - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
-  paths: 0100000002000000
-  money: 400
+  inimigoType: {fileID: 11400000, guid: 9b30606ad2d1d514dbf6bf4c3a152a33, type: 2}
+  count: 5
+  time: 2
