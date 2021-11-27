@@ -10,6 +10,7 @@ public class UpgradeButtons : MonoBehaviour
 	Text textbox, pricetext;
 	Image sprite;
 	public string textdescriptionp, textdescriptioni;
+
 	void Start()
 	{
 		textbox = dialogbox.GetComponentInChildren<Text>();
@@ -19,6 +20,7 @@ public class UpgradeButtons : MonoBehaviour
 		sprite.enabled = false;
 		textbox.enabled = false;
 	}
+
 	void OnMouseOver()
 	{
 		sprite.enabled = true;
@@ -34,11 +36,11 @@ public class UpgradeButtons : MonoBehaviour
 		}
 		
 	}
+
 	void OnMouseExit()
 	{
 		sprite.enabled = false;
 		textbox.enabled = false;
 		if (pricetag != null){pricetag.SetActive(false);}
 	}
-	
 }

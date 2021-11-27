@@ -21,7 +21,7 @@ public class TowerMeleArea : TowerAbstratc
                 if(enemy != null)
                     enemy.Damage(damage);
             }
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(time - Time.deltaTime);
         }
     }
 }

@@ -24,8 +24,7 @@ public class UpgradeMenu : MonoBehaviour
 		button_parallel = parallelUpgrades.GetComponentInChildren<Button>();
 		UptadeMoneyLabel();
 		level = (int)lastUpgrade;
-		RefreshButtons();
-						
+		RefreshButtons();				
 	}
 	
 	public void OnUpradesSelected() 

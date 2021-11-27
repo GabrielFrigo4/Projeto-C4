@@ -118,7 +118,7 @@ public class TowerRangeArea : TowerAbstratc
 	
 	IEnumerator DieDamage(float time)
 	{
-		yield return new WaitForSeconds(time);
+		yield return new WaitForSeconds(time - Time.deltaTime);
 		DamageAllEnemyInRangeDie();
 	}
 }

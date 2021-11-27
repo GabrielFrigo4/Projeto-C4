@@ -58,7 +58,7 @@ public class TowerRangeSolo: TowerAbstratc
 			{
 				ProjectileCelulaB.Create(projectileShootFromPositon.position, enemySelect, damage);
 			}
-			yield return new WaitForSeconds(time);	
+			yield return new WaitForSeconds(time - Time.deltaTime);	
 		}
     }
 }
