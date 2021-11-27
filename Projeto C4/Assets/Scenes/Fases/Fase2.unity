@@ -158,8 +158,8 @@ MonoBehaviour:
   DNAMoney: 150
   waves:
   - {fileID: 11400000, guid: bee9bb8b4b114cd428686e822b774751, type: 2}
-  - {fileID: 11400000, guid: bee9bb8b4b114cd428686e822b774751, type: 2}
-  - {fileID: 11400000, guid: bee9bb8b4b114cd428686e822b774751, type: 2}
+  - {fileID: 11400000, guid: 012c288abe360c445a1e2ec6063980dc, type: 2}
+  - {fileID: 11400000, guid: 25b2baadc516074499a28119ae25af43, type: 2}
   mainMap: {fileID: 469063708}
   maps:
   - {fileID: 1840202899}

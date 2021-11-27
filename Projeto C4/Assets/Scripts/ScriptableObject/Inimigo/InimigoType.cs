@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyType", menuName = "ScriptableObjects/EnemyType")]
 public class InimigoType : ScriptableObject
 {
-    public EnemyType enemyType;
 	public Texture2D texture;
     public Vector2 size;
     public int startInd, total, pixelPerUnity;
@@ -14,10 +13,4 @@ public class InimigoType : ScriptableObject
 	public int moneyInDie;
     public float speed, sizeLifeBar, rangeLifeBar, heightLifeBar;
 	public GameObject dead;
-}
-
-public enum EnemyType
-{
-    Bacterium,
-    Virus,
 }
