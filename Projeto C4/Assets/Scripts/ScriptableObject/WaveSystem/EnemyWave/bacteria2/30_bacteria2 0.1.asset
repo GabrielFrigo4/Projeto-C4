@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de44e7cc8f54f8f4fbb3dd2d4717648d, type: 3}
-  m_Name: TowerRangeArea
+  m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
+  m_Name: 30_bacteria2 0.1
   m_EditorClassIdentifier: 
-  animatorControler: {fileID: 9100000, guid: bfc4804ae097ade498cd353fb6cb5498, type: 2}
-  towerMode: 1
-  range: 5
-  time: 1.06
-  damage: 15
+  inimigoType: {fileID: 11400000, guid: 8fd63edde14485a4a99ff1a6642d75b3, type: 2}
+  count: 30
+  time: 0.1

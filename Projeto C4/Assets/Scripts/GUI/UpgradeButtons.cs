@@ -9,6 +9,7 @@ public class UpgradeButtons : MonoBehaviour
 	GameObject pricetag;
 	Text textbox, pricetext;
 	Image sprite;
+	[TextArea(3, 10)]
 	public string textdescriptionp, textdescriptioni;
 
 	void Start()

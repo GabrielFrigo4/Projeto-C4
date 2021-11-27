@@ -96,18 +96,22 @@ public class UpgradeMenu : MonoBehaviour
 	{
 		globalMoneyLabel.text = GameIA.globalMoney.ToString();
 	}
-	public void OnFase1Selected() 
+
+	public void OnFaseSelected(int fase) 
 	{
-		SceneScript.GoScene("Fase 1");
+		SceneScript.GoScene($"Fase {fase}");
 	}
+
 	public void OnTutorialSelected() 
 	{
 		SceneScript.GoScene("Tutorial");
 	}
+
 	public void OnBestiarySelected() 
 	{
 		SceneScript.GoScene("Bestiary");
 	}
+
 	public void OnTowerManualSelected() 
 	{
 		SceneScript.GoScene("TowerManual");

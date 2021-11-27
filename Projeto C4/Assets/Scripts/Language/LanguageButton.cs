@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LanguageButton : MonoBehaviour, ILanguage
 {
+	[TextArea(3, 10)]
 	[SerializeField] string portugues, ingles;
     [SerializeField] Text text;
 	

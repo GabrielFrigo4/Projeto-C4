@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2501bd47dd33b2b4390e10d2e3da6246, type: 3}
-  m_Name: Wave4
+  m_Name: Wave5
   m_EditorClassIdentifier: 
   enemyWaves:
-  - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
-  - {fileID: 11400000, guid: c8b7b141675447c4092526de8846b9bc, type: 2}
-  - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
+  - {fileID: 11400000, guid: b44300d133c39324e8906efa1804f1de, type: 2}
+  - {fileID: 11400000, guid: 9bdffe178f16dd64a92570eb29a855ce, type: 2}
+  - {fileID: 11400000, guid: d8b35318e304ab64087fc3aacffe1b70, type: 2}
   - {fileID: 11400000, guid: e9a782d5ba50ac345861e1f564e1f8ae, type: 2}
-  - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
-  - {fileID: 11400000, guid: db8b018d1f7961e45b347e682a014c2c, type: 2}
+  - {fileID: 11400000, guid: d8b35318e304ab64087fc3aacffe1b70, type: 2}
+  - {fileID: 11400000, guid: e904fae48ea341245849f3418df4d34e, type: 2}
   paths: 010000000100000002000000020000000300000003000000
-  money: 200
+  money: 0

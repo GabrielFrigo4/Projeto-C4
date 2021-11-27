@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.63}
-  m_SizeDelta: {x: 367.18, y: 104.33}
+  m_AnchoredPosition: {x: 1.65, y: 0.63}
+  m_SizeDelta: {x: 363.89, y: 104.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17881505
 MonoBehaviour:
@@ -608,8 +608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000047088, y: 16.35}
-  m_SizeDelta: {x: 166.58, y: 56.05}
+  m_AnchoredPosition: {x: 0.32, y: 14.77}
+  m_SizeDelta: {x: 156.94, y: 52.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804386758
 MonoBehaviour:
@@ -912,8 +912,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.47, y: 5.93}
-  m_SizeDelta: {x: 166.58, y: 57.55}
+  m_AnchoredPosition: {x: -0.47, y: 5.72}
+  m_SizeDelta: {x: 166.58, y: 57.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974216027
 MonoBehaviour:
@@ -1326,9 +1326,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: "Compre c\xE9lulas com moedas de prote\xEDna. Quando os inimigos morrem,
-    voc\xEA ganha moedas. "
-  ingles: Buy cells with protein coins. When an enemy dies you earn coins.
+  portugues: "Compre c\xE9lulas com moedas de prote\xEDna. Quando os inimigos morrem
+    ou quando ondas acabam, voc\xEA ganha moedas. "
+  ingles: Buy cells with protein coins. When an enemy dies or when waves run out,
+    you earn coins.
   text: {fileID: 1632050272}
 --- !u!1 &1180288021
 GameObject:
@@ -3450,8 +3451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.47, y: 5.93}
-  m_SizeDelta: {x: 166.58, y: 57.55}
+  m_AnchoredPosition: {x: 0.17, y: 4.81}
+  m_SizeDelta: {x: 165.3, y: 55.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598450302
 MonoBehaviour:
@@ -3530,8 +3531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.47, y: 5.93}
-  m_SizeDelta: {x: 166.58, y: 57.55}
+  m_AnchoredPosition: {x: 0.45, y: 4.97}
+  m_SizeDelta: {x: 173.34, y: 54.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632050272
 MonoBehaviour:
@@ -3566,8 +3567,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Compre c\xE9lulas com moedas de prote\xEDna. Quando os inimigos morrem,
-    voc\xEA ganha moedas.\r\n"
+  m_Text: "Compre c\xE9lulas com moedas de prote\xEDna. Quando os inimigos morrem
+    ou quando ondas acabam, voc\xEA ganha moedas. "
 --- !u!222 &1632050273
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3610,8 +3611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.36, y: 7.15}
-  m_SizeDelta: {x: 198.25, y: 64.85}
+  m_AnchoredPosition: {x: 2.3, y: 2.9}
+  m_SizeDelta: {x: 196.37, y: 68.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662790614
 MonoBehaviour:
@@ -4187,8 +4188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.66, y: 17.76}
-  m_SizeDelta: {x: 189.16, y: 62.47}
+  m_AnchoredPosition: {x: 2.32, y: 16.43}
+  m_SizeDelta: {x: 185.84, y: 59.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915656230
 MonoBehaviour:
