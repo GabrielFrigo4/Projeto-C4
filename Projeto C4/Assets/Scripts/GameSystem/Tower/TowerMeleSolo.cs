@@ -54,8 +54,8 @@ public class TowerMeleSolo : TowerAbstratc
 	protected override IEnumerator AttackTower(float time)
     {
 		while(true)
-		{	
-			Debug.Log(Time.unscaledDeltaTime);
+		{
+			//Debug.Log(Time.unscaledDeltaTime);
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);
