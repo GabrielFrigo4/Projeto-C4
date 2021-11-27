@@ -203,7 +203,37 @@ public class GameIA : MonoBehaviour
 		if(!complementarySystemSquare.activeSelf && ButtonPauseScript.isComplementarySystemActive)
         {
 			complementarySystemSquare.SetActive(true);
-        }
+
+			int x, y;
+			mainGrid.GetXY(GetMouseWorldPosition(), out x, out y);
+			complementarySystemSquare.transform.position = new Vector3(x * 2 - 15f, y * 2 - 8f, 0);
+			if (mainGrid.GetValue(x, y) == GridType.Path)
+			{
+				renderComplementartSystemSquare.color = new Color(0, 1, 0, 0.5f);
+				if (Input.GetMouseButtonDown(0))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+					Money -= 100;
+					Instantiate((GameObject)Resources.Load("SistemaComplementar"), complementarySystemSquare.transform.position, complementarySystemSquare.transform.rotation);
+				}
+				else if (Input.GetMouseButtonDown(1))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
+			}
+			else
+			{
+				renderComplementartSystemSquare.color = new Color(1, 0, 0, 0.5f);
+				if (Input.GetMouseButtonDown(0))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
+				else if (Input.GetMouseButtonDown(1))
+				{
+					ButtonPauseScript.isComplementarySystemActive = false;
+				}
+			}
+		}
 		else if (ButtonPauseScript.isComplementarySystemActive)
         {
 			int x, y;

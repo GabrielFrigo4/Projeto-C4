@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  total: 50
+  total: 75
   time: 0.1
 --- !u!95 &5191318400159025825
 Animator:

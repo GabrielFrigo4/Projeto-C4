@@ -63,13 +63,13 @@ public class UpgradeMenu : MonoBehaviour
 			if (i > level) {
 				buttons[i].interactable = false;
 				buttons[i].animator.SetBool("Interactable", false);
-				Debug.Log(i +" not available");
+				//Debug.Log(i +" not available");
 			} else if (i == level) {
 				buttons[i].interactable = true;
 				buttons[i].animator.SetBool("Interactable", true);
-				Debug.Log(i +" available");
+				//Debug.Log(i +" available");
 			} else if (i < level) {
-				Debug.Log(i +" purchased true");
+				//Debug.Log(i +" purchased true");
 				buttons[i].animator.SetBool("Purchased", true);
 				buttons[i].animator.SetBool("Interactable", true);
 				buttons[i].interactable = false;

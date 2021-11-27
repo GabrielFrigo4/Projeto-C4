@@ -55,12 +55,13 @@ public class TowerMeleSolo : TowerAbstratc
     {
 		while(true)
 		{	
+			Debug.Log(Time.unscaledDeltaTime);
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);
 				enemySelect.Damage(damage);
 				attack = true;
-				yield return new WaitForSeconds(time); 
+				yield return new WaitForSeconds(time - Time.deltaTime); 
 				UpdateAtaque();
 			}
 			else
@@ -68,7 +69,7 @@ public class TowerMeleSolo : TowerAbstratc
 				animator.SetBool("Ataque", false);
 				attack = false;
 				UpdateAtaque();
-				yield return new WaitForSeconds(0f);
+				yield return new WaitForSeconds(Time.unscaledDeltaTime);
 			}
 		}
     }

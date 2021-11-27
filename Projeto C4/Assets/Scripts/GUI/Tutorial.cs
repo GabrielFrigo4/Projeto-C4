@@ -37,7 +37,7 @@ public class Tutorial : MonoBehaviour
 			Pause.SetActive(false);
 		}
 		for(int i = 0;i < ListaTutorial.Count; i++) {
-			Debug.Log("i: "+i);
+			//Debug.Log("i: "+i);
 			if (tutorialStep != i) {
 				ListaTutorial[i].gameObject.SetActive(false);
 			} else {
