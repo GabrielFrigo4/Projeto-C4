@@ -23,14 +23,4 @@ public static class CodeUtils
     {
 		return Mathf.Sqrt((pos1.x - pos2.x) * (pos1.x - pos2.x) + (pos1.y - pos2.y) * (pos1.y - pos2.y));
     }
-    
-	public static IEnumerator WaitForRealTime(float delay){
-         while(true){
-             float pauseEndTime = Time.realtimeSinceStartup + delay;
-             while (Time.realtimeSinceStartup < pauseEndTime){
-                 yield return 0;
-             }
-             break;
-         }
-     }
 }

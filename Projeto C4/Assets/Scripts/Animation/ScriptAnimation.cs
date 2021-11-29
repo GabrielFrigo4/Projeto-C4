@@ -54,7 +54,7 @@ public class ScriptAnimation : MonoBehaviour
             if(timeType == TimeType.NormalTime)
             	yield return new WaitForSeconds(timeSecondFrame);
             else
-            	yield return WaitForRealTime(timeSecondFrame);
+            	yield return new WaitForRealTime(timeSecondFrame);
         }
     }
 
@@ -68,7 +68,7 @@ public class ScriptAnimation : MonoBehaviour
                 if(timeType == TimeType.NormalTime)
 		        	yield return new WaitForSeconds(timeSecondFrame);
 		        else
-		        	yield return WaitForRealTime(timeSecondFrame);
+		        	yield return new WaitForRealTime(timeSecondFrame);
             }
         }
     }
@@ -81,7 +81,7 @@ public class ScriptAnimation : MonoBehaviour
             if(timeType == TimeType.NormalTime)
             	yield return new WaitForSeconds(timeSecondFrame);
             else
-            	yield return WaitForRealTime(timeSecondFrame);
+            	yield return new WaitForRealTime(timeSecondFrame);
         }
         Destroy(gameObject);
 	}
