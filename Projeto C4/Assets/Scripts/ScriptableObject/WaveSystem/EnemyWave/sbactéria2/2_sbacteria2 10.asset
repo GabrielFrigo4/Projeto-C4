@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2501bd47dd33b2b4390e10d2e3da6246, type: 3}
-  m_Name: Wave3
+  m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
+  m_Name: 2_sbacteria2 10
   m_EditorClassIdentifier: 
-  enemyWaves:
-  - {fileID: 11400000, guid: 889dd060d56c18b4c9f13c12104ab0f1, type: 2}
-  - {fileID: 11400000, guid: e904fae48ea341245849f3418df4d34e, type: 2}
-  paths: 0100000001000000
-  money: 400
+  inimigoType: {fileID: 11400000, guid: 5f9ace0cd3312474abfdb0a804bddffb, type: 2}
+  count: 2
+  time: 10

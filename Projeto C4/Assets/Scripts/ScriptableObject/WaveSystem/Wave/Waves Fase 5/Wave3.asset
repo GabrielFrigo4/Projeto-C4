@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - {fileID: 11400000, guid: 889dd060d56c18b4c9f13c12104ab0f1, type: 2}
+  - {fileID: 11400000, guid: b44300d133c39324e8906efa1804f1de, type: 2}
+  - {fileID: 11400000, guid: ff718ff5a096cc947bab2d00fdc907d2, type: 2}
   - {fileID: 11400000, guid: e904fae48ea341245849f3418df4d34e, type: 2}
-  paths: 0100000001000000
-  money: 400
+  paths: 01000000010000000200000002000000
+  money: 250
