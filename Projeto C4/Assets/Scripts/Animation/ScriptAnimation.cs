@@ -7,8 +7,8 @@ public class ScriptAnimation : MonoBehaviour
 {
 	[SerializeField] Texture2D texture;
     [SerializeField] Vector2 size;
-    [SerializeField] int startInd, total, pixelPerUnity;
-    [SerializeField] float time;
+    [SerializeField] int startInd, total;
+    [SerializeField] float pixelPerUnity, time;
     [SerializeField] AnimationType animationType;
     [SerializeField] TimeType timeType;
     private IEnumerator coroutineDestroy, coroutineLoop, coroutineNormal;

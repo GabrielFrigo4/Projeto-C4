@@ -34,6 +34,11 @@ public class ButtonScript:MonoBehaviour
 		menu.transform.position = new Vector3(0,0,0);
 		option.transform.position = new Vector3(32,0,0);
 	}
+
+	//public void Restart()
+	//{
+	//	Application.LoadLevel(0);
+	//}
 	
 	public void CloseGame()
 	{

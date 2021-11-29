@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -646,8 +646,8 @@ MonoBehaviour:
     sua destrui\xE7\xE3o. Causam dano cont\xEDnuo aos inimigos."
   ing: Proteins from the blood that attack the pathogen, causing its destruction.
     Cause continuous damage to the enemy.
-  titletextp: Linfonodo
-  titletexti: Lymph Node
+  titletextp: Sistema Complementar
+  titletexti: Complement System
 --- !u!114 &824910734
 MonoBehaviour:
   m_ObjectHideFlags: 0

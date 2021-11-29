@@ -6,6 +6,7 @@ public class EndAnimation : MonoBehaviour
 {
 	SpriteRenderer spriteRenderer;
 	IEnumerator corroutine;
+	[SerializeField] float time = 0.02f;
 	[SerializeField] GameObject[] objs;
 	
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class EndAnimation : MonoBehaviour
 
     public void StartAnimation()
 	{
-		corroutine = StartAnimation(0f);
+		corroutine = StartAnimation(time);
 		StartCoroutine(corroutine);
 	}
 	
@@ -25,7 +26,7 @@ public class EndAnimation : MonoBehaviour
 	{
 		while(spriteRenderer.color.a < 1)
 		{
-			yield return new WaitForSeconds(time);
+			yield return new WaitForRealTime(time);
 			spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, spriteRenderer.color.a + 0.01f);
 		}
 		foreach(GameObject obj in objs)

@@ -11,7 +11,7 @@ public class GameIA : MonoBehaviour
 	static GameObject victory, vitoria, defeat, derrota;
 	static Text textVictory, textVitoria;
 		
-	public static int globalMoney = 10000;
+	public static int globalMoney = 0;
 	public static GameState gameState = GameState.Normal;
 
 	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;

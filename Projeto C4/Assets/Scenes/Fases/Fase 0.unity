@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731257, g: 0.3807449, b: 0.35872796, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -682,6 +682,38 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787495, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: time
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787496, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: time
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787497, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: time
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787497, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: objs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787497, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: objs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1525152279}
+    - target: {fileID: 1621524230150787498, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: time
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787498, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: objs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621524230150787498, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
+      propertyPath: objs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1525152279}
     - target: {fileID: 1621524230667274034, guid: 08f8ab42f4709744bbb0f17f033cb638, type: 3}
       propertyPath: m_Name
       value: GameMap
@@ -854,7 +886,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929313668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.039968945, y: 0.039968945, z: 0.039968945}
   m_Children:
   - {fileID: 1180288022}
@@ -1467,8 +1499,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 1.5301056}
-  m_SizeDelta: {x: 399.4492, y: 128.7202}
+  m_AnchoredPosition: {x: -0.0228, y: 1.4843}
+  m_SizeDelta: {x: 379.9667, y: 126.4278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219599373
 MonoBehaviour:
@@ -3516,7 +3548,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1525152280}
   - component: {fileID: 1525152283}
-  - component: {fileID: 1525152282}
   - component: {fileID: 1525152281}
   m_Layer: 5
   m_Name: Canvas
@@ -3524,7 +3555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1525152280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3534,7 +3565,7 @@ RectTransform:
   m_GameObject: {fileID: 1525152279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalScale: {x: 1, y: 1, z: 25}
   m_Children:
   - {fileID: 2085750792}
   m_Father: {fileID: 928073632}
@@ -3542,7 +3573,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10000, y: 6225}
+  m_AnchoredPosition: {x: 566, y: 170}
   m_SizeDelta: {x: 640, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525152281
@@ -3562,29 +3593,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1525152282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525152279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
 --- !u!223 &1525152283
 Canvas:
   m_ObjectHideFlags: 0
@@ -4450,7 +4458,7 @@ RectTransform:
   m_GameObject: {fileID: 2085750791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children:
   - {fileID: 1219599372}
   m_Father: {fileID: 1525152280}
@@ -4458,7 +4466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -376.48706, y: -235.7677}
+  m_AnchoredPosition: {x: 9, y: -36}
   m_SizeDelta: {x: -623.0763, y: -470.4806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2085750793
@@ -4511,10 +4519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: "No menu voc\xEA vai encontrar:\r uma loja, onde voc\xEA pode comprar
+  portugues: "No menu voc\xEA vai encontrar:\r Uma loja, onde voc\xEA pode comprar
     melhorias.\r A C\xE9lula T, que cria uma mem\xF3ria dos inimigos.\r O Linfonodo,
     que possui informa\xE7\xF5es das c\xE9lulas do Sistema Imune.\r"
-  ingles: "At the menu you find:\r a shop where you can buy upgrades.\r The T cell,
+  ingles: "At the menu you find:\r A shop where you can buy upgrades.\r The T cell,
     that created a memory of the enemies.\r The lymph node, that has information
     of the cell from the Immune System.\r"
   text: {fileID: 1219599373}
