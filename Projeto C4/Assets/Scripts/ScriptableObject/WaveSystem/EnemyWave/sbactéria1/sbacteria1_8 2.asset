@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 304db1c32bd57184fb3e0ffad28d65aa, type: 3}
-  m_Name: sbacteria1_5 2
+  m_Name: sbacteria1_8 2
   m_EditorClassIdentifier: 
   inimigoType: {fileID: 11400000, guid: 74b6c07345365924db76752ea0144f6a, type: 2}
-  count: 5
+  count: 8
   time: 2

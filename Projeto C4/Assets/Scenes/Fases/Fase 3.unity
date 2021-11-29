@@ -159,6 +159,8 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: ace081e47b77e02468b82f14ba524b28, type: 2}
   - {fileID: 11400000, guid: bd74dc79e7de1994686fe71a19650de4, type: 2}
+  - {fileID: 11400000, guid: 1c4af57a33d03934b80633a70b728c22, type: 2}
+  - {fileID: 11400000, guid: b8449b0b577d3e14894659994d4a1c61, type: 2}
   mainMap: {fileID: 1691056129}
   maps:
   - {fileID: 1907473695}
