@@ -6,7 +6,7 @@ public class EndAnimation : MonoBehaviour
 {
 	SpriteRenderer spriteRenderer;
 	IEnumerator corroutine;
-	[SerializeField] GameObject[] buttons;
+	[SerializeField] GameObject[] objs;
 	
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class EndAnimation : MonoBehaviour
 			yield return new WaitForSeconds(time);
 			spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, spriteRenderer.color.a + 0.01f);
 		}
-		foreach(GameObject obj in buttons)
+		foreach(GameObject obj in objs)
 		{
 			obj.SetActive(true);
 		}
