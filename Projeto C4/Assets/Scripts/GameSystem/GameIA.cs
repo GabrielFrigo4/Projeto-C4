@@ -9,6 +9,7 @@ public class GameIA : MonoBehaviour
 {
 	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
 	static GameObject victory, vitoria, defeat, derrota;
+	static Text textVictory, textVitoria;
 		
 	public static int globalMoney = 10000;
 	public static GameState gameState = GameState.Normal;
@@ -116,6 +117,11 @@ public class GameIA : MonoBehaviour
 		vitoria = victoryOrDefeat.transform.Find("Vitoria").gameObject;
 		defeat = victoryOrDefeat.transform.Find("Defeat").gameObject;
 		derrota = victoryOrDefeat.transform.Find("Derrota").gameObject;
+		
+		GameObject objVic = vitoria.transform.Find("DNA ganhado").gameObject, objVit = victory.transform.Find("DNA ganhado").gameObject;
+		
+		textVitoria = objVic.transform.Find("Text").GetComponent<Text>();
+		textVictory = objVit.transform.Find("Text").GetComponent<Text>();
 		
 		playerHp = 100;
 		kills = 0;
