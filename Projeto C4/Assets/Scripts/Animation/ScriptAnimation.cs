@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static CodeUtils;
 
 public class ScriptAnimation : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ScriptAnimation : MonoBehaviour
     [SerializeField] int startInd, total, pixelPerUnity;
     [SerializeField] float time;
     [SerializeField] AnimationType animationType;
+    [SerializeField] TimeType timeType;
     private IEnumerator coroutineDestroy, coroutineLoop, coroutineNormal;
     private SpriteRenderer spriteRender;
 
@@ -49,7 +51,10 @@ public class ScriptAnimation : MonoBehaviour
         for (int i = startInd; i < total + startInd; i++)
         {
             spriteRender.sprite = Sprite.Create(texture, new Rect(new Vector2(size.x * i, 0), size), new Vector2(0.5f, 0.5f), pixelPerUnity, 1);
-            yield return new WaitForSeconds(timeSecondFrame);
+            if(timeType == TimeType.NormalTime)
+            	yield return new WaitForSeconds(timeSecondFrame);
+            else
+            	yield return WaitForRealTime(timeSecondFrame);
         }
     }
 
@@ -60,7 +65,10 @@ public class ScriptAnimation : MonoBehaviour
             for (int i = startInd; i < total + startInd; i++)
             {
                 spriteRender.sprite = Sprite.Create(texture, new Rect(new Vector2(size.x * i, 0), size), new Vector2(0.5f, 0.5f), pixelPerUnity, 1);
-                yield return new WaitForSeconds(timeSecondFrame);
+                if(timeType == TimeType.NormalTime)
+		        	yield return new WaitForSeconds(timeSecondFrame);
+		        else
+		        	yield return WaitForRealTime(timeSecondFrame);
             }
         }
     }
@@ -70,7 +78,10 @@ public class ScriptAnimation : MonoBehaviour
 		for(int i = startInd; i < total + startInd; i++)
         {
             spriteRender.sprite = Sprite.Create(texture, new Rect(new Vector2(size.x * i, 0), size), new Vector2(0.5f, 0.5f), pixelPerUnity, 1);
-            yield return new WaitForSeconds(timeSecondFrame);
+            if(timeType == TimeType.NormalTime)
+            	yield return new WaitForSeconds(timeSecondFrame);
+            else
+            	yield return WaitForRealTime(timeSecondFrame);
         }
         Destroy(gameObject);
 	}
@@ -81,4 +92,10 @@ public enum AnimationType
     Destroy,
     Loop,
 	Normal,
+}
+
+public enum TimeType
+{
+	NormalTime,
+	RealTime,
 }

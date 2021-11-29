@@ -2186,6 +2186,7 @@ MonoBehaviour:
   pixelPerUnity: 50
   time: 0.1
   animationType: 1
+  timeType: 0
 --- !u!1 &1852703727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,8 +3018,9 @@ MonoBehaviour:
   startInd: 0
   total: 12
   pixelPerUnity: 50
-  time: 0
+  time: 0.1
   animationType: 1
+  timeType: 1
 --- !u!1 &1439895543184353884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,8 +4919,9 @@ MonoBehaviour:
   startInd: 0
   total: 12
   pixelPerUnity: 50
-  time: 0
+  time: 0.1
   animationType: 1
+  timeType: 1
 --- !u!1 &2249735623341806258
 GameObject:
   m_ObjectHideFlags: 0
