@@ -157,22 +157,20 @@ MonoBehaviour:
   startMoney: 300
   DNAMoney: 150
   waves:
-  - {fileID: 11400000, guid: 8c862d941afdda74ab62abf16569ae6a, type: 2}
+  - {fileID: 11400000, guid: ace081e47b77e02468b82f14ba524b28, type: 2}
+  - {fileID: 11400000, guid: bd74dc79e7de1994686fe71a19650de4, type: 2}
   mainMap: {fileID: 1691056129}
   maps:
   - {fileID: 1907473695}
   - {fileID: 1034885986}
   starts:
+  - {x: 1, y: 0}
   - {x: 0, y: 6}
-  - {x: 0, y: 3}
-  - {x: 0, y: 1}
   ends:
-  - {x: 15, y: 6}
-  - {x: 15, y: 6}
-  - {x: 15, y: 2}
+  - {x: 14, y: 7}
+  - {x: 15, y: 0}
   indentationStarts:
-  - {x: -1, y: 0}
-  - {x: -1, y: 0}
+  - {x: 0, y: -1}
   - {x: -1, y: 0}
   tileGround:
   - {fileID: 11400000, guid: 4f4221aa52a77e24eb517ac49aab07c0, type: 2}
