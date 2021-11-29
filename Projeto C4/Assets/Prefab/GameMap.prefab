@@ -2925,8 +2925,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7922966559218334916}
-  - component: {fileID: 825264026063053434}
   - component: {fileID: 1305143792366871558}
+  - component: {fileID: 825264026063053434}
   m_Layer: 5
   m_Name: DNA ganhado
   m_TagString: Untagged
@@ -2949,25 +2949,6 @@ Transform:
   m_Father: {fileID: 741002877}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &825264026063053434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330538723172998234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: bb04969dedaddef4094e27c89df3eda2, type: 3}
-  size: {x: 24, y: 64}
-  startInd: 0
-  total: 12
-  pixelPerUnity: 50
-  time: 0.1
-  animationType: 1
 --- !u!212 &1305143792366871558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3019,6 +3000,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &825264026063053434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330538723172998234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: bb04969dedaddef4094e27c89df3eda2, type: 3}
+  size: {x: 24, y: 64}
+  startInd: 0
+  total: 12
+  pixelPerUnity: 50
+  time: 0.1
+  animationType: 1
 --- !u!1 &1439895543184353884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,8 +4825,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5184874223150199621}
-  - component: {fileID: 5986706086613104808}
   - component: {fileID: 9001781429507168004}
+  - component: {fileID: 5986706086613104808}
   m_Layer: 5
   m_Name: DNA ganhado
   m_TagString: Untagged
@@ -4849,25 +4849,6 @@ Transform:
   m_Father: {fileID: 1058580352}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5986706086613104808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166340372928067405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: bb04969dedaddef4094e27c89df3eda2, type: 3}
-  size: {x: 24, y: 64}
-  startInd: 0
-  total: 12
-  pixelPerUnity: 50
-  time: 0.1
-  animationType: 1
 --- !u!212 &9001781429507168004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4919,6 +4900,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5986706086613104808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166340372928067405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969833e4d0aa0f408de4d3739807d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: bb04969dedaddef4094e27c89df3eda2, type: 3}
+  size: {x: 24, y: 64}
+  startInd: 0
+  total: 12
+  pixelPerUnity: 50
+  time: 0.1
+  animationType: 1
 --- !u!1 &2249735623341806258
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,7 +5379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '+ 50
+  m_Text: '+ 5
 
 '
 --- !u!1 &3002505844934735326
@@ -5986,9 +5986,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '+ 50
-
-'
+  m_Text: + 5
 --- !u!1 &3717546588022359878
 GameObject:
   m_ObjectHideFlags: 0
