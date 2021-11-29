@@ -198,8 +198,13 @@ public class GameIA : MonoBehaviour
 			option.transform.position = new Vector3(96, 0, 0);
 			Time.timeScale = 0;
 			finishGame = true;
-			
-			if(LanguageBehaviour.language == Language.Portugues)
+
+			if (LevelButtons.canGo2Next)
+			{
+				LevelButtons.currentLevel++;
+            }
+
+			if (LanguageBehaviour.language == Language.Portugues)
 			{
 				victory.SetActive(false);
 				defeat.SetActive(false);
