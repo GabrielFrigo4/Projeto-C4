@@ -99,6 +99,14 @@ public class UpgradeMenu : MonoBehaviour
 
 	public void OnFaseSelected(int fase) 
 	{
+		if (fase == LevelButtons.currentLevel)
+        {
+			LevelButtons.canGo2Next = true;
+        } 
+		else
+        {
+			LevelButtons.canGo2Next = false;
+		}
 		SceneScript.GoScene($"Fase {fase}");
 	}
 

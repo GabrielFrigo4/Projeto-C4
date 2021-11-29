@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1832,8 +1832,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2082092745}
         m_TargetAssemblyTypeName: UpgradeMenu, Assembly-CSharp
-        m_MethodName: OnTutorialSelected
-        m_Mode: 1
+        m_MethodName: OnFaseSelected
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3080,6 +3080,7 @@ MonoBehaviour:
   pixelPerUnity: 50
   time: 2
   animationType: 1
+  timeType: 0
 --- !u!212 &1109394847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5521,6 +5522,7 @@ MonoBehaviour:
   pixelPerUnity: 50
   time: 0.1
   animationType: 1
+  timeType: 0
 --- !u!212 &2002039299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5619,6 +5621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032593547}
+  - component: {fileID: 2032593548}
   m_Layer: 5
   m_Name: Levels
   m_TagString: Untagged
@@ -5652,6 +5655,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.0030751}
   m_SizeDelta: {x: 800, y: 449.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2032593548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032593546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d157200a09c44419dc2f2d65e90736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
 --- !u!1 &2035314971
 GameObject:
   m_ObjectHideFlags: 0
