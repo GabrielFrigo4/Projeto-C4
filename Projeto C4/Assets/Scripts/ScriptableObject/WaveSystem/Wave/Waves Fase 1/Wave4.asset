@@ -17,6 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db8b018d1f7961e45b347e682a014c2c, type: 2}
   - {fileID: 11400000, guid: fcce9f768a29eba4f9b6777b8e618827, type: 2}
   - {fileID: 11400000, guid: ccc8650c039bd664fa155fc73b8de007, type: 2}
-  - {fileID: 11400000, guid: e904fae48ea341245849f3418df4d34e, type: 2}
+  - {fileID: 11400000, guid: c95d09d7d38a60f43b0e523fa1759aac, type: 2}
   paths: 0100000001000000010000000200000002000000
   money: 0
