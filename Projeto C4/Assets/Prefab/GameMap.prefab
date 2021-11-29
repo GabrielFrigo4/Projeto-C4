@@ -3017,7 +3017,7 @@ MonoBehaviour:
   startInd: 0
   total: 12
   pixelPerUnity: 50
-  time: 0.1
+  time: 0
   animationType: 1
 --- !u!1 &1439895543184353884
 GameObject:
@@ -4917,7 +4917,7 @@ MonoBehaviour:
   startInd: 0
   total: 12
   pixelPerUnity: 50
-  time: 0.1
+  time: 0
   animationType: 1
 --- !u!1 &2249735623341806258
 GameObject:
