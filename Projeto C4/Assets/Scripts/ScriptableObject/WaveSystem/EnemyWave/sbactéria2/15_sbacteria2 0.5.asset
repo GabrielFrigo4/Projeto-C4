@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 15_sbacteria2 0.5
   m_EditorClassIdentifier: 
   inimigoType: {fileID: 11400000, guid: 5f9ace0cd3312474abfdb0a804bddffb, type: 2}
-  count: 7
-  time: 3
+  count: 15
+  time: 0.5

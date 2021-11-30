@@ -18,6 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5958eb8e85601044c9236111b1ea8fbf, type: 2}
   - {fileID: 11400000, guid: ff561edfecb8348499385411c51ff3ad, type: 2}
   - {fileID: 11400000, guid: f7ab93b5317bc7d40a143ff6de73bddb, type: 2}
-  - {fileID: 11400000, guid: db8b018d1f7961e45b347e682a014c2c, type: 2}
+  - {fileID: 11400000, guid: e82d7135b71b9974a82f20cda6fbd3c5, type: 2}
   paths: 020000000200000001000000010000000100000001000000
   money: 350

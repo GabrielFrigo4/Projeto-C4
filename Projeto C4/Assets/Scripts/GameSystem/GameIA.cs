@@ -342,7 +342,7 @@ public class GameIA : MonoBehaviour
         {
 			if (time < enemyWave.count * enemyWave.time) time = enemyWave.count * enemyWave.time;
 		}
-		corroutineMinTime = CountMinTime(time);
+		corroutineMinTime = CountMinTime(time + 0.15f);
 		StartCoroutine(corroutineMinTime);
 	}
 
@@ -358,24 +358,24 @@ public class GameIA : MonoBehaviour
 		
 		for (int i = 0; i < totalWaves; i++)
 		{
-			int totalEnemy =  waves[ind].enemyWaves[i].count;
+			float totalEnemy =  waves[ind].enemyWaves[i].count;
 			
 			if(UpgradeMenu.lastUpgrade == Upgrades.Soap)
 			{
-				totalEnemy = (int)((float)totalEnemy*85f/100f);
+				totalEnemy = Mathf.FloorToInt(totalEnemy*85f/100f);
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Mask)
 			{
-				totalEnemy = (int)((float)totalEnemy*65f/100f);
+				totalEnemy = Mathf.FloorToInt(totalEnemy*65f/100f);
 			}
 			else if(UpgradeMenu.lastUpgrade == Upgrades.Sanitizer)
 			{
-				totalEnemy = (int)((float)totalEnemy*55f/100f);
+				totalEnemy = Mathf.FloorToInt(totalEnemy*55f/100f);
 			}
 			
-			float time = waves[ind].enemyWaves[i].time * ((float)waves[ind].enemyWaves[i].count/(float)totalEnemy);
+			float time = waves[ind].enemyWaves[i].time * (waves[ind].enemyWaves[i].count/totalEnemy);
 		
-			corroutineEnemyWave = CreateEnemyWave(time, totalEnemy, i, ind);
+			corroutineEnemyWave = CreateEnemyWave(time, (int)totalEnemy, i, ind);
 			StartCoroutine(corroutineEnemyWave);
 		}
 	}

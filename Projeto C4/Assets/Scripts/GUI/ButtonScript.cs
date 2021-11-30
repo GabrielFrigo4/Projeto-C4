@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using System.Diagnostics;
+using System.IO;
 
 public class ButtonScript:MonoBehaviour
 {
@@ -25,22 +27,24 @@ public class ButtonScript:MonoBehaviour
 	
 	public void OptionGame()
 	{
-		menu.transform.position = new Vector3(-32,0,0);
-		option.transform.position = new Vector3(0,0,0);
+		menu.transform.position = new Vector3(-32, 0, 0);
+		option.transform.position = new Vector3(0, 0, 0);
 	}
 	
 	public void ReturnMenu()
 	{
-		menu.transform.position = new Vector3(0,0,0);
-		option.transform.position = new Vector3(32,0,0);
+		menu.transform.position = new Vector3(0, 0, 0);
+		option.transform.position = new Vector3(32, 0, 0);
 	}
 
-	//public void Restart()
-	//{
-	//	Application.LoadLevel(0);
-	//}
-	
-	public void CloseGame()
+    public void Restart()
+    {
+		string path = Path.GetFullPath(".") + "/" + Application.productName + ".exe";
+        Process.Start(path);
+        Application.Quit();
+    }
+
+    public void CloseGame()
 	{
 		Application.Quit();
 	}
