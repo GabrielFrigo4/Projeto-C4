@@ -15,4 +15,4 @@ MonoBehaviour:
   enemyWaves:
   - {fileID: 11400000, guid: a31762e4959bcac4494926528d8680e2, type: 2}
   paths: 03000000
-  money: 300
+  money: 350

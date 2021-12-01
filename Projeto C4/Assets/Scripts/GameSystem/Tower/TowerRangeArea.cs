@@ -11,7 +11,7 @@ public class TowerRangeArea : TowerAbstratc
 	Enemy enemySelect = null;
 	IEnumerator corroutineDestroy, corroutineDie;
 	bool attack = false, isDie = false;
-	int bullet = 10;
+	int bullet = 12;
 	Vector3 lastEnemyPosition;
 	
     void Awake()

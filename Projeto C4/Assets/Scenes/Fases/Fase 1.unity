@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 14
-  startMoney: 100
+  startMoney: 150
   DNAMoney: 100
   waves:
   - {fileID: 11400000, guid: 00bb9606d4fb88a4988894a1a02bb7eb, type: 2}

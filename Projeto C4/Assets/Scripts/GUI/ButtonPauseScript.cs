@@ -15,6 +15,10 @@ public class ButtonPauseScript : MonoBehaviour
 	
 	public void Start()
 	{
+		isSpeed = false;
+		isPaused = false;
+		isComplementarySystemActive = false;
+
 		music.value = SliderScript.volumeMusic;
 		sound.value = SliderScript.volumeSound;
 		language.value = DropDownScript.languageValue;

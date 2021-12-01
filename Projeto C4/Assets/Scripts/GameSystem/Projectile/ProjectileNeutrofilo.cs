@@ -8,7 +8,7 @@ public class ProjectileNeutrofilo : MonoBehaviour
 	Vector2 moveDir;
 	GameObject projectileDead;
 	Vector2 lastPosition;
-	float moveSpeed = 20f;
+	float moveSpeed = 25f;
 	int damage;
 	List<Enemy> allEnemys = new List<Enemy>();
 	[SerializeField] float range;

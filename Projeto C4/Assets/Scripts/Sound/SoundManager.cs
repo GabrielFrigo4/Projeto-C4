@@ -11,6 +11,11 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Behaviour(action, target, soundTag);
+    }
+
+    public static void Behaviour(SoundManagerAction action, SoundManagerTarget target, string soundTag)
+    {
         List<ClipPlayScript> clipPlayScripts = new List<ClipPlayScript>(FindObjectsOfType<ClipPlayScript>());
         List<ClipPlayScript> remove = new List<ClipPlayScript>();
 
@@ -24,7 +29,7 @@ public class SoundManager : MonoBehaviour
             clipPlayScripts.Remove(clip);
         }
 
-        if(clipPlayScripts.Count > 0)
+        if (clipPlayScripts.Count > 0)
         {
             switch (action)
             {
@@ -88,6 +93,7 @@ public class SoundManager : MonoBehaviour
             }
         }
     }
+
 }
 
 public enum SoundManagerAction

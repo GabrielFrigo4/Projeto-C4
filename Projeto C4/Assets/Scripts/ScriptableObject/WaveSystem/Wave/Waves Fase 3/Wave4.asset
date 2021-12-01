@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c1b0070c56951694cb178023c04e4bfa, type: 2}
   - {fileID: 11400000, guid: 03930b253a029f14a90450b02dfc65e9, type: 2}
   paths: 02000000020000000100000001000000
-  money: 300
+  money: 0

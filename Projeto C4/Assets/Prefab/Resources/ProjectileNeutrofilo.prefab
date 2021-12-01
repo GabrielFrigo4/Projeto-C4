@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01d94a33bf236e4984c8665595591d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0.75
+  range: 0.77
 --- !u!114 &1670544850295382565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,3 +116,4 @@ MonoBehaviour:
   pixelPerUnity: 25
   time: 0.1
   animationType: 2
+  timeType: 0

@@ -7,22 +7,46 @@ using static CodeUtils;
 
 public class GameIA : MonoBehaviour
 {
-	static GameObject menuPause, gameGUI, option, victoryOrDefeat;
+	#region Scene Objects
+	static GameObject menuPause = null, gameGUI = null, option = null, victoryOrDefeat = null, lifeBar = null, killPlacar = null, moneyPlacar = null;
 	static GameObject victory, vitoria, defeat, derrota;
 	static Text textVictory, textVitoria;
-		
+	static int playerHp, kills, staticMoney;
+	static AudioClip clipLose, clipWin, clipNextWave;
+	static GameObject miniMenuTorres = null, complementarySystemSquare = null;
+	Text TotalWaves, TimeNextWave;
+	TowerAbstratc towerRageShow = null;
+	SpriteRenderer renderComplementartSystemSquare = null;
+	#endregion
+
+	#region GameData
 	public static int globalMoney = 0;
 	public static GameState gameState = GameState.Normal;
-
-	static GameObject lifeBar = null, killPlacar = null, moneyPlacar = null;
 	static bool finishGame = false;
-	Text TotalWaves, TimeNextWave;
-	
-	private static int playerHp, kills, staticMoney;
-	private static AudioClip clipLose, clipWin, clipNextWave;
-	private static GameObject miniMenuTorres = null, complementarySystemSquare = null;
 	[SerializeField] int startTime = 12, startMoney, DNAMoney;
-	public static int PlayerHp
+	#endregion
+
+	#region Path and Grid
+	static Grid mainGrid;
+	[SerializeField] List<Wave> waves;
+	[SerializeField] Tilemap mainMap;
+	[SerializeField] List<Tilemap> maps;
+	[SerializeField] List<Vector2> starts, ends, indentationStarts;
+	[SerializeField] List<TileBase> tileGround;
+	[SerializeField] List<TileBase> tilePath;
+	[SerializeField] List<TileBase> tileTowerPositon;
+	List<List<Vector2>> paths = new List<List<Vector2>>();
+	List<Grid> pathGrid = new List<Grid>();
+	IEnumerator corroutineEnemyWave, corroutineTimeWave, corroutineMinTime;
+	bool minTimeWaveEnd = false;
+	int waveInd = 0;
+	#endregion
+
+	#region Const
+	const int NEXT_WAVE_TIME = 8;
+    #endregion
+
+    public static int PlayerHp
 	{
 		get
 		{
@@ -46,6 +70,8 @@ public class GameIA : MonoBehaviour
 					option.transform.position = new Vector3(96, 0, 0);
 					Time.timeScale = 0;
 					finishGame = true;
+					SoundManager.Behaviour(SoundManagerAction.Stop, SoundManagerTarget.All, "Fase");
+
 					if (miniMenuTorres != null) Destroy(miniMenuTorres);
 					if (LanguageBehaviour.language == Language.Portugues)
 					{
@@ -90,23 +116,6 @@ public class GameIA : MonoBehaviour
 			moneyPlacar.GetComponent<Text>().text = staticMoney.ToString();
 		}
     }
-	SpriteRenderer renderComplementartSystemSquare = null;
-	TowerAbstratc towerRageShow = null;
-
-	[SerializeField] List<Wave> waves;
-	[SerializeField] Tilemap mainMap;
-	[SerializeField] List<Tilemap> maps;
-	[SerializeField] List<Vector2> starts, ends, indentationStarts;
-	[SerializeField] List<TileBase> tileGround;
-	[SerializeField] List<TileBase> tilePath;
-	[SerializeField] List<TileBase> tileTowerPositon;
-	List<List<Vector2>> paths = new List<List<Vector2>>();
-	List<Grid> pathGrid = new List<Grid>(); 
-	static Grid mainGrid;
-
-	IEnumerator corroutineEnemyWave, corroutineTimeWave, corroutineMinTime;
-	int waveInd = 0;
-	bool minTimeWaveEnd = false;
 
     void Start()
     {
@@ -188,7 +197,7 @@ public class GameIA : MonoBehaviour
 		if(FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && waveInd < waves.Count && !finishGame)
         {
 			Money += waves[waveInd - 1].money;
-			StartNextWave(6, waveInd);
+			StartNextWave(NEXT_WAVE_TIME, waveInd);
 		}
 		else if (FindObjectsOfType<Enemy>().Length == 0 && minTimeWaveEnd && !finishGame)
         {
@@ -199,6 +208,7 @@ public class GameIA : MonoBehaviour
 			option.transform.position = new Vector3(96, 0, 0);
 			Time.timeScale = 0;
 			finishGame = true;
+			SoundManager.Behaviour(SoundManagerAction.Stop, SoundManagerTarget.All, "Fase");
 
 			if (miniMenuTorres != null) Destroy(miniMenuTorres);
 

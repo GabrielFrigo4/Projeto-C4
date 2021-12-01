@@ -330,6 +330,7 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 090fda1f5a68dee41860d26e93de3297, type: 2}
   - {fileID: 11400000, guid: 560098908e0642f46a98185fd699092d, type: 2}
+  - {fileID: 11400000, guid: 8bccd0422860e544f8407ecf3aaaf266, type: 2}
   mainMap: {fileID: 1304833056}
   maps:
   - {fileID: 1749293990}
