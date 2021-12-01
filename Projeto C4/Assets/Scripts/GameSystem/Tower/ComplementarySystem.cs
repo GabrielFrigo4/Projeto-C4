@@ -59,7 +59,7 @@ public class ComplementarySystem : MonoBehaviour
         List<Enemy> removeEnemys = new List<Enemy>();
         foreach (Enemy enemy in allEnemys)
         {
-            if (GetDistance2D(enemy.transform.position, transform.position) <= 1f) continue;
+            if (GetDistance2D(enemy.transform.position, transform.position) <= 1.2f) continue;
             removeEnemys.Add(enemy);
         }
         foreach (Enemy enemy in removeEnemys)

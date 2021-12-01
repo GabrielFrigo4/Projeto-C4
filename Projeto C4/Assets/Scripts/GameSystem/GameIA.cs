@@ -20,6 +20,7 @@ public class GameIA : MonoBehaviour
 	
 	private static int playerHp, kills, staticMoney;
 	private static AudioClip clipLose, clipWin, clipNextWave;
+	private static GameObject miniMenuTorres = null, complementarySystemSquare = null;
 	[SerializeField] int startTime = 12, startMoney, DNAMoney;
 	public static int PlayerHp
 	{
@@ -44,8 +45,9 @@ public class GameIA : MonoBehaviour
 					gameGUI.transform.position = new Vector3(64, 0, 0);
 					option.transform.position = new Vector3(96, 0, 0);
 					Time.timeScale = 0;
-					finishGame = false;
-					if(LanguageBehaviour.language == Language.Portugues)
+					finishGame = true;
+					if (miniMenuTorres != null) Destroy(miniMenuTorres);
+					if (LanguageBehaviour.language == Language.Portugues)
 					{
 						victory.SetActive(false);
 						vitoria.SetActive(false);
@@ -88,7 +90,6 @@ public class GameIA : MonoBehaviour
 			moneyPlacar.GetComponent<Text>().text = staticMoney.ToString();
 		}
     }
-	GameObject miniMenuTorres = null, complementarySystemSquare = null;
 	SpriteRenderer renderComplementartSystemSquare = null;
 	TowerAbstratc towerRageShow = null;
 
@@ -198,6 +199,8 @@ public class GameIA : MonoBehaviour
 			option.transform.position = new Vector3(96, 0, 0);
 			Time.timeScale = 0;
 			finishGame = true;
+
+			if (miniMenuTorres != null) Destroy(miniMenuTorres);
 
 			if (LevelButtons.canGo2Next)
 			{

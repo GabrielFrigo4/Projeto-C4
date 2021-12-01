@@ -55,7 +55,6 @@ public class TowerMeleSolo : TowerAbstratc
     {
 		while(true)
 		{
-			//Debug.Log(Time.unscaledDeltaTime);
 			if(enemySelect != null && allEnemys.Contains(enemySelect))
 			{
 				animator.SetBool("Ataque", true);

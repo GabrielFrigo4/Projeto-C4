@@ -77,7 +77,7 @@ public class TowerRangeArea : TowerAbstratc
 
 		foreach (Enemy enemy in allEnemys)
 		{
-			if (GetDistance2D(enemy.transform.position, transform.position) <= 3.5f) enemy.Damage(towerType.damage);
+			if (GetDistance2D(enemy.transform.position, transform.position) <= 3.7f) enemy.Damage(towerType.damage);
 		}
 	}
 
@@ -90,7 +90,7 @@ public class TowerRangeArea : TowerAbstratc
 			{
 				animator.SetBool("Ataque", true);
 				attack = true;
-				yield return new WaitForSeconds(time);
+				yield return new WaitForSeconds(time - Time.deltaTime);
 				ProjectileNeutrofilo.Create(projectileShootFromPositon.position, lastEnemyPosition, damage);
 				bullet--;
 				if (bullet <= 0 && !isDie)
@@ -105,7 +105,7 @@ public class TowerRangeArea : TowerAbstratc
 			{
 				animator.SetBool("Ataque", false);
 				attack = false;
-				yield return new WaitForSeconds(Time.deltaTime);
+				yield return new WaitForSeconds(Time.unscaledDeltaTime);
 			}
 		}
     }

@@ -50,7 +50,7 @@ public abstract class TowerAbstratc : MonoBehaviour
         List<Enemy> removeEnemys = new List<Enemy>();
         foreach (Enemy enemy in allEnemys)
         {
-            if (GetDistance2D(enemy.transform.position, transform.position) <= towerType.range) continue;
+            if (GetDistance2D(enemy.transform.position, transform.position) <= towerType.range + 0.2f) continue;
             removeEnemys.Add(enemy);
         }
         foreach (Enemy enemy in removeEnemys)
