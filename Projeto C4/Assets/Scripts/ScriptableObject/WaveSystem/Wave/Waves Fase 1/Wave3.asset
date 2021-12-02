@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Wave3
   m_EditorClassIdentifier: 
   enemyWaves:
-  - {fileID: 11400000, guid: 01a573d243b379d42b0134c1add9e913, type: 2}
+  - {fileID: 11400000, guid: ff37a5e1033216a40ac5a15e86a57968, type: 2}
   - {fileID: 11400000, guid: 94b909904033693458027cdaa4a5e0aa, type: 2}
-  - {fileID: 11400000, guid: 01a573d243b379d42b0134c1add9e913, type: 2}
+  - {fileID: 11400000, guid: ff37a5e1033216a40ac5a15e86a57968, type: 2}
   - {fileID: 11400000, guid: 94b909904033693458027cdaa4a5e0aa, type: 2}
   paths: 02000000020000000100000001000000
   money: 250

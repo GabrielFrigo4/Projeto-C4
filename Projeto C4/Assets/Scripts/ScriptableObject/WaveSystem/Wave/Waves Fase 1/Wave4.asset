@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Wave4
   m_EditorClassIdentifier: 
   enemyWaves:
-  - {fileID: 11400000, guid: e9a782d5ba50ac345861e1f564e1f8ae, type: 2}
-  - {fileID: 11400000, guid: db8b018d1f7961e45b347e682a014c2c, type: 2}
-  - {fileID: 11400000, guid: fcce9f768a29eba4f9b6777b8e618827, type: 2}
-  - {fileID: 11400000, guid: ccc8650c039bd664fa155fc73b8de007, type: 2}
-  - {fileID: 11400000, guid: c8b7b141675447c4092526de8846b9bc, type: 2}
+  - {fileID: 11400000, guid: 94b909904033693458027cdaa4a5e0aa, type: 2}
+  - {fileID: 11400000, guid: ff37a5e1033216a40ac5a15e86a57968, type: 2}
+  - {fileID: 11400000, guid: 0cf406cd51722a047a0c82743194ecfa, type: 2}
+  - {fileID: 11400000, guid: 94b909904033693458027cdaa4a5e0aa, type: 2}
+  - {fileID: 11400000, guid: 63d4a074309441e47ac259dc8110a8ae, type: 2}
   paths: 0100000001000000010000000200000002000000
   money: 0

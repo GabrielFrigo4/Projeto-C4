@@ -70,6 +70,7 @@ public class GameIA : MonoBehaviour
 					option.transform.position = new Vector3(96, 0, 0);
 					Time.timeScale = 0;
 					finishGame = true;
+					ButtonPauseScript.isComplementarySystemActive = false;
 					SoundManager.Behaviour(SoundManagerAction.Stop, SoundManagerTarget.All, "Fase");
 
 					if (miniMenuTorres != null) Destroy(miniMenuTorres);
@@ -208,6 +209,7 @@ public class GameIA : MonoBehaviour
 			option.transform.position = new Vector3(96, 0, 0);
 			Time.timeScale = 0;
 			finishGame = true;
+			ButtonPauseScript.isComplementarySystemActive = false;
 			SoundManager.Behaviour(SoundManagerAction.Stop, SoundManagerTarget.All, "Fase");
 
 			if (miniMenuTorres != null) Destroy(miniMenuTorres);
