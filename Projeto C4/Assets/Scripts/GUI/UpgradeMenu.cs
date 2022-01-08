@@ -29,14 +29,14 @@ public class UpgradeMenu : MonoBehaviour
 	
 	public void OnUpradesSelected() 
 	{
-		menuLevelSelector.transform.position = new Vector3(32, 0, 0);
+		menuLevelSelector.transform.position = new Vector3(100, 0, 0);
 		menuUpgrades.transform.position = new Vector3(0, 0, 0);
 	}
 	
 	public void OnLevelChoiceSelected() 
 	{
 		menuLevelSelector.transform.position = new Vector3(0, 0, 0);
-		menuUpgrades.transform.position = new Vector3(32, 1, 0);
+		menuUpgrades.transform.position = new Vector3(100, 0, 0);
 	}
 	
 	public void OnBack2MenuSelected() 
