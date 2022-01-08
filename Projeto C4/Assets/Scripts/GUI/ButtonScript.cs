@@ -39,10 +39,13 @@ public class ButtonScript:MonoBehaviour
 
     public void Restart()
     {
+		#if UNITY_IOS
+		#else
 		string path = Path.GetFullPath(".") + "/" + Application.productName + ".exe";
         Process.Start(path);
         Application.Quit();
-    }
+		#endif
+	}
 
     public void CloseGame()
 	{

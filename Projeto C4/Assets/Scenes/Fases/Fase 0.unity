@@ -1460,11 +1460,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180288021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47e2e92d81f00142a898144ae7a0a1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 44301e571a95e554e9e045e767b8931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portugues: "Aperte Espa\xE7o para avan\xE7ar nas etapas do tutorial!"
-  ingles: Press Space to go through the tutorial steps.
+  portuguesPc: "Aperte Espa\xE7o para avan\xE7ar nas etapas do tutorial!"
+  inglesPc: Press Space to go through the tutorial steps.
+  portuguesMobile: "Clique na tela para avan\xE7ar nas etapas do tutorial!"
+  inglesMobile: Click on the screen to advance through the tutorial steps!
   text: {fileID: 17881505}
 --- !u!1 &1219599371
 GameObject:
