@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class UpgradeMenu : MonoBehaviour
 {
 	[SerializeField]GameObject menuLevelSelector, menuUpgrades, ChainUpgrades, parallelUpgrades;
 	[SerializeField]Text globalMoneyLabel;
-	public const int VACCINECOST = 500, ANTIBIOTICSCOST = 350, ANTIVIRALCOST = 350;
+	public const int VACCINECOST = 500;
 	public static readonly int[] upgradeCosts = new int[] {50,75,100};
 	Animator animator;
 	public Button[] buttons;
+	public Button buyButton;
 	public Button button_parallel;
-	public int level = 0;
-	public static Upgrades lastUpgrade;
+	public int level;
+	public static Upgrades lastUpgrade = Upgrades.Noone;
 	public static bool vaccine = false;
 	
 	void Start()
@@ -44,7 +44,8 @@ public class UpgradeMenu : MonoBehaviour
 		SceneScript.GoScene("Menu");
 	}
 
-	public void OnUpgradePurchased()
+#if UNITY_STANDALONE
+	public void UpgradeClick()
 	{
 		if (GameIA.globalMoney >= upgradeCosts[level])
 		{
@@ -53,8 +54,65 @@ public class UpgradeMenu : MonoBehaviour
 			RefreshButtons();
 			UptadeMoneyLabel();
 		}
-
 	}
+
+	public void VaccineClick()
+	{
+		if (GameIA.globalMoney >= VACCINECOST && !vaccine)
+		{
+			GameIA.globalMoney -= VACCINECOST;
+			vaccine = true;
+			RefreshButtons();
+			UptadeMoneyLabel();
+		}
+	}
+#elif UNITY_IOS
+	Upgrades buyNow;
+
+	public void UpgradeClick()
+	{
+		if (GameIA.globalMoney >= upgradeCosts[level])
+		{
+			buyNow = (Upgrades)(level+1);
+			buyButton.interactable = true;
+		}
+	}
+
+	public void VaccineClick()
+	{
+		if (GameIA.globalMoney >= VACCINECOST && !vaccine)
+		{
+			buyNow = Upgrades.Vaccine;
+			buyButton.interactable = true;
+		}
+	}
+
+	public void PurchasedClick()
+	{
+		if(buyNow == Upgrades.Vaccine)
+        {
+			if (GameIA.globalMoney >= VACCINECOST)
+			{
+				GameIA.globalMoney -= VACCINECOST;
+				vaccine = true;
+				RefreshButtons();
+				UptadeMoneyLabel();
+			}
+		}
+        else
+        {
+			if (GameIA.globalMoney >= upgradeCosts[(int)buyNow - 1])
+			{
+				GameIA.globalMoney -= upgradeCosts[(int)buyNow - 1];
+				level++;
+				RefreshButtons();
+				UptadeMoneyLabel();
+			}
+		}
+		buyButton.interactable = false;
+	}
+#endif
+
 	public void RefreshButtons()
 	{
 		for(int i = 0; i < buttons.Length; i++)
@@ -79,19 +137,7 @@ public class UpgradeMenu : MonoBehaviour
 			button_parallel.animator.SetBool("Purchased", true);
 		}
 	}
-	
-	public void VaccinePurchased()
-	{
-		if (GameIA.globalMoney >= VACCINECOST) 
-		{
-			GameIA.globalMoney -= VACCINECOST;
-			vaccine = true;
-			RefreshButtons();
-			UptadeMoneyLabel();
-		}
-	}
 
-	
 	public void UptadeMoneyLabel()
 	{
 		globalMoneyLabel.text = GameIA.globalMoney.ToString();
@@ -132,5 +178,7 @@ public enum Upgrades : int
 	Soap,
 	Mask,
 	Sanitizer,
+	Vaccine,
 }
+
 //Para criar outra fileira de upgrades, duplica o ChainUpgrades, e poem os gameObjects dos botões na ordem, pq o GetComponentsInChildren vai de cima para baixo.
