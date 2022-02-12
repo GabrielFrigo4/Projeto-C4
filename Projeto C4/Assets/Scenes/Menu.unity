@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 198353836}
   - component: {fileID: 198353835}
   - component: {fileID: 198353834}
+  - component: {fileID: 198353839}
   m_Layer: 5
   m_Name: Reiniciar
   m_TagString: Untagged
@@ -555,6 +556,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198353832}
   m_CullTransparentMesh: 1
+--- !u!114 &198353839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198353832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e2295309d6ebb45bc941b63f92708d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 01000000
 --- !u!1 &212952965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1086,7 @@ GameObject:
   - component: {fileID: 347415088}
   - component: {fileID: 347415090}
   - component: {fileID: 347415089}
+  - component: {fileID: 347415091}
   m_Layer: 5
   m_Name: Som
   m_TagString: Untagged
@@ -1099,7 +1114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.95176, y: -70}
+  m_AnchoredPosition: {x: 110, y: -70}
   m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347415089
@@ -1180,6 +1195,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &347415091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347415087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887fce0d93c95934c83a61c7fb1a68d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  tranformType: 1
+  newPosition: {x: 110, y: -80, z: 0}
 --- !u!1 &454527624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
+  - component: {fileID: 963194229}
   - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
@@ -2100,7 +2131,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.027450982, g: 0.23529413, b: 0.427451, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2147,6 +2178,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f039d4c4251e64cac12dd7635bde25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  sizeCam: 12
 --- !u!1 &1084973387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +2670,7 @@ GameObject:
   - component: {fileID: 1552201794}
   - component: {fileID: 1552201796}
   - component: {fileID: 1552201795}
+  - component: {fileID: 1552201797}
   m_Layer: 5
   m_Name: Musica
   m_TagString: Untagged
@@ -2652,7 +2698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109.95176, y: 90}
+  m_AnchoredPosition: {x: 110, y: 90}
   m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552201795
@@ -2733,6 +2779,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1552201797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552201793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887fce0d93c95934c83a61c7fb1a68d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  tranformType: 1
+  newPosition: {x: 110, y: 80, z: 0}
 --- !u!1 &1578791285
 GameObject:
   m_ObjectHideFlags: 0

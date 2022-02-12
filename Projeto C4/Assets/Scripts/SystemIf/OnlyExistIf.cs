@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class OnlyExistIf : MonoBehaviour
 {
-    public Plataform[] plataforms;
+    [SerializeField] Plataform[] plataforms;
 
     void Start()
     {
@@ -16,13 +17,8 @@ public class OnlyExistIf : MonoBehaviour
             {
                 plataformIsUsing = true;
             }
-#elif UNITY_ANDROID
-           if(pla == Plataform.Android)
-            {
-                plataformIsUsing = true;
-            }
-#elif UNITY_STANDALONE
-            if (pla == Plataform.Desktop)
+#elif UNITY_STANDALONE_WIN
+            if (pla == Plataform.Windows)
             {
                 plataformIsUsing = true;
             }
@@ -33,11 +29,4 @@ public class OnlyExistIf : MonoBehaviour
             Destroy(gameObject);
         }
     }
-}
-
-public enum Plataform
-{
-    IOS = 0,
-    Android = 1,
-    Desktop = 2,
 }
