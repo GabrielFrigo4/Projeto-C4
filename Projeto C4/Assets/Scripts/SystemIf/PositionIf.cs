@@ -29,7 +29,8 @@ public class PositionIf : MonoBehaviour
         {
             if(tranformType == TranformType.RectTranform)
             {
-                gameObject.GetComponent<RectTransform>().localPosition = newPosition;
+                RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
+                rectTransform.anchoredPosition = newPosition;
             }
             if (tranformType == TranformType.Tranform)
             {

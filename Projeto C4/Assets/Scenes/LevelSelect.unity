@@ -793,6 +793,7 @@ GameObject:
   - component: {fileID: 210719423}
   - component: {fileID: 210719422}
   - component: {fileID: 210719425}
+  - component: {fileID: 210719426}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -925,6 +926,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf11853a248b3443897d5c11c82f0fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &210719426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210719420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887fce0d93c95934c83a61c7fb1a68d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  tranformType: 1
+  newPosition: {x: 80, y: 5, z: 0}
 --- !u!1 &215091019
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +954,7 @@ GameObject:
   - component: {fileID: 215091021}
   - component: {fileID: 215091024}
   - component: {fileID: 215091022}
+  - component: {fileID: 215091025}
   m_Layer: 5
   m_Name: Bestiary
   m_TagString: Untagged
@@ -1078,6 +1095,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &215091025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215091019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887fce0d93c95934c83a61c7fb1a68d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  tranformType: 1
+  newPosition: {x: 260, y: -190, z: 0}
 --- !u!1 &246354729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,6 +3308,7 @@ GameObject:
   - component: {fileID: 1110744806}
   - component: {fileID: 1110744809}
   - component: {fileID: 1110744810}
+  - component: {fileID: 1110744811}
   m_Layer: 5
   m_Name: Upgrades
   m_TagString: Untagged
@@ -3301,7 +3334,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -130, y: -70.5}
-  m_SizeDelta: {x: 100, y: 40}
+  m_SizeDelta: {x: 100, y: 39.999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110744806
 MonoBehaviour:
@@ -3431,6 +3464,21 @@ MonoBehaviour:
   portugues: Loja
   ingles: Shop
   text: {fileID: 303110914}
+--- !u!114 &1110744811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110744804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887fce0d93c95934c83a61c7fb1a68d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plataforms: 00000000
+  tranformType: 1
+  newPosition: {x: -130, y: -5, z: 0}
 --- !u!1 &1205224128
 GameObject:
   m_ObjectHideFlags: 0
