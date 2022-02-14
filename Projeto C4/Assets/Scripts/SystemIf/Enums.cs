@@ -1,7 +1,7 @@
 public enum Plataform
 {
     IOS = 0,
-    Windows = 1,
+    Desktop = 1,
 }
 
 public enum TranformType

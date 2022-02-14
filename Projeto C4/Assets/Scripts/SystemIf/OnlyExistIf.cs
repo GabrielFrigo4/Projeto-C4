@@ -17,8 +17,8 @@ public class OnlyExistIf : MonoBehaviour
             {
                 plataformIsUsing = true;
             }
-#elif UNITY_STANDALONE_WIN
-            if (pla == Plataform.Windows)
+#elif UNITY_STANDALONE
+            if (pla == Plataform.Desktop)
             {
                 plataformIsUsing = true;
             }
