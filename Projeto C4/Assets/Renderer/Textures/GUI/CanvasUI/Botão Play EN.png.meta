@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -460,6 +461,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o Play EN_13": -7209668946700343541
+      "Bot\xE3o Play EN_1": -6486706332542538485
+      "Bot\xE3o Play EN_4": -2535915126057906419
+      "Bot\xE3o Play EN_9": 2314545872765761958
+      "Bot\xE3o Play EN_12": -688311454496855896
+      "Bot\xE3o Play EN_6": 659310161379411516
+      "Bot\xE3o Play EN_7": 2426692443614855039
+      "Bot\xE3o Play EN_5": 6230290975355255752
+      "Bot\xE3o Play EN_11": 7031946418405485577
+      "Bot\xE3o Play EN_14": -4430318957646339665
+      "Bot\xE3o Play EN_0": 8152176792148102439
+      "Bot\xE3o Play EN_8": 5406414732046188427
+      "Bot\xE3o Play EN_3": 4023633029547905019
+      "Bot\xE3o Play EN_2": 669671923671627184
+      "Bot\xE3o Play EN_10": -9094765822802590380
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

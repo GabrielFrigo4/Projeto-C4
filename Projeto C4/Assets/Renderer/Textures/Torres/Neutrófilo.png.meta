@@ -141,6 +141,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -847,6 +848,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Neutr\xF3filo_15": -5881202685341355494
+      "Neutr\xF3filo_7": -2548581170818378106
+      "Neutr\xF3filo_2": 5012431304818038545
+      "Neutr\xF3filo_19": -8266592909501647231
+      "Neutr\xF3filo_24": -2741685662850480336
+      "Neutr\xF3filo_28": -632960439144630792
+      "Neutr\xF3filo_22": -1735747110974685905
+      "Neutr\xF3filo_29": -7538276016071132235
+      "Neutr\xF3filo_4": 1565606360276970319
+      "Neutr\xF3filo_0": 7611222663914931867
+      "Neutr\xF3filo_27": -553743975453456874
+      "Neutr\xF3filo_11": -2531283657240144341
+      "Neutr\xF3filo_12": 713110145331698
+      "Neutr\xF3filo_10": 1340534600855388106
+      "Neutr\xF3filo_13": 8367898472060007267
+      "Neutr\xF3filo_6": 8370760227999612283
+      "Neutr\xF3filo_8": 5358052651292493113
+      "Neutr\xF3filo_26": -2433442010475793619
+      "Neutr\xF3filo_20": 7070469834446209565
+      "Neutr\xF3filo_9": -7408457489049070786
+      "Neutr\xF3filo_16": 7300853945261905775
+      "Neutr\xF3filo_5": -1691623298842542916
+      "Neutr\xF3filo_23": -4251118515262684606
+      "Neutr\xF3filo_17": 7248406780031535144
+      "Neutr\xF3filo_25": 5464005800232082956
+      "Neutr\xF3filo_21": 3623953797760620715
+      "Neutr\xF3filo_3": -2768055360223891748
+      "Neutr\xF3filo_14": 6176786520974967750
+      "Neutr\xF3filo_1": -4089947662329114108
+      "Neutr\xF3filo_18": -9053619809051356794
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -493,6 +494,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o Lingua-Sheet_8": -900850467632408528
+      "Bot\xE3o Lingua-Sheet_9": -7714250560667037853
+      "Bot\xE3o Lingua-Sheet_14": -3235759283109785324
+      "Bot\xE3o Lingua-Sheet_5": -3365815293266430126
+      "Bot\xE3o Lingua-Sheet_3": 1667976759591851209
+      "Bot\xE3o Lingua-Sheet_4": -7132480284977378980
+      "Bot\xE3o Lingua-Sheet_1": -8029274976258148244
+      "Bot\xE3o Lingua-Sheet_7": 329613552868668811
+      "Bot\xE3o Lingua-Sheet_0": 9064773749562596159
+      "Bot\xE3o Lingua-Sheet_2": 905570125058217191
+      "Bot\xE3o Lingua-Sheet_10": -6808553905617329608
+      "Bot\xE3o Lingua-Sheet_11": -7429491058255960361
+      "Bot\xE3o Lingua-Sheet_12": -7118459304406051521
+      "Bot\xE3o Lingua-Sheet_13": 6678834235541918351
+      "Bot\xE3o Lingua-Sheet_15": -8138088633545257044
+      "Bot\xE3o Lingua-Sheet_6": -4255722416120438794
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

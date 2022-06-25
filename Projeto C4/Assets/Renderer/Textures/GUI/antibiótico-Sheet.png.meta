@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -436,6 +437,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "antibi\xF3tico-Sheet_0": -7943980527994838838
+      "antibi\xF3tico-Sheet_11": 5237488093068851858
+      "antibi\xF3tico-Sheet_5": -6914929589051947750
+      "antibi\xF3tico-Sheet_12": 6050680192746769
+      "antibi\xF3tico-Sheet_2": -6320954577654280177
+      "antibi\xF3tico-Sheet_4": 4883023028147732587
+      "antibi\xF3tico-Sheet_1": 848432807807100256
+      "antibi\xF3tico-Sheet_9": -4699244782308159563
+      "antibi\xF3tico-Sheet_8": -7964656405954392931
+      "antibi\xF3tico-Sheet_10": -9196937593045523186
+      "antibi\xF3tico-Sheet_13": 79222442948906856
+      "antibi\xF3tico-Sheet_6": -4566846253985605524
+      "antibi\xF3tico-Sheet_3": -3402871164167885399
+      "antibi\xF3tico-Sheet_7": 7837581060720100600
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

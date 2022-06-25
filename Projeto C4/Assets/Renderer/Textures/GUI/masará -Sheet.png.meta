@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -196,6 +197,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "masar\xE1 -Sheet_3": -5984874632558905503
+      "masar\xE1 -Sheet_2": -6495045518878440576
+      "masar\xE1 -Sheet_1": 4758634291848554738
+      "masar\xE1 -Sheet_0": -5913669456671119618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

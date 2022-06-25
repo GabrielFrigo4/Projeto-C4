@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Bacteria 1_5: -2975297321217603479
+      Bacteria 1_7: 4810622610053525064
+      Bacteria 1_4: -6875970660184338133
+      Bacteria 1_6: 4225354413538235131
+      Bacteria 1_3: -6596349980595432185
+      Bacteria 1_0: -8775457915460333609
+      Bacteria 1_2: 2137065433496415577
+      Bacteria 1_1: -297068478340547591
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

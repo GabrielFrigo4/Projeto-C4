@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Dendr\xEDtica_2": -7465321870645047237
+      "Dendr\xEDtica_7": -360906613508922929
+      "Dendr\xEDtica_6": -774197046352195679
+      "Dendr\xEDtica_4": -475689649739841893
+      "Dendr\xEDtica_5": -5462557129244846212
+      "Dendr\xEDtica_3": 570291098896109490
+      "Dendr\xEDtica_0": 4924548521508734842
+      "Dendr\xEDtica_1": 2421167271733045131
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

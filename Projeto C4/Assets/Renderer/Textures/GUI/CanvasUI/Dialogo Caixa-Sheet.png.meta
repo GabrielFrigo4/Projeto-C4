@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dialogo Caixa-Sheet_8: -2990248260433614375
+      Dialogo Caixa-Sheet_0: -2603765526306741317
+      Dialogo Caixa-Sheet_2: -851662794827985681
+      Dialogo Caixa-Sheet_3: 3467021784344938865
+      Dialogo Caixa-Sheet_5: 846097581698390266
+      Dialogo Caixa-Sheet_1: 2528159715781895534
+      Dialogo Caixa-Sheet_7: -8676995055879789379
+      Dialogo Caixa-Sheet_4: -3474459353387257769
+      Dialogo Caixa-Sheet_6: -5275418500310056873
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

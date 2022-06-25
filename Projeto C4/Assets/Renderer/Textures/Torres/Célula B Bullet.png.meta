@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -196,6 +197,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "C\xE9lula B Bullet_1": 7621222706580673782
+      "C\xE9lula B Bullet_3": 2581800288768066552
+      "C\xE9lula B Bullet_0": -8399900116256036504
+      "C\xE9lula B Bullet_2": -2456748342064365360
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

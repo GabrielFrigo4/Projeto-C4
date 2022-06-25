@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o Sistema complementar_4": 850945817332919290
+      "Bot\xE3o Sistema complementar_8": -5032915829042464988
+      "Bot\xE3o Sistema complementar_2": -4802888568444170237
+      "Bot\xE3o Sistema complementar_3": 7344509320519833492
+      "Bot\xE3o Sistema complementar_5": -836888387136013305
+      "Bot\xE3o Sistema complementar_6": 9024985063265053649
+      "Bot\xE3o Sistema complementar_0": -4548901342387080558
+      "Bot\xE3o Sistema complementar_1": -4949439901371252159
+      "Bot\xE3o Sistema complementar_7": -8353292657658886884
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

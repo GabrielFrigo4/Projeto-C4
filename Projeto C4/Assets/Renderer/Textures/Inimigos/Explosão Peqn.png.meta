@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Explos\xE3o Peqn_0": -8232201832826857494
+      "Explos\xE3o Peqn_3": -8207510195746241445
+      "Explos\xE3o Peqn_6": 3819687095325553527
+      "Explos\xE3o Peqn_4": 1879649113293690310
+      "Explos\xE3o Peqn_2": 306727585645308965
+      "Explos\xE3o Peqn_1": -9172680731617929665
+      "Explos\xE3o Peqn_5": 8277237963856227423
+      "Explos\xE3o Peqn_7": 2350439160178583129
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

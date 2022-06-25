@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -268,6 +269,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "C\xE9lula T Auxiliar-Sheet_4": 4006030943600292604
+      "C\xE9lula T Auxiliar-Sheet_3": 9017439173040515192
+      "C\xE9lula T Auxiliar-Sheet_2": 1401437704955657795
+      "C\xE9lula T Auxiliar-Sheet_1": -6944491347551133863
+      "C\xE9lula T Auxiliar-Sheet_6": 6714211826809446440
+      "C\xE9lula T Auxiliar-Sheet_0": 3239931716423714182
+      "C\xE9lula T Auxiliar-Sheet_5": 6405598054220072678
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

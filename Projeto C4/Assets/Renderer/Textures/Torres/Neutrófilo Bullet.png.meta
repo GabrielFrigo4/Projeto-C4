@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -388,6 +389,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Neutr\xF3filo Bullet_5": 1865243154915582495
+      "Neutr\xF3filo Bullet_8": -4621038953382241924
+      "Neutr\xF3filo Bullet_0": -3883299900598576302
+      "Neutr\xF3filo Bullet_11": 7465965076139519895
+      "Neutr\xF3filo Bullet_6": -3826052691557324820
+      "Neutr\xF3filo Bullet_4": -9082447603176393387
+      "Neutr\xF3filo Bullet_10": 7854759572802231035
+      "Neutr\xF3filo Bullet_7": 3726816840820642332
+      "Neutr\xF3filo Bullet_3": 944729923315866731
+      "Neutr\xF3filo Bullet_9": 7361173902781874122
+      "Neutr\xF3filo Bullet_1": -4278657336917080030
+      "Neutr\xF3filo Bullet_2": -5134850676080007471
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

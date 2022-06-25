@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -580,6 +581,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Sabonet\xE3o-Sheet_1": 8403926475422027738
+      "Sabonet\xE3o-Sheet_13": 6386500678495104771
+      "Sabonet\xE3o-Sheet_2": 2027921581116047521
+      "Sabonet\xE3o-Sheet_14": 909195781806739644
+      "Sabonet\xE3o-Sheet_9": -2814396932345044517
+      "Sabonet\xE3o-Sheet_15": 1901681179646153921
+      "Sabonet\xE3o-Sheet_3": -9086463137830115018
+      "Sabonet\xE3o-Sheet_7": -3912282314170964000
+      "Sabonet\xE3o-Sheet_8": -7463680597138081193
+      "Sabonet\xE3o-Sheet_12": 1722920822082124377
+      "Sabonet\xE3o-Sheet_10": 2441468356285871490
+      "Sabonet\xE3o-Sheet_4": 5397840647810220068
+      "Sabonet\xE3o-Sheet_19": 1458430454942971192
+      "Sabonet\xE3o-Sheet_17": -7306703064652776355
+      "Sabonet\xE3o-Sheet_6": 5589164075266473249
+      "Sabonet\xE3o-Sheet_18": -7243568810510350871
+      "Sabonet\xE3o-Sheet_0": 3037423086829190586
+      "Sabonet\xE3o-Sheet_5": -3636456280407633262
+      "Sabonet\xE3o-Sheet_11": 3516389779180559615
+      "Sabonet\xE3o-Sheet_16": 1969813811018093719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

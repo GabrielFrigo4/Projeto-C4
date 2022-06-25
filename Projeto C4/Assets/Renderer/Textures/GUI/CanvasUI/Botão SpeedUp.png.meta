@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -364,6 +365,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o SpeedUp_9": -4293156982934216073
+      "Bot\xE3o SpeedUp_1": 3383463439965597892
+      "Bot\xE3o SpeedUp_0": -5793844095504880912
+      "Bot\xE3o SpeedUp_3": 5656040197547873268
+      "Bot\xE3o SpeedUp_6": -2006389718064738733
+      "Bot\xE3o SpeedUp_10": -2365836017021403446
+      "Bot\xE3o SpeedUp_7": 1997043524726725530
+      "Bot\xE3o SpeedUp_4": -6551407022823054468
+      "Bot\xE3o SpeedUp_5": -1408713348805893616
+      "Bot\xE3o SpeedUp_2": -7502801506745310951
+      "Bot\xE3o SpeedUp_8": -3405671173611940433
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

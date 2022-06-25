@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -436,6 +437,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_8": 6852422605299721256
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_7": 6020212876270998004
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_0": 1722842565282357016
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_10": -2479227126665669867
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_5": 4874699437341908312
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_12": 8313679037577578474
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_11": 6400619508367936300
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_4": -7567297689240295426
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_6": 533884246949175621
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_1": -4402603000233507180
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_9": -6467426141554647179
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_2": -7821464279442690266
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_13": -6573700162684801920
+      "rem\xE9dio Cloroquina ponto de enterroga\xE7\xE3o (1)-Sheet_3": -4236692219313515526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

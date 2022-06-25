@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -220,6 +221,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o Pause_3": -988044116731520490
+      "Bot\xE3o Pause_4": 3871118703601088633
+      "Bot\xE3o Pause_0": 3355097875424017531
+      "Bot\xE3o Pause_1": 237491890486653335
+      "Bot\xE3o Pause_2": -1642663325206247031
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

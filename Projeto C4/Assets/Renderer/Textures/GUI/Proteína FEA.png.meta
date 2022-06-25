@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -364,6 +365,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Prote\xEDna FEA_2": 6685485978831480114
+      "Prote\xEDna FEA_8": 4274357298719364859
+      "Prote\xEDna FEA_7": -3418732807252588054
+      "Prote\xEDna FEA_5": 3134350206799864565
+      "Prote\xEDna FEA_0": 4931071830915984409
+      "Prote\xEDna FEA_1": 9005553868332482072
+      "Prote\xEDna FEA_9": -773933837898938756
+      "Prote\xEDna FEA_6": -4305884601269613630
+      "Prote\xEDna FEA_3": -5828677002162662825
+      "Prote\xEDna FEA_10": 1430965512829047433
+      "Prote\xEDna FEA_4": -7107571813587172096
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

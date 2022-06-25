@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -268,6 +269,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "G\xEDrus 1_2": 2093047314343064583
+      "G\xEDrus 1_6": -7609345890962775466
+      "G\xEDrus 1_0": 3836354628160298991
+      "G\xEDrus 1_4": 5433210520584150318
+      "G\xEDrus 1_5": 31325880339428756
+      "G\xEDrus 1_1": 385228553297892349
+      "G\xEDrus 1_3": 3581054454230954101
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

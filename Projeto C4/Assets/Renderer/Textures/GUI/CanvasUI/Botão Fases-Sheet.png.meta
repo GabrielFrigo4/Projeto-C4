@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -364,6 +365,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Bot\xE3o Fases-Sheet_9": 8997025156582661506
+      "Bot\xE3o Fases-Sheet_8": -5016808062251388943
+      "Bot\xE3o Fases-Sheet_2": -5807289309958238937
+      "Bot\xE3o Fases-Sheet_5": -3660271824324634941
+      "Bot\xE3o Fases-Sheet_1": 4038160829451464659
+      "Bot\xE3o Fases-Sheet_10": 968582068384160904
+      "Bot\xE3o Fases-Sheet_3": -4835300385304753505
+      "Bot\xE3o Fases-Sheet_4": -6679616755487262023
+      "Bot\xE3o Fases-Sheet_6": -5527265143959310339
+      "Bot\xE3o Fases-Sheet_7": 8565326031343172241
+      "Bot\xE3o Fases-Sheet_0": -4349175015441865767
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
